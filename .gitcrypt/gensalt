@@ -1,0 +1,8 @@
+#!/bin/sh
+
+BASEDIR="$(dirname "$0")"
+
+cat /dev/urandom | base64 | tr -dc 0-9a-f | head -c 16 > "$BASEDIR/salt"
+cd "$BASEDIR/.."
+rm .git/index
+git add -A

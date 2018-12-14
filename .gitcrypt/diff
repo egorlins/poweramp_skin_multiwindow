@@ -1,0 +1,8 @@
+#!/bin/sh
+
+BASEDIR="$(dirname "$0")"
+
+. "$BASEDIR/init"
+
+# cat is used, if the file already is decrypted
+openssl enc -d -a -aes-128-cbc -k "$CRYPT_PASS" -in "$1" 2>/dev/null || cat "$1"

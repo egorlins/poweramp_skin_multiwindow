@@ -1,0 +1,7 @@
+#!/bin/sh
+
+BASEDIR="$(dirname "$0")"
+
+. "$BASEDIR/init"
+
+openssl enc -e -a -aes-128-cbc -S "$CRYPT_SALT" -k "$CRYPT_PASS"

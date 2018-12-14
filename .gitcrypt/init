@@ -1,0 +1,11 @@
+exit_msg() { echo "\033[31m$1\033[0m"; exit 1; }
+
+CRYPT_SALT=$(cat "$BASEDIR/salt")
+CRYPT_PASS="$GITCRYPT_PASS"
+
+[ -z "$CRYPT_SALT" ] && exit_msg "Salt not found"
+
+if [ -z "$CRYPT_PASS" ]; then
+	CRYPT_PASS="$(cat "$BASEDIR/../.git/pass")"
+	[ -z "$CRYPT_PASS" ] && exit_msg "Pass not found"
+fi
