@@ -1,25 +1,13 @@
-package com.maxmpz.poweramp.dsppluginexample;
-
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-
-public class MainActivity extends Activity {
-	
-	static {
-		System.loadLibrary("powerampdspexample");
-	}
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-}
+U2FsdGVkX1/ucPAcAK1NdnIdUrSScsJw4Kp19gY7+Jd4QzXgTGoq/Ex2G7QYgM4n
+/Y8x3H78nZd4mWU1bNpR1vC2805XdBwXUcfP+BlwfRCNFu/JI70CR93luPkEwsv2
+CXPfEimKdnkILHHB0M+B4ZO00Ft12c56t+0Z9ZhKXgB902KGik5SrHUJdFxjsONk
+XiQpONScXkFRowcZWm+YPIJRPvehgXHSwZzLe+PcZFdbjlGHx1IiFpRBu92G1ASs
+6BR39cS4woTAlFAijdEDjAdkytFy8Fn3hUtWXW2TQ0TC4NSL0wSWqg6DwLp4Qked
+ctBY+eZzsannly1HIQALWmbfF2SbGABuLNfTRgw6JtWfakPjUBbA47QEPQPIjEN4
+19AAyHhAI1jSMSqNbimR1ZalXwSIhrsxp5cRwdu7N7iVg0w94MRGVO5PmVpzAzL8
+x+oTjINoRjkYzquHrDJkTIWUvZ71m4zRkYRnnsFSrj0kaT7KIr6KYtr9Ji1YDMiP
+9SNyUv29+fU4qO/w58YHjKaSCjOxEDUZAMpKka4i/TIpA005DnqymvjUlPu3OyND
+E39wZF4i+b7AxJIley3FqN57SRGzhriZqOfWqjHkVR9+Ng2e1faT8zmL/+PF7YFR
+EezPATVE1ad5IfBESRyTfh5hVjpIeIkVgzDApmAFmUwLjs1kREjLxyHSzlLc2NMW
+OR4htYJvz2ggRhEnE6lsg5t48SFEdXEUzdl+SNC84svRBCzgdjlIf2qTvCoq4mDb
+v5Gp6Q9x+l4Xd6+BqEMt/dFvP+EzrG/c5qAYHMgYE2U=

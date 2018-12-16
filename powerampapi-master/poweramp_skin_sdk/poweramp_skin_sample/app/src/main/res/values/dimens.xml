@@ -1,51 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- NOTE: these are baseline values for large scale screens. See values-sw360dp-h1dp for normal screens dimens -->
-<resources>
-	<dimen name="NavbarBounds_height">40dp</dimen>
-	<dimen name="NavbarBounds_height_scene_navbar_2lines">90dp</dimen>
-
-
-	<dimen name="AAA_Seek_height">32dp</dimen>
-	<dimen name="AAA_TopPlay_marginBottom">24dp</dimen>
-	<dimen name="AAA_Seek_marginBottom">18dp</dimen>
-	<dimen name="AAA_TopTrackElapsed_marginBottom">4dp</dimen>
-	<dimen name="AAA_TopMetaInfoLayout_marginBottom">8dp</dimen>
-
-	<dimen name="AAA_TopPlay_maxSize">64dp</dimen>
-	<dimen name="AAA_TopPause_maxSize">54dp</dimen>
-	<dimen name="AAA_TopMediumButton_size">48dp</dimen>
-
-
-	<item type="dimen" format="float" name="AAA_ItemLikeUnlikeLayout_scene_aa_scale">.75</item>
-
-	<item type="dimen" format="float" name="AAA_ItemTrackTitle_scene_aa_scale">.75</item>
-	<item type="dimen" format="float" name="AAA_TopShuffleButtonLayout_scale">.8</item>
-	<item type="dimen" format="float" name="AAA_TopTrackElapsed_scale">.65</item>
-	<item type="dimen" format="float" name="AAA_TopTrackElapsed_scene_playing_scale">.75</item>
-
-	<dimen name="AAA_TopSleepTimerButtonLayout_marginLeft">-9.75dp</dimen>
-
-
-	<dimen name="AAA_TopSubAAButtons_marginTop">8dp</dimen>
-
-	<!-- This is the extra room for title / line2 / menu / like/unlike below AA image -->
-	<dimen name="AAA_ListSubstyle_aaPaddingBottom">52dp</dimen>
-
-	<fraction name="AAA_TopAAItemRatio">100%</fraction>
-	<!-- Extra hard limit on AA height. This is to ensure we always have a room for other controls. This value may be further adjusted depending on screen aspect and height,
-	     or portrait / landscape orientation, or both -->
-	<dimen name="AAA_aaMaxSize">260dp</dimen>
-
-	<dimen name="AAA_ItemTrackAAImage_scene_aa_margin">4dp</dimen><!-- Smaller AA image margin for small screens -->
-
-	<dimen name="AAA_ItemTrackMenu_scene_aa_marginBottom">26dp</dimen>
-
-	<dimen name="AAA_ItemTrackMenu_padding">4dp</dimen>
-	<dimen name="AAA_ItemTrackMenu_drawableSize">16dp</dimen>
-
-	<dimen name="AAA_ItemRatingBar_padding">4dp</dimen>
-	<dimen name="AAA_ItemRatingBar_drawableSize">16dp</dimen>
-
-	<dimen name="AAA_ItemRatingBar_scene_aa_marginBottom">0dp</dimen>
-</resources>
+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
+au1HotIL+8XF/0wc/gXdvQ==

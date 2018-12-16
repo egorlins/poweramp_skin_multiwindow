@@ -1,37 +1,24 @@
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 28
-    defaultConfig {
-        applicationId "com.egorlins.poweramp.v3.skins.my"
-        minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    lintOptions {
-        disable "ResAuto", "MissingTranslation", "OnClick", "ExtraTranslation"
-
-    }
-    aaptOptions {
-        additionalParameters "--package-id", "0x80", "-I", "Poweramp-v3-build-810-uni.apk"
-    }
-
-    useLibrary 'android.test.runner'
-    useLibrary 'android.test.base'
-}
-
-dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
+U2FsdGVkX1/ucPAcAK1NdrxsNsTkAJAzYwiSrjMxopMor4DAZo3mMX3QAx4s9Yri
+QJV1KcD+IeHWSAoJPoUveEu7IC2WGuii/stSn4JvBXAOhgS0usFu9CZk0b095nlL
+mbaD+da8/2MtLeJGGtx+kRtxuFYPyzDcK5ymBoP4Lnh8f/2r2B6RiCo+/svN7I3B
+jpNSgOy11DZ3hFvCOpwZMsNqOlYGykhFHZEihxYvvrI7Ib9hXxjattWrFvkp9VPZ
+QTiEqcofTkDnrlof8C1x54foqj5tAD745CFZCXdyoCD+YZlR6Uguf75yvuSd3/Jd
+CRYHLtBJyG5DrTzbVjRjxfnZY8wXlQguPhCvCwZrZByQ/nTnDDYcQN31M8ovO/RG
+UTip24jYSTcIudcr8QlhTZFDwu2hulfJFt2Znt5ilD0YH24WwvjaOBa2D1j8A55S
+jXfEY8R743GIUVwU71RE5MZjR0ZYlgqb34U7MmRsGv9Xm9KK40zj6XtshSqBdHro
+jN7sg+OSis9G78hNXeiiNbmrbCpRLn9Wu7PThjvrGyES+iD36d9p+61IHVXrotph
+4MxYiVgrmDTuknw1lZC2yguJKI2YVLOropK7FOQhtzmgieuFABDpsRlDwQMkKlFY
+Qm9Pet7AZ5D4TTK8bArZ35mYXIyg3KrnivSU365Vsly6VpfM37FSHEtHXlJTsQN1
+/rz/yDf/2miutzjZl7xc1W8+oXKRWYa4rEEPPIkDf9ytF6jW6Yplb+8BoXQWTuah
+1tM4bxLRgThqI9A5paAfQVGkzwADf4qBZ82RaeHJ9K22/QW2/UN8gfuNwLTg4xVl
+gNv3V6Ey7/Lpz4sgcv5luXH76uhhfFtEFP9/gD0+TmUMn/B/JlW/3SnoRY1bOPYA
+lhVXXc0GyGcv+KsPgHGC/E2fnx8olSzpr+YCsYwYVMwjjOV4VW1KHQkS9VncLCvY
+cMAac2PbGEzKwExuz8ArxTuVa8Kv1Gc0gK2rSnTwWuw7FFHYVVximK7lFOsPv4NK
+Fb1YSepdE08iA025SIJufe8JxHuA5VwsZlrvFys18ZxidXeFSq+MCaqtUSxOAgPF
+7gGrKK5hR4obSy1Wj4myik8HFqfj/DnXxktQOReqGjF9FOue6n16tP/cvVjYX5bu
+8TYzt7ryKL1Fsn1xbouj9f8ibANTEccYQUADLS7k5d8l5hYPLGXLRgZCmsnCg37l
+TZPDqNKjKNGk0Psrw+bsD6WPFXxqx8x4qz9LObCFsRIQaFwgTEcUPHDCS1Np/Qzb
+RRCN8Z144rsIpc2ASxplT7uBWnjcaAdIeJMqsSjR0Vgc/EAS8DqqOVD4bL7ypfeT
+Z2JnBy/IrL8Wgqq4EYjfMPVP09nTtLCQV1A7+eKbPR+hO9Vl+pV8QDu9s624n1qB
+4qmOAlLUp9uc3+GBFiC/pDuACwVSaYx1kZjnkINYzpJPBrQO9PqZv/R3jbxYRMSE
+rquqEmtPxjvuE2ewha9vpQ==

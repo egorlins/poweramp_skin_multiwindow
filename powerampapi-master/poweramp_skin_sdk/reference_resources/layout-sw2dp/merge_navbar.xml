@@ -1,162 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<!-- 
-	Scenes:
-	- default - 1 line (toolbar)
-	- scene_navbar_1line_sheet - 1 line (toolbar) + menu extended
-	- scene_navbar_2lines - 2 lines (toolbar + mini player) 
-	- scene_navbar_2lines_sheet - 2 lines (toolbar + mini player) + menu extended
--->
-
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-	<com.maxmpz.widget.SceneFastLayout android:id="@+id/navbar_container"
-		style="?TopNavbarContainer"
-		w:privateScene="true"
-	>
-		<!-- NOTE: ATM navbar shim is not covering android navigation bar. It's not obviously noticeable if android navigation bar is also shaded -->
-		<com.maxmpz.widget.Shim android:id="@+id/navbar_shim"
-			style="?NavbarShim"
-		/>
-		<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_1line_sheet" w:scene_2="@id/scene_navbar_2lines_sheet"
-			android:visibility="visible"
-		/>
-		<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_2lines"
-			android:visibility="gone"
-		/>
-			
-		<!-- w:layout_attachBottom="parent" -->
-		<com.maxmpz.audioplayer.widget.Navbar android:id="@id/navbar"
-			style="?Navbar"
-		>
-			<com.maxmpz.widget.player.NavbarExtension android:id="@id/navbar_extension"
-				style="?NavbarExtension"
-			>
-				<com.maxmpz.widget.FastTextView
-					style="?NavbarExtensionLogo" 
-				/>
-				
-				<!-- NOTE: wrap content items shrink too much and causes jumps when we resize parent container to small height/GONE.
-					 This is why fixed heights are used here -->
-					 
-				<com.maxmpz.widget.FastTextView android:id="@+id/navbar_extension_logo_label"
-					style="?NavbarExtensionLogoLabel"
-				/>
-				
-				<com.maxmpz.widget.IntentActionButton
-					style="?NavbarExtensionMenuLine"
-					android:drawable="?settings_24dp"
-					android:text="@string/settings"
-					android:targetClass=".preference.SettingsActivity"
-					android:targetPackage="com.maxmpz.audioplayer"
-				/>
-								
-				<com.maxmpz.widget.IntentActionButton
-					style="?NavbarExtensionMenuLine"
-					android:drawable="?changelog_24dp"
-					android:text="@string/about_poweramp_changelog"
-					android:targetClass=".dialogs.ChangelogActivity"
-				/>
-								
-				<com.maxmpz.widget.BusActionButton
-					style="?NavbarExtensionMenuLine"
-					android:drawable="?support_24dp"
-					android:text="@string/help"
-					w:busId="@id/bus_gui"
-					w:msgId="@id/cmd_gui_open_help"
-				/>
-			</com.maxmpz.widget.player.NavbarExtension>
-			<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_1line_sheet" w:scene_2="@id/scene_navbar_2lines_sheet"
-				android:visibility="visible"
-			/>
-			<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_2lines"
-				android:visibility="gone"
-			/>
-			
-	
-			<com.maxmpz.widget.PowerList android:id="@+id/navbar_list"
-				style="?NavbarList"
-			/>
-			<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_2lines_sheet"
-				android:visibility="visible"
-			/>
-			<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_1line_sheet"
-				android:visibility="gone"
-			/>
-			
-			<!-- NOTE: extra view group is needed to attach sceneparams to, so it's tracked/animated as one entity (vs scene params per button). Also helps with fast button search -->
-			
-			<com.maxmpz.widget.FastLayout android:id="@+id/navbar_nav_buttons"
-				style="?NavbarNavButtonsLayout"
-			>
-				<com.maxmpz.widget.FastButton android:id="@id/cmd_nav_to_lib"
-					style="?NavBarButton"
-					android:drawable="?nav_lists"
-				/>
-				<com.maxmpz.widget.FastButton android:id="@id/cmd_nav_to_eq"
-					style="?NavBarButton"
-					android:drawable="?nav_equ"
-				/>
-				<com.maxmpz.widget.FastButton android:id="@id/cmd_nav_to_search"
-					style="?NavBarButton"
-					android:drawable="?nav_search"
-				/>
-				<com.maxmpz.widget.FastButton android:id="@id/cmd_nav_more"
-					style="?NavBarButton"
-					android:drawable="?nav_hamburger"
-				/>
-			</com.maxmpz.widget.FastLayout>
-			<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_2lines_sheet"
-				android:visibility="visible"
-			/>
-			<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_1line_sheet"
-				android:visibility="visible"
-			/>
-			
-		</com.maxmpz.audioplayer.widget.Navbar>
-		<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_1line_sheet"
-			style="?Navbar_scene_navbar_1line_sheet"
-		/>
-		<!-- w:layout_attachBottom="parent" -->
-		<com.maxmpz.widget.SceneParams w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_2lines_sheet"
-			style="?Navbar_scene_navbar_2lines"
-		/>
-	
-	</com.maxmpz.widget.SceneFastLayout>
-	<SceneParams w:scene="@id/scene_vis"
-		android:visibility="gone"
-	/>		
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@id/scene_vis_w_ui"
-		android:visibility="visible"
-		android:alpha="0.55"
-	/>		
-	<SceneParams w:scene="@id/scene_vis_temp_ui" w:scene_2="@id/scene_playing" w:scene_3="@id/scene_eq" w:scene_4="@id/scene_lib" w:scene_5="@id/scene_search"
-		android:alpha="1"
-		android:visibility="visible"
-	/>		
-				
-	
-	
-</merge>
+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

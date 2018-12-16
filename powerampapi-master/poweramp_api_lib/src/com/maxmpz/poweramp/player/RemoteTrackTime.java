@@ -1,153 +1,97 @@
-/*
-Copyright (C) 2011-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with Poweramp application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.player;
-
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Handler;
-import android.util.Log;
-
-
-/**
- * This class tracks Poweramp in-song position via as few sync intents as possible.
- * Syncing happens when:
- * - your app calls registerAndLoadStatus() (for example, in activity onResume).
- * - when Poweramp seeks the track (throttled to 500ms)
- * - when track is started/resumed/paused
- */
-public class RemoteTrackTime {
-	private static final String TAG = "RemoteTrackTime";
-	private static final boolean LOG = false; // Make it false for production.
-
-	private static final int UPDATE_DELAY = 1000;
-
-	private Context mContext;
-	int mPosition;
-
-	long mStartTimeMs;
-	int mStartPosition;
-	private boolean mPlaying;
-
-	Handler mHandler = new Handler();
-
-
-	public interface TrackTimeListener {
-		@Deprecated
-		public void onTrackDurationChanged(int duration);
-		public void onTrackPositionChanged(int position);
-	}
-
-	TrackTimeListener mTrackTimeListener;
-
-
-	public RemoteTrackTime(Context context) {
-		mContext = context;
-	}
-
-	public void registerAndLoadStatus() {
-		IntentFilter filter = new IntentFilter(PowerampAPI.ACTION_TRACK_POS_SYNC);
-		mContext.registerReceiver(mTrackPosSyncReceiver, filter);
-		try {
-			mContext.startService(PowerampAPI.newAPIIntent().putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.POS_SYNC));
-		} catch(Throwable th) {
-			Log.e(TAG, "", th);
-		}
-
-		if(mPlaying) {
-			mHandler.removeCallbacks(mTickRunnable);
-			mHandler.postDelayed(mTickRunnable, 0);
-		}
-	}
-
-	public void unregister() {
-		if(mTrackPosSyncReceiver != null) {
-			try {
-				mContext.unregisterReceiver(mTrackPosSyncReceiver);
-			} catch(Exception ex){}
-		}
-		mHandler.removeCallbacks(mTickRunnable);
-	}
-
-	private BroadcastReceiver mTrackPosSyncReceiver = new BroadcastReceiver() {
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			int pos = intent.getIntExtra(PowerampAPI.Track.POSITION, 0);
-			if(LOG) Log.w(TAG, "mTrackPosSyncReceiver sync=" + pos);
-			updateTrackPosition(pos);
-		}
-
-	};
-
-	public void setTrackTimeListener(TrackTimeListener l) {
-		mTrackTimeListener = l;
-	}
-
-	// REVISIT: not used to update duration here ATM
-	public void updateTrackDuration(int duration) {
-		if(mTrackTimeListener != null) {
-			mTrackTimeListener.onTrackDurationChanged(duration);
-		}
-	}
-
-	public void updateTrackPosition(int position) {
-		mPosition = position;
-		if(LOG) Log.w(TAG, "updateTrackPosition mPosition=>" + mPosition);
-		if(mPlaying) {
-			mStartTimeMs = System.currentTimeMillis();
-			mStartPosition = mPosition;
-		}
-		if(mTrackTimeListener != null) {
-			mTrackTimeListener.onTrackPositionChanged(position);
-		}
-	}
-
-	protected Runnable mTickRunnable = new Runnable() {
-		@Override
-		public void run() {
-			mPosition = (int)(System.currentTimeMillis() - mStartTimeMs + 500) / 1000 + mStartPosition;
-			if(LOG) Log.w(TAG, "mTickRunnable mPosition=" + mPosition);
-			if(mTrackTimeListener != null) {
-				mTrackTimeListener.onTrackPositionChanged(mPosition);
-			}
-			mHandler.removeCallbacks(mTickRunnable);
-			mHandler.postDelayed(mTickRunnable, UPDATE_DELAY);
-		}
-	};
-
-	public void startSongProgress() {
-		if(!mPlaying) {
-			mStartTimeMs = System.currentTimeMillis();
-			mStartPosition = mPosition;
-			mHandler.removeCallbacks(mTickRunnable);
-			mHandler.postDelayed(mTickRunnable, UPDATE_DELAY);
-			mPlaying = true;
-		}
-	}
-
-	public void stopSongProgress() {
-		if(mPlaying) {
-			mHandler.removeCallbacks(mTickRunnable);
-			mPlaying = false;
-		}
-	}
-}
+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

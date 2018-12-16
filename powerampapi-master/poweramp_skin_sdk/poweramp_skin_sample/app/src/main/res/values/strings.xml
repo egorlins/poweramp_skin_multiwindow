@@ -1,53 +1,55 @@
-<resources>
-	<string name="app_name">Poweramp v3 Skin Sample</string>
-
-	<string name="start_with_sample_skin">Start Poweramp\nwith Sample Skin</string>
-	<string name="start_with_sample_aaa_skin">Start Poweramp\nwith Sample Skin Alternative Layout</string>
-
-	<string name="installation_ok">Successfully installed</string>
-
-	<string name="skin_sample">Sample Skin</string>
-	<string name="skin_author">Sample Skin Author</string>
-	<string name="skin_sample_description">This is a sample skin</string>
-	<string name="open_theme_settings">Open Theme Settings</string>
-
-
-	<string name="skin_divided_waveseek">Divided Waveseek</string>
-	<string name="skin_summary_divided_waveseek">Waveseek with the top and bottom parts separated</string>
-
-	<string name="skin_no_aa_blur">No Album Art Blur Background</string>
-	<string name="skin_summary_no_aa_blur">Just show default background color</string>
-
-	<string name="skin_static_seekbar">Static Seekbar</string>
-
-	<!-- Color rectangle (simple ⬤ symbol + color). NOTE: extra backslash is needed before quotes (\") -->
-	<string name="skin_text_color1"><![CDATA[Text color <span style=\"color: #ff0000;\">⬤</span>]]></string>
-
-	<string name="skin_select_text_color">Select Text Color</string>
-	<string name="skin_summary_select_text_color">Select one of the colors below</string>
-
-	<string name="skin_select_bg_color">Select Background Color</string>
-	<string name="skin_summary_select_bg_color_s">Background Color: %s</string>
-
-	<string name="skin_default">Default</string>
-	<string name="skin_summary_default">Default summary</string>
-
-	<string name="skin_red">Red</string>
-	<string name="skin_red_w_color"><![CDATA[<span style=\"color: #ff0000;\">⬤</span> Red color]]></string>
-
-	<string name="skin_green">Green</string>
-	<string name="skin_green_w_color"><![CDATA[<span style=\"color: #00ff00;\">⬤</span> Green color]]></string>
-
-	<string name="skin_blue">Blue</string>
-	<string name="skin_blue_w_color"><![CDATA[<span style=\"color: #0000ff;\">⬤</span> Blue color]]></string>
-
-	<string name="skin_transparent_navbar">Transparent Navbars</string>
-	<string name="skin_summary_transparent_navbar">Both, Poweramp and Android navigation bars are transparent</string>
-
-	<string name="skin_sample_aaa">Sample Skin Alternative Layout</string>
-	<string name="skin_sample_aaa_description">Plain seekbar, labels don\'t overlap image in main UI and grids</string>
-
-	<string name="skin_seekbar_and_waveseek">Static waveseek + seek bar</string>
-	<string name="skin_summart_seekbar_and_waveseek">Both seek widgets visible and operational</string>
-
-</resources>
+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

@@ -1,33 +1,20 @@
-package com.maxmpz.poweramp.apiexample;
-
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.util.Log;
-
-import com.maxmpz.poweramp.player.PowerampAPI;
-
-public class PowerampAPIReceiver extends BroadcastReceiver {
-	private static final String TAG = "PowerampAPIReceiver";
-
-	@Override
-	public void onReceive(Context context, Intent intent) {
-		String action = intent.getAction();
-		if(action != null) {
-			switch(action) {
-				case PowerampAPI.ACTION_STATUS_CHANGED_EXPLICIT:
-					MainActivity.debugDumpIntent(TAG, "ACTION_STATUS_CHANGED_EXPLICIT", intent);
-					break;
-
-				case PowerampAPI.ACTION_TRACK_CHANGED_EXPLICIT:
-					MainActivity.debugDumpIntent(TAG, "ACTION_TRACK_CHANGED_EXPLICIT", intent);
-					break;
-
-				default:
-					MainActivity.debugDumpIntent(TAG, "UNKNOWN", intent);
-					break;
-			}
-		}
-	}
-}
+U2FsdGVkX1/ucPAcAK1NdnIdUrSScsJw4Kp19gY7+JeILZFRCGHoTCjD9BXm6aOV
+8omtHCN0kdK+mqgRL0676ALCLQmnqFpqYwLo9+6CK39Wz8DwwE2RpqL+GU9TSv7u
+JrIV3sNElPNHFxBex1ng6pAVyMitVCxyZLc31B20u0KwVzPU7ScQfcAmiOTDhoRz
+qaH8JpMdyNASIhZqBMJjQjCyhVauLNVGFXHWDf1FLY524K8WUqwT7uIgEPjIFX9B
+rtDbVZq54bmmfbWiiS024X8wzOL46GHkyXOOMvtxhhYfqNQWYawy6EtRn1iETBpQ
+mHvGEkgHD4F8zFNkbHag8cMCcc5Sos4RKNHWQfbF+iideEfwgzErNCSbTz2KobdA
+d7KEskhFTV7wPf8De95vLl43h3UTLTNo+2wNqpqJCRVuLN0eN420+JOBD5kCgKSY
+rsPgZpMMtsEXiHaCCnhX7LXkaoeDEhqsFnU7r45nxt3uQT83Jq8Q1+ckyHru4yAm
+EBg+BXzfKuuswr/nC0Fpl0r4bcqaWuADUO3nf7DoElv0PrLevFB6OacCqiQNotRO
+aNQPubZMuKmvIl8w7iN80+uSZXRvs0OW3APciDtL7Od3G23IZ6kXIhQxzHEuxeDs
+/z1nmY8CcumFviprsFbsCh6m/7O29Mv0KFKNRp2snwSCPPd5f8nm6hkRFkubtw9W
+gKfHyGaS4xeAp0MwN0Ako2Tq77H/DQ+9lnxzzBJEHAAPMeTfa5oWFvT/tuI/udrj
+/QZjTa+YZY1McIKn+nwWq3KHdt9sIHYDZEQEkT5AtQ2cmL2wAnb3ujfHutNYMrAB
+V6OkPxRkEZ6zXWT7Yu2ir4UlCYffobpJePifx2OIFD0X1Cj4CU01B9iM1/8bS5Nr
+9OBOpQQNn1XU5UI7AleBo4vW940M7099+ujaP2HIe/E5FHmguXzzfvcGpCbnmrHd
+TkkxyRJTFw88uS+jAkZyfqcN+jKJmJbXZwvVeM0JIqhc9b3xyuVWstaTN1phgk+Q
+pLnEsfcW9gDVu4zllKbFVLU2HSP+xw6Jg3dfw9TkX/KpTXKyfMROBtSYVHnUPPGe
+8xlt9ic34bcksf4P5sRflIfbW/Pi/0BEvpBNdfnohLepc6h2MItu2c9FHDIC6tnY
+0XKV5+it56M1R4/eM8qTHJdHQPHwnDi9I6IU63GGJa3Zye7bY+fC2EwQ1zd6WoCH
+UZ2Kl0b7t2wRxKm4qiP0T9FPYH0sveG7AT7KFx/A25w=

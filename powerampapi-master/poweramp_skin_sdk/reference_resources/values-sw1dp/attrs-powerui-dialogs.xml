@@ -1,106 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<resources>
-	
-	<declare-styleable name="CollapsableHelper">
-		<attr name="animTime" format="integer"/><!-- In/out animation duration -->
-		<attr name="animExitTime" format="integer"/><!-- Optional out animation duration (if not specified, animTime is used for both enter and exit) -->
-		<attr name="dragAnimTime" format="integer"/><!-- Manual dragging animation duration. Note that manual animations also depends on velocity of dragging -->
-		<attr name="dragByNestedScroll" format="boolean"/><!-- True by default. If true, scrollable areas can drag dialog --> 
-		
-		<!-- False by default. If true, velocity is not applied for collapsing gesture while in nested scrolling views.
-		If false, dialog should be moved up to dragThreshold during touch inside nested scroll view to be auto-collapsed.
-		If true, dialog can be auto collapsed by fast gesture in nested scroll. This may work well for some dialog configurations, while
-		for others, this can cause dialog to be closed pre-maturely while scrolling.
-		 -->
-		<attr name="dragUseNestedScrollVelocity" format="boolean"/>   
-		<attr name="dragDirection">
-			<enum name="none" value="0"/><!-- If none, disables dialog dragging completely. Dialog still can be dismissed by clicking outside, or by buttons. --> 
-			<enum name="down" value="1"/>
-			<enum name="up" value="2"/>
-		</attr>
-		<!-- 0..1. Threshold for manual dragging to be considered as enough for closing dialog. 0.0 is fully opened, 0.5 in the middle, 1.0 - fully closed. Default is 0.8. -->
-		<attr name="dragThreshold" format="float"/>
-		<!-- Velocity threshold in dpi/sec for collapsing the dialog. 
-		The more threshold velocity value is, more speed is needed for touch gesture to collapse the dialog
-		 -->
-		<attr name="dragThresholdVelocity" format="dimension"/>
-		
-		<!-- collapsedScene/expandedScene used for CollapsableBehavior/ToastFrameLayout -->
-		<attr name="collapsedScene" format="reference"/><!-- Default is 0 -->
-		<attr name="expandedScene" format="reference"/>
-	</declare-styleable>
-	
-	<attr name="DialogForcedStyle" format="reference"/>
-	
-	<!-- False by default. If true, alternative scene is used for manual drag out (e.g. as for Centered dialog, where default scene transition is just fade in/out,
-	     but manual dragging-out can be to the top.  -->
-	<attr name="dialogAltOutScene" format="boolean"/> 
-
-	<attr name="dialogAdjustToSoftKeyboard" format="boolean"/>
-	
-	<!-- Default dialog toast icon -->
-	<attr name="dialogCheckBig" format="reference"/>
-	
-	<attr name="dialogLayout" format="reference"/><!-- The top level dialog xml layout. Usually it's the same for all dialogs -->
-	<attr name="dialogContentLayout" format="reference"/><!-- The dialog content (differs per dialog) -->
-	<attr name="dialogButtonsLayout" format="reference"/><!-- The dialog buttons. Usually the same for dialogs of same type -->
-	
-	<attr name="dialogPaddingTop" format="dimension"/>
-	<attr name="dialogContentPaddingLR" format="dimension"/>
-	<attr name="dialogContentPaddingTop" format="dimension"/>
-	<attr name="dialogContentPaddingBottom" format="dimension"/>
-	<attr name="dialogButtonsBarPaddingLR" format="dimension"/>
-	<attr name="dialogButtonsBarPaddingTB" format="dimension"/>
-	<attr name="dialogFrame_elevation" format="dimension"/>
-	
-
-	<attr name="DialogBehavior" format="reference"/>	
-	<attr name="DialogShim" format="reference"/>
-	<attr name="DialogFrame" format="reference"/>
-	<attr name="DialogFrameStyle_scene_dialog_in" format="reference"/>
-
-	<attr name="DialogFrameContent" foramt="reference"/>
-	
-	<attr name="DialogTitleLayout" format="reference"/>
-	<attr name="DialogTitleLayout_scene_progress" format="reference"/>
-	<attr name="DialogTitle" format="reference"/>
-	<attr name="DialogTitleProgress" format="reference"/>
-	
-	<attr name="DialogToast" format="reference"/>
-	<attr name="DialogToastImg" format="reference"/>
-	<attr name="DialogToastLine1" format="reference"/>
-	<attr name="DialogToastLine2" format="reference"/>
-	<attr name="DialogToastLineOnly1" format="reference"/>
-	
-	<attr name="DialogContent" format="reference"/>
-	<attr name="DialogContentNoPadding" format="reference"/>
-	
-	<attr name="DialogButtonBar" format="reference"/>
-	<attr name="DialogPositiveButtonStyle" format="reference"/>
-	<attr name="DialogNegativeButtonStyle" format="reference"/>
-	<attr name="DialogNeutralButtonStyle" format="reference"/>
-	<attr name="DialogButtonSpace" format="reference"/>
-	<attr name="DialogSeparator" format="reference"/>
-	<attr name="DialogMenuPlaceholderLayout" format="reference"/>
-	
-</resources>
+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
+7Zqi5xHX6nG2huhriVqoxzO3ETbDQ+kB7ZhfA38g2f5ACKuTmBNiCZWXCNDtV6C2
+iAI+SD6ZCIL0n+JV5dNlD5vJmXYv73JEOlnNluS9PTQEP0ZNhHhw3TWf5C6liR5U
+WcAdtON9gy+AtOvsqDEKk+jlV080tbP4LMUBOysJPF00yV6iFiq1Dx0SZAlsYBtk
+bJGkPhPTYbPmXC75vGDOLWBbG3O3vSyrtTMO9OileSKRq7Szj1MzzZBfJBarq68A
+qW3Hm7u6cQ3pM6NLLwjs3hkd88fFjivMpwWkwDilTXM9bu/wmREGNI6VC/vawWEU
+49f1DaPpsGFrQlkyUbxO/y8Ync6+JgPG/Cd1y4XJVyrswrx3BxqHCJvi0POFWmZs
+OBdHMpbqH1yRVQduqd/7kY/nwE3T8H2Ao5AYsy4yrwqLHqhD+hRMyoMl+ihdSdd7
+zSNYwdIA+m+Zw5AnS0F55T34/Ds+1T7nWfV3UmGEKG8/UZ12FASIGYSiT9Z+Iyvp
+ASE/bGpXfEEs/rLkOVJHcCckiPWjBnpOu4idmu5ZpnJqX8ZETWRrRUgIOuVOwFYh
+JWlg0Q8dAFJxOyNusYSQZmziUyuLuM2Bd0PWEENbOo5vJPpnsuRNGxtpm8e0ZNO2
+QYxLYHoe32/EYOkFps0as23ihbK4zXlk6QZzKqR0HA4hPdZnY+nbII+lV6VUxZ2C
+tTjy231EqwhwPRyJqMIydS3vIHu55jqgEihAB6KWlGITkW73lX6MaSa333XOIv/K
+FZ8aucaYjeXM1F/vm0H5d1t4y3foEGT5+0Gcof5NJFxikA+DtzF30UE/+pJFUMNG
+U8JzLafaMPv68Xya1pRq9A7tkLXxc/4PmmMf/ST/wqI+apla02eSNByyaNXPKTGV
+Sy8g4L4SLEyEnIf2pZdSCeRCYr1o/yzFbWSS8L4qk2YHS0cGp00zogWAgmmz3+EA
+2M9bqoBX3uLEAbtHRxkI3dMjOTo1s25gnVbZQo/s05pg+mNy4uIf/fxhaRtgpYEB
+mutynqXywUgx/zeQMc7Iwwj9B0LzeGjdnYJkgEwiZ7UXCnLb+FkT1h7WlaCgPpDg
+wPq8ZCVLSrcC1x3RJQImXS4WNC1pB4KdGEio0hTf22uuh7+3RDcD2dqlipn8yLq1
+a6EOuHn7oe3aKAWxKjRY8VJ0cIATMNL6Ir8odESHI1Um12ryeembsNPL2jySKovB
+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

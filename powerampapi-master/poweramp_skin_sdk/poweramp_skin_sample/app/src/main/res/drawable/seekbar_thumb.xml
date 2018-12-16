@@ -1,28 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="250">
-	<item android:state_pressed="true">
-		<shape android:shape="ring"
-			android:useLevel="false"
-			android:innerRadius="3dp"
-			android:thickness="3dp"
-			android:insetLeft="1dp"
-			android:insetRight="1dp"
-		>
-			<solid android:color="?android:attr/colorControlNormal" />
-			<size android:width="@dimen/AAA_Seek_thumb_size" android:height="@dimen/AAA_Seek_thumb_size" />
-		</shape>
-	</item>
-	<item>
-		<shape android:shape="ring"
-			android:useLevel="false"
-			android:innerRadius="2dp"
-			android:thickness="2dp"
-			android:insetLeft="3dp"
-			android:insetRight="3dp"
-		>
-			<solid android:color="?android:attr/colorControlNormal" />
-			<size android:width="@dimen/AAA_Seek_thumb_size" android:height="@dimen/AAA_Seek_thumb_size" />
-		</shape>
-	</item>
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9hNq/SJP2bteTOWo8D7qOltaQzjgtBjh+tpEoviCOD+f
+YepUkVaOt0YehZr81V4UI29xrVdyEahy3Srzxv0BbnIau/Bwen6c4iRo+4dV5u/9
+YqmcqdvVTIU1C5GiPXFPj0nS0zaMc289btV68tbdlHOPAuyH+3g/TbI9aonfHa0I
+WJEtN935BuD/yzeZiL4JaUfid1xVwLEP7VB9ia62/NmHrJOGOS+JNF4LnROsKcCW
+XkMHWNstAgmYh627kNkS6usu7Hn0eRuiXFJHNdtWPBVrTV/Dj0zmiUkYc/Vz8J1/
+N2zoXJGk1Dqk1E2dv+HmDD7f9lWUJjJ+CH20StaTeEP3eA2vNJ0Jo8Z38JbRz1jU
+R3by3I/dlXnU3m57RRCg4RaHb3SSnS14H66DBGyOaV+2/Jq0I0KXlhwGkpDSar+I
+GtLaJ5/LfschCiPr3e9X1PBiCskmx09Q/+gxyA11fAiITN5/i8VvXmY6jZjKjB6i
+fVXpxINz0rr4Aov8fPSU1VOgNaPQJla71OwoPJpqTLNV4f8GVjIGqboguRxb3Ydc
+W3yerqzQ/aiNp905LoF9fnPK8N00N3aM/IT/7mPkybDt3borIDHJpdnvtZQX17Y3
+RlTwloWxibDlPjr8qqbPLfdkN2bjZXlM5QrOwSwRkEo8r80DwfmZ9XMtpFT5K0LC
+V3vb/22eXJ62lklSOHkDv3fCSeyHr+bE8uQg5Ul+ZqH4HZI+7I1qW7i1ujirJFzl
+21zkfFAUNkLRtp4CWfa46fxB7hjCRB/0Y2VfwkLfMbh/i71CgjDs0fI8eFfmPGkM
+4rlsHwIfplY2+fA0LCTin235Djbse2rmF4tZ3jwtrs81tYlr/bSH7jyGRL4lxYTb
+mqoS91mMzu53H/94lkKAuyrkxKYh77HI2hkrecPwMYw7CzDkpRSB7B+qpFl8X2zV
+qrLOA8cxBF0/qOD7Mmy/gZ3WMOK8DeNydevF3F/EjzE8qA80XBf6yPZKwWKGTuKL
+jzvnG3u6cQMBLMGHuXT0PhZWuoM3RjLKAjAAIjPx1i0eKwkfQg9NU6eBAJxAU/6k
+FKlMpEsHo3boYIKuvxoWbw==

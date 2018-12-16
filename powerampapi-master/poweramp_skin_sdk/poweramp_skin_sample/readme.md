@@ -1,209 +1,219 @@
-# Poweramp v3 Skin Sample
-============================================
-
-This is a sample skin source that demonstrates two separate skins in one project.
-This project can be directly used to build APK which can be installed on the device and recognized by
-Poweramp v3.
-
-**NOTE: this sample skin is intended for demonstration purposes only. While you can build and publish this skin, the skin goal is Poweramp v3 skin features demonstration, which may look weird
-and unpolished when all such features combined in one skin**
-
-
-### Poweramp v3 skin
-
-Poweramp skin is a pretty much standard Android app in APK which includes:
-* meta entry in AndroidManifest.xml which points to **[xml/skins.xml](app/src/main/res/xml/skins.xml)**:
-```xml
-<meta-data android:name="com.maxmpz.PowerampSkins" android:resource="@xml/skins"/>
-```
-* **[xml/skins.xml](app/src/main/res/xml/skins.xml)** file which defines skins in the APK and additional per-skin options
-
-* an Activity which can be started by user. This activity may include actions which
-opens Poweramp skin settings or directly start Poweramp with target skin applied
-    * the activity is also used for skin development to force Poweramp to reload skin under development
-    * the activity can be further customized as needed
-
-* one or multiple skins style definitions (see **[values/sample_skin_styles.xml](app/src/main/res/values/sample_skin_styles.xml)**, **[values/sample_skin_aaa_styles.xml](app/src/main/res/values/sample_skin_aaa_styles.xml)**)
-* all the required skin drawables, extra layouts, dimens, and other resources
-
-### How to start own skin (based on sample skin)
-
-Skin development is done directly from Android Studio (3.2 was used for these skins development).
-* clone this repository, rename appropriately and change **[values/strings.xml](app/src/main/res/values/strings.xml)** labels and **[xml/skins.xml](app/src/main/res/xml/skins.xml)** entries
-* change application package, preferable to something containing **".poweramp.v3.skins."** as this is the substring that will be used in Poweramp to search for skin APKs in Play
-* edit app/build.gradle, replace ../../../audioplayer/bin/audioplayer.apk with path to your Poweramp v3 APK (**build 795** and above)
-```
-additionalParameters "--shared-lib", "-I", "path to your Poweramp v3 APK"
-```
-
-* build and run skin as a normal Android app
-* when skin activity is started, "Start Poweramp With * Skin" button can be pressed to force Poweramp immediately reload the skin
-* skin should appear in Poweramp skin selection settings page as well
-* **if skin fails, ensure Android Studio's "Instant Run" feature is turned off (Prefs > Build, Execution, Deployment > Instant Run**
-
-### How Poweramp v3 skins work
-
-Poweramp loads skin APK resources and applies skin theme style directly to its main player activity (there is only one player activity in Poweramp v3).
-To ensure future skin compatibility (and to reuse existing default skin styles), skin styles **must extend** default Poweramp styles.
-
-See [values/sample_skin_styles.xml](app/src/main/res/values/sample_skin_styles.xml), [values/sample_skin_aaa_styles.xml](app/src/main/res/values/sample_skin_aaa_styles.xml) for commented skin style definitions.
-
-### Poweramp skin styles.xml
-
-The main skin styles is defined via [xml/skins.xml](app/src/main/res/xml/skins.xml) (in this example, SampleSkin):
-```xml
-<skins xmlns:android="http://schemas.android.com/apk/res/android">
-    <skin
-        name="@string/skin_sample"
-        author="@string/skin_author"
-        description="@string/skin_sample_description"
-        style="@style/SampleSkin"
-    >
-        ...
-    </skin>
-    ...
-</skins>
-```
-
-
-In this sample skin, SampleSkin style is defined in **[values/sample_skin_styles.xml](app/src/main/res/values/sample_skin_styles.xml)**.
-This is standard Android theme style definition, with couple additional requirements:
-* the skin style should have one of the Poweramp default skin styles as parent:
-```xml
-<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Default">
-    ...
-</style>
-```
-
-* all the overridden styles should be derived from appropriate Poweramp styles, with **com.maxmpz.audioplayer:** prefix:
-```xml
-<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Default">
-    ...
-    <item name="com.maxmpz.audioplayer:ItemTrackMenu">@style/ItemTrackMenu</item><!-- We override com.maxmpz.audioplayer:ItemTrackMenu with own @style/ItemTrackMenu -->
-    ...
-</style>
-
-<!-- This is our @style/ItemTrackMenu style, we derive it from com.maxmpz.audioplayer:ItemTrackMenu -->
-<style name="ItemTrackMenu" parent="com.maxmpz.audioplayer:ItemTrackMenu">
-   ...
-</style>
-
-```
-
-* overriden styles **should always be derived** from Poweramp styles, otherwise almost any Poweramp update will break skin, due to possible base styles changes
-
-### Poweramp v3 skin theme specifics
-Poweramp v3 has concept of a scene. A view can be rendered in the target scene (e.g. scene_aa for main player UI large album art item) and can be animated from one scene to another
-(e.g. item can be animated from scene_aa to scene_grid when transition happens from main screen to the library playlist).
-
-This is why many attributes/styles are ending with "_scene.." suffix, as for almost each view addition per-scene styles are required.
-
-Scene generally defines initial and final view layout/position and some view parameters.
-
-Also, almost all Poweramp views are custom views, including layout (FastLayout) and text views (FastTextView). FastLayout is multi-paradigm layout, somewhat similar to ConstraintLayout,
-but faster, strictly one-pass per layout, and optimized for animations; and FastText is a fast text rendering view optimized for transitions. See **[reference_resources/values-sw1dp/attrs-powerui.xml](/poweramp_skin_sdk/reference_resources/values-sw1dp/attrs-powerui.xml)** for commented attributes definitions
-for these views.
-
-See appropriate reference resources xmls for the details in the comments.
-
-### Poweramp v3 skin options
-Poweramp v3 supports unique feature allowing user selectable skin options to be defined by skin author. Option is an "overlap" style which is applied in addition to main skin theme.
-See sample skin **[xml/skins.xml](app/src/main/res/xml/skins.xml)** for reference.
-
-Options include:
-* option with just a name (rendered as half-width switch), or with the summary (rendered as 2 line switch):
-```xml
-<option
-    key="[preference unique key]"
-    name="[visible name]"
-    summary="[optional summary]"
-    overlapStyle="[overlap style reference]"
-    checkedByDefault="[true|false]"/>
-```
-* set of radio buttons (build 810+). Only one selected value from the set of options is applied:
-```xml
-<radio
-    key="[preference unique key]"
-    name="[visible name]"
-    summary="[optional summary]"
-    defaultValue="[optional default overlap style reference]">
-        <option
-            name="[visible name]"
-            summary="[optional summary]"
-            overlapStyle="[overlap style reference, can be an empty string]"
-        />
-        ...
-</radio>
-```
-* option with popup option chooser list (build 810+). Only one selected value from the set of options is applied:
-```xml
-<popup
-    key="[preference unique key]"
-    name="[visible name]"
-    summary="[optional summary, can include %s pattern which is replaced by currently selected option name]"
-    defaultValue="[optional default overlap style reference]">
-        <option
-            name="[visible name]"
-            overlapStyle="[overlap style reference, can be an empty string]"
-        />
-        ...
-</popup>
-```
-
-Most options support limited set of html tags inside **name** and **summary** attributes. These allow e.g. specifying color:
-```xml
-<option
-    ...
-    name="@string/skin_text_color1"
-    ...
-/>
-
-```
-where skin_text_color1 is defined in strings.xml with html tags inside:
-```xml
-<string name="skin_text_color1"><![CDATA[Text color <span style=\"color: #ff0000;\">⬤</span>]]></string>
-```
-
-
-
-### Difference vs Poweramp v2 skins
-* Poweramp v2 skins are not compatible with Poweramp v3, Poweramp v3 skins are not compatible with Poweramp v2
-* Poweramp v2 skins relied on skin provided layout xmls, v3 skins rely on style redefinitions, layouts xmls can't be changed by skin (except for few injected specific **merge_** layouts)
-* much less raster graphics in default skins, but this is open for skin author, there is no limitation on raster images
-
-
-### Reference resources
-
-For skin authoring, some Poweramp v3 resources (attribute definitions, styles, drawables, etc.) are provided for the reference - see **[/reference_resources](/poweramp_skin_sdk/reference_resources)** directory.
-
-The most important files are:
-* res/layout-sw1dp/activity_list_fast.xml - the main Poweramp activity layout
-* res/layout-sw1dp/merge_*.xml - various additional merged layouts
-* res/layout-sw1dp/item_track.xml - the "track" item which is used in main player UI and lists for all the items with image
-* res/layout-sw1dp/item_text.xml - same as item_track.xml, but for text-only items
-* res/values-sq1dp/attrs.xml, attrs-powerui.xml, attrs-player.xml - attributes definitions for all the Poweramp custom views, scenes, etc.
-* res/values/default-styles.xml - default skin style
-* res/values-sw1db/styles-*.xml - various default skin styles, grouped by style name prefix (all of them combined into default style inside Poweramp)
-
-### License
-
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
-
+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

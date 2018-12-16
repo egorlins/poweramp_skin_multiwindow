@@ -1,19 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"
-		android:exitFadeDuration="500"
-		android:enterFadeDuration="250"
-	>
-	<item w:state_toolbar_in_header="true">
-		<shape>
-			<!-- Empty. TODO: requires extra state for e.g. expanded state -->
-		</shape>
-	</item>
-
-	<item>
-		<shape>
-			<corners android:radius="?corners_navbar"/>
-			<solid android:color="?colorBgPrimary"/>
-		</shape>
-	</item>
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9kZnE+Rn2/ZoAh38GhbmG/lzISVov2MeRyT1uEuVO5g0
+nhRA3CwHKTBddYaflBIQbAN0gdXVSokg/0JTktNdSyffSXqMrpz2IF3dSNj5R+pc
+eeUYIzjTkVnV0UAeu+c3pl/xp3JGKEOfsh+ixU2ep3XlbrNrUAl5cedA+uejJnzN
+qLa+3NgDzse4s7kjJUP2KI+anJfgB7oQfJxLQuAH5/ozOz7gBAslybaVotv851rQ
+kMgyIGTBemQUYshngNOoOINDlqeevuRx841KhupDSj6UPOTyfrd0eRgQ4pP3N0Rz
+zkJf8irobai78XNPQfZsS6V0OWW+g2AYy+h2wYc9nnTW54LZhj5h5szjW+yVgFaA
+26soH/jADqzplqRLsqt7P6gEmThyXMNeFte5pjEj6IYUVa56P5npS3/HNIrfYpoU
+oEWNT98n2QEzg9dfO+VBOUDML1csUZGXRA8mBG3Hd/Zsx8oczifXlXnM7bxumNqs
++qNYrL4sev47MXEB6ukJHJS6qiVG/z78SqXpfgSUwE8hVgF9U9h4ySLhNqqJBFKh

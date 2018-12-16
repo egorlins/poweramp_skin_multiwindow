@@ -1,206 +1,145 @@
-package yuku.ambilwarna;
-
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
-import android.graphics.Color;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-
-public class AmbilWarnaDialog {
-	public interface OnAmbilWarnaListener {
-		void onCancel(AmbilWarnaDialog dialog);
-		void onOk(AmbilWarnaDialog dialog, int color);
-	}
-
-	final AlertDialog dialog;
-	final OnAmbilWarnaListener listener;
-	final View viewHue;
-	final AmbilWarnaKotak viewSatVal;
-	final ImageView viewCursor;
-	final View viewOldColor;
-	final View viewNewColor;
-	final ImageView viewTarget;
-	final ViewGroup viewContainer;
-	final float[] currentColorHsv = new float[3];
-
-	/**
-	 * create an AmbilWarnaDialog. call this only from OnCreateDialog() or from a background thread.
-	 * 
-	 * @param context
-	 *            current context
-	 * @param color
-	 *            current color
-	 * @param listener
-	 *            an OnAmbilWarnaListener, allowing you to get back error or
-	 */
-	public AmbilWarnaDialog(final Context context, int color, OnAmbilWarnaListener listener) {
-		this.listener = listener;
-		Color.colorToHSV(color, currentColorHsv);
-
-		final View view = LayoutInflater.from(context).inflate(R.layout.ambilwarna_dialog, null);
-		viewHue = view.findViewById(R.id.ambilwarna_viewHue);
-		viewSatVal = (AmbilWarnaKotak) view.findViewById(R.id.ambilwarna_viewSatBri);
-		viewCursor = (ImageView) view.findViewById(R.id.ambilwarna_cursor);
-		viewOldColor = view.findViewById(R.id.ambilwarna_warnaLama);
-		viewNewColor = view.findViewById(R.id.ambilwarna_warnaBaru);
-		viewTarget = (ImageView) view.findViewById(R.id.ambilwarna_target);
-		viewContainer = (ViewGroup) view.findViewById(R.id.ambilwarna_viewContainer);
-
-		viewSatVal.setHue(getHue());
-		viewOldColor.setBackgroundColor(color);
-		viewNewColor.setBackgroundColor(color);
-
-		viewHue.setOnTouchListener(new View.OnTouchListener() {
-			@Override public boolean onTouch(View v, MotionEvent event) {
-				if (event.getAction() == MotionEvent.ACTION_MOVE
-						|| event.getAction() == MotionEvent.ACTION_DOWN
-						|| event.getAction() == MotionEvent.ACTION_UP) {
-
-					float y = event.getY();
-					if (y < 0.f) y = 0.f;
-					if (y > viewHue.getMeasuredHeight()) y = viewHue.getMeasuredHeight() - 0.001f; // to avoid looping from end to start.
-					float hue = 360.f - 360.f / viewHue.getMeasuredHeight() * y;
-					if (hue == 360.f) hue = 0.f;
-					setHue(hue);
-
-					// update view
-					viewSatVal.setHue(getHue());
-					moveCursor();
-					viewNewColor.setBackgroundColor(getColor());
-
-					return true;
-				}
-				return false;
-			}
-		});
-		viewSatVal.setOnTouchListener(new View.OnTouchListener() {
-			@Override public boolean onTouch(View v, MotionEvent event) {
-				if (event.getAction() == MotionEvent.ACTION_MOVE
-						|| event.getAction() == MotionEvent.ACTION_DOWN
-						|| event.getAction() == MotionEvent.ACTION_UP) {
-
-					float x = event.getX(); // touch event are in dp units.
-					float y = event.getY();
-
-					if (x < 0.f) x = 0.f;
-					if (x > viewSatVal.getMeasuredWidth()) x = viewSatVal.getMeasuredWidth();
-					if (y < 0.f) y = 0.f;
-					if (y > viewSatVal.getMeasuredHeight()) y = viewSatVal.getMeasuredHeight();
-
-					setSat(1.f / viewSatVal.getMeasuredWidth() * x);
-					setVal(1.f - (1.f / viewSatVal.getMeasuredHeight() * y));
-
-					// update view
-					moveTarget();
-					viewNewColor.setBackgroundColor(getColor());
-
-					return true;
-				}
-				return false;
-			}
-		});
-
-		dialog = new AlertDialog.Builder(context)
-			.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-				@Override public void onClick(DialogInterface dialog, int which) {
-					if (AmbilWarnaDialog.this.listener != null) {
-						AmbilWarnaDialog.this.listener.onOk(AmbilWarnaDialog.this, getColor());
-					}
-				}
-			})
-			.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-				@Override public void onClick(DialogInterface dialog, int which) {
-					if (AmbilWarnaDialog.this.listener != null) {
-						AmbilWarnaDialog.this.listener.onCancel(AmbilWarnaDialog.this);
-					}
-				}
-			})
-			.setOnCancelListener(new OnCancelListener() {
-				// if back button is used, call back our listener.
-				@Override public void onCancel(DialogInterface paramDialogInterface) {
-					if (AmbilWarnaDialog.this.listener != null) {
-						AmbilWarnaDialog.this.listener.onCancel(AmbilWarnaDialog.this);
-					}
-
-				}
-			})
-			.create();
-		// kill all padding from the dialog window
-		dialog.setView(view, 0, 0, 0, 0);
-
-		// move cursor & target on first draw
-		ViewTreeObserver vto = view.getViewTreeObserver();
-		vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-			@Override public void onGlobalLayout() {
-				moveCursor();
-				moveTarget();
-				view.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-			}
-		});
-	}
-
-	protected void moveCursor() {
-		float y = viewHue.getMeasuredHeight() - (getHue() * viewHue.getMeasuredHeight() / 360.f);
-		if (y == viewHue.getMeasuredHeight()) y = 0.f;
-		RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) viewCursor.getLayoutParams();
-		layoutParams.leftMargin = (int) (viewHue.getLeft() - Math.floor(viewCursor.getMeasuredWidth() / 2) - viewContainer.getPaddingLeft());
-		;
-		layoutParams.topMargin = (int) (viewHue.getTop() + y - Math.floor(viewCursor.getMeasuredHeight() / 2) - viewContainer.getPaddingTop());
-		;
-		viewCursor.setLayoutParams(layoutParams);
-	}
-
-	protected void moveTarget() {
-		float x = getSat() * viewSatVal.getMeasuredWidth();
-		float y = (1.f - getVal()) * viewSatVal.getMeasuredHeight();
-		RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) viewTarget.getLayoutParams();
-		layoutParams.leftMargin = (int) (viewSatVal.getLeft() + x - Math.floor(viewTarget.getMeasuredWidth() / 2) - viewContainer.getPaddingLeft());
-		layoutParams.topMargin = (int) (viewSatVal.getTop() + y - Math.floor(viewTarget.getMeasuredHeight() / 2) - viewContainer.getPaddingTop());
-		viewTarget.setLayoutParams(layoutParams);
-	}
-
-	private int getColor() {
-		return Color.HSVToColor(currentColorHsv);
-	}
-
-	private float getHue() {
-		return currentColorHsv[0];
-	}
-
-	private float getSat() {
-		return currentColorHsv[1];
-	}
-
-	private float getVal() {
-		return currentColorHsv[2];
-	}
-
-	private void setHue(float hue) {
-		currentColorHsv[0] = hue;
-	}
-
-	private void setSat(float sat) {
-		currentColorHsv[1] = sat;
-	}
-
-	private void setVal(float val) {
-		currentColorHsv[2] = val;
-	}
-
-	public void show() {
-		dialog.show();
-	}
-
-	public AlertDialog getDialog() {
-		return dialog;
-	}
-}
+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
+YLGdACr2ojyuGt3vAdyfIA==

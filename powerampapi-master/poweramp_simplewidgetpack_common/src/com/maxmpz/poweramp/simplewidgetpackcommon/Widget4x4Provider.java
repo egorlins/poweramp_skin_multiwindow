@@ -1,307 +1,240 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpackcommon;
-
-import android.app.PendingIntent;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
-import android.util.SparseArray;
-import android.view.View;
-import android.widget.RemoteViews;
-
-import com.maxmpz.poweramp.player.PowerampAPI;
-import com.maxmpz.poweramp.widgetpackcommon.WidgetUpdateData;
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-public class Widget4x4Provider extends SimpleBaseWidgetProvider {
-	private static final String TAG = "Widget4x4AAProvider";
-	private static final boolean LOG = false;
-	private static final boolean LOG_AA = false;
-	
-	protected static final int DEFAULT_BG = 0x55000000; //0x55000000;	
-	
-	protected static final SparseArray<WidgetContext> sWidgetContexts = new SparseArray<WidgetContext>(2);	
-
-	// NOTE: each such preference requires string contact (id + pref).
-	
-	public static final String PREF_THEME = "theme";
-	public static final String PREF_ALT_SCALE = "alt_scale";
-	public static final String PREF_SHADOW = "shadow";
-	public static final String PREF_COLOR = "color";
-	
-	public static final int SHADOW_BOTH_UP = 0;
-	public static final int SHADOW_BOTH_DOWN = 1;
-	public static final int SHADOW_ALBUM_ART = 2;
-	
-	public static final int STYLE_1 = 0;
-	public static final int STYLE_2 = 1;
-	public static final int STYLE_3 = 2;
-	
-	// non-direct files (bitmaps) produces pops and clicks on SGS (probably due to slow parcel save to flash).
-	// direct files can cause problems if the original file is too large.
-	// also it can kill launcher pro if something bad is going with the memory in it.
-	private static final boolean USE_DIRECT_FILES = true;
-	
-	protected int mWidgetLayout;
-	protected boolean mGlueAlbum;
-	
-	public Widget4x4Provider() {
-		super();
-		mWidgetLayout = R.layout.appwidget_4x4;
-		mGlueAlbum = true;
-	}
-	
-	public static void clearContexts() {
-		sWidgetContexts.clear();
-	}
-	
-
-	@Override
-	public RemoteViews update(Context context, WidgetUpdateData data, SharedPreferences prefs, int id) {
-		if(LOG) Log.e(TAG, "update id=" + id + " me=" + this);
-		
-		if(sIconsHelper == null) {
-			sIconsHelper = new IconsHelper(context.getApplicationContext());
-		}
-		
-		RemoteViews views = new RemoteViews(context.getPackageName(), mWidgetLayout);
-		
-		bindButtons(context, views);
-		
-		views.setOnClickPendingIntent(R.id.shuffle_icon, PendingIntent.getService(context, 6, 
-				new Intent(PowerampAPI.ACTION_API_COMMAND)
-														.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.SHUFFLE), 0));
-		
-		views.setOnClickPendingIntent(R.id.repeat_icon, PendingIntent.getService(context, 7, 
-				new Intent(PowerampAPI.ACTION_API_COMMAND)
-														.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.REPEAT), 0));
-		
-		final Bundle track = data.track;
-		if(track != null) {
-			int catMatchUri = track.getInt(PowerampAPI.Track.CAT);
-			boolean isCue = track.getBoolean(PowerampAPI.Track.IS_CUE);
-			
-			bindBaseTextFields(context, data, views, mGlueAlbum);
-		
-			int iconRes = data.apiVersion >= API_VERSION_200 ? sIconsHelper.getIcon(catMatchUri, isCue) : sIconsHelper.getIconV140(catMatchUri, isCue);
-
-			//if(LOG) Log.e(TAG, "cat=" + catMatchUri + " iconRes=" + iconRes + " data.apiVersion=" + data.apiVersion);
-			
-			views.setImageViewResource(R.id.type_image, iconRes);
-		
-			updateRepeatShuffle(data.repeat, data.shuffle, views, data);
-		} else {
-			bindBaseTextFields(context, data, views, mGlueAlbum);
-			views.setImageViewResource(R.id.type_image, 0);
-		}
-
-		boolean altScale = prefs.getBoolean(id + PREF_ALT_SCALE, false);
-		int flipperFrameId; 
-		int color = prefs.getInt(id + PREF_COLOR, DEFAULT_BG);
-		int aaColor = Color.alpha(color);
-		int shadow = 0;
-		shadow = prefs.getInt(id + PREF_SHADOW, 0);
-		
-		flipperFrameId = setShadow(views, aaColor, shadow);
-
-		setBG(views, color, shadow);
-
-		setTheme(prefs, id, views);
-		
-		WidgetContext widgetCtx = sWidgetContexts.get(id);
-		if(widgetCtx == null) {
-			if(LOG) Log.e(TAG, "creating widgetCtx for id=" + id + " me=" + this);
-			widgetCtx = new WidgetContext();
-			sWidgetContexts.put(id, widgetCtx);
-		}
-		
-		updateAlbumArt(context, prefs, id, data, views, altScale, flipperFrameId, widgetCtx);
-		
-		bindNavigation(context, views, data);		
-		
-		return views;
-	}
-	
-	protected void bindNavigation(Context context, RemoteViews views, WidgetUpdateData data) {
-		bindGoToMainUI(context, views, R.id.aa_cont_layout);
-		bindGoToPlUI(context, views, R.id.playing_now, data.apiVersion);
-	}
-
-	protected void setBG(RemoteViews views, int color, int shadow) {
-		views.setInt(R.id.deck_bg, "setBackgroundColor", color);
-	}
-
-	protected void setTheme(SharedPreferences prefs, int id, RemoteViews views) {
-		int smallButtonRes;
-		int mediumButtonRes;
-		int bigButtonRes;
-
-		final int theme = prefs.getInt(id + PREF_THEME, 0);
-
-		switch(theme) {
-		
-			case 1:
-				smallButtonRes = R.drawable.alu_small_round_button_selector;
-				mediumButtonRes = R.drawable.alu_medium_round_button_selector;
-				bigButtonRes = R.drawable.alu_big_round_button_selector;
-				break;
-			case 0:
-			default:
-				smallButtonRes = R.drawable.matte_small_round_button_selector;
-				mediumButtonRes = R.drawable.matte_medium_round_button_selector;
-				bigButtonRes = R.drawable.matte_big_round_button_selector;
-				break;
-		}
-		
-		
-		views.setInt(R.id.folder_prev_button, "setBackgroundResource", smallButtonRes);
-		views.setInt(R.id.rw_button, "setBackgroundResource", mediumButtonRes);
-		views.setInt(R.id.play_button, "setBackgroundResource", bigButtonRes);
-		views.setInt(R.id.ff_button, "setBackgroundResource", mediumButtonRes);
-		views.setInt(R.id.folder_next_button, "setBackgroundResource", smallButtonRes);
-	}
-
-	protected int setShadow(RemoteViews views, int aaColor, int shadow) {
-		int flipperFrameId;
-		switch(shadow) {
-			case SHADOW_ALBUM_ART:
-				views.setViewVisibility(R.id.shadow, View.INVISIBLE);
-				views.setViewVisibility(R.id.shadow_up, View.INVISIBLE);
-				views.setViewVisibility(R.id.shadow_down, View.INVISIBLE);
-				flipperFrameId = R.id.flipper_frame_alt;
-				views.setViewVisibility(R.id.flipper_frame, View.GONE);
-				if(aaColor > 0) {
-					views.setViewVisibility(R.id.controls_shadow, View.VISIBLE);
-				}
-				break;
-			case SHADOW_BOTH_DOWN:
-				views.setViewVisibility(R.id.shadow_up, View.INVISIBLE);
-				views.setViewVisibility(R.id.shadow_down, View.VISIBLE);
-				flipperFrameId = R.id.flipper_frame;
-				views.setViewVisibility(R.id.flipper_frame_alt, View.GONE);
-				break;
-			case SHADOW_BOTH_UP:
-			default:
-				views.setViewVisibility(R.id.shadow_up, View.VISIBLE);
-				views.setViewVisibility(R.id.shadow_down, View.INVISIBLE);
-				flipperFrameId = R.id.flipper_frame;
-				views.setViewVisibility(R.id.flipper_frame_alt, View.GONE);
-				break;
-		}
-		return flipperFrameId;
-	}
-	
-	protected void updateAlbumArt(Context context, SharedPreferences prefs, int id, WidgetUpdateData data, final RemoteViews views, boolean altScale, int flipperFrameId, WidgetContext widgetCtx) {
-		if(LOG || LOG_AA) Log.e(TAG, "updateAlbumArt() me=" + this);
-		
-		final boolean noAnim = getAANoAnimState(data, widgetCtx);
-		
-		widgetCtx.lastAATimeStamp = data.albumArtTimestamp;
-
-		final int aaLayout = altScale ? R.layout.appwidget_4x4_aa_layout_alt : R.layout.appwidget_4x4_aa_layout;
-		
-		views.removeAllViews(flipperFrameId);
-		
-		Bitmap albumArtBitmap = data.albumArtBitmap;
-		String path = data.albumArtPath;
-		
-		if(noAnim) {
-			// Set album art without animation.
-			if(albumArtBitmap != null && albumArtBitmap.getHeight() >= MIN_HEIGHT && albumArtBitmap.getWidth() >= MIN_WIDTH || !TextUtils.isEmpty(path)) {
-				final RemoteViews aaView2 = new RemoteViews(context.getPackageName(), aaLayout);
-				views.setViewVisibility(flipperFrameId, View.VISIBLE);
-				
-				try {
-					applyBitmapOrFile(albumArtBitmap, path, aaView2);
-					
-					views.addView(flipperFrameId, aaView2);
-					
-					//if(altScale) {
-						views.setViewVisibility(R.id.logo, View.INVISIBLE);
-					//}
-					if(LOG || LOG_AA) Log.w(TAG, "AA => updated, no anim");
-					return;
-				} catch(OutOfMemoryError er) {
-					Log.e(TAG, "", er);
-				}
-			} 
-			views.setViewVisibility(R.id.logo, View.VISIBLE);
-			views.setViewVisibility(flipperFrameId, View.INVISIBLE);
-			// Fall back for no image or oom.
-			if(LOG || LOG_AA) Log.w(TAG, "updateAlbumArt() - no AA (fast)");
-			return;
-		}
-		
-		final RemoteViews flipper = new RemoteViews(context.getPackageName(), R.layout.appwidget_4x4_flipper);
-
-		if(albumArtBitmap != null &&  albumArtBitmap.getHeight() >= MIN_HEIGHT && albumArtBitmap.getWidth() >= MIN_WIDTH  || !TextUtils.isEmpty(path)) {
-			// Proceed with animation.
-			final RemoteViews aaView2 = new RemoteViews(context.getPackageName(), aaLayout);
-			flipper.addView(R.id.view_flipper, aaView2);
-			views.setViewVisibility(flipperFrameId, View.VISIBLE);
-			
-			try {
-				applyBitmapOrFile(albumArtBitmap, path, aaView2);
-				
-				views.addView(flipperFrameId, flipper);
-				//if(altScale) {
-					views.setViewVisibility(R.id.logo, View.INVISIBLE);
-				//}
-				
-				if(LOG || LOG_AA) Log.w(TAG, "AA => updated, animated");
-				return;
-			} catch(OutOfMemoryError er) {
-				Log.e(TAG, "", er);
-			}
-		} 
-			
-		// Fall back for no image or oom.
-		if(LOG || LOG_AA) Log.w(TAG, "updateAlbumArt() - no AA");
-		views.setViewVisibility(R.id.logo, View.VISIBLE);
-		views.setViewVisibility(flipperFrameId, View.INVISIBLE);
-		views.addView(flipperFrameId, flipper);
-	}
-	
-	private void applyBitmapOrFile(Bitmap bitmapAlbumArt, String path, RemoteViews aaView2) {
-		if(LOG || LOG_AA) Log.e(TAG, "applyBitmapOrFile() me=" + this);
-		
-		if(USE_DIRECT_FILES && path != null) {
-			if(LOG || LOG_AA) Log.w(TAG, "AA => got jpeg on disk");
-			aaView2.setImageViewUri(R.id.image, Uri.parse(path));
-		} else {
-			if(bitmapAlbumArt != null) {
-				if(LOG || LOG_AA) Log.w(TAG, "got bitmap w=" + bitmapAlbumArt.getWidth() + " h=" + bitmapAlbumArt.getHeight() + " rowBytes=" + bitmapAlbumArt.getRowBytes() + " total bytes=" + bitmapAlbumArt.getRowBytes() * bitmapAlbumArt.getHeight());
-			}
-			if(bitmapAlbumArt != null && (bitmapAlbumArt.getWidth() <= 0 || bitmapAlbumArt.getHeight() <= 0)) { // Safeguard about occasional bad images.
-				bitmapAlbumArt = null;
-			}
-			aaView2.setImageViewBitmap(R.id.image, bitmapAlbumArt);
-		}
-	}
-}
+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

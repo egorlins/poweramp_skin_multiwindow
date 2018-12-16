@@ -1,451 +1,442 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-	<!-- 
-		NOTE: dialog themes are applied in multiple steps:
-		- main app theme applied
-		- then dialog style, which inherits some *Dialog (e.g. BottomsheetDialog) is applied without overriding exisiting app theme values
-		  (meaning, only values which are missing from app theme are applied. App theme attributes take priority)
-		- then ?DialogForcedStyle (==BaseDialogForcedStyle) style is applied with overriding. This applies few styles
-		  which always should be overriden for dialog theme, like window title, background, position, etc.
-	-->
-	
-		
-	<!-- Dialog styles, which should be forced on app theme -->
-	<style name="BaseDialogForcedStyle">
-		<item name="android:windowNoTitle">true</item>
-		<item name="windowNoTitle">true</item>
-		<item name="android:windowActionBar">false</item>
-		<item name="windowActionBar">false</item>
-
-		<item name="android:colorBackground">#00000000</item>
-		<item name="android:colorBackgroundCacheHint">@null</item>
-
-		<item name="android:windowFrame">@null</item>
-		<item name="android:windowBackground">@android:color/transparent</item>
-		<item name="android:windowIsFloating">false</item>
-		<item name="android:windowIsTranslucent">true</item>
-		<item name="android:windowContentOverlay">@null</item>
-		<item name="android:backgroundDimEnabled">false</item>
-		<item name="android:windowElevation">0px</item><!-- Forced no elevation -->
-		<item name="android:windowClipToOutline">false</item>
-		<item name="android:windowSoftInputMode">adjustResize</item>
-		
-		<item name="android:windowAnimationStyle">@null</item>
-		<item name="android:windowEnterTransition">@android:transition/no_transition</item>
-		<item name="android:windowSharedElementEnterTransition">@android:transition/no_transition</item>
-		<item name="android:windowSharedElementExitTransition">@android:transition/no_transition</item>
-		<item name="android:windowActivityTransitions">false</item>
-		<item name="android:windowContentTransitions">false</item>
-		<item name="android:windowDisablePreview">true</item>
-
-		<item name="android:statusBarColor">#00000000</item>
-		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
-		<item name="android:windowOverscan">true</item>
-	</style>
-	
-	<style name="BaseDialog">
-		<item name="android:windowNoTitle">true</item>
-		<item name="windowNoTitle">true</item>
-		<item name="android:windowActionBar">false</item>
-		<item name="windowActionBar">false</item>
-						
-		<item name="android:colorBackground">#00000000</item>
-		<item name="android:colorBackgroundCacheHint">@null</item>
-
-		<item name="android:windowFrame">@null</item>
-		<item name="android:windowBackground">@android:color/transparent</item>
-		<item name="android:windowIsFloating">false</item>
-		<item name="android:windowIsTranslucent">true</item>
-		<item name="android:windowContentOverlay">@null</item>
-		<item name="android:backgroundDimEnabled">false</item>
-		<item name="android:windowElevation">0px</item><!-- Forced no elevation -->
-		<item name="android:windowClipToOutline">false</item>
-		
-		<item name="android:windowAnimationStyle">@null</item>
-		<item name="android:windowEnterTransition">@android:transition/no_transition</item>
-		<item name="android:windowSharedElementEnterTransition">@android:transition/no_transition</item>
-		<item name="android:windowSharedElementExitTransition">@android:transition/no_transition</item>
-		<item name="android:windowActivityTransitions">false</item>
-		<item name="android:windowContentTransitions">false</item>
-		<item name="android:windowDisablePreview">true</item>
-		
-		<item name="android:statusBarColor">#00000000</item>
-		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
-		<item name="android:windowOverscan">true</item>
-		
-		<item name="DialogTitleLayout">@style/DialogTitleLayout</item>
-		<item name="DialogTitleLayout_scene_progress">@style/DialogTitleLayout_scene_progress</item>
-		<item name="DialogTitle">@style/DialogTitle</item>
-		<item name="DialogTitleProgress">@style/DialogTitleProgress</item>
-		<item name="DialogToast">@style/DialogToast</item>
-		<item name="DialogToastImg">@style/DialogToastImg</item>
-		<item name="DialogToastLine1">@style/DialogToastLine1</item>
-		<item name="DialogToastLine2">@style/DialogToastLine2</item>
-		<item name="DialogToastLineOnly1">@style/DialogToastLineOnly1</item>
-		
-		<item name="DialogSeparator">@style/DialogSeparator</item>
-		
-		<!-- NOTE: following attributes are pulled from theme by DialogBehavior -->
-		<item name="dragDirection">none</item>
-		<item name="animTime">350</item>
-		<item name="dragAnimTime">1000</item>
-		<item name="dragByNestedScroll">true</item>
-		<item name="dragThreshold">0.5</item>
-		<item name="dragUseNestedScrollVelocity">false</item><!-- NOTE: false here makes nested scrolling NOT to dismiss dialog by velocity -->
-		<item name="dragThresholdVelocity">1800dp</item><!-- was 700dp -->
-		
-		<item name="dialogAdjustToSoftKeyboard">true</item>
-		
-		<item name="dialogFrame_elevation">16dp</item><!-- NOTE: usually this is re-defined in main app/skin theme. NOTE: also used directly in dialog.xml -->
-		
-		<item name="DialogShim">@style/DialogShim</item>
-		
-		<item name="dialogButtonsBarPaddingLR">16dp</item>
-		<item name="dialogButtonsBarPaddingTB">4dp</item>
-		
-		<item name="dialogCheckBig">@drawable/check_big</item>
-		
-		<item name="dialogPaddingTop">18dp</item><!-- 24dp NOTE: optically the same as padding left/right due to optical extra padding on text view -->
-		<item name="dialogContentPaddingLR">24dp</item><!-- 30dp -->
-		<item name="dialogContentPaddingTop">12dp</item><!-- 12dp -->
-		<item name="dialogContentPaddingBottom">12dp</item><!-- 24dp -->
-		
-		<item name="dialogLayout">@layout/dialog</item>
-		<item name="dialogButtonsLayout">@layout/dialog_buttons</item>
-		
-		<item name="DialogButtonBar">@style/DialogButtonBar</item>
-		<item name="DialogPositiveButtonStyle">@style/DialogPositiveButtonStyle</item>
-		<item name="DialogNegativeButtonStyle">@style/DialogNegativeButtonStyle</item>
-		<item name="DialogNeutralButtonStyle">@style/DialogNeutralButtonStyle</item>
-		<item name="DialogButtonSpace">@style/DialogButtonSpace</item>
-		<item name="DialogMenuPlaceholderLayout">@style/DialogMenuPlaceholderLayout</item>
-	</style>
-	
-	<style name="BottomsheetDialog" parent="BaseDialog">
-		<item name="dragDirection">down</item>
-		<item name="DialogFrame">@style/BottomsheetDialogFrame</item>
-		<item name="DialogFrameStyle_scene_dialog_in">@style/BottomsheetDialogFrameStyle_scene_dialog_in</item>
-		<item name="DialogFrameContent">@style/DialogFrameContent</item>
-		<item name="DialogContent">@style/DialogContent</item>
-		<item name="DialogContentNoPadding">@style/DialogContentNoPadding</item><!-- REVISIT: remove, use DialogContent styles redefinition per dialog instead -->
-	</style>
-	
-	<style name="TopsheetDialog" parent="BaseDialog">
-		<item name="dragDirection">up</item>
-		<item name="dialogAdjustToSoftKeyboard">false</item>
-		<item name="DialogFrame">@style/TopsheetDialogFrame</item>
-		<item name="DialogFrameStyle_scene_dialog_in">@style/TopsheetDialogFrameStyle_scene_dialog_in</item>
-		<item name="DialogFrameContent">@style/DialogFrameContent</item>
-		<item name="DialogContent">@style/DialogContent</item>
-		<item name="DialogContentNoPadding">@style/DialogContentNoPadding</item>
-	</style>
-	
-	<style name="CenteredDialog" parent="BaseDialog">
-		<item name="dialogAltOutScene">true</item>
-		<item name="dragDirection">up</item>
-		<item name="animTime">450</item>
-		<item name="DialogFrame">@style/CenteredDialogFrame</item>
-		<item name="DialogFrameStyle_scene_dialog_in">@style/CenteredDialogFrameStyle_scene_dialog_in</item>
-		<item name="DialogFrameContent">@style/CenteredDialogFrameContent</item>
-		<item name="DialogContent">@style/CenteredDialogContent</item>
-		<item name="DialogContentNoPadding">@style/CenteredDialogContentNoPadding</item>
-	</style>
-	
-	<style name="DialogShim">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">match_parent</item>
-		<item name="android:background">?colorShade</item>
-	</style>
-	
-	
-	<style name="BaseDialogFrame">
-		<item name="android:background">@drawable/default_dialog_bg_less_rounded</item>
-		<item name="android:elevation">?dialogFrame_elevation</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:minWidth">300dp</item>
-	</style>
-	
-	<style name="BottomsheetDialogFrame" parent="BaseDialogFrame">
-		<item name="android:layout_gravity">center_horizontal</item>
-		<item name="layout_attachTop">100%</item>
-		<item name="layout_maxHeight">@dimen/TopBottomSheetDialogFrame_maxHeight</item>
-		<item name="layout_maxWidth">@dimen/DialogFrame_maxWidth</item>
-	</style>
-	<style name="BottomsheetDialogFrameStyle_scene_dialog_in">
-		<item name="android:layout_gravity">center_horizontal</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_maxHeight">@dimen/TopBottomSheetDialogFrame_maxHeight</item>
-		<item name="layout_maxWidth">@dimen/DialogFrame_maxWidth</item>
-		<item name="layout_attachBottom">parent</item>
-	</style>
-	
-	<style name="TopsheetDialogFrame" parent="BaseDialogFrame">
-		<item name="android:layout_gravity">center_horizontal</item>
-		<item name="layout_attachBottom">0%</item>
-		<item name="layout_maxHeight">@dimen/TopBottomSheetDialogFrame_maxHeight</item>
-		<item name="layout_maxWidth">@dimen/DialogFrame_maxWidth</item>
-		<item name="android:layout_marginBottom">24dp</item><!-- Compensate for status bar slightly -->
-	</style>
-	<style name="TopsheetDialogFrameStyle_scene_dialog_in">
-		<item name="android:layout_gravity">center_horizontal</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_maxHeight">@dimen/TopBottomSheetDialogFrame_maxHeight</item>
-		<item name="layout_maxWidth">@dimen/DialogFrame_maxWidth</item>
-		<item name="layout_attachTop">parent</item>
-	</style>
-	
-	<style name="CenteredDialogFrame" parent="BaseDialogFrame">
-		<item name="android:layout_gravity">center</item>
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_maxWidth">380dp</item>
-		<item name="layout_maxHeight">@dimen/CenterDialogFrame_maxHeight</item>
-		<item name="android:visibility">invisible</item>
-		<item name="android:scaleX">0.975</item>
-		<item name="android:scaleY">0.975</item>
-		<!-- <item name="android:minWidth">300dp</item> --><!-- We don't want too narrow dialogs. Applied to all scenes (view property, not layout) -->
-	</style>
-	<style name="CenteredDialogFrameStyle_scene_dialog_in">
-		<item name="android:layout_gravity">center</item>
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:visibility">visible</item>
-		<item name="layout_maxWidth">380dp</item>
-		<item name="layout_maxHeight">@dimen/CenterDialogFrame_maxHeight</item>
-		<item name="scale">1.0</item>
-	</style>
-	
-	<style name="CenteredDialogFrameContent">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:orientation">vertical</item>
-		<item name="android:minWidth">300dp</item><!-- We don't want too narrow dialogs. Applied to all scenes (view property, not layout) -->
-	</style>
-	
-	<style name="DialogFrameContent">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:orientation">vertical</item>
-	</style>
-	
-	<style name="DialogTitleLayout">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginTop">?dialogPaddingTop</item>
-		<item name="android:layout_marginLeft">?dialogContentPaddingLR</item>
-		<item name="android:layout_marginRight">?dialogContentPaddingLR</item>
-		<item name="layout_flexAxis">vertical</item>
-		<item name="android:visibility">visible</item><!-- NOTE: needed as we go to scene with gone and need explicit visibility to go back to visible -->
-		<item name="recalcChildren">on_start</item>
-	</style>
-	
-	<style name="DialogTitleLayout_scene_progress" parent="DialogTitleLayout">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_margin">16dp</item>
-		<item name="android:layout_gravity">center</item>
-	</style>
-	
-	<style name="DialogTitle">
-		<item name="android:textSize">20dp</item>
-		<item name="android:textStyle">bold</item>
-		
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_attachLeft">@id/dialog_progress</item>
-		<item name="android:maxLines">2</item>
-		<item name="android:ellipsize">end</item>
-	</style>
-			
-	<style name="DialogTitleProgress" parent="@style/Widget.AppCompat.ProgressBar">
-		<item name="android:layout_width">24dp</item>
-		<item name="android:layout_height">24dp</item>
-		<item name="android:visibility">gone</item>
-		<item name="android:layout_marginRight">8dp</item>
-	</style>
-	
-	<style name="DialogToast">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_flexAxis">vertical</item>
-		<item name="android:layout_marginTop">5dp</item>
-		<item name="android:layout_marginBottom">5dp</item>
-		<item name="android:layout_marginLeft">16dp</item>
-		<item name="android:layout_marginRight">6dp</item>
-		<item name="android:minWidth">300dp</item>
-		<item name="android:minHeight">48dp</item>
-		<item name="android:visibility">gone</item>
-	</style>
-	
-	<style name="DialogToastImg">
-		<item name="android:layout_width">48dp</item>
-		<item name="android:layout_height">48dp</item>
-		<item name="android:layout_marginRight">16dp</item>
-		<item name="android:drawable">@drawable/check_big</item>
-		<item name="drawableTint">?colorIconPrimary</item>
-		<item name="drawableOnly">true</item>
-		<item name="layout_consumeSpace">horizontal</item>
-	</style>
-	
-	<style name="DialogToastLine1">
-		<!-- NOTE: due to consume space by image, match_parent matches the space left to the right -->
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginTop">4dp</item>
-				
-		<item name="android:textSize">15dp</item>
-		<item name="android:textStyle">bold</item>
-		<item name="android:color">#000</item>
-		<item name="android:maxLines">1</item>
-	</style>
-	
-	<style name="DialogToastLine2">
-		<!-- NOTE: due to consume space by image, match_parent matches the space left to the right -->
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_attachTop">@+id/dialog_toast_line1</item>
-		<item name="android:layout_marginTop">2dp</item>
-		<item name="android:layout_marginBottom">4dp</item>
-				
-		<item name="android:textSize">13dp</item>
-		<item name="android:color">#000</item>
-	</style>
-	
-	<style name="DialogToastLineOnly1" parent="DialogToastLine1">
-		<item name="android:layout_marginTop">11.5dp</item>
-		<item name="android:textSize">16dp</item>
-	</style>
-	
-	<style name="DialogContent">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_weight">1</item>
-		<item name="layout_flexAxis">vertical</item>
-		<item name="layout_flexWeight">1</item>
-		<!-- <item name="android:clipChildren">false</item> -->
-		
-		<!-- <item name="android:fadeScrollbars">false</item> -->
-		<item name="android:scrollbarStyle">outsideOverlay</item>
-		<item name="android:nestedScrollingEnabled">true</item>
-		
-		<item name="android:paddingTop">?dialogContentPaddingTop</item>
-		<item name="android:paddingLeft">?dialogContentPaddingLR</item>
-		<item name="android:paddingRight">?dialogContentPaddingLR</item>
-	</style>
-	<style name="CenteredDialogContent" parent="DialogContent">
-		<item name="android:layout_width">wrap_content</item>
-	</style>
-
-	<style name="DialogContentNoPadding" parent="DialogContent">
-		<!-- <item name="android:paddingTop">0dp</item> -->
-		<item name="android:paddingLeft">0dp</item>
-		<item name="android:paddingRight">0dp</item>
-	</style>
-	<style name="CenteredDialogContentNoPadding" parent="CenteredDialogContent">
-		<item name="android:paddingTop">0dp</item>
-		<item name="android:paddingLeft">0dp</item>
-		<item name="android:paddingRight">0dp</item>
-	</style>
-	
-	<style name="DialogButtonBar">
-		<item name="android:visibility">visible</item><!-- NOTE: need explicit visibility, so visibility is applied properly for scene -->
-		<item name="layout_flexAxis">vertical</item>
-		<item name="android:paddingLeft">?dialogButtonsBarPaddingLR</item>
-		<item name="android:paddingRight">?dialogButtonsBarPaddingLR</item>
-		<item name="android:paddingBottom">?dialogButtonsBarPaddingTB</item>
-		<item name="android:paddingTop">?dialogButtonsBarPaddingTB</item>
-	
-		<item name="android:layout_gravity">right</item>
-		
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-	</style>
-	
-	<style name="DialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="layout_maxWidth">148dp</item>
-		<item name="android:capitalize">characters</item>
-		<item name="animOnClick">true</item>
-	</style>
-	
-	<style name="DialogNeutralButtonStyle" parent="DialogButtonStyle">
-		<item name="layout_flexAxis">horizontal</item>
-		<item name="layout_flexReverse">true</item><!-- NOTE: forces right-to-left dialog buttons measure, thus positive button gets more real estate -->
-	</style>
-	<style name="DialogNegativeButtonStyle" parent="DialogButtonStyle">
-		<item name="layout_flexAxis">horizontal</item>
-		<!-- <item name="layout_flexWeight">1</item> -->
-   	</style>
-	<style name="DialogPositiveButtonStyle" parent="DialogButtonStyle">
-		<item name="layout_flexAxis">horizontal</item>
-		<!-- <item name="layout_flexWeight">1</item> -->
-		<item name="layout_maxWidth">250dp</item>
-		<!-- <item name="android:maxLines">1</item> -->
-	</style>
-	
-	<style name="DialogButtonSpace">
-		<item name="android:layout_width">wrap_content</item>	
-		<item name="android:layout_height">0px</item>
-		<item name="layout_flexAxis">horizontal</item>
-		<item name="layout_flexWeight">1</item>
-	</style>
-		
-	
-	<style name="DialogSeparator"><!-- Invisible for v21+, but still provides padding --><!-- REVISIT -->
-		<item name="android:layout_width">0px</item>
-		<item name="android:layout_height">0px</item>
-		<item name="android:background">@null</item>
-	</style>		
-	
-	
-	
-	
-	<style name="CenteredAlertDialog" parent="CenteredDialog">
-		<item name="dialogContentLayout">@layout/dialog_content_alert_dialog</item>	
-	</style>
-	<style name="BottomsheetAlertDialog" parent="BottomsheetDialog">
-		<item name="dialogContentLayout">@layout/dialog_content_alert_dialog</item>	
-	</style>
-	<style name="TopsheetAlertDialog" parent="TopsheetDialog">
-		<item name="dialogContentLayout">@layout/dialog_content_alert_dialog</item>	
-	</style>
-	
-	<style name="dialog_AlertDialogActivity" parent="BottomsheetAlertDialog"/>
-	
-	<style name="dialog_AlertDialogActivity_list" parent="BottomsheetAlertDialog">
-		<item name="DialogContent">@style/DialogContentNoPadding</item>
-		<item name="dragByNestedScroll">false</item>
-	</style>
-	
-	<style name="DialogMenuPlaceholderLayout">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">match_parent</item>
-		<item name="android:translationZ">?modal_translationZ</item>
-		<item name="android:outlineProvider">none</item>
-		<item name="shadeColor">?colorShade</item>
-	</style>
-				
-</resources>
+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
+CpftonLh+EAZ26n8tVd3xQ==

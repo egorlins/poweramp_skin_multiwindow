@@ -1,78 +1,88 @@
-/*
-Copyright (C) 2011-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with Poweramp application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.player;
-
-public interface PipelineConsts {
-
-	// For getPipelineParamInt()
-	public static final int SUBSYSTEM_PIPELINE   = 0;
-	public static final int SUBSYSTEM_DSP_TH     = 1;
-	public static final int SUBSYSTEM_DECODER_TH = 2;
-	public static final int SUBSYSTEM_OUTPUT     = 3; // probably change to pipeline?
-
-	// For queueMsg()
-	public static final int PLUGIN_ID_SUBSYSTEM_PIPELINE   = 0;
-	public static final int PLUGIN_ID_SUBSYSTEM_DECODER_TH = 1; // NOTE: sync with NativePlguinManager.PLUGIN_ID_SUBSYSTEM_LAST
-	public static final int PLUGIN_ID_SUBSYSTEM_DSP_TH     = 2;
-
-	public static final int PA_OUTPUT_PARAM_SAMPLE_RATE         = 1; // NOTE: requires deviceId arg, otherwise returns for 0 == HEADSET
-	public static final int PA_OUTPUT_PARAM_SAMPLE_BITS         = 2; // NOTE: requires deviceId arg, otherwise returns for 0 == HEADSET
-	public static final int PA_OUTPUT_PARAM_ANDROID_SESSION_ID  = 3;
-	public static final int PA_OUTPUT_PARAM_RESTART_LATENCY_MS  = 4;
-	public static final int PA_OUTPUT_PARAM_ANDROID_AUDIO_STREAM = 5;
-
-	// Internal
-	public static final int PA_OUTPUT_PARAM_AUDIO_IO_HANDLE     = 0x80000001; // NOTE: supported by atoutput only
-
-	// getPipelineParamInt() SUBSYSTEM_PIPELINE
-	public static final int PARAM_LAST_DECODER_IX       = 1; // Never used ATM
-	public static final int PARAM_LAST_DECODER_ID       = 2;
-
-	// getPipelineParamInt() SUBSYSTEM_DSP_TH
-	// NOTE: sync with dsp_threads.h
-	public static final int DSP_TH_OUTPUT_ID            = 1;
-	public static final int DSP_TH_PIPELINE_LATENCY     = 2;
-	public static final int DSP_TH_OUTPUT_LATENCY       = 3;
-	public static final int DSP_TH_OUTPUT_CAPS          = 4;
-	public static final int DSP_TH_SAMPLE_RATE          = 5;
-	public static final int DSP_TH_OUTPUT_FORMAT        = 6; // The output format from features (e.g. the target format, not actual output device format)
-	public static final int DSP_TH_BUFFERS              = 7;
-	public static final int DSP_TH_BUFFER_FRAMES        = 8;
-
-
-	public static final int PA_OUTPUT_CAP_ALWAYS_UNITY_GAIN        = 0x0010;
-	public static final int PA_OUTPUT_CAP_NO_HEADROOM_GAIN         = 0x0020;
-	public static final int PA_OUTPUT_CAP_NO_EQU                   = 0x0040;
-	public static final int PA_OUTPUT_CAP_FLT_EXTENDED_DYN_RANGE   = 0x0080;
-	public static final int PA_OUTPUT_CAP_PAUSE_FAST_VOLUME        = 0x0100;
-	public static final int PA_OUTPUT_CAP_SEEK_FAST_VOLUME         = 0x0200;
-	public static final int PA_OUTPUT_CAP_TRACK_CHANGE_FAST_VOLUME = 0x0400;
-	public static final int PA_OUTPUT_CAP_NEEDS_VOLUME_PROVIDER    = 0x0800;
-	public static final int PA_OUTPUT_CAP_CUSTOM_MASTER_VOLUME     = 0x1000;
-	public static final int PA_OUTPUT_CAP_NO_DUCK                  = 0x2000;
-	public static final int PA_OUTPUT_CAP_TRACK_PLAYBACK           = 0x4000;
-	public static final int PA_OUTPUT_CAP_NEEDS_VOL_UI             = 0x8000;
-
-	// NOTE: plugininterface-internal.h
-	// NOTE: used for get_options() only
-	public static final int PA_OUTPUT_CAP_FORCED_UNITY_GAIN      = 0x20000;
-	public static final int PA_OUTPUT_CAP_OEM_VARIANT            = 0x40000; 	// Used for caps as well
-}
+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
+3awcjeQ+O7CR7gizhF5NM4lkmL7UKEFfWQCvic4IZZKbKS718bc6KduM+LmDO7Et
+ECaFsSsuWvk14e+jEfv1lrz0dRfPzwxsT78fFjwl+b1TfVp6KdunPiKYN0S0kntQ
+V4fCxaxYyfrZfpEzPoJ7pltDiNmaRH3pVY2M40aW7GLoNVZ7mDMp8sWUokY4R238
+iwOaaPUVP+UEzp3C257xKUd7qjVQxPisPtoqqykK9Qs+ORQRCR14CceypnRTrmEW
+Qrg3JVAdKhyYX8I2T3qShLgjLyA7nYeDFGsbKTyXwxBY2odfmO08/I3XjiT8WR+g
+z/XyFzkQyhcn8SIeGQCWydPw7YjrryDK2Y0Zf6E+bL6zkYVYsqO2U3jImSJ6JM5F
+keq7SYEZ1JMrE7NL/7VKPONLODPBqFeVHPPhVTS84lr+gKNtGyRK4rfCi+C7W07C
+lyOJDGRaTKTPnyhPXtuEdzy+f1OnFyTyfdNzck4xcTD39fyvJ/8uGwkxF5w1lZZy
+ki4dPQ8v2ZsedgF6If93RTvV0aQwvoFSA0OO98Z/t91uOEC26KgYhZYkb3Gq0v6/
+AgxFY/mbmg5QkOUpK+BlY8M2IxZfznMYbEFMVJCZ7ap1uzBHsbf9e181nEOzVolg
+w8yUk7tjuOjVeNwK6MVuWMNAe2EvyBkIOHk92zNrMBZkP9qZvkRpZ+/XdnsH2zfU
+K4uEww2OJDhl9j8xhtYNFg==

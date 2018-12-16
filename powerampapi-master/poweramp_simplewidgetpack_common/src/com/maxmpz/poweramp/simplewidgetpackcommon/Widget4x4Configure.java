@@ -1,307 +1,195 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpackcommon;
-
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-import yuku.ambilwarna.AmbilWarnaDialog;
-import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener;
-import android.app.Dialog;
-import android.content.SharedPreferences.Editor;
-import android.graphics.Color;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.View;
-import android.view.WindowManager.LayoutParams;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.ImageView;
-import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.Spinner;
-
-public class Widget4x4Configure extends BaseWidgetConfigure implements OnItemSelectedListener, OnCheckedChangeListener, OnSeekBarChangeListener, OnAmbilWarnaListener {
-	private static final String TAG = "Widget4x4Configure";
-	private static final boolean LOG = false;
-	
-	
-	private int mTheme = 0;
-	
-	protected int mBgColor = 0x55000000;
-	protected int mShadow = Widget4x4Provider.SHADOW_BOTH_UP;
-	private Handler mHandler = new Handler();
-	private long mLastCreateResume;
-		
-	public Widget4x4Configure() {
-		super();
-		mWidgetProvider = new Widget4x4Provider();
-		
-		mConfigureContentLayout = R.layout.widget_configure_content_scroll;
-		mConfigureOptionsLayout = R.layout.widget_4x4_configure;
-	}
-	
-	@Override
-	protected void setWidgetFrameSize() {
-		mWidgetFrameHeight = getResources().getDimensionPixelSize(R.dimen.appwidget_4x4_height_config);
-		mWidgetFrameWidth = LayoutParams.FILL_PARENT;
-	}
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		
-		mLastCreateResume = System.currentTimeMillis();
-
-		if(savedInstanceState != null) {
-			mBgColor = savedInstanceState.getInt("mBgColor");
-		}
-		
-		findViewById(R.id.done_button).setOnClickListener(this);
-		findViewById(R.id.color_button).setOnClickListener(this);
-		
-		ArrayAdapter<CharSequence> adapter;
-		Spinner themeSpinner = (Spinner)findViewById(R.id.theme_spinner);
-		if(themeSpinner != null) {
-			adapter = ArrayAdapter.createFromResource(this, R.array.pref_theme_entries, android.R.layout.simple_spinner_item);
-			adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-			themeSpinner.setAdapter(adapter);
-
-			int themeToIndex = 0;
-			
-			themeSpinner.setSelection(themeToIndex);
-			themeSpinner.setTag(new Object());
-			themeSpinner.setOnItemSelectedListener(this);
-		}
-		
-		final CheckBox altScale = (CheckBox)findViewById(R.id.alt_scale_cb);
-		if(altScale != null) {
-			altScale.setOnCheckedChangeListener(this);
-		}
-		
-		final SeekBar opacity = (SeekBar)findViewById(R.id.alpha);
-		opacity.setProgress(Color.alpha(mBgColor));
-		opacity.setOnSeekBarChangeListener(this);
-		
-		Spinner shadowSpinner = (Spinner)findViewById(R.id.shadow_spinner);
-		if(shadowSpinner != null) {
-			adapter = ArrayAdapter.createFromResource(this, R.array.pref_widget_shadow_entries, android.R.layout.simple_spinner_item);
-			adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-			shadowSpinner.setAdapter(adapter);
-			shadowSpinner.setOnItemSelectedListener(this);
-		}
-
-		setDefaults();
-		
-		updateWidget(false);
-		
-		setBGColor(mBgColor);
-	}
-	
-	@Override
-	protected void onResume() {
-		super.onResume();
-		mLastCreateResume = System.currentTimeMillis();
-	}
-	
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-		outState.putInt("mBgColor", mBgColor);
-	}
-	
-	protected void setDefaults() {
-		mTheme = 0;
-		
-		Editor edit = mPrefs.edit();
-		edit.remove(mAppWidgetId + Widget4x4Provider.PREF_SHADOW);
-		edit.putBoolean(mAppWidgetId + Widget4x4Provider.PREF_ALT_SCALE, false);
-		edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_THEME, mTheme);
-		edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_COLOR, mBgColor);
-		edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_SHADOW, Widget4x4Provider.SHADOW_BOTH_UP);
-		
-		edit.commit();
-	}
-
-	@Override
-	public void onItemSelected(AdapterView<?> view, View arg1, int pos, long arg3) {
-		if(view.getId() == R.id.theme_spinner) {
-			if(mTheme != pos) {
-				mTheme = pos;
-				Editor edit = mPrefs.edit();
-				//Log.w(TAG, "pos=" + pos);
-				edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_THEME, pos);
-				edit.commit();
-				
-				//updateWidget(true);
-				updateWidgetDelayed();
-			}
-		} else if (view.getId() == R.id.shadow_spinner) {
-			if(LOG) Log.e(TAG, "onItemSelected pos=" + pos + " view selected pos=" + view.getSelectedItemPosition());
-			
-
-			Editor edit = mPrefs.edit();
-			edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_SHADOW, pos);
-			
-			if(pos == Widget4x4Provider.STYLE_3 && System.currentTimeMillis() - mLastCreateResume > 200) { // Avoid resitting alpha during init/restore step within first 200ms.
-				((SeekBar)findViewById(R.id.alpha)).setProgress(0);
-				setAlpha(0);
-				edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_COLOR, mBgColor);
-			}
-			edit.commit();
-			mShadow = pos;
-			//updateWidget(true);
-			updateWidgetDelayed();
-		}
-	}
-	
-	protected void updateWidgetDelayed() {
-		mHandler.removeCallbacks(mUpdateWidgetDelayed);
-		mHandler.postDelayed(mUpdateWidgetDelayed, 100);
-	}
-	
-	private Runnable mUpdateWidgetDelayed = new Runnable() {
-		public void run() {
-			updateWidget(true);
-		}
-	};
-
-	@Override
-	public void onNothingSelected(AdapterView<?> arg0) {
-	}
-
-	@Override
-	public void onCheckedChanged(CompoundButton v, boolean isChecked) {
-		if (v.getId() == R.id.alt_scale_cb) {
-			Editor edit = mPrefs.edit();
-			edit.putBoolean(mAppWidgetId + Widget4x4Provider.PREF_ALT_SCALE, isChecked);
-			edit.commit();
-			updateWidget(false);
-		} else if (v.getId() == R.id.alpha_sdk7) {
-			if(LOG) Log.e(TAG, "alpha_sdk7=>" + (isChecked ? 0x55000000 : 0x00000000));
-			Editor edit = mPrefs.edit();
-			edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_COLOR, isChecked ? 0x55000000 : 0x00000000);
-			edit.commit();
-			updateWidget(true);
-		}
-	}
-	
-	private void setBGColor(int color) {
-		mBgColor = color;
-		View deck = mWidgetFrame.findViewById(R.id.deck_bg);
-
-		setDeckBG(color, (ImageView)deck);
-		
-		int aaColor = Color.alpha(color);
-		
-		if(mShadow == Widget4x4Provider.SHADOW_ALBUM_ART) {
-			View controlsShadow = mWidgetFrame.findViewById(R.id.controls_shadow);
-			if(controlsShadow != null) {
-				controlsShadow.setVisibility(aaColor == 0 ? View.GONE : View.VISIBLE);
-			}
-		}
-		
-		mHandler.removeCallbacks(mSaveRunnable);
-		mHandler.postDelayed(mSaveRunnable, 500);
-	}
-
-
-	protected void setDeckBG(int color, ImageView deck) {
-		deck.setBackgroundColor(mBgColor);
-	}
-	
-	private Runnable mSaveRunnable = new Runnable() {
-		public void run() {
-			Editor edit = mPrefs.edit();
-			if(LOG) Log.e(TAG, "saveRunnable bgColor=" + mBgColor);
-			edit.putInt(mAppWidgetId + Widget4x4Provider.PREF_COLOR, mBgColor);
-			edit.commit();
-		}
-	};
-	
-
-	@Override
-	public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-		if(fromUser) {
-			setAlpha(progress);
-		}			
-	}
-
-
-	private void setAlpha(int progress) {
-		int r = Color.red(mBgColor);
-		int g = Color.green(mBgColor);
-		int b = Color.blue(mBgColor);
-		
-		setBGColor(Color.argb(progress, r, g, b));
-	}
-
-	@Override
-	public void onStartTrackingTouch(SeekBar seekBar) {
-	}
-
-	@Override
-	public void onStopTrackingTouch(SeekBar seekBar) {
-	}
-	
-	@Override
-	protected void onDone() {
-	}
-	
-	@Override
-	public void onClick(View v) {
-		if(v.getId() == R.id.color_button) {
-			showDialog(DIALOG_COLOR);
-		} else {
-			super.onClick(v);
-		}
-	}
-	
-	
-	private final int DIALOG_COLOR = 1;
-	
-	@Override
-	protected Dialog onCreateDialog(int id) {
-		switch(id) {
-			case DIALOG_COLOR:
-				return new AmbilWarnaDialog(this, mBgColor, this).getDialog();
-		}
-		return super.onCreateDialog(id);
-	}
-
-	@Override
-	public void onCancel(AmbilWarnaDialog dialog) {
-	}
-
-	@Override
-	public void onOk(AmbilWarnaDialog dialog, int color) {
-		int alpha = Color.alpha(mBgColor);
-		int r = Color.red(color);
-		int g = Color.green(color);
-		int b = Color.blue(color);
-		setBGColor(Color.argb(alpha, r, g, b));
-	}
-}
+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

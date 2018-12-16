@@ -1,67 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- NOTE: keeping ripple as top drawable item: 
-	- that allows setting software mode on it
-	- avoiding multiple ripples inside drawable hierarchy
---> 
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-	android:color="?colorKnobRipple">
-	<item>
-		<layer-list>
-			<!-- NOTE: layer item width/height is supported for SDK 23+, thus, using linear knob thumbWidth/height attributes instead -->
-			<!-- <item android:width="32dp" android:height="64dp"> -->
-			<item>
-				<selector android:exitFadeDuration="300">
-					<item android:state_enabled="false">
-						<shape>
-							<corners android:radius="?corners_knob_thumb"/>
-							<solid android:color="?colorKnobBg"/>
-							<stroke android:color="?colorKnobDisabled" android:width="1dp"/>
-						</shape>
-					</item>
-					
-					<item android:state_pressed="true">
-						<shape>
-							<corners android:radius="?corners_knob_thumb"/>
-							<solid android:color="?colorKnobBg"/>
-							<stroke android:color="?colorKnobPressed" android:width="2.5dp"/>
-						</shape>
-					</item>
-						
-					<item>
-						<shape>
-							<corners android:radius="?corners_knob_thumb"/>
-							<solid android:color="?colorKnobBg"/>
-							<stroke android:color="?colorKnob" android:width="1dp"/>
-						</shape>
-					</item>
-				</selector>
-			</item>
-			
-			<item android:top="@dimen/knob_thumb_indicator_top_bottom" 
-				android:left="@dimen/knob_thumb_indicator_left_right" 
-				android:right="@dimen/knob_thumb_indicator_left_right" 
-				android:bottom="@dimen/knob_thumb_indicator_top_bottom"
-			>
-				<selector android:exitFadeDuration="300">
-					<item android:state_enabled="false">
-						<shape>
-							<solid android:color="?colorKnobIndicatorDisabled"/>
-						</shape>
-					</item>
-					<item android:state_pressed="true">
-						<shape>
-							<solid android:color="?colorKnobIndicatorPressed"/>
-						</shape>
-					</item>
-					<item>
-						<shape>
-							<solid android:color="?colorKnobIndicator"/>
-						</shape>
-					</item>
-				</selector>
-			</item>
-			
-		</layer-list>
-	</item>
-</ripple>
+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

@@ -1,50 +1,33 @@
-#include <jni.h>
-#include <time.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
-
-#include <android/log.h>
-#include <arm_neon.h>
-
-#define  LOG_TAG    "plugin.c"
-#define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
-#define  LOGW(...)  __android_log_print(ANDROID_LOG_WARN,LOG_TAG,__VA_ARGS__)
-
-int registerNativeMethods(JNIEnv* env, const char* className, JNINativeMethod* gMethods, int numMethods) {
-    jclass clazz = (*env)->FindClass(env, className);
-    if (clazz == NULL) return JNI_FALSE;
-    if ((*env)->RegisterNatives(env, clazz, gMethods, numMethods) < 0) return JNI_FALSE;
-    return JNI_TRUE;
-}
-
-static JNINativeMethod native_methods[] = { /* name, signature, funcPtr */
-//	{"native_empty_test_via_register", "(I)I", (void*)native_empty_test_via_register},
-//	{"native_static_empty_test_via_register", "!(I)I", (void*)native_static_empty_test_via_register},
-};
-
-__attribute__ ((visibility("default"))) jint JNI_OnLoad(JavaVM* vm, void* reserved) {
-    JNIEnv* env = NULL;
-    jint result = JNI_ERR;
-
-    if((*vm)->GetEnv(vm, (void**) &env, JNI_VERSION_1_6) != JNI_OK) {
-        LOGE("GetEnv failed!");
-        goto end;
-    }
-
-//    if(!registerNativeMethods(env, "com/maxmpz/neontests/NeonActivity", native_methods, sizeof(native_methods) / sizeof(native_methods[0]))) {
-//    	LOGE("registerNativeMethods failed");
-//    	goto end;
-//    }
-
-    LOGE("LOADED!");
-
-    result = JNI_VERSION_1_6;
-end:
-    return result;
-}
-
-__attribute__ ((visibility("default"))) void JNI_OnUnload(JavaVM* vm, void* reserved) {
-}
-
-
+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

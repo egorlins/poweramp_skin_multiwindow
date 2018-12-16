@@ -1,182 +1,100 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpackcommon;
-
-import android.content.Context;
-import android.util.Log;
-
-import com.maxmpz.poweramp.player.PowerampAPI.Cats;
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-public class IconsHelper {
-	private static final String TAG = "IconsHelper";
-	private static final boolean LOG = false;
-	
-	private int mFolderRes;
-	private int mAllSongsRes;
-	private int mAlbumRes;
-	private int mArtistRes;
-	private int mGenreRes;
-	private int mPlaylistRes;
-	private int mQueueRes;
-	private int mCueRes;
-	private int mComposerRes;
-
-	private int mMostPlayedRes;
-	private int mTopRatedRes;
-	private int mRecentlyAddedRes;
-	private int mRecentlyPlayedRes;
-	
-	public IconsHelper(Context context) {
-		mFolderRes = R.drawable.matte_folders;
-		mCueRes = R.drawable.matte_folder_cue;
-		mAllSongsRes = R.drawable.matte_all_songs;
-		mAlbumRes = R.drawable.matte_albums;
-		mArtistRes = R.drawable.matte_artists;
-		mComposerRes = R.drawable.matte_composers;
-		mGenreRes = R.drawable.matte_genres;
-		mPlaylistRes = R.drawable.matte_playlists;
-		mQueueRes = R.drawable.matte_queue;
-		mMostPlayedRes = R.drawable.matte_most_played;
-		mTopRatedRes = R.drawable.matte_top_rated;
-		mRecentlyAddedRes = R.drawable.matte_recently_added;
-		mRecentlyPlayedRes = R.drawable.matte_recently_played;
-	}
-	
-	public int getIcon(int matchedUri, boolean isCue) {
-		int res = 0;
-		switch(matchedUri) {
-			case Cats.FOLDERS:
-				if(!isCue) {
-					res = mFolderRes;
-				} else {
-					res = mCueRes;
-				}
-				break;
-				
-			case Cats.ROOT:
-				res = mAllSongsRes;
- 				break;
-				
-			case Cats.GENRES_ID_ALBUMS:
-			case Cats.ALBUMS:
-			case Cats.ARTISTS_ID_ALBUMS:
-			case Cats.COMPOSERS_ID_ALBUMS:				
-			case Cats.ARTISTS__ALBUMS:
-				res = mAlbumRes;
-				break;
-				
-			case Cats.GENRES:
-				res = mGenreRes;
-				break;
-
-			case Cats.ARTISTS:
-				res = mArtistRes;
-				break;
-
-			case Cats.COMPOSERS:
-				res = mComposerRes;
-				break;
-
-			case Cats.PLAYLISTS:
-				res = mPlaylistRes;
-				break;
-				
-			case Cats.QUEUE:
-				res = mQueueRes;
-				break;
-				
-			case Cats.MOST_PLAYED:
-				res = mMostPlayedRes;
-				break;
-				
-			case Cats.TOP_RATED:
-				res = mTopRatedRes;
-				break;
-				
-			case Cats.RECENTLY_ADDED:
-				res = mRecentlyAddedRes;
-				break;
-				
-			case Cats.RECENTLY_PLAYED:
-				res = mRecentlyPlayedRes;
-				break;
-			default:
-				if(LOG) Log.e(TAG, "DEBUG no icon matched=" + matchedUri);
-		}
-	
-		return res;
-	}
-
-	public static final class CatsV140 {
-		public static final int UNKNOWN = 0;
-		public static final int NONE_RAW_FILE = 1;
-		public static final int ARTIST = 11;
-		public static final int ALBUM = 12;
-		public static final int ARTIST_ALBUM = 13;
-		public static final int GENRE = 14;
-		public static final int PLAYLIST = 15;
-		public static final int GENRE_ALBUM = 16;		
-		public static final int FOLDER_PLAYLIST = 101;
-		public static final int ALL = 10;
-		public static final int FOLDER = 100;
-		public static final int QUEUE = 200;
-	}
-
-	public int getIconV140(int cat, boolean isCue) {
-		int res;
-		if(LOG) Log.e(TAG, "getIconV140 cat=" + cat);
-		switch(cat) {
-			case CatsV140.FOLDER:
-				if(!isCue) {
-					res = mFolderRes;
-				} else {
-					res = mCueRes;
-				}
-				break;
-			case CatsV140.ARTIST_ALBUM:
-			case CatsV140.ALBUM:
-				res = mAlbumRes;
-				break;
-			case CatsV140.ARTIST:
-				res = mArtistRes;
-				break;
-			case CatsV140.GENRE:
-				res = mGenreRes;
-				break;
-			case CatsV140.FOLDER_PLAYLIST:
-			case CatsV140.PLAYLIST:
-				res = mPlaylistRes;
-				break;
-			case CatsV140.ALL:
-				res = mAllSongsRes;
-				break;
-			case CatsV140.QUEUE:
-				res = mQueueRes;
-				break;
-			default:
-				if(LOG) Log.e(TAG, "DEBUG no icon matched=" + cat);
-				res = 0;
-				break;
-		}
-		return res;
-	}
-}
+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
+ZLlsZvSNz/L1YVBt1Gj42A==

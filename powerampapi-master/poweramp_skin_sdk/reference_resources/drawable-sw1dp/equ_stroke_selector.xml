@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="@integer/selector_fade_ms">
-
-	<item android:state_activated="true" android:drawable="@drawable/equ" />
-	<item android:state_pressed="true" android:drawable="@drawable/equ" />
-	<item android:drawable="@drawable/equ_stroke" />
-	
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9mIvUq/d7icCy5liFoDcUX69KyAKVc7J67q6YaptuFkE
+Nc9VBuxayp89jCyubWvLu+xV/2wumFaBDSTsrAPIyn/ax6qA5eclOw0ADZMsvg/0
+IwSrepFynhsxk/Rlzp0UqF6aF0ZqErbUtiEM1GbL4KgMhqY98MbXFuS6cOP40PTu
+T3at1CkqUti74D5wdijv17Rwj2qn7JX56iQgAFkMLygbu9jbuFqeKjzMUm6IoYaM
+Pt5tZNkOD/nKwPhuai011Ukej7G3gOuVWqVrxCCBCgCToVe3enemgzI2pu0VeHDT
+nSAeLA36H7x4y7Edehf+yybIQQnyJPp6L7FMigO/C4VilLFAx6KCBZtGTUektLMS
+0a+e2smNV1X+riacMABZOA==

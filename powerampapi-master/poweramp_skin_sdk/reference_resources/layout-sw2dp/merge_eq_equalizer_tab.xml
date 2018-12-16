@@ -1,176 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<!-- PORTRAIT -->
-<com.maxmpz.widget.SceneFastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" 
-	style="?EqTabLayout"
-	w:enableStateAnim="true"
-	w:privateScene="true"
->
-	<!-- EqKnobsFastLayout generates LinearKnobs with style="?EqLinearKnob -->
-	<com.maxmpz.widget.player.EqKnobsFastLayout android:id="@+id/eq_knobs_layout"
-		style="?EqKnobsLayout"
-	>
-		<!-- NOTE: EqPreampKnobLayout is needed for background as if background is applied to the DSPLinearKnob itself, knob outline shadow is rendered behind background --> 
-		<com.maxmpz.widget.FastLayout
-			style="?EqPreampKnobLayout"
-		>
-			<com.maxmpz.widget.player.DSPLinearKnob android:id="@+id/preamp_knob"
-				style="?EqPreampLinearKnob"
-				android:text="@string/preamp"
-				w:param="@id/dsp_preamp"
-				w:updateMsgId="@id/msg_dsp_eq_changed"
-			/>
-		</com.maxmpz.widget.FastLayout>
-		
-		<com.maxmpz.widget.ScrollingBehavior w:disallowParentScroll="true" w:noScrollbars="true"/>
-	</com.maxmpz.widget.player.EqKnobsFastLayout>
-		
-	<com.maxmpz.widget.player.MilkFRS android:id="@+id/milk_frs"
-		style="?EqMilkFrs"
-	/>
-	
-	<com.maxmpz.widget.player.FrequencyResponseScroller android:id="@+id/frequency_response_scroller"
-		style="?EqFrequencyResponseScroller"
-		w:scrollable="@id/eq_knobs_layout"
-		w:useDSPBus="true"
-	/>
-	
-	<com.maxmpz.widget.BusActionPopupLayout android:id="@+id/frs_info_label"
-		style="?EqInfo"
-		w:menuItemsLayout="@layout/merge_dsp_info_popup_layout"
-		w:busId="@id/bus_dsp_cmd"
-		w:msgId="@id/cmd_dsp_switch_dsp_meta"
-	>
-		<com.maxmpz.widget.player.BusStatusText android:id="@id/_label"
-			style="?EqInfoLabel"
-			w:stateBusId="@id/bus_dsp"
-			w:labelStateId="@id/dsp_meta"
-			w:updateMsgId="@id/msg_dsp_started"
-			w:updateMsgId_2="@id/msg_dsp_boolean_param"
-			w:updateMsgId_3="@id/msg_dsp_eq_changed"
-			w:updateMsgId_4="@id/msg_dsp_other_changed"
-			w:updateMsgId_5="@id/msg_dsp_reverb_changed"
-			w:updateMsgId_6="@id/msg_dsp_meta_switched"
-		/>
-		<SceneParams w:scene="@+id/scene_button_menu"
-			android:visibility="gone"
-		/>
-		<SceneParams w:scene="@+id/scene_button_menu_closed"
-			android:visibility="visible"
-		/>
-	</com.maxmpz.widget.BusActionPopupLayout>
-	<SceneParams w:scene="@+id/scene_button_menu" 
-		style="?EqInfo_scene_item_menu" 
-	/>
-			
-	
-	<com.maxmpz.widget.player.DSPCheckBox android:id="@+id/equ_button"
-		style="?EqEquButton"
-		w:param="@id/dsp_eq_enabled"
-		w:updateMsgId="@id/msg_dsp_eq_changed"
-		android:text="@string/equ"
-	/>
-
-	<com.maxmpz.widget.player.DSPCheckBox android:id="@+id/tone_button"
-		style="?EqToneButton"
-		w:param="@id/dsp_tone_enabled"
-		w:updateMsgId="@id/msg_dsp_eq_changed"
-		android:text="@string/tone"
-	/>
-
-	<com.maxmpz.widget.player.DSPCheckBox android:id="@+id/limiter_button"
-		style="?EqLimiterButton"
-		w:param="@id/dsp_limiter_enabled"
-		w:updateMsgId="@id/msg_dsp_eq_changed"
-		android:text="@string/limit" 
-	/>
-
-	<!-- NOTE: this button is completely detached from here when it changes to popup, thus, avoid attaching/aligning anything to it.
-		 Alternatively, wrap it in private scene layout -->
-	<com.maxmpz.widget.player.EqPresetPopupListLayout android:id="@+id/preset_button"
-		style="?EqEquPresetButtonLayout"
-	>
-		<com.maxmpz.widget.player.BusStatusText android:id="@id/_label"
-			style="?EqEquPresetLabel"
-			w:defaultTextOnNoState="true"
-			w:stateBusId="@id/bus_dsp"
-			w:labelStateId="@id/dsp_eq_preset_name"
-			w:updateMsgId="@id/msg_dsp_eq_changed"
-			w:updateMsgId_2="@id/msg_dsp_started"
-			android:text="@string/preset"
-		/>
-		<!-- NOTE: invisible (vs gone) is needed here for a bit better animation (text gets layout earlier, thus, better positioned when popup closes) -->
-		<SceneParams w:scene="@+id/scene_button_menu"
-			android:visibility="gone"
-		/>
-		<SceneParams w:scene="@+id/scene_button_menu_closed"
-			android:visibility="visible"
-		/>
-	</com.maxmpz.widget.player.EqPresetPopupListLayout>
-	<SceneParams w:scene="@+id/scene_button_menu" 
-		style="?EqEquPresetButtonLayout_scene_button_menu"
-	/>
-	
-	<com.maxmpz.widget.BusActionButton android:id="@+id/save_button"
-		style="?EqEquSaveButton"
-		android:text="@string/save"
-
-		w:busId="@id/bus_data_cmd"
-		w:msgId="@id/cmd_data_add_eq_preset_dialog"
-	/>
-	<com.maxmpz.widget.BusActionButton android:id="@+id/reset_button"
-		style="?EqEquResetButton"
-
-		w:busId="@id/bus_dsp_cmd"
-		w:msgId="@id/cmd_dsp_reset_eq"
-		
-		android:text="@string/reset"
-		w:confirmTitle="@string/reset"
-		w:confirmText="@string/reset_knobs_on_screen"
-	/>
-	
-	<com.maxmpz.widget.player.DSPRoundKnobLayout android:id="@+id/eq_bass_knob_layout"
-		style="?EqBassToneKnobLayout"
-		
-		w:param="@id/dsp_bass_gain"
-		w:enablingParam="@id/dsp_tone_enabled"
-		w:updateMsgId="@id/msg_dsp_eq_changed"
-
-		w:labelText="@string/bass_tone"
-		w:valueFormat="@string/f0_percent"
-		w:valueFormatMin="0"
-		w:valueFormatMax="100"
-	/>
-	
-	<com.maxmpz.widget.player.DSPRoundKnobLayout android:id="@+id/eq_treble_knob_layout"
-		style="?EqTrebleToneKnobLayout"
-
-		w:param="@id/dsp_treble_gain"
-		w:enablingParam="@id/dsp_tone_enabled"
-		w:updateMsgId="@id/msg_dsp_eq_changed"
-
-		w:labelText="@string/treble"
-		w:valueFormat="@string/f0_percent"
-		w:valueFormatMin="0"
-		w:valueFormatMax="100"
-	/>
-</com.maxmpz.widget.SceneFastLayout>
+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

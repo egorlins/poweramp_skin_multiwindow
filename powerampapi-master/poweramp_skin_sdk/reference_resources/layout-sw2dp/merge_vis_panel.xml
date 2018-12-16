@@ -1,149 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-	<com.maxmpz.widget.Shim android:id="@+id/vis_panel_shim"
-		style="?VisPanelShim"
-	/>
-	
-	<!-- NOTE: as shim now outside of vis_panel_container, can't control it with scenes - controlled by code now
-	<SceneParams w:scene="@+id/scene_vispanel_expanded"
-		android:visibility="visible"
-	/>
-	-->
-	
-	<com.maxmpz.widget.SceneFastLayout android:id="@+id/vis_panel_container"
-		style="?VisPanelContainer"
-		w:privateScene="true"
-		w:enableStateAnim="true"
-	>
-		<com.maxmpz.widget.player.VisPanelFrame android:id="@+id/vis_panel_frame"
-			style="?VisPanelFrame"
-		>
-			<!-- NOTE: buttons are aligned to the right, thus, reveresed -->
-			<com.maxmpz.widget.FastButton android:id="@+id/close_button"
-				style="?VisCloseButton"
-			/>
-			<SceneParams w:scene="@+id/scene_vispanel_expanded"
-				android:visibility="visible"
-			/>
-			
-			<com.maxmpz.widget.BusActionButton android:id="@+id/settings_button"
-				style="?VisSettingsButton"
-				w:busId="@id/bus_app_cmd"
-				w:msgId="@id/cmd_app_open_settings"
-				w:string="vis"
-			/>
-			<SceneParams w:scene="@+id/scene_vispanel_expanded"
-				android:visibility="visible"
-			/>
-
-			<!-- w:msgId="@id/msg_player_milk_data_changed" NOTE: don't react on msg, as no message with sort is sent ATM. 
-				 msg_player_milk_data_changed is with arg1==0 which breaks selected icon -->
-			<!-- w:buttonsArg1="@array/milk_sort_modes_enum" -->
-			<com.maxmpz.widget.BusSelectablePopupButtonLayout
-				style="?VisSortButtonLayout"
-			
-				w:stateBusId="@id/bus_player"
-				w:stateId="@id/state_player_milk_sort"			
-				
-				w:buttonsLabels="@array/milk_sort_modes"
-				w:buttonsDrawables="@array/milk_sort_icons_24dp"
-				
-				w:buttonsBusId="@id/bus_player_cmd"
-				w:buttonsMsgId="@id/cmd_player_set_milk_sort"
-			/>
-			<SceneParams w:scene="@+id/scene_button_menu"
-				style="?ItemPopupMenu_scene_item_menu"
-			/>
-			<SceneParams w:scene="@+id/scene_vispanel_expanded"
-				android:visibility="visible"
-			/>
-						
-			
-			
-			<EditText android:id="@+id/vis_panel_edittext"
-				style="?VisFilterEditText"
-				android:hint="@string/filter"
-			/>
-			<SceneParams w:scene="@+id/scene_vispanel_expanded"
-				android:visibility="visible"
-			/>
-			
-						
-			<com.maxmpz.widget.PowerList android:id="@+id/vis_panel_list"
-				style="?VisPanelList"
-			/>
-			<SceneParams w:scene="@+id/scene_vispanel_expanded"
-				w:recalcChildren="on_end"
-			/>
-	
-			<com.maxmpz.widget.BusSelectablePopupButtonLayout
-				style="?VisLockButtonLayout"
-			
-				w:stateBusId="@id/bus_player"
-				w:stateId="@id/state_player_milk_advance"			
-				
-				w:buttonsLabels="@array/milk_advance_modes"
-				w:buttonsDrawables="@array/milk_advance_icons_24dp"
-
-				w:buttonsBusId="@id/bus_player_cmd"
-				w:buttonsMsgId="@id/cmd_player_set_milk_advance"
-				
-				w:toastOnPress="@string/long_press_for_more_options"
-			/>
-			<SceneParams w:scene="@+id/scene_button_menu"
-				style="?ItemPopupMenu_scene_item_menu"
-			/>
-			<SceneParams w:scene="@+id/scene_vispanel_expanded"
-				android:visibility="gone"
-			/>
-		</com.maxmpz.widget.player.VisPanelFrame>
-		
-		<SceneParams w:scene="@+id/scene_vispanel_expanded"
-			style="?VisPanelFrame_scene_vispanel_expanded"
-			w:recalcChildren="on_end"
-		/>
-		<StateAnimParams w:stateAnim="@+id/anim_temp_hidden"
-			android:alpha="0"
-		/>
-	
-	</com.maxmpz.widget.SceneFastLayout>
-	<SceneParams w:scene="@id/scene_vis_temp_ui"
-		android:visibility="visible"
-		android:alpha="1"
-	/>
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@id/scene_vis_w_ui"
-		android:visibility="visible"
-		android:alpha="0.55"
-	/>
-	<SceneParams w:scene="@id/scene_vis"
-		android:visibility="invisible"
-	/>
-	<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_lib" w:scene_3="@id/scene_search" w:scene_4="@id/scene_eq" w:scene_5="@id/scene_playing"
-		android:visibility="gone"
-	/>
-	
-</merge>
+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
+Si8U5Jrqf0fDa3FW+MRB5Q==

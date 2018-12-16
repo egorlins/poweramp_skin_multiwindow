@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- 18:9 screens -->
-<resources>
-	<dimen name="AAA_Seek_height">32dp</dimen>
-	<dimen name="AAA_Seek_marginBottom">20dp</dimen>
-	<dimen name="AAA_TopTrackElapsed_marginBottom">0dp</dimen>
-	<dimen name="AAA_TopMetaInfoLayout_marginBottom">8dp</dimen>
-
-	<dimen name="AAA_TopPlay_maxSize">100dp</dimen>
-	<dimen name="AAA_TopPause_maxSize">90dp</dimen>
-	<dimen name="AAA_TopMediumButton_size">64dp</dimen>
-
-	<item type="dimen" format="float" name="AAA_ItemLikeUnlikeLayout_scene_aa_scale">.875</item>
-	<item type="dimen" format="float" name="AAA_TopShuffleButtonLayout_scale">1</item>
-	<item type="dimen" format="float" name="AAA_TopTrackElapsed_scale">.8</item>
-	<item type="dimen" format="float" name="AAA_TopTrackElapsed_scene_playing_scale">.9</item>
-
-	<dimen name="AAA_TopSleepTimerButtonLayout_marginLeft">4dp</dimen>
-
-	<fraction name="AAA_TopAAItemRatio">100%</fraction>
-	<dimen name="AAA_aaMaxSize">500dp</dimen><!-- For 18:9 actually it doesn't limit max size (width of screen does) -->
-
-	<dimen name="AAA_ItemTrackAAImage_scene_aa_margin">8dp</dimen>
-	<dimen name="AAA_TopWaveseekLayout_height">172dp</dimen>
-</resources>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+VkEcowVWhN4kTwYx/cAS5FVuTY53lYJOx/LmpzKKBNxueJRYPhogFOdE1bRCyy+M
+JrR7VLX13N63FdGxckSR5iYTsJGA03QZ2523SX8xnr+QeIXmqIrDRyncp19Ixqk/
+xfZr3hQARUwvCTHqnAT08TG37XyF+VKKhPCkWkbGX+kWN7qFRV4djLnLwcu5WeYB
+hwzvNAuvTJiksLUQuVG3Vu8h21bzB27wRyeFS/czHfQNIsb1dNNVGBySKT5A8uVj
+5c9SPmH1x6tViyax3DmFs+kQp3+hK4N7wxPxfUbDBdeWK3FtoU9JReJFvPktL1zR
+jDlejw69UlKdwZetCGMQmjXt+gy7SBCEeeKr6Y3W4bRwOXAa0F916ZBWU4brUY6f
+P4zZ4llPARfIQFRKIN0sW1ulBD/9YCu003Eepyti1oAsK3mSGd1V6DRovk8yYX/W
+RV+KgQ1MmIf0gertOgzFLHyTxF+cpZxHybdfa4wP3uS9YBqy1oJkfbbqOiLv/OyW
+LUd4UmfWDfbhNG0eekVWW8EC8U0zyETim+ewsKhceTdxZvVWdv4CSQ0bLwP3Mat6
+Mw+PZoJjvL5qbbz1WyXmdRSaLOjO5bwdqaelW8Z2UKIRab8+2daErbvNnLUtoCq3
+MTrN1WudP/7FD9DeOKwROhnOifyfmiZMqHgoukqvLzVNYjIcRYH3MWnqFrX1Zs0z
+zDznOHBKmNKoGPmj6chBev4rG94PtYAMwQ7wmtE/eBiNBVKipNGBQkWErqw1uBSF
+q5KgyRVoTBSMpHFndVJp+8ik/qrArTpeF4uXqZJEcK3dYBOXlFbPOumwcKN1TAUN
+GV1ZJ4rrZow/BudEhQ9s4Lygi0EUtTDcDty+NvHOYtQLaZMUrPQO5g27z/V4MB0i
+EbjKXe769ks3azjYEllrEVkVzi/ZdcIK+C8rZirV/D0RPtH0sWcKYOnyTOfbZtax
+9+g8FD+LeYutRLRF4ZhY0G3+Www0YAEspNIC2dm4AqSKjoPkdvnMSmc1TwKxSt67
+6Udy/nfhNpvO/CjrlFpf+jsGJsvmX9KuGM5FmTvUFvj6C3VpbTaDHGe5/ywJFDzh
+0NHL8tm9J/VHzKGIHrQVkMkAqRCFi2c8tDCNCeiDu6S1kCcKiIdrSUZ3kb9J1qE0
+YSBlCkTez7rTZZjFJY+WmhJuwY9PwmIAUJucgsoYyBT8OeRMyzIcIb1digQnjvdM
+PLPFAiJCGhJjtxo56UyLoVMwvjVACd9UJlCD6abochIXdjPFFIA1txpaeCMH/2Ee
+AndZaEjbX22nawPk2NsrpxNdsV3HR+qadXQDhauXWl798VvkK1pWf2Ghv4GxItoe
+uOsoRdR0fU30xgfTs7nsyDKJg7h46xLYlzHYBntwyHKMS+8cmUUhy+aa/SMUjuGt
+HUqiHuECc3jWcRzFPNfLPEN2DWcWqQk6CVa0Ps/7Pfp0Z8CvjGtyq2toiNNnai7c
+0YtSvOSwHgyrI0krMn+Wqzx4TXY7nCM02CB/wNjm6Ew=

@@ -1,5 +1,3 @@
-Poweramp Skin SDK
-===========
-
-See [poweramp_skin_sample/readme.md](poweramp_skin_sample/readme.md) for details.
-
+U2FsdGVkX1/ucPAcAK1NdhuDOxfISMX6xBOyn8VVSei/7mdmg9nUiJRY6is3P315
+1cpd435AsD6Yhn3faZ3RH37bDer0ZOzEbBZAv8eRXDCQTXQ+en61gqGztrT0BCfZ
+Rt32oHGUYUKKmy6yZdd6XcIZ2XTmYPEWZQGvnZahvYFqjh0NM1tos9eZpB+YfRR4

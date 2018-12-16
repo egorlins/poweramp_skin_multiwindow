@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"
-	android:exitFadeDuration="@integer/selector_fade_ms">
-
-	<item android:state_activated="true" android:drawable="@drawable/vol" />
-	<item android:state_pressed="true" android:drawable="@drawable/vol" />
-	<item android:drawable="@drawable/vol_stroke" />
-	
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9kZnE+Rn2/ZoAh38GhbmG/lzISVov2MeRyT1uEuVO5g0
+nhRA3CwHKTBddYaflBIQbAN0gdXVSokg/0JTktNdSycHfvFSL4CayycRwIUnQDIG
+4SBQSlPDsjbI2w1h22liOVr7n5XEksKaRz+9z3+byCFk/OnFfq3lOHpC+jicdhLq
+qaRiYPIW/75qTHCdDdvku1kGAUK7mvDbZXYst2cPmQWMH+/3HEe77GfJ3B0m0aqb
+eY8gwe0z8XRVnhbjuuNrC92xMWmvOhalK4Mkel3ZHRklya27DGhEycHoNglWKpjD
+/2eljiO65dDckuiWmDBxBw30n3NAbUZDp3AyAgFvHk5tWSFdqmM1LOYOghOZcwRl
+tgJ1/AnOjsIL+qsxaKB3jCLoZTYouPRQMkdW5DlqGj+KcvbjSLpmsVhKv8IxxmxW
+3vXu9oi1tDJQentFxNlrXA==

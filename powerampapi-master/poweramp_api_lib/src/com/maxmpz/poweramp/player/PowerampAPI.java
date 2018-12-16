@@ -1,1439 +1,946 @@
-/*
-Copyright (C) 2011-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with Poweramp application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.player;
-
-import android.content.ComponentName;
-import android.content.Intent;
-import android.net.Uri;
-
-
-/**
- * Poweramp intent based API.
- */
-public final class PowerampAPI {
-	/**
-	 * Defines PowerampAPI version
-	 */
-	public static final int VERSION = 800;
-
-	/**
-	 * No id value (for id-related fields, for example, {@link PowerampAPI.Track.ID})
-	 */
-	public static final long NO_ID = 0L;
-
-	/**
-	 * Special {@link PowerampAPI.Track.ID} value indicating raw file - file opened from some file manager, which can't be matched against Poweramp database
-	 */
-	public static final long RAW_TRACK_ID = -2L;
-
-	/**
-	 * Authority used for data provider
-	 */
-	public static final String AUTHORITY = "com.maxmpz.audioplayer.data";
-
-	/**
-	 * Root data provider uri
-	 */
-	public static final Uri ROOT_URI = new Uri.Builder().scheme("content").authority(AUTHORITY).build();
-
-	/**
-	 * Authority used for album art provider
-	 */
-	public static final String AA_AUTHORITY = "com.maxmpz.audioplayer.aa";
-	/**
-	 * Root album art provider uri
-	 */
-	public static final Uri AA_ROOT_URI = new Uri.Builder().scheme("content").authority(AA_AUTHORITY).build();
-
-	/**
-	 * Uri query parameter - filter. Currently used only for search uri
-	 */
-	public static final String PARAM_FILTER = "flt";
-
-	/**
-	 * Uri query parameter - shuffle mode
-	 */
-	public static final String PARAM_SHUFFLE = "shf";
-
-
-	/**
-	 * Poweramp Control action.
-	 * <br>
-	 * Should be sent with sendBroadcast().
-	 * <br>
-	 * Extras:<br>
-	 * {@code int cmd} - command to execute. See {@link #COMMAND}
-	 */
-	public static final String ACTION_API_COMMAND = "com.maxmpz.audioplayer.API_COMMAND";
-
-	/**
-	 * Poweramp package name
-	 */
-	public static final String PACKAGE_NAME = "com.maxmpz.audioplayer";
-
-	/**
-	 * Poweramp service name
-	 */
-	public static final String PLAYER_SERVICE_NAME = "com.maxmpz.audioplayer.player.PlayerService";
-
-	/**
-	 * Poweramp service ComponentName
-	 */
-	public static final ComponentName PLAYER_SERVICE_COMPONENT_NAME = new ComponentName(PACKAGE_NAME, PLAYER_SERVICE_NAME);
-
-	/**
-	 * @return ready to use Intent for Poweramp service
-	 */
-	public static Intent newAPIIntent() {
-		return new Intent(ACTION_API_COMMAND).setComponent(PLAYER_SERVICE_COMPONENT_NAME);
-	}
-
-	/**
-	 * ACTION_API_COMMAND extra
-	 * <br>
-	 * {@code int}
-	 */
-	public static final String COMMAND = "cmd";
-
-
-	/**
-	 * Common extras:
-	 * <br>
-	 *
-	 */
-	@SuppressWarnings("hiding")
-	public static final class Commands {
-		/**
-		 * Extras:<br>
-		 * {@code boolean keepService} - (optional) if true, Poweramp won't unload player service. Notification will be appropriately updated<br>
-		 * {@code boolean beep} - (optional) if true, Poweramp will beep on playback command
-		 */
-		public static final int TOGGLE_PLAY_PAUSE = 1;
-		/**
-		 * Extras:<br>
-		 * {@code boolean keepService} - (optional) if true, Poweramp won't unload player service. Notification will be appropriately updated<br>
-		 * {@code boolean beep} - (optional) if true, Poweramp will beep on playback command
-		 */
-		public static final int PAUSE = 2;
-		/**
-		 * Extras:<br>
-		 * {@code int shuffle} - (optional) if set, shuffle mode to set (even if Poweramp is already playing)
-		 */
-		public static final int RESUME = 3;
-		/**
-		 * NOTE: subject to 200ms throttling
-		 */
-		public static final int NEXT = 4;
-		/**
-		 * NOTE: subject to 200ms throttling
-		 */
-		public static final int PREVIOUS = 5;
-		/**
-		 * NOTE: subject to 200ms throttling
-		 */
-		public static final int NEXT_IN_CAT = 6;
-		/**
-		 * NOTE: subject to 200ms throttling
-		 */
-		public static final int PREVIOUS_IN_CAT = 7;
-		/**
-		 * Extras:<br>
-		 * {@code boolean showToast} - (optional) if false, no toast will be shown. Applied for cycle only<br>
-		 * {@code int repeat} - (optional) if exists, appropriate mode will be directly selected, otherwise modes will be cycled
-		 * @see PowerampAPI.RepeatMode
-		 */
-		public static final int REPEAT = 8;
-		/**
-		 * Extras:<br>
-		 * {@code boolean showToast} - (optional) if false, no toast will be shown. Applied for cycle only<br>
-		 * {@code int shuffle} - (optional) if exists, appropriate mode will be directly selected, otherwise modes will be cycled
-		 * @see PowerampAPI.ShuffleMode
-		 */
-		public static final int SHUFFLE = 9;
-		/**
-		 * Poweramp starts constantly seeking forward until {@link #END_FAST_FORWARD} received
-		 */
-		public static final int BEGIN_FAST_FORWARD = 10;
-		/**
-		 * Stops #BEGIN_FAST_FORWARD
-		 */
-		public static final int END_FAST_FORWARD = 11;
-		/**
-		 * Poweramp starts constantly seeking backward until {@link #END_REWIND} received
-		 */
-		public static final int BEGIN_REWIND = 12;
-		/**
-		 * Stops {@link #BEGIN_REWIND}
-		 */
-		public static final int END_REWIND = 13;
-		public static final int STOP = 14;
-		/**
-		 * Extras:<br>
-		 * {@code int pos} - seek position in seconds
-		 */
-		public static final int SEEK = 15;
-		/**
-		 * Request for Poweramp current track position. In response, {@link #ACTION_TRACK_POS_SYNC} is sent
-		 */
-		public static final int POS_SYNC = 16;
-
-		/**
-		 * Data:<br>
-		 * - uri, following URIs are recognized:<br>
-		 * 	- file://path<br>
-		 * 	- content://com.maxmpz.audioplayer.data/... (see below)<br><br>
-		 *
-		 * # means some numeric id (track id for queries ending with /files, otherwise - appropriate category id).<br>
-		 * If track id (in place of #) is not specified, Poweramp plays whole list starting from the specified track,<br>
-		 * or from first one, or from random one in shuffle mode.<br><br>
-		 *
-		 * All queries support following params (added as URL encoded params, e.g. content://com.maxmpz.audioplayer.data/files?lim=10&flt=foo):<br>
-		 * {@code int lim} - SQL LIMIT, which limits number of rows returned<br>
-		 * {@code String flt} - filter substring. Poweramp will return only matching rows (the same way as returned in Poweramp lists UI when filter is used).<br>
-		 * {@code int shf} - shuffle mode (see ShuffleMode class)<br>
-		 * {@code int shs} - 1 if this is shuffle session (for internal use)<br><br>
-		 <pre>
-		 - All tracks:
-		 content://com.maxmpz.audioplayer.data/files
-		 content://com.maxmpz.audioplayer.data/files/#
-
-		 - Most Played
-		 content://com.maxmpz.audioplayer.data/most_played
-		 content://com.maxmpz.audioplayer.data/most_played/#
-
-		 - Top Rated
-		 content://com.maxmpz.audioplayer.data/top_rated
-		 content://com.maxmpz.audioplayer.data/top_rated/#
-
-		 - Recently Added
-		 content://com.maxmpz.audioplayer.data/recently_added
-		 content://com.maxmpz.audioplayer.data/recently_added/#
-
-		 - Recently Played
-		 content://com.maxmpz.audioplayer.data/recently_played
-		 content://com.maxmpz.audioplayer.data/recently_played/#
-
-		 - Long
-		 content://com.maxmpz.audioplayer.data/long
-		 content://com.maxmpz.audioplayer.data/long/#
-
-		 - Plain folders view (just files in plain folders list)
-		 content://com.maxmpz.audioplayer.data/folders
-		 content://com.maxmpz.audioplayer.data/folders/#
-		 content://com.maxmpz.audioplayer.data/folders/#/files
-		 content://com.maxmpz.audioplayer.data/folders/#/files/#
-
-		 - Hierarchy folders view (files and folders intermixed in one cursor)
-		 content://com.maxmpz.audioplayer.data/folders/#/folders_and_files
-		 content://com.maxmpz.audioplayer.data/folders/#/folders_and_files/#
-		 content://com.maxmpz.audioplayer.data/folders/files // All folder files, sorted as folders_files sort (for mass ops).
-
-		 - Genres
-		 content://com.maxmpz.audioplayer.data/genres
-		 content://com.maxmpz.audioplayer.data/genres/#/files
-		 content://com.maxmpz.audioplayer.data/genres/#/files/#
-		 content://com.maxmpz.audioplayer.data/genres/files
-
-		 - Artists
-		 content://com.maxmpz.audioplayer.data/artists
-		 content://com.maxmpz.audioplayer.data/artists/#
-		 content://com.maxmpz.audioplayer.data/artists/#/files
-		 content://com.maxmpz.audioplayer.data/artists/#/files/#
-		 content://com.maxmpz.audioplayer.data/artists/files
-
-		 - Composers
-		 content://com.maxmpz.audioplayer.data/composers
-		 content://com.maxmpz.audioplayer.data/composers/#
-		 content://com.maxmpz.audioplayer.data/composers/#/files
-		 content://com.maxmpz.audioplayer.data/composers/#/files/#
-		 content://com.maxmpz.audioplayer.data/composers/files
-
-		 - Albums
-		 content://com.maxmpz.audioplayer.data/albums
-		 content://com.maxmpz.audioplayer.data/albums/#/files
-		 content://com.maxmpz.audioplayer.data/albums/#/files/#
-		 content://com.maxmpz.audioplayer.data/albums/files
-
-		 - Album Artists
-		 content://com.maxmpz.audioplayer.data/album_artists
-		 content://com.maxmpz.audioplayer.data/album_artists/#/files
-		 content://com.maxmpz.audioplayer.data/album_artists/#/files/#
-		 content://com.maxmpz.audioplayer.data/album_artists/files
-
-		 - Albums by Genres
-		 content://com.maxmpz.audioplayer.data/genres/#/albums
-		 content://com.maxmpz.audioplayer.data/genres/#/albums/#/files
-		 content://com.maxmpz.audioplayer.data/genres/#/albums/#/files/#
-		 content://com.maxmpz.audioplayer.data/genres/#/albums/files
-		 content://com.maxmpz.audioplayer.data/genres/albums
-
-		 - Albums by Artists
-		 content://com.maxmpz.audioplayer.data/artists/#/albums
-		 content://com.maxmpz.audioplayer.data/artists/#/albums/#/files
-		 content://com.maxmpz.audioplayer.data/artists/#/albums/#/files/#
-		 content://com.maxmpz.audioplayer.data/artists/#/albums/files
-		 content://com.maxmpz.audioplayer.data/artists/albums
-
-		 - Albums by Composers
-		 content://com.maxmpz.audioplayer.data/composers/#/albums
-		 content://com.maxmpz.audioplayer.data/composers/#/albums/#/files
-		 content://com.maxmpz.audioplayer.data/composers/#/albums/#/files/#
-		 content://com.maxmpz.audioplayer.data/composers/#/albums/files
-		 content://com.maxmpz.audioplayer.data/composers/albums
-
-		 - Albums by Artist
-		 content://com.maxmpz.audioplayer.data/artists_albums
-		 content://com.maxmpz.audioplayer.data/artists_albums/#/files
-		 content://com.maxmpz.audioplayer.data/artists_albums/#/files/#
-		 content://com.maxmpz.audioplayer.data/artists_albums/files
-
-		 - Playlists
-		 content://com.maxmpz.audioplayer.data/playlists
-		 content://com.maxmpz.audioplayer.data/playlists/#
-		 content://com.maxmpz.audioplayer.data/playlists/#/files
-		 content://com.maxmpz.audioplayer.data/playlists/#/files/#
-		 content://com.maxmpz.audioplayer.data/playlists/files
-
-		 - Search
-		 content://com.maxmpz.audioplayer.data/search?flt=search string
-
-		 - Equalizer Presets
-		 content://com.maxmpz.audioplayer.data/eq_presets
-		 content://com.maxmpz.audioplayer.data/eq_presets/#
-
-		 - Reverb Presets
-		 content://com.maxmpz.audioplayer.data/reverb_presets
-		 content://com.maxmpz.audioplayer.data/reverb_presets/#
-
-		 - Queue
-		 content://com.maxmpz.audioplayer.data/queue
-		 content://com.maxmpz.audioplayer.data/queue/#
-		 </pre><br>
-
-		 * Extras<br>
-		 * {@code boolean paused} - (optional) default false. OPEN_TO_PLAY command starts playing the file immediately, unless "paused" extra is true<br>
-		 * {@code int pos}- (optional) seek to this position in track before playing
-		 * @see PowerampAPI.Track.POSITION
-		 * @see PowerampAPI.PAUSED
-		 */
-		public static final int OPEN_TO_PLAY = 20;
-
-		/**
-		 * Extras:<br>
-		 * {@code long id} - preset ID
-		 */
-		public static final int SET_EQU_PRESET = 50;
-
-		/**
-		 * Extras:<br>
-		 * {@code String value} - equalizer values,
-		 * @see PowerampAPI.ACTION_EQU_CHANGED
-		 */
-		public static final int SET_EQU_STRING = 51;
-
-		/**
-		 * Extras:<br>
-		 * {@code String name} - equalizer band (bass/treble/preamp/31/62../8K/16K) name
-		 * {@code float value} - equalizer band value (bass/treble/, 31/62../8K/16K => -1.0...1.0, preamp => 0..2.0)
-		 */
-		public static final int SET_EQU_BAND = 52;
-
-		/**
-		 * Extras:<br>
-		 * {@code boolean equ}- if exists and true, equalizer is enabled
-		 * {@code boolean tone} - if exists and true, tone is enabled
-		 */
-		public static final int SET_EQU_ENABLED = 53;
-
-		/**
-		 * Used by Notification controls to stop pending/paused service/playback and unload/remove notification
-		 */
-		public static final int STOP_SERVICE = 100;
-	}
-
-	/**
-	 * Minimum allowed time between seek commands
-	 */
-	public static int MIN_TIME_BETWEEN_SEEKS_MS = 200;
-
-	/**
-	 * Extra<br>
-	 * {@code Mixed}
-	 */
-	public static final String API_VERSION = "api";
-
-	/**
-	 * Extra<br>
-	 * {@code Mixed}
-	 * @Deprecated not used now
-	 */
-	@Deprecated
-	public static final String CONTENT = "content";
-
-	/**
-	 * Extra<br>
-	 * {@code String}
-	 */
-	public static final String PACKAGE = "pak";
-
-	/**
-	 * Extra<br>
-	 * {@code String}
-	 * @Deprecated not used now
-	 */
-	@Deprecated
-	public static final String LABEL = "label";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 * @Deprecated not used now
-	 */
-	@Deprecated
-	public static final String AUTO_HIDE = "autoHide";
-
-	/**
-	 * Extra<br>
-	 * {@code Bitmap}
-	 * @Deprecated not used now
-	 */
-	@Deprecated
-	public static final String ICON = "icon";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 * @Deprecated not used now
-	 */
-	@Deprecated
-	public static final String MATCH_FILE = "matchFile";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 */
-	public static final String SHOW_TOAST = "showToast";
-
-	/**
-	 * Extra<br>
-	 * {@code String}
-	 */
-	public static final String NAME = "name";
-
-	/**
-	 * Extra<br>
-	 * {@code Mixed}
-	 */
-	public static final String VALUE = "value";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 */
-	public static final String EQU = "equ";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 */
-	public static final String TONE = "tone";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 */
-	public static final String KEEP_SERVICE = "keepService";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 */
-	public static final String BEEP = "beep";
-
-
-	/**
-	 * Extra<br>
-	 * {@code String}
-	 * @since 795
-	 */
-	public static final String TABLE = "table";
-
-	/**
-	 * Poweramp track changed.<br>
-	 * Sticky intent (can be queried for permanently stored data).<br><br>
-	 * <b>NOTE: on Android 8+, you'll receive this intent only if your app is on foreground (some activity started or some foreground service is active).</b><br>
-	 * Use *_EXPLICIT version to receive this action in background app.<br><br>
-	 * Extras:<br>
-	 * {@code Bundle track} - Track bundle<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())
-	 * @see PowerampAPI.Track
-	 */
-	public static final String ACTION_TRACK_CHANGED = "com.maxmpz.audioplayer.TRACK_CHANGED";
-
-	/**
-	 * This is explicit intent sent to your app to ensure it receives it on Android 8+ (with background execution limitations).<br>
-	 * Differs from ACTION_TRACK_CHANGED which is sticky intent which won't be received by your app in the background.<br><br>
-	 *
-	 * <b>NOTE: Poweramp caches app list for this intent. Cache is updated when Poweramp is started or playback resumed.</b><br>
-	 * This means if your app just installed and Poweramp is playing, your app won't receive this action until next Poweramp pause/resume cycle or Poweramp service restart.<br><br>
-	 *
-	 * Extras:<br>
-	 * {@code Bundle track} - Track bundle<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())
-	 * @see PowerampAPI.Track
-	 * @since 798
-	 */
-	public static final String ACTION_TRACK_CHANGED_EXPLICIT = "com.maxmpz.audioplayer.TRACK_CHANGED_EXPLICIT";
-
-	/**
-	 * Album art was changed. Album art can be the same for whole album/folder, thus usually it will be updated less frequently comparing to TRACK_CHANGE.
-	 * If both aaPath and aaBitmap extras are missing that means no album art exists for the current track(s).<br>
-	 * Note that there is no direct Album Art to track relation, i.e. both track and album art can change independently from each other -
-	 * for example - when new album art asynchronously downloaded from internet or selected by user.<br><br>
-	 *
-	 * Sticky intent (can be queried for permanently stored data).<br><br>
-	 *
-	 * <b>NOTE: on Android 8+, you'll receive this intent only if your app is on foreground (some activity started or some foreground service is active).</b><br><br>
-	 * Extras:<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())
-	 */
-	public static final String ACTION_AA_CHANGED = "com.maxmpz.audioplayer.AA_CHANGED";
-
-	/**
-	 * Poweramp playing state changed (paused/resumed/ended).<br>
-	 * Sticky intent (can be queried for permanently stored data).<br><br>
-	 *
-	 * <b>NOTE: on Android 8+, you'll receive this intent only if your app is on foreground (some activity started or some foreground service is active).</b><br>
-	 * Use *_EXPLICIT version to receive this action in background app.<br><br>
-	 *
-	 * Extras:<br>
-	 * {@code int state} - one of the STATE_* values (700+)<br>
-	 * {@code boolean paused} - true if track paused/stopped, false if track is playing<br>
-	 * {@code int pos} - (optional) current in-track position in seconds<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())<br>
-	 * {@code int status} - one of the STATUS_* values (deprecated)<br><br>
-	 * (deprecated since 790) additional extras - not sent anymore
-	 */
-	public static final String ACTION_STATUS_CHANGED = "com.maxmpz.audioplayer.STATUS_CHANGED";
-
-
-	/**
-	 * This is explicit intent sent to your app to ensure it receives it on Android 8+ (with background execution limitations).
-	 * Differs from ACTION_STATUS_CHANGED which is sticky intent which won't be received by your app in the background.<br><br>
-	 *
-	 * <b>NOTE: Poweramp caches app list for this intent. Cache is updated when Poweramp is started or playback resumed.</b><br>
-	 * This means if your app just installed and Poweramp is playing, your app won't receive this action until next Poweramp pause/resume cycle or Poweramp service restart.<br><br>
-	 *
-	 * Extras:<br>
-	 * {@code int state} - one of the STATE_* values<br>
-	 * {@code boolean paused} - true if track paused/stopped, false if track is playing<br>
-	 * {@code int pos} - (optional) current in-track position in seconds<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())
-	 * @since 798
-	 */
-	public static final String ACTION_STATUS_CHANGED_EXPLICIT = "com.maxmpz.audioplayer.STATUS_CHANGED_EXPLICIT";
-
-	/**
-	 * NON sticky intent<br>
-	 * Extras:<br>
-	 * {@code int pos} - current in-track position in seconds
-	 */
-	public static final String ACTION_TRACK_POS_SYNC = "com.maxmpz.audioplayer.TPOS_SYNC";
-
-	/**
-	 * Poweramp repeat or shuffle mode changed.<br>
-	 * Sticky intent (can be queried for permanently stored data).<br><br>
-	 *
-	 * <b>NOTE: on Android 8+, you'll receive this intent only if your app is on foreground (some activity started or some foreground service is active).</b><br><br>
-	 *
-	 * Extras:<br>
-	 * {@code int repeat} - new repeat mode<br>
-	 * {@code int shuffle} - new shuffle mode<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())
-	 * @see PowerampAPI.RepeatMode, PowerampAPI.ShuffleMode
-	 */
-	public static final String ACTION_PLAYING_MODE_CHANGED = "com.maxmpz.audioplayer.PLAYING_MODE_CHANGED";
-
-	/**
-	 * Poweramp equalizer settings changed.<br>
-	 * Sticky intent (can be queried for permanently stored data).<br><br>
-	 *
-	 * <b>NOTE: on Android 8+, you'll receive this intent only if your app is on foreground (some activity started or some foreground service is active).</b><br><br>
-	 *
-	 * Extras:<br>
-	 * {@code String name} - preset name. If no name extra exists, it's not a preset<br>
-	 * {@code long id} - preset id. If no id extra exists, it's not a preset<br>
-	 * {@code String value} - equalizer and tone values in format:<br>
-	 * <blockquote><code>bass=pos_float|treble=pos_float|31=float|62=float|....|16K=float|preamp=0.0 ... 2.0</code><br>
-	 * where float = -1.0 ... 1.0, pos_float = 0.0 ... 1.0</blockquote>
-	 * {@code boolean equ} - true if equalizer bands are enabled<br>
-	 * {@code boolean tone} - truel if tone bands are enabled<br>
-	 * {@code long ts} - timestamp of the event (System.currentTimeMillis())
-	 */
-	public static final String ACTION_EQU_CHANGED = "com.maxmpz.audioplayer.EQU_CHANGED";
-
-
-	/**
-	 * Opens a category list for the current track, or library - if no track is loaded
-	 */
-	public static final String ACTION_SHOW_CURRENT = "com.maxmpz.audioplayer.ACTION_SHOW_CURRENT";
-
-	/**
-	 * Opens library
-	 * @deprecated. Use ACTION_OPEN_LIBRARY
-	 */
-	@Deprecated
-	public static final String ACTION_SHOW_LIST = "com.maxmpz.audioplayer.ACTION_SHOW_LIST";
-
-	/**
-	 * Opens library
-	 */
-	public static final String ACTION_OPEN_LIBRARY = "com.maxmpz.audioplayer.ACTION_OPEN_LIBRARY";
-
-	/**
-	 * Opens search
-	 */
-	public static final String ACTION_OPEN_SEARCH = "com.maxmpz.audioplayer.ACTION_OPEN_SEARCH";
-
-	/**
-	 * Opens equalizer screen
-	 * @see #EXTRA_EQ_TAB
-	 */
-	public static final String ACTION_OPEN_EQ = "com.maxmpz.audioplayer.ACTION_OPEN_EQ";
-
-	/**
-	 * Opens main screen
-	 */
-	public static final String ACTION_OPEN_MAIN = "com.maxmpz.audioplayer.ACTION_OPEN_MAIN";
-
-
-	/**
-	 * Grants sender a permission for data access<br>
-	 * Extras:<br>
-	 * {@code String package} - the package name of app trying to get access<br>
-	 * @since 797
-	 */
-	public static final String ACTION_ASK_FOR_DATA_PERMISSION = "com.maxmpz.audioplayer.ACTION_ASK_FOR_DATA_PERMISSION";
-
-	/**
-	 * Forces Poweramp UI and PlayerService to reload data from DB<br>
-	 * Extras:<br>
-	 * {@code String package} - the package name of app asking for the reload
-	 * {@code String table} - the changed table, e.g. "playlists", "queue". Gives Poweramp a hint regarding data reloading, e.g. when queue is changed, queue UI stats should be probably updated
-	 * @since 797
-	 */
-	public static final String ACTION_RELOAD_DATA = "com.maxmpz.audioplayer.ACTION_RELOAD_DATA";
-
-	/**
-	 * Extra<br>
-	 * {@code Mixed}
-	 * @since 700
-	 */
-	public static final String DATA = "data";
-
-	/**
-	 * Poweramp native plugin command<br>
-	 * Extras:<br>
-	 * {@code String pak} - plugin package (see PACKAGE)<br>
-	 * {@code int cmd} - some dsp unique command. cmd should be >= 0 (see COMMAND)<br>
-	 * {@code byte[] data} - the command data serialized as byte array (see CONTENT)
-	 * @since 700
-	 * @see PowerampAPI.PACKAGE
-	 * @see PowerampAPI.COMMAND
-	 * @see PowerampAPI.CONTENT
-	 */
-	public static final String ACTION_NATIVE_PLUGIN_COMMAND = "com.maxmpz.audioplayer.NATIVE_PLUGIN_COMMAND";
-
-
-	/**
-	 * Poweramp initiated broadcast. Sent by Poweramp when it loads/reloads its audio kernel and loads plugin.<br>
-	 * In response, plugin apps should send NATIVE_PLUGIN_COMMAND to Poweramp with the initial or restored plugin parameters.<br>
-	 * Extras:<br>
-	 * {@code int api} - Poweramp API version
-	 * @since 700
-	 * @see PowerampAPI.API_VERSION
-	 */
-	public static final String ACTION_NATIVE_PLUGIN_INIT = "com.maxmpz.audioplayer.NATIVE_PLUGIN_INIT";
-
-	/**
-	 * @deprecated there is no PlayerUIActivity anymore
-	 */
-	@Deprecated
-	public static final String ACTIVITY_PLAYER_UI = "com.maxmpz.audioplayer.PlayerUIActivity";
-
-	/**
-	 * @deprecated there is no EqActivity anymore
-	 */
-	@Deprecated
-	public static final String ACTIVITY_EQ = "com.maxmpz.audioplayer.EqActivity";
-
-	/**
-	 * @deprecated there is no PlayListActivity anymore
-	 */
-	@Deprecated
-	public static final String ACTIVITY_PLAYLIST = "com.maxmpz.audioplayer.PlayListActivity";
-
-
-	/**
-	 * Poweramp settings activity
-	 */
-	public static final String ACTIVITY_SETTINGS = "com.maxmpz.audioplayer.preference.SettingsActivity";
-
-	/**
-	 * Poweramp startup activity. This activity always tries to pass incoming intent to main activity. Calling StartupActivity instead of main activity is preferable due
-	 * to activity animation and possible first-run setup
-	 */
-	public static final String ACTIVITY_STARTUP = "com.maxmpz.audioplayer.StartupActivity";
-
-	/**
-	 * Extra for ACTION_API_COMMAND and RESUME command<Br>
-	 * {@code int}
-	 * @see PowerampAPI.ShuffleMode
-	 * @since 797
-	 */
-	public static final String EXTRA_SHUFFLE = "shuffle";
-
-	/**
-	 * Extra
-	 * Int
-	 * @see PowerampAPI.ACTION_OPEN_EQ
-	 * @see PowerampAPI.EQ_TAB_DEFAULT, PowerampAPI.EQ_TAB_EQUALIZER, PowerampAPI.EQ_TAB_VOLUME, PowerampAPI.EQ_TAB_REVERB
-	 */
-	public static final String EXTRA_EQ_TAB = "eqTab";
-
-	/**
-	 * Open last user opened eq tab 
-	 * @see PowerampAPI.EXTRA_EQ_TAB
-	 */
-	public static final int EQ_TAB_DEFAULT = -1;
-	/**
-	 * Open equalizer tab 
-	 * @see PowerampAPI.EXTRA_EQ_TAB
-	 */
-	public static final int EQ_TAB_EQUALIZER = 0;
-	/**
-	 * Open volume tab 
-	 * @see PowerampAPI.EXTRA_EQ_TAB
-	 */
-	public static final int EQ_TAB_VOLUME = 1;
-	/**
-	 * Open reverb tab 
-	 * @see PowerampAPI.EXTRA_EQ_TAB
-	 */
-	public static final int EQ_TAB_REVERB = 2;
-
-
-	/**
-	 * Extra<br>
-	 * {@code String}
-	 * @deprecated not used anymore
-	 */
-	@Deprecated
-	public static final String ALBUM_ART_PATH = "aaPath";
-
-	/**
-	 * Extra<br>
-	 * {@code Bitmap}
-	 * @deprecated not used anymore
-	 */
-	@Deprecated
-	public static final String ALBUM_ART_BITMAP = "aaBitmap";
-
-	/**
-	 * Extra<br>
-	 * {@code boolean}
-	 * @deprecated not used anymore
-	 */
-	@Deprecated
-	public static final String DELAYED = "delayed";
-
-
-	/**
-	 * Extra<br>
-	 * {@code long}
-	 */
-	public static final String TIMESTAMP = "ts";
-
-	/**
-	 * Extra<br>
-	 * {@code int}
-	 * @since 700
-	 * @see PowerampAPI.STATUS_CHANGED
-	 */
-	public static final String STATE = "state";
-
-	/**
-	 * Poweramp is probably not fully loaded, state is unknown
-	 * @since 705
-	 * @see PowerampAPI.STATUS_CHANGED
-	 */
-	public static final int STATE_NO_STATE = -1;
-
-	/**
-	 * Poweramp is in stopped state - finished playing some list and stopped, or explicitly stopped by user
-	 * @since 700
-	 * @see PowerampAPI.STATUS_CHANGED
-	 */
-	public static final int STATE_STOPPED = 0;
-	/**
-	 * Poweramp is playing
-	 * @since 700
-	 * @see PowerampAPI.STATUS_CHANGED
-	 */
-	public static final int STATE_PLAYING = 1;
-	/**
-	 * Poweramp is paused
-	 * @since 700
-	 * @see PowerampAPI.STATUS_CHANGED
-	 */
-	public static final int STATE_PAUSED = 2;
-
-
-	/**
-	 * STATUS_CHANGED extra<br>
-	 * {@code int}
-	 * @deprecated use ACTION_STATUS_CHANGED
-	 */
-	@Deprecated
-	public static final String STATUS = "status";
-
-	/**
-	 * STATUS extra values
-	 * @deprecated use ACTION_STATUS_CHANGED
-	 */
-	@Deprecated
-	public static final class Status {
-		/**
-		 * STATUS_CHANGED status value - track has been started to play or has been paused.<br>
-		 * Note that Poweramp will start track immediately into this state when it's just loaded to avoid STARTED => PAUSED transition.<br>
-		 * Additional extras - deprecated since 790 - not sent anymore:<br>
-		 * 	(deprecated) {@code Bundle track} - bundle - track info<br>
-		 * 	{@code boolean paused} - true if track paused, false if track resumed
-		 */
-		@Deprecated
-		public static final int TRACK_PLAYING = 1;
-
-		/**
-		 * STATUS_CHANGED status value - track has been ended. Note, this intent will NOT be sent for just finished track IF Poweramp advances to the next track.<br>
-		 * Additional extras:<br>
-		 * 	(deprecated) {@code Bundle track} - track info<br>
-		 *  (deprecated) {@code boolean failed} - true if track failed to play
-		 */
-		@Deprecated
-		public static final int TRACK_ENDED = 2;
-
-		/**
-		 * STATUS_CHANGED status value - Poweramp finished playing some list and stopped
-		 */
-		@Deprecated
-		public static final int PLAYING_ENDED = 3;
-	}
-
-
-	/**
-	 * STATUS_CHANGED trackEnded extra<br>
-	 * {@code boolean} - true if track failed to play
-	 * @Deprecated (since 790) not sent anymore
-	 */
-	@Deprecated
-	public static final String FAILED = "failed";
-
-	/**
-	 * STATUS_CHANGED extra<br>
-	 * {@code boolean} - true if track is paused
-	 * @see #ACTION_STATUS_CHANGED
-	 */
-	public static final String PAUSED = "paused";
-
-	/**
-	 * PLAYING_MODE_CHANGED extra<br>
-	 * {@code integer}
-	 * @see PowerampAPI.ShuffleMode
-	 */
-	public static final String SHUFFLE = "shuffle";
-
-	/**
-	 * PLAYING_MODE_CHANGED extra<br>
-	 * {@code integer}
-	 * @see PowerampAPI.RepeatMode
-	 */
-	public static final String REPEAT = "repeat";
-
-
-	/**
-	 * Extra<br>
-	 * {@code long}
-	 */
-	public static final String ID = "id";
-
-	/**
-	 * STATUS_CHANGED track extra<br>
-	 * {@code Bundle}
-	 */
-	public static final String TRACK = "track";
-
-
-	/**
-	 * Shuffle extras values
-	 */
-	public static final class ShuffleMode {
-		/**
-		 * No any shuffle selected
-		 */
-		public static final int SHUFFLE_NONE		   = 0;
-		/**
-		 * All songs global category shuffle
-		 */
-		public static final int SHUFFLE_ALL			   = 1;
-		/**
-		 * Just songs from current category shuffled
-		 */
-		public static final int SHUFFLE_SONGS		   = 2;
-		/**
-		 * Categories shuffled, songs in order
-		 */
-		public static final int SHUFFLE_CATS		   = 3;
-		/**
-		 * Songs shuffled, categories in order
-		 */
-		public static final int SHUFFLE_SONGS_AND_CATS = 4;
-		/**
-		 * Max possible shuffle value
-		 */
-		public static final int MAX_SHUFFLE			   = 4;
-	}
-
-	/**
-	 * Repeat extras values
-	 */
-	public static final class RepeatMode {
-		/**
-		 * Repeat is disabled
-		 */
-		public static final int REPEAT_NONE	   = 0;
-		/**
-		 * Current selected category repeated
-		 */
-		public static final int REPEAT_ON	   = 1;
-		/**
-		 * Category will be advanced to next one after the last song played
-		 */
-		public static final int REPEAT_ADVANCE = 2;
-		/**
-		 * Current song is repeated
-		 */
-		public static final int REPEAT_SONG    = 3;
-		/**
-		 * Max possible repeat value
-		 */
-		public static final int MAX_REPEAT     = 3;
-	}
-
-	/**
-	 * Vis extras values
-	 */
-	public static final class VisMode {
-		/**
-		 * Visualization is disabled
-		 */
-		public static final int VIS_NONE        = 0;
-		/**
-		 * Visualization with UI visible
-		 */
-		public static final int VIS_W_UI        = 1;
-		/**
-		 * Full screen visualization
-		 */
-		public static final int VIS_FULL_SCREEN = 2;
-	}
-
-
-	/**
-	 * STATUS_CHANGED track extra fields
-	 */
-	@SuppressWarnings("hiding")
-	public static final class Track {
-		/**
-		 * Id of the current track.
-		 * Can be a playlist entry id<br>
-		 * {@code long}
-		 */
-		public static final String ID = "id";
-
-		/**
-		 * "Real" id. In case of playlist entry, this is always resolved to Poweramp folder_files table row ID or System Library MediaStorage.Audio._ID<nt>
-		 * {@code long}
-		 */
-		public static final String REAL_ID = "realId";
-
-		/**
-		 * Category type<br>
-		 * {@code int}
-		 * @see PowerampAPI.Track.Type
-		 */
-		public static final String TYPE = "type";
-
-		/**
-		 * Category URI match<br>
-		 * {@code int}
-		 */
-		public static final String CAT = "cat";
-
-		/**
-		 * {@code boolean}
-		 */
-		public static final String IS_CUE = "isCue";
-
-		/**
-		 * Category URI<br>
-		 * {@code Uri}
-		 */
-		public static final String CAT_URI = "catUri";
-
-		/**
-		 * True if category navigation (<<< >>>) is possible<br>
-		 * {@code boolean}
-		 */
-		public static final String SUPPORTS_CAT_NAV = "supportsCatNav";
-
-		/**
-		 * File type<br>
-		 * {@code integer}
-		 * @see PowerampAPI.Track.FileType
-		 */
-		public static final String FILE_TYPE = "fileType";
-
-		/**
-		 * Track file path<br>
-		 * {@code String}
-		 */
-		public static final String PATH = "path";
-
-		/**
-		 * Track title<br>
-		 * {@code String}
-		 */
-		public static final String TITLE = "title";
-
-		/**
-		 * Track album<br>
-		 * {@code String}
-		 */
-		public static final String ALBUM = "album";
-
-		/**
-		 * Track artist<br>
-		 * {@code String}
-		 */
-		public static final String ARTIST = "artist";
-
-		/**
-		 * Track duration in seconds<br>
-		 * {@code int}
-		 */
-		public static final String DURATION = "dur";
-
-		/**
-		 * Position in track in seconds<br>
-		 * {@code int}
-		 */
-		public static final String POSITION = "pos";
-
-		/**
-		 * Position in a list<br>
-		 * {@code int}
-		 */
-		public static final String POS_IN_LIST = "posInList";
-
-		/**
-		 * List size<br>
-		 * {@code int}
-		 */
-		public static final String LIST_SIZE = "listSize";
-
-		/**
-		 * Track sample rate<br>
-		 * {@code int}
-		 */
-		public static final String SAMPLE_RATE = "sampleRate";
-
-		/**
-		 * Track number of channels<br>
-		 * {@code int}
-		 */
-		public static final String CHANNELS = "channels";
-
-		/**
-		 * Track average bitrate<br>
-		 * {@code int}
-		 */
-		public static final String BITRATE = "bitRate";
-
-		/**
-		 * Resolved codec name for the track<br>
-		 * {@code String}
-		 */
-		public static final String CODEC = "codec";
-
-		/**
-		 * Track bits per sample<br>
-		 * {@code int}
-		 */
-		public static final String BITS_PER_SAMPLE = "bitsPerSample";
-
-		/**
-		 * Track flags<br>
-		 * {@code int}
-		 */
-		public static final String FLAGS = "flags";
-
-		/**
-		 * {@link PowerampAPI.Track} {@link #FILE_TYPE} values
-		 */
-		public static class FileType {
-			public static final int TYPE_UNKNOWN = -1;
-			public static final int TYPE_MP3 = 0;
-			public static final int TYPE_FLAC = 1;
-			public static final int TYPE_M4A = 2;
-			public static final int TYPE_MP4 = 3;
-			public static final int TYPE_OGG = 4;
-			public static final int TYPE_WMA = 5;
-			public static final int TYPE_WAV = 6;
-			public static final int TYPE_TTA = 7;
-			public static final int TYPE_APE = 8;
-			public static final int TYPE_WV = 9;
-			public static final int TYPE_AAC = 10;
-			public static final int TYPE_MPGA = 11;
-			public static final int TYPE_AMR = 12;
-
-			public static final int TYPE_3GP = 13;
-			public static final int TYPE_MPC = 14;
-			public static final int TYPE_AIFF = 15;
-			public static final int TYPE_AIF = 16;
-			public static final int TYPE_FLV = 17;
-			public static final int TYPE_OPUS = 18;
-			public static final int TYPE_DFF = 19;
-			public static final int TYPE_DSF = 20;
-			public static final int TYPE_MKA = 21;
-			public static final int TYPE_TAK = 22;
-			public static final int LAST_TYPE = 22;
-
-			@Deprecated
-			public static final int mp3 = 0;
-			@Deprecated
-			public static final int flac = 1;
-			@Deprecated
-			public static final int m4a = 2;
-			@Deprecated
-			public static final int mp4 = 3;
-			@Deprecated
-			public static final int ogg = 4;
-			@Deprecated
-			public static final int wma = 5;
-			@Deprecated
-			public static final int wav = 6;
-			@Deprecated
-			public static final int tta = 7;
-			@Deprecated
-			public static final int ape = 8;
-			@Deprecated
-			public static final int wv = 9;
-			@Deprecated
-			public static final int aac = 10;
-			@Deprecated
-			public static final int mpga = 11;
-			@Deprecated
-			public static final int amr = 12;
-			@Deprecated
-			public static final int _3gp = 13;
-			@Deprecated
-			public static final int mpc = 14;
-			@Deprecated
-			public static final int aiff = 15;
-			@Deprecated
-			public static final int aif = 16;
-		}
-
-		/**
-		 * {@link PowerampAPI.Track} {@link #FLAGS} bitset values. First 3 bits = FLAG_ADVANCE_*
-		 */
-		public static final class Flags {
-			/**
-			 * Track wasn't advanced
-			 */
-			public static final int FLAG_ADVANCE_NONE = 0;
-			/**
-			 * Track was advanced forward
-			 */
-			public static final int FLAG_ADVANCE_FORWARD = 1;
-			/**
-			 * Track was advanced backward
-			 */
-			public static final int FLAG_ADVANCE_BACKWARD = 2;
-			/**
-			 * Track category was advanced forward
-			 */
-			public static final int FLAG_ADVANCE_FORWARD_CAT = 3;
-			/**
-			 * Track category was advanced backward
-			 */
-			public static final int FLAG_ADVANCE_BACKWARD_CAT = 4;
-
-			/**
-			 * Mask for FLAG_ADVANCE_* values
-			 */
-			public static final int FLAG_ADVANCE_MASK = 0x7; // 111
-
-			/**
-			 * Track was advanced from notification
-			 */
-			public static final int FLAG_NOTIFICATION_UI = 0x20;
-
-			/**
-			 * Used to indicate that track is first in Poweramp service session
-			 */
-			public static final int FLAG_FIRST_IN_PLAYER_SESSION = 0x40;
-		}
-	}
-
-	/**
-	 * {@link PowerampAPI.Track} {@link PowerampAPI.Track.CAT} categories
-	 */
-	public static final class Cats {
-		public static final int ROOT = 0;
-		public static final int FOLDERS = 10;
-		public static final int MOST_PLAYED = 43;
-		public static final int TOP_RATED = 48;
-		public static final int LOW_RATED = 50;
-		public static final int RECENTLY_ADDED = 53;
-		public static final int RECENTLY_PLAYED = 58;
-		public static final int LONG = 55;
-		public static final int PLAYLISTS = 100;
-		public static final int ALBUMS = 200;
-		public static final int GENRES_ID_ALBUMS = 210;
-		public static final int ARTISTS_ID_ALBUMS = 220;
-		public static final int ARTISTS__ALBUMS = 250;
-		public static final int COMPOSERS_ID_ALBUMS = 230;
-		public static final int GENRES = 320;
-		public static final int ARTISTS = 500;
-		public static final int COMPOSERS = 600;
-		public static final int QUEUE = 800;
-	}
-
-	/**
-	 * Describes Poweramp scanner related actions
-	 */
-	public static final class Scanner {
-
-		/**
-		 * Poweramp Scanner action.<br><br>
-		 *
-		 * Poweramp Scanner scanning process is 2 step:<br>
-		 * 1. Folders scan.<br>
-		 *	Checks filesystem and updates DB with folders/files structure.<br>
-		 * 2. Tags scan.<br>
-		 *	Iterates over files in DB with TAG_STATUS == TAG_NOT_SCANNED and scans them with tag scanner.<br><br>
-		 *
-		 * Poweramp Scanner is a IntentService, this means multiple scan requests at the same time (or during another scans) are queued.<br>
-		 * ACTION_SCAN_DIRS actions are prioritized and executed before ACTION_SCAN_TAGS.<br><br>
-		 *
-		 * Poweramp main scan action scans the set of folders either incrementally or from scratch, the folders are configured by user in Poweramp Settings.<br>
-		 * NOTE: Poweramp will always do ACTION_SCAN_TAGS automatically after ACTION_SCAN_DIRS is finished and some changes are required to song tags in DB.<br>
-		 * Unless, fullRescan specified, Poweramp will not remove songs if they are missing from filesystem due to unmounted storages.<br>
-		 * Normal menu => Rescan calls ACTION_SCAN_DIRS without extras<br><br>
-		 *
-		 * Poweramp Scanner sends appropriate broadcast intents:<br>
-		 * {@link #ACTION_DIRS_SCAN_STARTED} (sticky),
-		 * {@link #ACTION_DIRS_SCAN_FINISHED},
-		 * {@link #ACTION_TAGS_SCAN_STARTED} (sticky),
-		 * {@link #ACTION_TAGS_SCAN_PROGRESS},
-		 * {@link #ACTION_TAGS_SCAN_FINISHED}, or
-		 * {@link #ACTION_FAST_TAGS_SCAN_FINISHED}<br><br>
-		 *
-		 * Extras:<br>
-		 * {@code boolean fastScan} - Poweramp will not check folders and scan files which hasn't been modified from previous scan. Based on files last modified timestamp<br>
-		 * {@code boolean eraseTags} - Poweramp will clean all tags from exisiting songs. This causes each song to be re-scanned for tags.
-		 *			   Warning: as a side effect, cleans CUE tracks from user created playlists. 
-		 *			   This is because scanner can't incrementaly re-scan CUE sheets, so they are deleted from DB, causing their
-		 *			   deletion from user playlists as well<br>
-		 * {@code boolean fullRescan} - Poweramp will also check for folders/files from missing/unmounted storages and will remove them from DB.
-		 *				Warning: removed songs also disappear from user created playlists.
-		 *				Used in Poweramp only when user specificaly goes to Settings and does Full Rescan (after e.g. SD card change)<br>
-		 *
-		 */
-		public static final String ACTION_SCAN_DIRS = "com.maxmpz.audioplayer.ACTION_SCAN_DIRS";
-
-		/**
-		 * Poweramp Scanner action.<br>
-		 * Secondary action, only checks songs with TAG_STATUS set to TAG_NOT_SCANNED. Useful for rescanning just songs (which are already in Poweramp DB) with editied file tag info.<br><br>
-		 *
-		 * Extras:<br>
-		 * {@code boolean fastScan} - If true, scanner doesn't send ACTION_TAGS_SCAN_STARTED/ACTION_TAGS_SCAN_PROGRESS/ACTION_TAGS_SCAN_FINISHED intents,
-		 *			   just sends ACTION_FAST_TAGS_SCAN_FINISHED when done.
-		 *			   It doesn't modify scanning logic otherwise.
-		 */
-		public static final String ACTION_SCAN_TAGS = "com.maxmpz.audioplayer.ACTION_SCAN_TAGS";
-
-
-		/**
-		 * Broadcast<br>
-		 * Poweramp Scanner started folders scan<br>
-		 * Sticky intent (can be queried for permanently stored data)<br>
-		 */
-		public static final String ACTION_DIRS_SCAN_STARTED = "com.maxmpz.audioplayer.ACTION_DIRS_SCAN_STARTED";
-		/**
-		 * Broadcast<br>
-		 * Poweramp Scanner finished folders scan<br>
-		 */
-		public static final String ACTION_DIRS_SCAN_FINISHED = "com.maxmpz.audioplayer.ACTION_DIRS_SCAN_FINISHED";
-		/**
-		 * Broadcast<br>
-		 * Poweramp Scanner started tag scan<br>
-		 * Sticky intent (can be queried for permanently stored data)
-		 */
-		public static final String ACTION_TAGS_SCAN_STARTED = "com.maxmpz.audioplayer.ACTION_TAGS_SCAN_STARTED";
-		/**
-		 * Broadcast<br>
-		 * @Deprecated not used anymore
-		 */
-		@Deprecated
-		public static final String ACTION_TAGS_SCAN_PROGRESS = "com.maxmpz.audioplayer.ACTION_TAGS_SCAN_PROGRESS";
-		/**
-		 * Broadcast<br>
-		 * Poweramp Scanner finished tag scan<br>
-		 * Extras:<br>
-		 * {@code boolean track_content_changed} - true if at least on track has been scanned, false if no tags scanned (probably, because all files are up-to-date)
-		 */
-		public static final String ACTION_TAGS_SCAN_FINISHED = "com.maxmpz.audioplayer.ACTION_TAGS_SCAN_FINISHED";
-		/**
-		 * Broadcast<br>
-		 * Poweramp Scanner finished fast tag scan. Only fired when ACTION_SCAN_TAGS is called with extra fastScan = true<br>
-		 * Extras:<br>
-		 * {@code boolean trackContentChanged} - true if at least on track has been scanned, false if no tags scanned (probably, because all files are up-to-date)
-		 */
-		public static final String ACTION_FAST_TAGS_SCAN_FINISHED = "com.maxmpz.audioplayer.ACTION_FAST_TAGS_SCAN_FINISHED";
-
-		/**
-		 * Extra<br>
-		 * {@code boolean}
-		 */
-		public static final String EXTRA_FAST_SCAN = "fastScan";
-		/**
-		 * Extra<br>
-		 * {@code int}
-		 */
-		public static final String EXTRA_PROGRESS = "progress";
-		/**
-		 * Extra<br>
-		 * {@code boolean} - true if at least on track has been scanned, false if no tags scanned (probably, because all files are up-to-date)
-		 */
-		public static final String EXTRA_TRACK_CONTENT_CHANGED = "trackContentChanged";
-
-		/**
-		 * Extra<br>
-		 * {@code boolean}
-		 */
-		public static final String EXTRA_ERASE_TAGS = "eraseTags";
-
-		/**
-		 * Extra<br>
-		 * {@code boolean}
-		 */
-		public static final String EXTRA_FULL_RESCAN = "fullRescan";
-
-		/**
-		 * Extra<br>
-		 * {@code String} - cause of the scan (e.g. user request, auto scan, etc.). Useful for debugging, visible in logcat
-		 */
-		public static final String EXTRA_CAUSE = "cause";
-	}
-
-	/**
-	 * Settings related actions
-	 */
-	public static final class Settings {
-		/**
-		 * Exports Poweramp settings
-		 */
-		public static final String ACTION_EXPORT_SETTINGS = "com.maxmpz.audioplayer.ACTION_EXPORT_SETTINGS";
-		/**
-		 * Imports Poweramp settings
-		 */
-		public static final String ACTION_IMPORT_SETTINGS = "com.maxmpz.audioplayer.ACTION_IMPORT_SETTINGS";
-
-		/**
-		 * Extra<br/>
-		 * {@code boolean} if true, UI may be shown for import / export errors, otherwise import / export may fail silently
-		 */
-		public static final String EXTRA_UI = "ui";
-
-		/**
-		 * Value for EXTRA_OPEN - opens skins list
-		 * @see PowerampAPI.ACTIVITY_SETTINGS
-		 * @since 700
-		 */
-		public static final String OPEN_THEME = "theme";
-
-		/**
-		 * Extra for ACTIVITY_STARTUP and ACTIVITY_SETTINGS<br>
-		 * If this is specified, Poweramp will attempt to enable and scan vis presets in this package<br>
-		 * Can be also specified for com.maxmpz.audioplayer.SettingsActivity (with EXTRA_OPEN=vis) to scroll to that apk in presets list<br>
-		 * {@code String} - vis presets APK package name
-		 * @since 795
-		 */
-		public static final String EXTRA_VIS_PRESETS_PAK = "vis_presets_pak";
-
-		/**
-		 * Extra for ACTIVITY_SETTINGS<br>
-		 * {@code String}
-		 * @see PowerampAPI.ACTIVITY_SETTINGS
-		 * @since 700
-		 */
-		public static final String EXTRA_OPEN = "open";
-
-
-		/**
-		 * Value for EXTRA_OPEN - opens vis presets list
-		 * @see PowerampAPI.ACTIVITY_SETTINGS
-		 * @since 700
-		 */
-		public static final String OPEN_VIS = "vis";
-
-		/**
-		 * Extra for ACTIVITY_STARTUP and ACTIVITY_SETTINGS<Br>
-		 * If this is specified with EXTRA_SKIN_STYLE_ID, Poweramp will attempt to change skin as commanded, but on any failure, default skin is activated<br>
-		 * Can be also specified for com.maxmpz.audioplayer.SettingsActivity (with EXTRA_OPEN=theme) to scroll to that skin in skins list<br><br>
-		 *
-		 * {@code String} - Skin APK package name
-		 * @see PowerampAPI.ACTIVITY_STARTUP, PowerampAPI.ACTIVITY_SETTINGS
-		 * @since 795
-		 */
-		public static final String EXTRA_SKIN_PACKAGE = "theme_pak";
-
-		/**
-		 * Can be specified for com.maxmpz.audioplayer.SettingsActivity and open/theme extras top scroll to given skin in skins list<Br>
-		 * {@code integer} - theme resource id
-		 * @since 795
-		 */
-		public static final String EXTRA_SKIN_STYLE_ID = "theme_id";
-	}
-
-}
+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
+tiD6KpELSbxE/oOMH9p0BAqO6118HVd5ryy+OdoG/MFYJ9to0ov3C+M00D3G8AW1
+DslpUxE2h38yIvyKFC/dJqyWgtM1uj0w4e7Aqlyoxt695cReNrt9OtMgx1E10WDh
+ukd5oqtFxlPY5i9UfNXoTt+GMSLiASnk9/gnhvyz2+4BYCVuTYsh31UNpWydtxFf
+6kDqCOWAaegtpebfJTzSEVVMJPfxsKP3WuRxHsJ0zz4UvOQyPYQ9nNHVX3t/OPFP
+ljFFrrv7i7X9D3T2ffwQJ8KFFDomyinCrU866T1/0zHbhBdvEhIa+ibzWpsS2nIo
+PNX83495vxI5nhIT/C2T3p0XLF+XoqBLI/B3lHj9UO8rzl2tC1Cb2QnVVPkkhouH
+OzRp+i85x68Lsd5DoUE0VsbZTdAvE3R8vHgJAZXM+FGl7RiXbIOdoAl7qvsFg+8g
+96ysr+s4d5CQS1GSHWioxD4vdn88WfVpv6TNS9uftcAXpd4ae6B0yIZmx1qvcxcm
+4CGa9qem57y1ru8BmfnwQHGyUotRauA41hwc76piIyolzc4h0oKnBAIGNffP/iIh
+7d5DZvebbMsxxcJpkjOrrJ4+fKf7aj8VYWVq0gUAhIfqHmcrU2nJYpjG3VtvTPEJ
+JMeoQbHUh+iLh47bIhuCWktamTYFnmUKfNaIuU0ZQQB9ZdJuS+ApnbIR8fO5+K4F
+qs0R/8UINnaAbHKQ/wojsVGoOyPTZAl+7ZNnLJ8BBDMg769tMZrqu8XfEpwC2obl
+++6OR6gj9qpK1plbNNi0oXuPdbDSOXfy5mWkjutAMQ8XVUocl9gBohS7vIzK8yAV
+vWwjUDoGJuGz13Jt6Cg8+9lvTCWOgKOGW2VzOTlhD5+hMffastA6HJ3bK0E37hC0
+HM2Id32v7rxc4XX10EnPqs2WiN7TnVbqvSwAnuxSibW6p8/i5eRoPnlWkqYBvpA7
+fQAntIKFrMce4xqxX5bxxKe7bKpAtDehHYfjh3TeMUaSdinBGXjzAJ1/f7WKXL6a
+JI4R7g+trP6FfSuqdQiOp6IZhvW+mADd0v/b4rxz+TYhmnjIjLs3d3QBhX60wGvr
+2aXLrbJWXZ/I+ZgfihzbTpp7uc0UOwpYxLNIskI3t2KjPHLofLYzw/IOu/PGCIeA
+bg7T+KKUi657YTUCKjbeGv4I3bQuJf75Ts83yhjUol33uK0xkZ+vm+bXuriOjFxO
+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
+IF9reGNHYXP38HLXDDQDoQ==

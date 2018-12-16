@@ -1,36 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- NOTE: can't change size of drawable, thus, emulating bolder hole when pressed with invisile (#0000) stroke -->
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="300"
->
-	<item android:state_enabled="false">
-		<shape>
-			<size android:width="3dp"/>
-			<padding android:left="18dp" android:right="18dp" android:top="20dp" android:bottom="20dp"/>
-			<corners android:radius="3dp"/>
-			<solid android:color="?colorKnobHoleDisabled"/>
-			<stroke android:color="#0000" android:width="1dp"/>
-		</shape>
-		</item>
-	
-	<item android:state_pressed="true">
-		<shape>
-			<size android:width="3dp"/>
-			<padding android:left="18dp" android:right="18dp" android:top="20dp" android:bottom="20dp"/>
-			<corners android:radius="3dp"/>
-			<solid android:color="?colorKnobHolePressed"/>
-			<stroke android:color="?colorKnobHolePressed" android:width="1dp"/>
-		</shape>
-		</item>
-		
-	<item>
-		<shape>
-			<size android:width="3dp"/>
-			<padding android:left="18dp" android:right="18dp" android:top="20dp" android:bottom="20dp"/>
-			<corners android:radius="3dp"/>
-			<solid android:color="?colorKnobHole"/>
-			<stroke android:color="#0000" android:width="1dp"/>
-		</shape>
-		</item>
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+ZHZIXw8emtxXgjbfcbasIT7xJJ5ysEvkKViz8qt+CUWYoBPAohIK2V2BacTc16A7
+xv9qUHIXCxtpiRjj1BqSiZdr93AvcGyaZ4AnbRu/8Fym9ILGcZrYtKpd/NKfoQgG
+YIwQQXoGjTlL6SW0rYU4Xjuhi5OtY0UoP/FJdqXR3rZ/jNvdLGTQXbjFCGbnN7Fm
+34EXSUkPEXC10u1p4O3qmInEXwVUlh7vwIeLAiMJXTaXCHLEJQKNdk8D00Cig0FO
+rKNU0AfYz5jxr+xLlQVLwyEfEQ8qc35cv19JZwY7jrVq54FUJbJic/2lVBcnokk2
+4jwsF6xa1dNlZz0J0A2WbWKZwiLkQagvUJeo8A8q3MTIxyT2lr7eSO13ATaoSRWf
+ApVM9DczH2KLhjhWAIaO3GaecVpdtHfJRV1FmOgUdNNpx1Zq9Bm1Tg7616vXkKIX
+NqOF/l2VdhbDbgqgYWtNYgtA7g3M4nhItRmHvMhYgaUiqdP1dYRUcY8SNxDfQNT3
+THru3ZC8W7tgdbZ7zkV1fI4fFBRoyVH9G7nH1z4BQvhCE5XWt/+NeDpU1xdneWJx
+H72MwCiypB6FmWg7ShHzSP5uQytE9/APQoa8D2mDTOtFNQdIP2//b7Ny0Fl2La4V
++BD4twz4Bnx041Bv2sRI8qhjITZq1TfQoK8FtsgdvQcQHqy38OoyS5+CmozeUUsC
+uyYR9Rcd+vaEFR4C3jZWuKA8Zoq9x42uffAqtkzB8/vkqalVwPkro11YxDaAtwws
+0is3cXa9vpQAn758KRdd6Mppm6HNHa1Sk4pXYTJo6hXlos2ZWLsO2JrVplOkphmF
+9i6GVZQX5JnS2BUZlEyCsvkFj/yYMasBwHkdWSg53buVdTdpm3SEaSv6dLAx4lhN
+BHa24JFIyncSaLeZbe2qXUIEbiNSXMpH04Ro4lLgdO6jfntzNETRwvP+MpXJlxdk
+QzeyfCooSVKJb9zLz7dvfkM1h9Yz4iobpatQalP2s8NuMdq8xe0QwFvIbFfJp4RS
+gab6ymvrUKMIunWpUrj4NXqqob4IRe8y1fW1h73n21cpc0R3sFmVy1bbUPcqZ/7/
+OB7joIyMIfsD38AvqtFe+IbYLxtuYZSUoAluGo/ux2gTdkea81L0p08mr/pkMl5I
+jnbuwuhTfR53iEQ8zdjdfPIxIPaHLfoL/kwceHBcLbda6YYfoPrFMazUe9E/0Z2F
+2w76NNnOhR513FTudbIvOBJFigCgglaI8fMVrgD91mi/B8o+nbOZBAIUJ45iFH6v
+TPAK24g+oiLlpnTMbsLwSFPHxZ6SFkGTu/9VvQsi0tzmvv7m5KCMAhAfNfExM6ud
+M3LT+ZUsMrZo8L2npDa57w+VyCI5+/tWmUekUOTGVEI/N3Znge/e+yqChK68o8Xt
+nWz78PYjt5ICW2wG93QMYhCdQEmrkLt6zNV9vHpkJUwlnJ1TPjBlPkF1uDDpAV9w
+ljg+sv4eG4i4hSmvXf2ZdoMELVIZPFnKBxWt1nzNrYQ1vFn3EORWW59u1MLefHIo
+w0aLaqZjI/M1z5100SftkMjIycQioHoWZEG8ZfYbhBvHEjZSL/iqf+3x7bi/H1JY
+/r/3WhiU9wOkqgJraVr6AQXEHZkbW8iLDo5llm4ZHzk=

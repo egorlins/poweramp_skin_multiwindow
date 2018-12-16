@@ -1,18 +1,8 @@
-LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-
-LOCAL_ARM_MODE := arm
-LOCAL_MODULE := powerampdspexample
-
-LOCAL_SRC_FILES := 
-
-ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
-    LOCAL_CFLAGS := -DHAVE_NEON=1 -Winline -save-temps -O3 -std=gnu99 -mfloat-abi=softfp -mfpu=neon  
-    LOCAL_SRC_FILES := plugin.c
-endif
-
-
-LOCAL_LDLIBS := -llog
-
-include $(BUILD_SHARED_LIBRARY)
+U2FsdGVkX1/ucPAcAK1NdhCFrQj2ExKZ69ITrJeBO7fYtCSdkiNX7eAkopbls9H9
+jCN+iLfTPGMwq2z3uPPDTXGcB8Fpr+nfPUYBEGA30OO7nF/tO8VJxDridxqUpPoP
+G79N+ez3iPILQz18zx3PeTVFnrEB9528YfklZz76VYR1rLRe7QLLwuceC7ocSLTl
+Zujw8iWsl7egKQl6paLsQf2AS9BqCd3eRp6aUz7VASrFedX/MfXehRXfCXA/XxCB
+9Q9EI+Ny6glyEg7gvSHk2ZKIop449Hz82I3xREnYPI9nPS4zulSk//+JZpaeOTlM
+DDEP+/fzEGdyxIpxU4WXijc31k96Qtg6NP5+LOC2tEc9Pwu1epaJXcQe2AWWQVR+
+mMN3DGSBvzEwtAU0bEkGsin9dAMAMKlq/WKGhUKMHSEjd7Bi9xFeQUNF0dfoBjWq
+HovkJj/VzX+RobOz3JzVFP+9fuKur7SUQsV0Iw/1YtJuITXdSpptq777aiORBiZC

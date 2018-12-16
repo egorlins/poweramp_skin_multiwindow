@@ -1,25 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	package="com.egorlins.poweramp.v3.skins.my">
-
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/app_icon"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-	    tools:ignore="GoogleAppIndexingWarning">
-
-        <meta-data android:name="com.maxmpz.PowerampSkins" android:resource="@xml/skins"/>
-
-        <activity android:name=".SkinInfoActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+pYJp9bcMkgYxPx4X6CltsixP2ix0Z6/bEWo8CMvYnrYk8L1jWvIDZx+tued6km5y
+T5WUTXttFyM5tIMUaVsL7QhL8ZBYoU1C7GUSU6iHTcOOyZ+sVsuTr2V0OTkjJlim
+cNcVXFn3Yht44ZaCv2HvDc3dj39k/VZQG4209ApkZ0NK7rFcyNkbV5K+IvXupvhB
+o/mVe+7+kp10MCe4j9OauGV2cnHsNRGy+Dtvj/YKy6NvB5e6g+bcga5C2a+nAx2q
+aRg3q+mnZRYcwdyIZz8NQbhWAC6aD2KUdq9ovxCvApX4gU1fTWE9xagF+DtqnTZW
+iT+XTLFQ+4rVtRXgzc0cpbZx84AmVgIOihRTYquiaiMdgiMA7PfvSJDtSHfjR+UH
+8XcYc40r71roiGrmZzDNctE6Xv+cFjyl9s6hX8gaF0I0nARL6KKcT8kbkQaiujqj
++a7tkJb3auI5d9MwqYSSrqUchD0MTppZsQ0HZg3Pe0ZmKiCQvYiMzoK4bMLQHzzG
+2f4JJvadx0clgFBC1613zz3txO+xCfTRRR29Jfb9J+McTIyheOVc8xk8bwKekYD8
+QUZYMkWs3du+NsRuG7kFICzS7t8Lpe9ASnT8ezTKsq5TbG7RBsQ3YOyAabaR89Cj
+KQ4lHtwPckDM/NNiUPJxAcEXiEpbDkzQ3aJ80dlYdYfaEC6KISh++Etv6hE3U6qo
+fMv5eAYrgYpwFA/i4Vn7MxSkx0iCVOcoytZI3yFaLEZgCUxWluq0H+wYa7xj/O4/
+GkTWaM69UAlOE1U4jRlEDb/arc+dv9tjt80c/7HR1ip2KX5TtBExaqp3+gTRA2Wc
+lk0Ojjvy2t37cAopedUmvjp9euzJZE5fJsx9eKf8FueF2tdrzAprt2QoiOoat7jh
+/F0OxxMAkI26ezjqUeXf9ohbKWA+eekVWT4fa9oGyP+jDBsq40GDg2rCk6DoUPoM
+IQShmi3xbmgmp7rS7kDCTv4em1Lqh16LZI6YQ/5Yf7rBoFVzrwq+BSrbbOSeVa/l
+n8cTgo/zMfQsGuyVzk66ANN5cKVrarL1bquAhCF2wigqraUWLXZ5H1wK6ncYSYQ2
+fzLpa/bU3NnOcAilA4VFXw==

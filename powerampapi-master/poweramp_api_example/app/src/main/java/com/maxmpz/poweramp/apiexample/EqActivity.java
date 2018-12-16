@@ -1,431 +1,286 @@
-/*
-Copyright (C) 2011-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with Poweramp application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.apiexample;
-
-import java.util.regex.Pattern;
-import android.app.Activity;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.database.Cursor;
-import android.database.MatrixCursor;
-import android.database.MergeCursor;
-import android.os.Build;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.SimpleCursorAdapter;
-import android.widget.SimpleCursorAdapter.ViewBinder;
-import android.widget.Spinner;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
-import com.maxmpz.poweramp.player.PowerampAPI;
-import com.maxmpz.poweramp.player.PowerampAPIHelper;
-import com.maxmpz.poweramp.player.TableDefs;
-
-public class EqActivity extends Activity implements OnClickListener, OnCheckedChangeListener, OnSeekBarChangeListener, OnItemSelectedListener {
-	private static final String TAG = "EqActivity";
-
-	Intent mEquIntent;
-	private boolean mEquBuilt;
-
-	private boolean mSettingEqu;
-	private boolean mSettingTone;
-	private boolean mSettingPreset;
-
-	/** Called when the activity is first created. */
-	@SuppressWarnings("resource")
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-
-		setContentView(R.layout.eq);
-
-		((CheckBox)findViewById(R.id.dynamic)).setOnCheckedChangeListener(this);
-		findViewById(R.id.commit_eq).setOnClickListener(this);
-
-		// Create and bind spinner which binds to available Poweramp presets.
-		Spinner presetSpinner = (Spinner)findViewById(R.id.preset_spinner);
-		String[] cols = new String[] { "_id", "name" };
-		Cursor c = getContentResolver().query(PowerampAPI.ROOT_URI.buildUpon().appendEncodedPath("eq_presets").build(),
-				cols, null, null, "name");
-		startManagingCursor(c);
-		// Add first empty item to the merged cursor via matrix cursor with single row.
-		MatrixCursor mc = new MatrixCursor(cols);
-		mc.addRow(new Object[]{ PowerampAPI.NO_ID, "" });
-		MergeCursor mrgc = new MergeCursor(new Cursor[]{ mc, c });
-
-		SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
-				android.R.layout.simple_spinner_dropdown_item,
-				mrgc,
-				new String[] { "name" },
-				new int[] { android.R.id.text1 },
-				0);
-
-		adapter.setViewBinder(new ViewBinder() {
-			@Override
-			public boolean setViewValue(View view, Cursor cursor, int columnIndex) {
-				((TextView)view).setText(cursor.getString(1));
-				return true;
-			}
-		});
-
-		presetSpinner.setAdapter(adapter);
-		presetSpinner.setOnItemSelectedListener(this);
-
-		((CheckBox)findViewById(R.id.eq)).setOnCheckedChangeListener(this);
-		((CheckBox)findViewById(R.id.tone)).setOnCheckedChangeListener(this);
-	}
-
-	/*
-	 * NOTE: when screen is rotated, by default android will reapply all saved values to the controls, calling the event handlers, which generate appropriate intents, thus,
-	 * on screen rotation some commands could be sent to Poweramp unintentionally.
-	 * As this activity always syncs everything with the actual state of Poweramp, this automatic restoring of state is just non needed.
-	 */
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-	}
-
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-	}
-
-
-	// NOTE: this method unregister all broadcast receivers on activity pause. This is the correct way of handling things - we're
-	// sure no unnecessary event processing will be done for paused activity, when screen is OFF, etc.
-	@Override
-	protected void onPause() {
-		unregister();
-
-		super.onPause();
-	}
-
-	// Register broadcast receivers.
-	@Override
-	protected void onResume() {
-		super.onResume();
-
-		registerAndLoadStatus();
-	}
-
-
-	@Override
-	protected void onDestroy() {
-		unregister();
-
-		mEquReceiver = null;
-
-		super.onDestroy();
-	}
-
-	private void registerAndLoadStatus() {
-		// Note, it's not necessary to set mStatusIntent/mPlayingModeIntent/mEquIntent this way here,
-		// but this approach can be used with null receiver to get current sticky intent without broadcast receiver.
-		mEquIntent = registerReceiver(mEquReceiver, new IntentFilter(PowerampAPI.ACTION_EQU_CHANGED));
-	}
-
-	private void unregister() {
-		if(mEquReceiver != null) {
-			try {
-				unregisterReceiver(mEquReceiver);
-			} catch(Exception ex){}
-		}
-	}
-
-	private BroadcastReceiver mEquReceiver = new BroadcastReceiver() {
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			mEquIntent = intent;
-
-			debugDumpEquIntent(intent);
-
-			updateEqu();
-		}
-
-	};
-
-	void updateEqu() {
-		if(mEquIntent == null) {
-			return;
-		}
-
-
-		final CheckBox eq = (CheckBox)findViewById(R.id.eq);
-		boolean equEnabled = mEquIntent.getBooleanExtra(PowerampAPI.EQU, false);
-		if(eq.isChecked() != equEnabled) {
-			mSettingEqu = true;
-			eq.setChecked(equEnabled);
-		}
-
-		final CheckBox tone = (CheckBox)findViewById(R.id.tone);
-		boolean toneEnabled = mEquIntent.getBooleanExtra(PowerampAPI.TONE, false);
-		if(tone.isChecked() != toneEnabled) {
-			mSettingTone = true;
-			tone.setChecked(toneEnabled);
-		}
-
-		String presetString = mEquIntent.getStringExtra(PowerampAPI.VALUE);
-		if(presetString == null || presetString.length() == 0) {
-			return;
-		}
-
-		if(!mEquBuilt) {
-			buildEquUI(presetString);
-			mEquBuilt = true;
-		} else {
-			updateEquUI(presetString);
-		}
-
-		//String presetName = mEquIntent.getStringExtra(PowerampAPI.NAME);
-
-		long id = mEquIntent.getLongExtra(PowerampAPI.ID, PowerampAPI.NO_ID);
-		Log.w(TAG, "updateEqu id=" + id);
-
-		Spinner presetSpinner = (Spinner)findViewById(R.id.preset_spinner);
-		int count = presetSpinner.getAdapter().getCount();
-		for(int i = 0; i < count; i++) {
-			if(presetSpinner.getAdapter().getItemId(i) == id) {
-				if(presetSpinner.getSelectedItemPosition() != i) {
-					mSettingPreset = true;
-					presetSpinner.setSelection(i);
-				}
-				break;
-			}
-		}
-	}
-
-	private static Pattern sSemicolonSplitRe = Pattern.compile(";");
-	private static Pattern sEqualSplitRe = Pattern.compile("=");
-
-	// This method parses the equalizer serialized "presetString" and creates appropriate seekbars.
-	private void buildEquUI(String string) {
-		String[] pairs = sSemicolonSplitRe.split(string);
-		TableLayout equLayout = (TableLayout)findViewById(R.id.equ_layout);
-
-		for(int i = 0, pairsLength = pairs.length; i < pairsLength; i++) {
-			String[] nameValue = sEqualSplitRe.split(pairs[i], 2);
-			if(nameValue.length == 2) {
-				String name = nameValue[0];
-
-				try {
-					float value = Float.parseFloat(nameValue[1]);
-
-					TableRow row = new TableRow(this);
-
-					TextView label = new TextView(this);
-					label.setText(name);
-					TableRow.LayoutParams lp = new TableRow.LayoutParams();
-					lp.height = lp.width = TableRow.LayoutParams.WRAP_CONTENT;
-					row.addView(label, lp);
-
-					SeekBar bar = new SeekBar(this);
-					bar.setOnSeekBarChangeListener(this);
-					bar.setTag(name);
-					setBandValue(name, value, bar);
-					row.addView(bar, lp);
-
-					equLayout.addView(row);
-
-				} catch(NumberFormatException ex) {
-					ex.printStackTrace();
-					Log.e(TAG, "failed to parse eq value=" + nameValue[1]);
-				}
-			}
-		}
-	}
-
-	// Preamp, bass/treble and equ bands have different scalling. This method ensures correct scalling is applied. 
-	void setBandValue(String name, float value, SeekBar bar) {
-		//Log.w(TAG, "name=" + name + " value=" + value);
-		if("preamp".equals(name)) {
-			bar.setMax(200);
-			bar.setProgress((int)(value * 100f));
-		} else if("bass".equals(name) || "treble".equals(name)) {
-			bar.setMax(100);
-			bar.setProgress((int)(value * 100f));
-		} else {
-			bar.setMax(200);
-			bar.setProgress((int)(value * 100f + 100f));
-		}
-	}
-
-	// Almost the same as buildEquUI, just do the UI update without building it
-	private void updateEquUI(String string) {
-		Log.w(TAG, "updateEquUI!");
-		String[] pairs = sSemicolonSplitRe.split(string);
-		TableLayout equLayout = (TableLayout)findViewById(R.id.equ_layout);
-
-		for(int i = 0, pairsLength = pairs.length; i < pairsLength; i++) {
-			String[] nameValue = sEqualSplitRe.split(pairs[i], 2);
-			if(nameValue.length == 2) {
-				String name = nameValue[0];
-				try {
-					float value = Float.parseFloat(nameValue[1]);
-
-					SeekBar bar = (SeekBar)((ViewGroup)equLayout.getChildAt(i)).getChildAt(1);
-					//SeekBar bar = (SeekBar)equLayout.findViewWithTag(name);
-					if(bar == null) {
-						Log.w(TAG, "no bar=" + name);
-						continue;
-					}
-					setBandValue(name, value, bar);
-				} catch(NumberFormatException ex) {
-					ex.printStackTrace();
-					Log.e(TAG, "failed to parse eq value=" + nameValue[1]);
-				}
-			}
-		}
-	}
-
-	void debugDumpEquIntent(Intent intent) {
-		if(intent != null) {
-			String presetName = intent.getStringExtra(PowerampAPI.NAME);
-			String presetString = intent.getStringExtra(PowerampAPI.VALUE);
-			long id = mEquIntent.getLongExtra(PowerampAPI.ID, PowerampAPI.NO_ID);
-			Log.w(TAG, "debugDumpEquIntent presetName=" + presetName + " presetString=" + presetString + " id=" + id);
-		} else {
-			Log.e(TAG, "debugDumpEquIntent: intent is null");
-		}
-	}
-
-
-	@Override
-	public void onClick(View v) {
-		switch(v.getId()) {
-			case R.id.commit_eq:
-				commitEq();
-				break;
-		}
-	}
-
-	// Event handler for Dynamic Eq checkbox
-	@Override
-	public void onCheckedChanged(CompoundButton view, boolean isChecked) {
-		Log.w(TAG, "onCheckedChanged=" + view);
-		switch(view.getId()) {
-			case R.id.dynamic:
-				findViewById(R.id.commit_eq).setEnabled(!isChecked);
-				break;
-
-			case R.id.eq:
-				if(!mSettingEqu) {
-					PowerampAPIHelper.startPAService(this, new Intent(PowerampAPI.ACTION_API_COMMAND)
-							.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.SET_EQU_ENABLED)
-							.putExtra(PowerampAPI.EQU, isChecked)
-					);
-				}
-				mSettingEqu = false;
-				break;
-
-			case R.id.tone:
-				if(!mSettingTone) {
-					PowerampAPIHelper.startPAService(this, new Intent(PowerampAPI.ACTION_API_COMMAND)
-							.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.SET_EQU_ENABLED)
-							.putExtra(PowerampAPI.TONE, isChecked)
-					);
-				}
-				mSettingTone = false;
-				break;
-		}
-	}
-
-	// Generates and sends presetString to Poweramp
-	private void commitEq() {
-		StringBuilder presetString = new StringBuilder();
-
-		TableLayout equLayout = (TableLayout)findViewById(R.id.equ_layout);
-		int count = equLayout.getChildCount();
-		for(int i = count - 1; i >= 0; i--) {
-			SeekBar bar = (SeekBar)((ViewGroup)equLayout.getChildAt(i)).getChildAt(1);
-			String name = (String)bar.getTag();
-			float value = seekBarToValue(name, bar.getProgress());
-			presetString.append(name).append("=").append(value).append(";");
-		}
-
-		PowerampAPIHelper.startPAService(this, new Intent(PowerampAPI.ACTION_API_COMMAND)
-				.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.SET_EQU_STRING)
-				.putExtra(PowerampAPI.VALUE, presetString.toString())
-		);
-	}
-
-	// Applies correct seekBar-to-float scaling. 
-	private float seekBarToValue(String name, int progress) {
-		float value;
-		if("preamp".equals(name) || "bass".equals(name) || "treble".equals(name)) {
-			value = (float)progress / 100.f;
-		} else {
-			value = (float)(progress - 100) / 100.f;
-		}
-		return value;
-	}
-
-	@Override
-	public void onProgressChanged(SeekBar bar, int progress, boolean fromUser) {
-		// Process Eq band change.
-		if(((CheckBox)findViewById(R.id.dynamic)).isChecked()) {
-			String name = (String)bar.getTag();
-			float value = seekBarToValue(name, bar.getProgress());
-			PowerampAPIHelper.startPAService(this, new Intent(PowerampAPI.ACTION_API_COMMAND)
-					.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.SET_EQU_BAND)
-					.putExtra(PowerampAPI.NAME, name)
-					.putExtra(PowerampAPI.VALUE, value)
-			);
-		}
-	}
-
-
-	@Override
-	public void onStartTrackingTouch(SeekBar seekBar) {
-	}
-
-	@Override
-	public void onStopTrackingTouch(SeekBar seekBar) {
-	}
-
-	// Event handler for Presets spinner
-	@Override
-	public void onItemSelected(AdapterView<?> adapter, View item, int pos, long id) {
-		if(!mSettingPreset) {
-			PowerampAPIHelper.startPAService(this, new Intent(PowerampAPI.ACTION_API_COMMAND)
-					.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.SET_EQU_PRESET)
-					.putExtra(PowerampAPI.ID, id)
-			);
-		} else {
-			mSettingPreset = false;
-		}
-	}
-
-	@Override
-	public void onNothingSelected(AdapterView<?> arg0) {
-	}
-}
+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

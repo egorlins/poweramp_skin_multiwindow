@@ -1,140 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<resources>
-	<!-- NOTE: using arrays to drawable attrs here to allow for future array changes w/o breaking skins -->
-	
-	<string-array name="vis_modes">
-		<item>@string/vis_none</item>
-		<item>@string/vis_w_ui</item>
-		<item>@string/vis_full_screen</item>
-	</string-array>
-	<array name="vis_icons_32dp">
-		<item>?vis_none_32dp</item>
-		<item>?vis_w_ui_32dp</item>
-		<item>?vis_32dp</item>
-	</array>
-	<integer-array name="vis_modes_enum">
-		<item>@integer/VIS_NONE</item>
-		<item>@integer/VIS_W_UI</item>
-		<item>@integer/VIS_FULL_SCREEN</item>
-	</integer-array>
-					
-	
-	<!-- NOTE: indices should match PlayerAPI.REPEAT_* 
-	public static final int REPEAT_NONE = 0;
-	public static final int REPEAT_ON = 1;
-	public static final int REPEAT_ADVANCE = 2;
-	public static final int REPEAT_SONG = 3;
-	--> 
-	<string-array name="repeat_modes">
-		<item>@string/repeat_none</item>
-		<item>@string/repeat_on</item>
-		<item>@string/repeat_advance</item>
-		<item>@string/repeat_song</item>
-	</string-array>
-	<!-- Extra line for repeat modes -->
-	<string-array name="repeat_modes_summary">
-		<item>@string/stop_on_last_song</item>
-		<item>@string/jump_to_first_song</item>
-		<item>@string/jump_to_next_list</item>
-		<item>@string/repeat_one_song</item>
-		<item></item>
-	</string-array>
-	<array name="repeat_icons_32dp">
-		<item>?repeat_none_32dp</item>
-		<item>?repeat_32dp</item>
-		<item>?repeat_advance_32dp</item>
-		<item>?repeat_song_32dp</item>
-	</array>
-	<integer-array name="repeat_modes_enum">
-		<item>@integer/REPEAT_NONE</item>
-		<item>@integer/REPEAT_ON</item>
-		<item>@integer/REPEAT_ADVANCE</item>
-		<item>@integer/REPEAT_SONG</item>
-	</integer-array>
-	
-	
-	<!--
-	public static final int SHUFFLE_NONE = 0;
-	public static final int SHUFFLE_ALL = 1;
-	public static final int SHUFFLE_SONGS = 2;
-	public static final int SHUFFLE_CATS = 3; // Songs in order.
-	public static final int SHUFFLE_SONGS_AND_CATS = 4; // Songs shuffled.
-	-->
-	<integer-array name="shuffle_modes_enum">
-		<item>@integer/SHUFFLE_NONE</item>
-		<item>@integer/SHUFFLE_ALL</item>
-		<item>@integer/SHUFFLE_SONGS</item>
-		<item>@integer/SHUFFLE_CATS</item>
-		<item>@integer/SHUFFLE_SONGS_AND_CATS</item>
-	</integer-array>
-	<string-array name="shuffle_modes">
-		<item>@string/shuffle_none</item>
-		<item>@string/shuffle_all</item>
-		<item>@string/shuffle_songs</item>
-		<item>@string/shuffle_cats</item>
-		<item>@string/shuffle_songs_and_cats</item>
-	</string-array>
-	<string-array name="shuffle_modes_long">
-		<item>@string/shuffle_none_long</item>
-		<item>@string/shuffle_all_long</item>
-		<item>@string/shuffle_songs_long</item>
-		<item>@string/shuffle_cats_long</item>
-		<item>@string/shuffle_songs_and_cats_long</item>
-	</string-array>	
-	
-	<array name="shuffle_icons_32dp">
-		<item>?shuffle_none_32dp</item>
-		<item>?shuffle_all_32dp</item>
-		<item>?shuffle_songs_32dp</item>
-		<item>?shuffle_cats_32dp</item>
-		<item>?shuffle_songs_and_cats_32dp</item>
-	</array>
-		
-	<string-array name="milk_sort_modes"><!-- Sync with RestMilkPreset.SORT_* -->
-		<item>@string/by_type</item>
-		<item>@string/by_name</item>
-		<item>@string/by_author</item>
-		<item>@string/by_source</item>
-		<item>@string/by_rating</item>
-	</string-array>
-	<array name="milk_sort_icons_24dp">
-		<item>?sort_type_24dp</item>
-		<item>?sort_24dp</item>
-		<item>?sort_author_24dp</item>
-		<item>?sort_source_24dp</item>
-		<item>?sort_rating_24dp</item>
-	</array>
-	
-	<string-array name="milk_advance_modes"><!-- Sync with MilkAPI.ADVANCE_* -->
-		<item>@string/lock</item>
-		<item>@string/change_with_track</item>
-		<item>@string/change_by_time</item>
-		<item>@string/shuffle_by_time</item>
-	</string-array>
-	<array name="milk_advance_icons_24dp">
-		<item>?vis_lock_24dp</item>
-		<item>?vis_advance_24dp</item>
-		<item>?vis_advance_by_time_24dp</item>
-		<item>?vis_shuffle_24dp</item>
-	</array>
-</resources>
+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

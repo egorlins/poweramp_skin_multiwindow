@@ -1,330 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	
-	android:layout_width="@dimen/widget_keyguard_width"
-	android:layout_height="@dimen/widget_keyguard_height"
-	android:layout_marginLeft="0dip"
-	android:layout_marginRight="0dip"
-	android:layout_marginTop="0dip"
-	android:layout_marginBottom="0dip"
-
-	android:layout_gravity="center"
-	
->
-
-	<!--
-		NOTE: background set via widget provider.
-		android:layout_alignTop="@+id/playing_now"
-		android:layout_alignParentBottom="true"
-		android:background="@drawable/widget_rounded_bg"			
-	-->
-
-	<ImageView android:id="@+id/deck_bg"
-		android:src="@drawable/widget_rounded_bg"
-		android:scaleType="fitXY"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:visibility="gone"
-	/>
-
-	<ImageView android:id="@+id/deck_bg2"
-		android:src="@drawable/widget_rounded_bg"
-		android:scaleType="fitXY"
-		android:layout_width="fill_parent"
-		android:layout_height="0dip"
-		android:visibility="gone"
-		android:layout_alignParentBottom="true"
-		android:layout_alignTop="@+id/controls"
-	/>
-	
-	<ImageView android:id="@+id/deck_bg3"
-		android:src="@drawable/widget_rounded_bg"
-		android:scaleType="fitXY"
-		android:layout_width="fill_parent"
-		android:layout_height="0dip"
-		android:visibility="gone"
-		android:layout_alignParentBottom="true"
-		android:layout_alignTop="@+id/playing_now"
-	/>
-	<!-- NOTE: visibility set via widget provider -->
-	<!-- 
-	<ImageView android:id="@+id/shadow"
-		android:background="@drawable/widget4_shadow"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-	/>
-	-->
-
-	<!--
-	-->
-	<FrameLayout  
-		android:id="@+id/aa_cont_layout"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_alignParentTop="true"
-		android:layout_above="@+id/controls"
-	>
-	
-		<ImageView 
-			android:src="@drawable/lock_screen_logo"
-			android:scaleType="centerInside"
-			
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			
-			android:layout_gravity="center"
-			android:padding="10dip"			
-		/>
-
-		<!-- NOTE: visibility set via wp -->
-		<FrameLayout android:id="@+id/flipper_frame"
-		    android:background="@drawable/widget4_shadow"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			android:layout_gravity="center"
-			android:paddingLeft="8dip"
-			android:paddingRight="8dip"
-			android:paddingTop="8dip"
-			android:paddingBottom="8dip"
-		>
-		</FrameLayout>
-		
-	<!-- NOTE: visibility set via wp -->
-	<!-- 
-		<FrameLayout android:id="@+id/flipper_frame_alt"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="@drawable/widget4_shadow"
-			android:layout_gravity="center"
-			android:visibility="invisible"
-		/>
-	 -->
-	 </FrameLayout>
-	
-	<!-- NOTE: visibility set via wp -->
-	<!-- 
-	<ImageView android:id="@+id/shadow_up" 
-		android:src="@drawable/widget_shadow_up"
-		android:layout_alignBottom="@+id/aa_cont_layout"
-		android:layout_width="fill_parent"
-		android:layout_height="10.66dip"
-		android:scaleType="fitXY"
-		android:layout_marginLeft="10.66dip"
-		android:layout_marginRight="10.66dip"
-	/>
-	-->
-	
-	<ImageButton android:id="@+id/repeat_icon"
-    	android:src="@drawable/matte_repeat_levels"
-    	android:scaleType="centerInside"
-    	android:padding="8dip"
-		android:background="@null"
-		android:layout_height="58.6dip"
-		android:layout_width="58.6dip"
-		android:layout_marginLeft="12dip"
-		android:layout_alignParentLeft="true"
-		android:layout_above="@+id/controls"
-	/>
-	
-	<ImageButton android:id="@+id/shuffle_icon"
-		android:src="@drawable/matte_shuffle_levels"
-		android:background="@null"	
-    	android:scaleType="centerInside"
-    	android:padding="8dip"
-		android:layout_height="58.6dip"
-		android:layout_width="58.6dip"
-		android:layout_marginRight="12dip"
-		android:layout_alignParentRight="true"
-		android:layout_above="@+id/controls"
-	/>
-
-	
-
-	<!--
-	<ImageView android:id="@+id/shadow_down"
-		android:visibility="invisible"
-		android:src="@drawable/widget_shadow_down"
-		android:layout_alignTop="@+id/controls"
-		android:layout_width="fill_parent"
-		android:layout_height="10.66dip"
-		android:scaleType="fitXY"
-		android:layout_marginLeft="10.66dip"
-		android:layout_marginRight="10.66dip"
-	/>
-	-->
-
-<!-- 
-	<ImageView android:id="@+id/controls_shadow"
-		android:visibility="gone"
-		android:background="@drawable/widget4_shadow"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_alignBottom="@+id/playing_now"
-		android:layout_alignTop="@+id/controls"
-		android:layout_marginTop="-11.33dip"
-		android:layout_marginBottom="-11.33dip"
-	/>
- -->
-	
-	<RelativeLayout  
-		android:id="@+id/playing_now"
-		android:layout_width="fill_parent"
-		android:layout_height="51dip"
-		android:layout_marginLeft="0dip"
-		android:layout_marginRight="0dip"
-		android:layout_marginBottom="0dip"
-		android:layout_alignParentBottom="true"
-		android:paddingTop="3dip"
-	>
-		<ImageView android:id="@+id/type_image"
-			android:layout_width="42.66dip"
-			android:layout_height="42.66dip"
-			android:scaleType="centerInside"
-			android:layout_alignParentLeft="true"
-			android:layout_alignTop="@+id/title"
-			android:layout_marginLeft="4dip"
-			android:layout_marginRight="4dip"
-		/>
-	
-		<TextView android:id="@+id/title"
-			android:singleLine="true"
-			android:ellipsize="marquee"
-		
-	    	android:textSize="16dip"
-    		android:textStyle="bold"
-    		android:typeface="normal"
-    		android:textColor="@color/matte_text_color_1"
-	
-			android:shadowColor="#F0000000"
-			android:shadowDx="0"
-			android:shadowDy="0"
-			android:shadowRadius="2.0"
-	
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_toRightOf="@+id/type_image"
-	
-			android:layout_marginRight="4dip"
-			android:layout_marginLeft="0dip"
-			android:layout_marginTop="2dip"
-			
-			android:layout_toLeftOf="@+id/counter"
-		/>
-		
-		<TextView android:id="@+id/counter"
-
-	    	android:textColor="#000000"
-			android:background="@drawable/matte_rounded_bg"
-	    	android:textStyle="normal"
-	    	android:typeface="normal"
-			android:paddingLeft="4dip"
-			android:paddingRight="4dip"
-			android:textSize="12.5dip"
-			
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentRight="true"
-			android:layout_alignTop="@+id/title"
-			android:layout_marginTop="2dip"
-			android:layout_marginRight="4dip"
-		/>
-		
-		<TextView android:id="@+id/line2"
-			android:singleLine="true"
-			android:ellipsize="marquee"
-
-    		android:typeface="normal"
-    		android:textColor="@color/matte_text_color_1"
-			android:textSize="14dip"
-			android:textStyle="normal"
-	
-			android:shadowColor="#F0000000"
-			android:shadowDx="0"
-			android:shadowDy="0"
-			android:shadowRadius="2.0"
-	
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			
-			android:layout_alignLeft="@+id/title"
-			android:layout_below="@+id/title"
-			android:layout_alignParentRight="true"
-			android:layout_marginRight="4dip"
-			android:layout_marginTop="-2.66dip"
-		/>
-	</RelativeLayout>
-	
-	<LinearLayout android:id="@+id/controls" 
-		android:layout_width="fill_parent" 
-		android:layout_height="88dip"
-		android:layout_above="@+id/playing_now"
-		android:layout_marginBottom="0dip"
-
-		android:gravity="center"
-			 
-		android:layout_centerInParent="true"
-	>
-		<ImageButton android:id="@+id/folder_prev_button"
-			android:background="@drawable/matte_small_round_button_selector"
-			android:src="@drawable/matte_prev_cat_selector"
-			android:visibility="visible"
-			android:layout_marginRight="-4dip"
-   			android:layout_width="45dip"
-   			android:layout_height="45dip"
-   			
-			android:scaleType="centerInside"
-			android:padding="@dimen/widget_cat_padding"
-		/>
-		<ImageButton android:id="@+id/rw_button" 
-			android:src="@drawable/matte_rw_selector"
-			
-			android:background="@drawable/matte_medium_round_button_selector"
-   			android:layout_width="60dip"
-   			android:layout_height="60dip"
-			android:layout_marginRight="-8dip"
-
-			android:scaleType="centerInside"
-			android:padding="@dimen/widget_rw_ff_padding"
-		/>
-	
-		
-		<!-- PLAY -->
-		<ImageButton android:id="@+id/play_button" 
-			android:scaleType="centerInside"
-			android:background="@drawable/matte_big_round_button_selector"
-			android:src="@drawable/matte_play_big_selector"
-			android:padding="@dimen/widget_play_padding"
-   			android:layout_width="88dip"
-   			android:layout_height="88dip"
-		/>
-	
-
-		<ImageButton android:id="@+id/ff_button" 
-			android:src="@drawable/matte_ff_selector"		
-			android:background="@drawable/matte_medium_round_button_selector"
-   			android:layout_width="60dip"
-   			android:layout_height="60dip"
-			
-			android:layout_marginLeft="-8dip"
-			
-			android:scaleType="centerInside"
-			android:padding="@dimen/widget_rw_ff_padding"
-		/>
-		<ImageButton android:id="@+id/folder_next_button"
-			android:visibility="visible"
-			android:background="@drawable/matte_small_round_button_selector"
-			android:src="@drawable/matte_next_cat_selector"
-
-   			android:layout_width="45dip"
-   			android:layout_height="45dip"
-			android:layout_marginLeft="-4dip"
-
-			android:scaleType="centerInside"
-			android:padding="@dimen/widget_cat_padding"
-		/>
-	</LinearLayout>
-
-
-	
-</RelativeLayout>
+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

@@ -1,55 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<resources>
-	<dimen name="TopPlay_maxSize">100dp</dimen>
-	<dimen name="TopPauseMoreButtons_maxSize_scene_playing">76dp</dimen>
-	<dimen name="TopSmallButton_size">52dp</dimen>
-	<dimen name="TopMediumButton_size">64dp</dimen>
-		
-	<dimen name="TopTrackElapsedMoreButtons_marginBottom">0dp</dimen>
-	<dimen name="TopMetaInfoLabel_textSize">10dp</dimen>
-	<dimen name="TopMetaInfoLabel_drawableSize">12dp</dimen>
-	<dimen name="TopMetaInfoLabel_paddingTopBottom">3dp</dimen>
-	
-	<dimen name="TopBaseButtonLayout_layout_width">68dp</dimen>
-	<dimen name="TopBaseButtonLayout_layout_height">36dp</dimen>
-	<dimen name="PopupButtons_drawableSize">32dp</dimen>
-	<dimen name="SmallerPopupButton_marginLeft">-12dp</dimen>
-	<dimen name="PopupButtons_paddingLeft">18dp</dimen><!-- Sync with TopBaseButtonLayout_layout_width=>PopupButtons_paddingLeft + 32dp (icon size) + PopupButtons_paddingLeft -->
-	
-	<dimen name="TopMetaInfoLayout_marginBottom">8dp</dimen>
-	
-	<dimen name="Navbar_height">48dp</dimen>
-	<dimen name="NavbarNavButtonsLayout_height">44dp</dimen>
-	
-	<dimen name="NavBarButton_drawableSize">@null</dimen>
-
-	<dimen name="NavbarBounds_height">56dp</dimen>
-	<dimen name="NavbarBounds_height_scene_navbar_2lines">108dp</dimen>
-	
-	<dimen name="ListMenu_drawableSize">24dp</dimen>
-	
-	<dimen name="TopHelpSmaller_textSize">11dp</dimen>
-	<dimen name="TopHelpSmaller_paddingLR">12dp</dimen>
-	<dimen name="TopHelpSmaller_paddingTB">6dp</dimen>
-	<dimen name="TopHelpSmaller_marginTB">12dp</dimen>
-</resources>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+4OufRiBmcXfHy7DQ+tjPqjgaA+DPLqEOWL6SgG475wGhv+/w9dAESe6xWp6HY/xI
+/SO230t/vy+GFS4AGp7uVCwGyuVENut1Qb6eIY5H2t5on6YGSCcgGHOZUmQft3IB
+Ere+pukT38NA9g3yQWHCs3X+oIg4ffxqwGTaNk/TWwMAYtlq9VJedxLYhfcH2rwm
++d9DkzTpFAlNsqrNCgKAIlljRq2PDilHRtk/Z44D4Z6ij3sO7TetCyfHaC48IgK0
+4iCReW6QP9tToQjmuhc+u9BwttY/+LKKTI+LOINOy+dXrH6Bm+HW96S2chgLEvc4
+q1cZfFAnArAcjDVRjdiJCo4+68ILyuVJ1jm5OqFd6PfLAyWnKaXWjM2R3CNEqaP8
+spJMLMQI0A+2YQFs0vnq/ebysF5HLipc9BzUUIwz36WdM2WJsHoATl4JULa8E3gx
+ZT2IyvR4OHtJVlqyLQ+khHrK5OCJxiUuA48Jp4LnRyfCbJWXg+zNcWkvs7A8w8g8
+897dnABG1dj6Du+ucJQC9TVozcPJqZjgg0FjZsLmvKlL1QJy0//ZwUy0j85eFjXM
+S+khaTLIokn/0zAOVmWm9ekuilcnVMustV9I5NsYhNLF22jmpJ1wah/xOSwTqbez
+A7Z04XRQBHqVy6D6RZlzPtDGWm3HHtHz1Mt6CWftVGqn6maRKqZN6htm/BvvWwxU
+rm4uRsByEOl3tOzgVrRh9RwNfCaVFsoa0XyzRBbzuEGEXi2T82MoRNiUYyu3iFih
+VWZLuUHGZ0Ez0uEFifh6IpWCcRXXlyM64bhZW7lf3ERQRNgpGJRrQRUjpDOLTUvD
+k0iHxlY4XAr3LGTK67XlAb+5KLGt4YfdHZpS0J5dWEds/mgDN9oTt75HgIkC7zSh
+fLHs5Uiah7YVwxiHARNyyxies7yrzCDjmmJsje6bWm6CohBrrCfJrvSwmMdKylKv
+gxE8DoM+kF1CjuXA6rk5qHnLKY92FWZUnmMgxhFuV08NTFQgDszAyGWA64NN1A86
+ym9HgfTy8CVWwGmzGfN4Oye9cEoCJZ04uknaHbO0y9ZdfsZn5mR7fvKc0+0PBZc7
+QDyMTtlSTk25GYe+a8BVMQEBqlT2EkUDfhdEWhEXGP3aJ0/nv1yQLlyGkGtXiGPV
+s2d0rZ77WgzunFR2yBQcLkJ8d5PXsB4R54+1+jgk6xW2Fuzjt8LxDMhOd0DByGFA
+dnbb/q4xFnQY8LFx8OT8nyYTXMmxN9t/nFGJZFAfkadUL6vHamxBjkASiGpBPaTk
+t1BUsUJQKzkzJ1g0iHtmKRBXXlWSdJiUzQ/BCXrjiXC9miCAM8unyh2GTFGJq+Qe
+ulbem8XjGHZgApWXPqpwkjoNapO+WvXoYOoapuB3Nyj72Kut3zUTZfVhi1+X4PgJ
+6Gs9kaqfODUbu2BWXlOsuoxLulY7Sk8Pes0NU8qSf6lRGiPC7rcU1IUvkBBNwUVg
+ZvV8a178r0lgikJuB16Q8+gZM0oM66ZOjmWfoGnfpbiMvypOwA93nmlGHdSL9Gnc
+k+HUdVURihHc4+CQbuJfgltyU3SRbbb5q25fVOLtMx5R90xyG0fcg54Ig4KR4PV1
+gEPn2HHOsmPTqM86VzPkivIcnOFhlbmZR+nGqZ5rP8ZSmDK7S9fUl2h7DPLKbiNX
+AVHZaDLuwaQ2W3GEOrdLXcTItD5EijJZefSHf/TZvSU4w9W0JFLP69wN0ZXJQNE4
+wN3eXVelfc645306y8eP7y9gSYVqEVHBFdgnq4eXyrOeIptoRNSLizJU40n9/rXJ
+MHkTCrQlNzZC+JLG7k5L2FjF4yaAELgsUUnzbWa7IZ4CazjnzLoZqmbuvb/TcKR+
+sOCgGsKTwTFyiffx5UMA/9yLyoASMK2viuWSBEugUVEvvgofNw+VCRX/FnVlxEji
+1XGoN1TUq+epYCdM3GkjHAoMxFnugLLm6hG93XNMORuHrzikDWB64lgXtsC4KZsf
+9RhmjYcd9Bg9TSPAcHaiTmgylJejSRLaEZY97YvZTUJmKCh5LdScRUY+P2Jj8hKV
+VKgBstTzHMRevyDVc28f10Wag1CMWssXMpLlpnz4AnM7u42WpPrnBgjP1JqtP0ZX
+x4va73S3mPYV9uaNva00+JzeskVsI5ph5XGiV4Yt/djeFqyxc+Vx19JHB9X/cabK
+4zMn67H5QzxYIX+AvRVJkX8XAEkD2e+KX9Qes3AxdpqDMYS9o3Oq/ArowQSlNVII
+tDbc+kiV4AXB4viuwRrTz+/RlsRwwulCdRdTv9qBMd9ycbqkbw2BgVyUYyxlcTMm
+7F97tBW1TsTpbqOJOBJ4A7s6iPfN9DRTXb0kA6BKTo2kTQY91QWdmsg9PIsF1+Au
+cDvcEA+60a2PKYpyWPSXg3XU2PtxYD0nNg6+jCPDb0G4nP5naF0oE+joraTgT7M+
+J6WD/QLmLfIO52sDlu97eyh9i9MRYbmaZAE6Flli8t6Rl8WpAf97B4UaMWjbnJHB
+Z/VRZcKbe4fJAaIW4yXO8a2r6AE8krI76J3YqtAp8mUFmoIOq6zytaHIFvqVa2LQ
+/qEH83i+qXBcZPRUrS44HwyndcKLLhflyOQvDOSZE2vv+AE57zkKbdgBhTzFzrXo
+RzTrHU0EZTrYedWNP0NfkfXqb8p6M4kt4lAhmPSNrLJKuCCID9vsBv748Z0C8U2T
+2/iNawsbzhAzHIGNQ5y3XF3XLlpdaf3CoUJ5XWzXB7UzWYk7mmdWxFMCfkt2j6Mp
+8Dd7zI4DPnUMu6WsG/ivmTlXUdU/iWoZagv+JZ3zOaRgt/yt3w3Jq3nKGYj1p1mW
++XuOtVfZef1LG6919JihIy79X3nm2Ar/oDG4I19jpitoLoso9hw72BEHTjE8MI5z
+3QV8Z5DIibsGFmIXu0t0ZWGdGBxyR9pmA7Hs6zFkKEpunzbNvjtCOnubosh2gxB1
+uuh4MKMVWWheFgdRPWSzbHV3eiWGxKY/I1Rn7XI6xPi0XxyTNcGW485ovw85ndWE
+8f1EJvL/6oh21rRJQDY0cXVWaU5KOgd6PZjnhRPL6KvAwFxPNKovNG9wXebRuzUY
+4QDFHUCW2b/wJv2aeyHir7VEiGHNehH8Jlc1rhUdl/uUgN4HlwSMjGxCdFzi2uhq
+6UkrU0Iy3Y6EWtoPev2MG6E7p/c7AJghGqsbfMDyw0OVGMl65MQsgTVgOiOWneSS
+P1Cwz6F0FPeMbetW2cRThf3nZgIOv5OnELU9F8Gw+L4iBTnjI6V6wpyz+wWvPTT5
+U44AfX+LDB+KbgDJx3Yy3fnkVniSZdXebOERY2HTKADVhsI4Utwm4jpb9vY6mETo
+u1fKEcUC/Bn9fAbzdEbJTmZMlfHhlzuzanuzq9Fz75CRq1a2Nnhu97cyHlEXRY9Q
+mV+7W1rOF4Ogf1RZ1YVCLA==

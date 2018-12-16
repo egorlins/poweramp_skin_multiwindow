@@ -1,154 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<skins xmlns:android="http://schemas.android.com/apk/res/android">
-	<skin
-		name="@string/skin_sample"
-		author="@string/skin_author"
-		description="@string/skin_sample_description"
-		style="@style/SampleSkin"
-	>
-		<!-- Checkable option. In this case we use built-in ActivityTheme_Whitepro_StaticSeekbar substyle. We may need own substyle if we modify theme more -->
-		<option
-			key="static_seekbar"
-			name="@string/skin_static_seekbar"
-			overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_StaticSeekbar"
-			checkedByDefault="false"
-		/>
-
-		<!-- (build 810+) Both name and summary labels support limited html (see https://developer.android.com/reference/android/text/Html). Can be useful to for e.g. colors.
-		     See strings.xml for some examples.
-		-->
-		<option
-			key="color1"
-			name="@string/skin_text_color1"
-			overlapStyle="@style/SampleSkin_color1"
-			checkedByDefault="false"
-		/>
-
-		<!-- (build 810+) radio / popup - an option selectable from the number of available options -->
-
-		<!--
-			Multiple "radio" button options.
-
-		     defaultValue is the style selected and applied by default.
-		     defaultValue can be an empty string "" (or can be missing) - this indicates that none of the options are selected nor applied.
-		     Preferable, one of the child options should have defaultValue value too (or be an empty/missing), otherwise some unspecified option will be shown for defaultValue
-
-		     name and summary are optional for <radio>
-        -->
-		<radio
-			key="color2"
-			name="@string/skin_select_text_color"
-			summary="@string/skin_summary_select_text_color"
-
-			type="radio"
-			defaultValue=""
-		>
-			<!-- name is the required attribute. summary is optional, key is ignored -->
-			<option
-				name="@string/skin_default"
-				summary="@string/skin_summary_default"
-				overlapStyle=""
-			/>
-			<option
-				name="@string/skin_red"
-				summary="@string/skin_red_w_color"
-				overlapStyle="@style/SampleSkin_color_red"
-			/>
-			<option
-				name="@string/skin_green"
-				summary="@string/skin_green_w_color"
-				overlapStyle="@style/SampleSkin_color_green"
-			/>
-			<option
-				name="@string/skin_blue"
-				summary="@string/skin_blue_w_color"
-				overlapStyle="@style/SampleSkin_color_blue"
-			/>
-		</radio>
-
-		<!--
-			Multiple options in a popup.
-
-		     defaultValue is the style selected and applied by default.
-		     defaultValue can be an empty string "" (or can be missing) - this indicates that none of the options are selected nor applied.
-		     Preferable, one of the child options should have defaultValue value too (or be an empty/missing), otherwise some unspecified option will be shown for defaultValue
-
-		     popup name and summary are optional.
-		     popup name doesn't support html as it's used for dialog title.
-		     popup summary can include %s => that is replaced by the selected option name
-        -->
-		<popup
-			key="bg_color"
-			name="@string/skin_select_bg_color"
-			summary="@string/skin_summary_select_bg_color_s"
-		>
-			<!-- name is the required attribute. summary is ignored, key is ignored -->
-			<option
-				name="@string/skin_default"
-				overlapStyle=""
-			/>
-			<option
-				name="@string/skin_red_w_color"
-				overlapStyle="@style/SampleSkin_bg_color_red"
-			/>
-			<option
-				name="@string/skin_green_w_color"
-				overlapStyle="@style/SampleSkin_bg_color_green"
-			/>
-			<option
-				name="@string/skin_blue_w_color"
-				overlapStyle="@style/SampleSkin_bg_color_blue"
-			/>
-		</popup>
-
-		<!-- Let's add our skin unique option which makes navigation bars fully transparent -->
-		<option
-			key="trans_navbar"
-			name="@string/skin_transparent_navbar"
-			summary="@string/skin_summary_transparent_navbar"
-			overlapStyle="@style/SampleSkin_transparentNavbar"
-			checkedByDefault="false"
-		/>
-
-		<option
-			key="divided_waveseek"
-			name="@string/skin_divided_waveseek"
-			summary="@string/skin_summary_divided_waveseek"
-			overlapStyle="@style/SampleSkin_dividedWaveseek"
-			checkedByDefault="false"
-		/>
-
-		<option
-			key="no_aa_blur"
-			name="@string/skin_no_aa_blur"
-			summary="@string/skin_summary_no_aa_blur"
-			overlapStyle="@style/SampleSkin_noAABlur"
-			checkedByDefault="false"
-		/>
-	</skin>
-
-	<skin
-		name="@string/skin_sample_aaa"
-		author="@string/skin_author"
-		description="@string/skin_sample_aaa_description"
-		style="@style/SampleSkinAAA"
-	>
-		<!-- NOTE: noAABlur option for SampleSkinAAA requires another style as SampleSkinAAA overrides list styles -->
-		<option
-			key="no_aa_blur"
-			name="@string/skin_no_aa_blur"
-			summary="@string/skin_summary_no_aa_blur"
-			overlapStyle="@style/SampleSkinAAA_noAABlur"
-			checkedByDefault="false"
-		/>
-
-		<option
-			key="seekbar_and_waveseek"
-			name="@string/skin_seekbar_and_waveseek"
-			summary="@string/skin_summart_seekbar_and_waveseek"
-			overlapStyle="@style/SampleSkinAAA_seekbar_and_waveseek"
-			checkedByDefault="false"
-		/>
-	</skin>
-</skins>
+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
+hGREQ5c05xNkcv7/6RVceg==

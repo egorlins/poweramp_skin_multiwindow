@@ -1,49 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<projectDescription>
-	<name>poweramp_api_lib</name>
-	<comment></comment>
-	<projects>
-	</projects>
-	<buildSpec>
-		<buildCommand>
-			<name>org.eclipse.andmore.ResourceManagerBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.andmore.PreCompilerBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.andmore.ApkBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-	</buildSpec>
-	<natures>
-		<nature>org.eclipse.andmore.AndroidNature</nature>
-		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
-		<nature>org.eclipse.jdt.core.javanature</nature>
-	</natures>
-</projectDescription>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf5Lyu2sbOOSlinevma4xDkl
+N2ZfKP1IjW8/spHr/JcVAVddlBQ6VgI+VMn1jLvZHjCPrg1Pxm8OINkvVnWtnvTr
+nE9AQlzDqo5Eoa0z9YJoCirX82Vn8VoZ1FXhpzyf9H6DHZdFhLZMIakstMqGr1+T
+DU5xVn4i9lE1WuizT1gYPiP+tJ0wJqDLyHvBC0K16zftSI1cx0Fo3D6l7TjdTcxX
+6VyWPRFPT8Jw1kzuUMXZCQPpcOT/N9V4tnZDcUQPZokYn//TdDsOI7znRWdoMzo2
+fecQ5qP/cjgvE3x0Y9IQyqK1ezaAGlob26Xrowc/GJ0Jmcj5F6/knX5bsR0W0kBt
+sgkg4iQruMMYpqL+7qfRvpx7oxsk8K/cx+yQTbUu3+aNmvJ5CW+OiTRoaKGscQzp
+ixq03KvTnzHWtEOhegza7WpfqPJ0NyJjwPEsbIK9rmpmE/jSZLtLOqY3exUmvQ+P
+XniMRt3Ea4AdOv2g0IO58PlLeKbZlOSiXHH9OxU4Nizpjoer8K+L8UhnanG7vzZd
+mlXuE0rKag+l6L9skXZGx9QVZc8iCVIO6CoLUpwzfuM2TtiIbWrcEqybjBUF1Yg3
+E7YNPT/l83AEbqhiPJt4IxgC0O86LhMqapKeqgXnj7ppHY6Y2MRuyWywbBj057iN
+/hSkCwzz4wpnCjLO+QDEmeR4MZNxrB1EwVoLfbqWx0enZeompHjgAvPVYypvHQKa
+z5vBivKE9lQuG6kjaEcaUKkVObnEWiZMm3SdIZsao7qYzwu8sdXqfrLcCgZfF+Jx
+vjkfzu04oY96U2XSmkZCAvTB9Qfzg4zSpSsc+HVKJdGhXAa5CzdEPzwBFVl0zijG
+l5Cy9rLjQbJBJKX6pr/NaqL9byix9xV7Zm1wn8UTJfXNXTMR/v8zia91nBRtGItq
+MmjQbPCzEAdCxoV2I6x0XazHJX+Phzf7kkUa1bornCv3RwCBrCOcWAIZ3QpEiu2W
+XgV0++1n8io6G/mOG1STMCrm7g1F5veJFVwJHNI2AlvS/JKMgPR771U0lzcdrLQG
+EY2V65tbLI3aW6XAiRfNLJz8C25LHfVQ7NN15zr5fcCypX7BlwSjG7p1aSuL2Fua
+BOP43LuOTS9bi72j+h/AefGQekjlL0Wpa2FeEdpNUSgcnu9qBEySECnNcXf20rbd
+eMS66xJiS14B03rv/oSNPn3J8cNN4q7YBApxAAggHiz2+uDwFbXpNbb/3gtre022
+69zr4PhXxn1XjJVw4kjcBaJBo6MGkKSUAt0Uvf/tgna+DeOY80Bg+cNiDI/JVnPm
+HErfxOEBgI9RefQjCxlL2sJDLcj+GkCGStH/4pmeyUb2z4yzIZjEF5OrZMg9fUAu
+pxQDQxK91ETzQFWOnfYczqgL3H449q7WvonDDHbN9jBkidiYOkfHR2Jbpm93B4j4
+ZzGDGQbKko3UFixz2m9WtlyN71rk/PoLp4MaXrY9SuHi+L9kvCkv5yOR+353hinD
+3FQhD0esVBYwFNWAOIuQGmYknPjDUZkBy97XGscbRXu38a5CW+7QRMI4Ne4jTbB9
+BU/vlplosy6SlHPCYBsKsgLp1ERdpEFJKltX92h0QeeSKmaHayc1aBV1RMNGVr4Z
+75X61nxXDO8h9QV/4kJkCd6FrKKJBSeEORF7N0U/wDC20qZjw8ULISLiq1n2mLtj
+be+uLMShiqaCk9KX8kcocQ==

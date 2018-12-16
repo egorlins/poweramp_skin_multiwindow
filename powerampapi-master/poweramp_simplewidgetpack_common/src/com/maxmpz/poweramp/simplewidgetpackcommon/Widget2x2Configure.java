@@ -1,41 +1,35 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpackcommon;
-
-import android.content.res.Resources;
-
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-public class Widget2x2Configure extends Widget4x2Configure {
-	private static final String TAG = "Widget2x2Configure";
-	
-	public Widget2x2Configure() {
-		super();
-		mWidgetProvider = new Widget2x2Provider();
-	}
-	
-	@Override
-	protected void setWidgetFrameSize() {
-		final Resources r = getResources();
-		mWidgetFrameHeight = r.getDimensionPixelSize(R.dimen.appwidget_small_configure_height);
-		mWidgetFrameWidth = r.getDimensionPixelSize(R.dimen.appwidget_2x2_configure_width);
-	}
-}
+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

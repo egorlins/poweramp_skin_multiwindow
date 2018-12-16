@@ -1,9 +1,6 @@
-Poweramp APIs
-===========
-
-Please check https://forum.powerampapp.com/forum/13-developers-area/ for more details
-
-Also see [poweramp_skin_sdk/poweramp_skin_sample/readme.md](poweramp_skin_sdk/poweramp_skin_sample/readme.md)
-
-
-
+U2FsdGVkX1/ucPAcAK1NdrM9wnC2gA26z+sebrYhOku3RFw2bIj8ErDrHQzRkTTs
+WBi7mdtfDMGSPutMerRz9Y02tEPgRcgL7X//mDJHWwTfAYUkX/H/bNFtGTV3iZf9
+1f9PgxkzLnRoCDbBDh87CX0rvztV9aIZGFyhs8yJn8KSyH+YpHlK5tPn6hjHH9zn
+P0uJhhLipI/S6B026MO2ZzIpNEXQaB7PTiJs5hIVv2o02y192J9fyzT0dxZU5igm
+liykp7DgzJXdPUgyXRMGlkTw0hzaoLgtIgiUWRGgCOUO87HByKpv3qmPE1CR7EIQ
+Ogo4v0IVLnQLbzyF4DcgzQ==

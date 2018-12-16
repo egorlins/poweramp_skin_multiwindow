@@ -1,70 +1,29 @@
-fGammaAdj=1.000
-fDecay=0.97
-nWaveMode=0
-bAdditiveWaves=0
-bWaveDots=0
-bWaveThick=1
-bModWaveAlphaByVolume=1
-bMaximizeWaveColor=0
-bTexWrap=0
-bDarkenCenter=0
-bRedBlueStereo=0
-bBrighten=0
-bDarken=0
-bSolarize=0
-bInvert=0
-fWaveSmoothing=0.000
-fModWaveAlphaStart=0.000
-fModWaveAlphaEnd=1.000
-fWarpAnimSpeed=1.000
-fWarpScale=1.000
-fZoomExponent=1.00
-zoom=1.000
-rot=0.000
-cx=0
-cy=0
-dx=0.00000
-dy=0.000
-warp=0
-sx=1.00000
-sy=1.00000
-fWaveAlpha=0
-wave_r=1.000
-wave_g=1.000
-wave_b=1.000
-wave_x=0.5
-wave_y=0.5
-
-bars_mode=6
-
-bars_thr = 0.50
-bars_thr_color_t=0xFFFFFFFF
-bars_thr_color_b=0xFFFFFFFF
-
-bars_color_t=0xFFFF0000
-bars_color_b=0xFFFF3782
-bars_color_r=0x00000000
-bars_color_l=0x00000000
-
-bars_x=0.0
-bars_y=0.0
-bars_rot=105
-bars_sx = 1.0
-bars_sy = 0.65
-bars_num_x = 32
-bars_num_y = 24
-bars_smooth = 0.5
-bars_sensitivity = 0.9
-bars_bass_sensitivity = 0.9
-bars_spacing_y = 0.5
-bars_spacing_x = 0.5
-
-per_frame_1=bars_sy=bass_att;
-per_frame_2=bars_rot=bass;
-per_frame_3=bars_spacing_x=bass;
-per_frame_4=bars_color_t=($xFF000000 | (((mid * 100) & $xFF)) * $x10000);
-per_frame_5=bars_color_b=bars_color_t;
-
-per_frame_6=bars_thr_color_t=$xFF000000 | (((treb * 80) & $xFF) * $x10000) | (((bass * 80) & $xFF) * $x100) | ((mid * 80) & $xFF);
-per_frame_7=bars_thr_color_b=bars_thr_color_t;
-
+U2FsdGVkX1/ucPAcAK1Ndn7T8GMoTJnOEUuzzbHsDPQp26OL0HiQWfeeO5pFlM8x
+qqC/zbt9GaugWVyCy5Qc9O63kh6uNqwwu7EdIDnIQ0xwj9uNNL3339KMSxaitNLa
+NmzPWConX3Y69NIW0wbrMYqMCwhSKYJSYdS+5kDWRgtzcqNIhM8qOa8x0JwD8Gdi
+ErAv/qOyLgNlOfxyhB+JMr+l9W3QOlAF9ahpo74BeQJ3OyY925qxnqctk+2S9vm1
+SAy7CpYJ8pjG+cJrte1vOJvj9qSDyLAzW9Ny99Sy9SUIJQZVjRjidTKcvTT7kLbo
+sPHrkyvWAXzOvhPQYabmc51mfQHWvpU9opAun4x4i6uskYdvd90kxZQchXwFMT9P
+94rUERa19UipwcCSWcpL8OF36rlUfhv0Ku2scX4h5WSb9M3yCe4DnuosHZ1z8owe
+Oa1/Z18Y1MgR/KNv7Z7VIeX9OmgvuE/n8Z+WrF+kWc5ytc/if/dkEHGilPwktt/m
+x2F1yHPy/R6ApFmA/KufZnIec5chKgZ4jjRBXFSlR6WU/01G+IwxL0JK7lGd3jBq
+qr8KZmyfcDY6eyCM+g30lMzGRkgOBRlSDUrI6R3FCClpwzwXF60KOfc3FTY9QASY
+/hB8hxN6MVW0+EI0URCZkp3VhzygmoY+ORocgiT0GL1pp1EH/FWOawkMHfHfw3Ij
+YaFrlSHB63fpvwhgKIcPiu9F5ADQEtQX/AJ5ToFgs+DSJtpVnTXv2uO6nV9Zl1k8
+f69Ameivui/myhGg+yqoy1nqPFuqhPHhItrDU9bf8uCs0heuyQpmf52QsAW9UI5f
+LZ9iUGoTCzcnAoLJNMpDeHKJP+R8/KWgtSaKcQUjdVYZhz3v6XNLPFAPcqkf11lK
+ZWwRXtFOAICuZOWWAFXk8++qz3TnHuNyIbMUZ6DazSbeclvw4LqvcN5XYuAtATjb
+h6R7pglk8MaXF1fzd58WfAtzULK0DTVkMBjio3iyQJ/Sx4ExBkfNv3wjdqPYhloh
+wWYtkN0TZEKDV+YcZoYuIeKfQxzmsXD/H5IWPynlHtq4UB6MXFQ2BgXhkcA6ywLq
+kxGayrNjaeEjE80RiSBmtsmRXnkyQj55xU4quoNfRN9YiDDVtN6Lm4jyguPsdNfg
+wv5oyUbEgAZHcYZBzZZYRaocCFl98W9CshT55aFdiSwaMgK5Q4YLlnYtafkOZFsA
+6aANrcHXygQz8TzmFVCjx72hXgQt4+F+fvErmIWlI17jV/KyX7ypwel2RIEBvpkY
+4JOf3yT8g2mtzwkAaVxnP5cGLS16UDTwVCl72vYjNPsSFov5vbZ62QepDGLBM3EN
+6A74SyJ1AzedtyWPVAGaU9qDTXGxGFnaqK6ms8ZoxTohEyLEfFCqDiNOjT/gGVUU
+70cKbRLWramBehkP2gNKd/OgYMTY8Ebt/3F+wszrCkfC5PJyhZO5T9IYb3G8v6zc
+YVycTGVI4Z2EqnPIzQY5AErEdE5K7pTzCz3n7Do54hH5JohWUgCEzwkkn3G5F6V6
+lUL00XH7yLTKTi935gy/y4D7Jt/nrM8R4+yYtB5CfVoF73KlPhaiPrRY16H1DSvT
+YVh5EyR4RYhS5sy+QFMrDVRQOVttGqldJciFkyqFM/gc1TUgKpLfyoPR/WjPKSLM
+cQUnunw1JYyygi4BH0y7tDTxLsgBEdjxG35/Wp9V6zSMmoPWUZQ73cN80+MPOLMR
+GTBKD2RhttdK2jle/xEO40a4apr0zu3NwdDV2UDfg7kemIMKpjh9kc7RKOtoJTOh
+fI42EBOsHUjGLIhGCWRiyg==

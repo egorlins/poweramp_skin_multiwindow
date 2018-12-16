@@ -1,1 +1,1 @@
-APP_ABI := armeabi-v7a
+U2FsdGVkX1/ucPAcAK1NdoTy0mOmQIHWCXnJtNiY8OO66aLkzxDDdrNA7b7YvTQs

@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- These should be sorted in desc order as they are in fact bitset values (android selects first match) -->
-<level-list xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="250">
-
-	<item android:minLevel="@integer/ITEM_BG_LEVEL_POPUP" android:maxLevel="10000"
-		>
-		<shape>
-			<corners android:radius="?corners_popup"/>
-			<solid android:color="?colorBgPrimary"/>
-		</shape>
-	</item>
-	
-	<item android:minLevel="0" android:maxLevel="0" android:drawable="@drawable/ripple_inverse_stroke_rounded_large"/>
-</level-list>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+q5QhAz3qRFzdQf4a0Pw1skOLKNkO57rnupUp5pKphKzKje0wulN0Qk+nJghL588c
+Kn9gDXnRTe5+c53Rt1UE/QNP0Ov9P0fvrXGHriyRpR/Cl8gSD0pN9yatEFS29VPT
+kpjq6g9qNlf/oG/Dy0CdEQMxQU9MpcbfJl7Z1UsuHvIf1qvJOGFds3aEDi0sSTPd
+/Rrk3Gq2nueXXGsIvBo1oRmoSOF6ZreGbFKemBxQQReVrMtzru0tpE4Id05a/F8A
+cN8ZPZiyUkkR4JRTiWBfcPyiFwxDs7xoRNcanJeSMzaqfa9Ijwx0jm75jEyY7Hv8
+dcevXyQfCZFM3F8+uXW12JCNHdlTGtqeWtNR5KbBJzfjBdoaJNsHxtMhdQpYGIp5
+XP7clMsckvFkS0+j2pK+bHP7EvWCphGSW7H6X4A68r83PO5thsS4TWI4SvM3o6z5
+NZI+EOP949Xa4ZD6RkDJCrFtpdO4Q6pgh/O9zmpYLAFuOabGLQFR+V97W3Qdzd76
+ZwWfijaHc/y9/H3LB8eKRO1K13EaGXzkOtVtPtZ8AOjlFrd3hvnO1oKAPArqeIbl
+IIv2JacpdDGWryEFAdXZJYKqugYWgcvjGU+huen7V1rSzN0tvpeljYL8RzTlRJ9Z
+ieqZ4N0K0pEuKn/mLuJNdiK/AlixFoUNIo10UgNnWBTJ6zwZyk8+OeBIDwygppCT
+mWdyK77GARQp4koDortENIjQvWlrkuzTBv+Ze1SJsFQ=

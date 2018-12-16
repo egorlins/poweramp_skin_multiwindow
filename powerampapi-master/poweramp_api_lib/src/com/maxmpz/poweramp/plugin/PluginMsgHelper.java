@@ -1,154 +1,114 @@
-/*
-Copyright (C) 2011-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with Poweramp application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.plugin;
-
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.IntBuffer;
-import org.eclipse.jdt.annotation.NonNull;
-
-public class PluginMsgHelper {
-	public static class PluginMsgException extends RuntimeException {
-		private static final long serialVersionUID = -5131019933670409856L;
-
-		public PluginMsgException() {}
-
-		public PluginMsgException(@NonNull String msg) {
-			super(msg);
-		}
-	}
-
-	// sync with plugininterface.h
-	public static int MSG_TAG 			 = 0xF1F2F3F4;
-	public static int HEADER_SIZE_INTS   = 8;
-	public static int MAX_SIZE_INTS		 = 1024;
-	public static int MAX_SIZE_BYTES	 = MAX_SIZE_INTS * 4;
-	public static int HEADER_SIZE_BYTES  = HEADER_SIZE_INTS * 4;
-
-	public static int IX_PLUGIN_ID      = 0;
-	public static int IX_PLUGIN_ID_INT  = 0;
-	public static int IX_TAG            = 4 * 4; // 1
-	public static int IX_MSG_ID         = 5 * 4; // 2
-	public static int IX_FLAGS          = 6 * 4; // 3
-	public static int IX_DATA_SIZE      = 7 * 4; // 4
-	public static int IX_DATA           = 8 * 4;
-	public static int IX_DATA_INT       = 8;
-
-	public static int FLAG_TYPE_MASK            = 0xF000;
-	public static int FLAG_TYPE_SYNC_NO_CONTEXT = 0x1000;
-	public static int FLAG_TYPE_SEND_OUTSIDE    = 0x2000;
-	public static int FLAG_TYPE_BROADCAST       = 0x4000;
-
-	public static int FLAG_BROADCAST_GROUP_MASK = 0x003F;
-
-	// Volume updates
-	public static int PA_BROADCAST_VOLUME       = 1;
-
-	public static int MSG_ID_BROADCAST          = -1;
-
-
-	public static int calcBufferSizeInts(int desiredSizeInts) {
-		return HEADER_SIZE_INTS + desiredSizeInts;
-	}
-
-	public static int calcBufferSizeBytes(int desiredSizeBytes) {
-		return HEADER_SIZE_BYTES + desiredSizeBytes;
-	}
-
-	private static void writeHeader(@NonNull int[] buf, int pluginID, int msgID, int flags, int desiredSizeInts) {
-		buf[0] = pluginID;
-		// 3 ints are zeros (reserved for Poweramp msg header).
-		buf[IX_TAG / 4] = MSG_TAG;
-		buf[IX_MSG_ID / 4] = msgID;
-		buf[IX_FLAGS / 4] = flags;
-		buf[IX_DATA_SIZE / 4] = desiredSizeInts * 4;
-	}
-
-	private static void writeHeader(@NonNull ByteBuffer buf, int pluginID, int msgID, int flags, int desiredSizeBytes) {
-		buf.putInt(pluginID);
-		// 3 ints are zeros (reserved for Poweramp msg header).
-		buf.position(IX_TAG);
-		buf.putInt(MSG_TAG);
-		buf.putInt(msgID);
-		buf.putInt(flags);
-		buf.putInt(desiredSizeBytes);
-	}
-
-	public static int[] createIntMsgBuffer(int pluginID, int msgID, int flags, int desiredSizeInts) {
-		if(desiredSizeInts > MAX_SIZE_INTS) {
-			throw new PluginMsgException("bad desiredSizeInts=" + desiredSizeInts + " MAX_SIZE_INTS=" + MAX_SIZE_INTS);
-		}
-		int[] buf = new int[calcBufferSizeInts(desiredSizeInts)];
-		writeHeader(buf, pluginID, msgID, flags, desiredSizeInts);
-		return buf;
-	}
-
-	// NOTE: returned ByteBuffer is positioned to the first data position
-	// NOTE: direct buffer makes no sense in our case and is slower.
-	public static @NonNull ByteBuffer createBufferMsgBuffer(int pluginID, int msgID, int flags, int desiredSizeBytes) {
-		if(desiredSizeBytes > MAX_SIZE_BYTES) {
-			throw new PluginMsgException("bad desiredSizeBytes=" + MAX_SIZE_BYTES + " MAX_SIZE_BYTES=" + MAX_SIZE_BYTES);
-		}
-		ByteBuffer buf = ByteBuffer.allocate(calcBufferSizeBytes(desiredSizeBytes));
-		buf.order(ByteOrder.LITTLE_ENDIAN);
-		writeHeader(buf, pluginID, msgID, flags, desiredSizeBytes);
-		return buf;
-	}
-
-	public static @NonNull String msgBufferAsString(@NonNull int[] buf) {
-		if(buf.length < HEADER_SIZE_INTS) {
-			throw new PluginMsgException("bad buf length=" + buf.length);
-		}
-		return toString(buf);
-	}
-
-	public static @NonNull String msgBufferAsString(@NonNull ByteBuffer buf) {
-		if(buf.capacity() < HEADER_SIZE_BYTES) {
-			throw new PluginMsgException("bad buf capacity=" + buf.capacity());
-		}
-		int pos = buf.position();
-		buf.position(0);
-		IntBuffer intBuf = buf.asIntBuffer();
-		buf.position(pos);
-		int ar[] = new int[intBuf.capacity()];
-		intBuf.get(ar);
-		return toString(ar);
-	}
-
-	@SuppressWarnings("null")
-	private static @NonNull String toString(@NonNull int[] array) {
-		if (array == null) {
-			return "null";
-		}
-		if (array.length == 0) {
-			return "[]";
-		}
-		StringBuilder sb = new StringBuilder(array.length * 6);
-		sb.append('[');
-		sb.append(array[0]);
-		for (int i = 1; i < array.length; i++) {
-			sb.append(", 0x");
-			sb.append(Integer.toHexString(array[i]));
-		}
-		sb.append(']');
-		return sb.toString();
-	}
-}
+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

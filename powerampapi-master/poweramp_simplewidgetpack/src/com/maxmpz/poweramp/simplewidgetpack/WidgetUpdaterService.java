@@ -1,51 +1,47 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpack;
-
-import com.maxmpz.poweramp.widgetpackcommon.BaseWidgetUpdaterService;
-import com.maxmpz.poweramp.simplewidgetpackcommon.Widget2x2Provider;
-import com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x1Provider;
-import com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x2Provider;
-import com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x4Provider;
-import com.maxmpz.poweramp.simplewidgetpackcommon.WidgetKeyguardProvider;
-
-import android.os.Build;
-
-/**
- * Simple Serivce which updates widget(s). This service actually processes PowerampAPI intents, but throttles them, so widget updates are
- * as rare as possible. 
- */
-public class WidgetUpdaterService extends BaseWidgetUpdaterService {
-	private static final String TAG = "WidgetUpdaterService";
-	private static final boolean LOG = false;
-	
-	public WidgetUpdaterService() {
-		// NOTE: remove/add Widget providers for widgets supported by your widgetpack.
-		
-		mProviders.add(new Widget4x1Provider());
-		mProviders.add(new Widget4x4Provider());
-		mProviders.add(new Widget4x2Provider());
-		mProviders.add(new Widget2x2Provider());
-		if(Build.VERSION.SDK_INT >= 17) {
-			mProviders.add(new WidgetKeyguardProvider());
-		}
-	}
-}
+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

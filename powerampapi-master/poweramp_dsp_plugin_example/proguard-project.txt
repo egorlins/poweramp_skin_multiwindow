@@ -1,20 +1,17 @@
-# To enable ProGuard in your project, edit project.properties
-# to define the proguard.config property as described in that file.
-#
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in ${sdk.dir}/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the ProGuard
-# include property in project.properties.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
-
-# Add any project specific keep options here:
-
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+U2FsdGVkX1/ucPAcAK1NdpNhfMkHEXVozTUtH8DYY8m/HI5rNJVa2jb+fV9RM3DG
+h+i0VqxAa29jgRBhvSMcTmq4fAM/rRmEarVhdGIzx6z2NoGDTZd8vDNxsGQEOub6
+MrLdqM0mDOemawCwULJcGOSFm1pZQRB7lhrtCNvF3zV8Y1AxwE1KQzOoUDw5R3wd
+y0vY6SUeX+CFsx6SetnH1fuu+X150XO+kCHXQaT8r2cGb2pFDEWn49dStd+lbif5
+kEKVF2+QN7QFUjj95nhpW5f8E+MOhgwhoFfp3F2Ct5yeMMKWlhCzSr8o2fUWyfYq
+T1fdxWgVxPb97w5jvtpBHKQv2JcdvVFwOpuvxO1pwJpBxYRpah5AP9C7t+fEMNhL
+0zVppOTDDDxILjIWDcKqfjwLh821yfbTvNRKGyysrGplwasd60r2uv1Fxbc1lg19
+OWBWMR6k5rYx7pgQ9LUqfQtiuS0+ez/jzLuWxjwodsEtg83pQz5fGZVxLSs03yaA
+uot+qFwdhd93I8Ik1Tt74LdqrDMTlGod3/1y62Ozul1JfXGqsLzwqeGX6o/ppJaa
+vTTwZm5XDoxTHE0cxr25VXbaQk+egO/hpON6pNzbd9MFQzz4QpV2FGexAUx1EhEq
+LEwYbsgAxcqMuLrvyzJqABh+hyuC6mjjWYfGe9Tc0/ZZIcp3Tqw6nPr6oZ1+1G/E
+KGjyorPkXJEjUe6WDjHoqWewqtexxa4Zm/Th28p3094npd099VmCQ/bE20gZA212
+xU2FQswWV3RpQSbkR+YWqENTGvLRXpzBdF03kH6Is71ctvePp5jsOGftkep2cNSb
+K2uHjdb5OV/47V5RWy/UvNelEOppG5O0m/oQ7szIhFNFxYqX8GAssnz/WrJFxa5A
+sE/KEbq506X3zokGkrf6OK+doaV5DGX0URkgR1e3JI8DjJXDc86kgCaLYVidgNVv
+XoRaXLzXFUvhsd6u1JKyyg2lvpulryQe/9rWPPI02udbSDWlAoVPdfwxiLPtHWss
+JiB59cNqmFC05LSejDEtGICaDtY9V56nJMqV/OvWkZ8=

@@ -1,54 +1,42 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpackcommon;
-
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-import android.view.View;
-import android.widget.RemoteViews;
-
-// NOTE: keep in mind that this provider gets instantiated and destroyed for just any update or other calls.
-public class Widget4x1Provider extends Widget4x2Provider {
-	public Widget4x1Provider() {
-		super();
-		mWidgetLayout = R.layout.appwidget_4x1;
-		mGlueAlbum = true;
-	}
-	
-	protected int setShadow(RemoteViews views, int aaColor, int shadow) {
-		int flipperFrameId;
-		switch(shadow) {
-			case SHADOW_ALBUM_ART:
-				views.setViewVisibility(R.id.shadow, View.INVISIBLE);
-				flipperFrameId = R.id.flipper_frame_alt;
-				break;
-			case SHADOW_BOTH_DOWN:
-				flipperFrameId = R.id.flipper_frame;
-				views.setViewVisibility(R.id.flipper_frame_alt, View.GONE);
-				break;
-			case SHADOW_BOTH_UP:
-			default:
-				flipperFrameId = R.id.flipper_frame_alt;
-				break;
-		}
-		return flipperFrameId;
-	}
-}
+U2FsdGVkX1/ucPAcAK1NdlDr5UTrb/XXff02W1BEsGzTrkmdhLUMlOFzEAFBFzLG
+noJ/2BMqxWjWJMmVKgfiygWg1xeoLPauZC/uovQJgQx07uUrErDV7WkaGTs7l9Ai
+gwmEN/NVoIRDMh4E7yAO3v5YDsAYiNB89k2L4uDuoJctgklb+A2JWUzt2FdnRPct
+MZaVzLCekmsDNs9r4C08F6MsOUXnJOjBVi4nnmeUinqBQdV80hNVjd43VVntCXkv
+soXTK4jbRfVl30xdyfI2QeeAqx4KARvMl8fV7vExpBDGrOCMWwQOBtatec12/XpS
+E7+8qJ+7n7Z7cSv9teFRfJuVCmr+IvV9JOapp2yOmmUspE/hYutXCeOuXPN6a30N
+LhRzRZToh8nZY/s5/WxQ3clgbOgXyfq/B9S6w0yEJWPuRAEAyjGXvUmQW1lXsWE7
+xs3hyWt99xNFMAGN/m+JxQ1o1jmkd41IpCj+tKtoXf5mJaKenJy7aAigUVSeEj1t
+IdfJFGixQ9iNScr8XDdmyT0YuEgVlViWd6QuZq67YtsTW8kcyqgyEl2RET9SwJ9F
+LCCPRGKzeRBZW2kXwSm1mZtQfl4XhjRrkAbmE0eFGyo5nkSKO+eAxrdIfx8SqOLg
+tGrUKHWUt7X/sMAQTfJDEzF/pvxyaTf68aMFuQOs09raY5fzaHssDCi23hBHzwCQ
+itSC9i7v1DcT3WUwwim6umY/LfDNzy1VbM4+IOzr9vgwOADUSnaJeosvAdckBabt
+rpsWMU8tasvXaDhqNff2QdOaZamH9iGbR4WcOTWTLP6ZmDi1Dlmil1CawAT4k3R1
+S1MUF8GoPqboO3G7Hm7Z18tPe/9J4wJpPfWxkiFRQUgUSvvsu3f0PuYX7PjHn7u/
+Pwv/D3jEVBYt11kaVYsUSvKJIRNQwDVN5hNcCr5JASiIz0r0ivYawG5eucjCsrtl
+xqnZsr+WGmVg4trkmSVgoMdGvP8atoWfv3fdluPx727afEryka9VTmPytAbmgNij
++RKOZwW0nD2CDoDlXkm6efuUZ+tVfUBkJXTD26Q5+4dNORM+quMEqbmiqo/ZPbT8
+Zo2F9jeGey5GfeIrlXLWhaMkc21HWwknqhpNpHYSnMGRjtLycBTq8Uc/WG1j2PKl
+EXBVncgG2pDSnMHI/8mrFHWKIgdeTptRK6WOUViysdYCqtPjQ7J1F199g9eEASgU
+6SrONC/yxgmVXfEtbp6JTV65YIGtiBrTf0thLSLbuVGH7ffcxwRxRVMz7kgQA9iY
+cu1AzbPzcTdS4bgY9XjugFopPxw1yd531PdkiX156c5G1d1EHQXXJyuZrQE8s98X
+RrFt95HmVmNYFyYtOLVEyRTbMgCwZe3Il2VxHn/9b9pkGGd6UvUFKmh5PzKbpy1q
+nxlqMtdS4RFOYiO3iCgOovhohWjZvgnlYhHRtW5WIfbKzvVyag8ByfBFc3bTN2Xq
+IKjFJRHGf/pQpnBXE4H+hmUmuDmps9IrpxUlYMUoPNYgQmW4XHuKtAzZJ8imTyXO
+8ciP0/sdKI5JK145WtlyXVYUvtVxKrFZwuTnMoeTYKdovrDe/SovfZuvSCVsUpU9
+chyz0bxRWaMgJRPbY6/Z8QkT2lFBLOC57K1uKCN79atVZnn9Q95DP4aGd780EOKQ
+kgnCJ/bYnBUihHcGD4+V3z0Nf3n/fFYLRF01qmFFMrE2W0iNwnH5p01NNkbB0FoS
+kxYAUjQbTGHxGyYNiK7lgYItEnSRd0/sHUiCVWEtKL0LI68UKhNLRyq4TqLXK0Rs
+PPEEp9eBeT6d4EWp5XGucvGtLbu/bQdV7qEmlK396LvFKZXCeCV1UBzOeZ0OiYoN
+CH5BdjlV/yQxOl061sZJ2/VF0RlvtzwSdO9PVV7HE7l8x9KWPO2ShTTBie2lfsPt
+taYSpHW5H6Q8W4o2CIKZ+oA4wDUab7fIxtLHruGoGJTFUBoWc00aYK/Iye5TMmoT
+/cdWYia3ScRZKLiftst+z4+xrlDmHwo7fU8vhdRAQBuxIFFoL4CckiTbxSMMUTSp
+e3E5qNGeKU5lHKJyeldx0NxNPQ1o4bNwr1qM6nTNEJcx23WjwIi0NIXWYNfGYxD5
+DrbmgIn4L2+QYYLmJ3j4Vj058XU7LiZKZSvZjFRmIN3PZMSzpsCCKco1N/ii/47v
+/CFH1spVkMmEmG1juDxLOoDHZ+j7D2HkEsyczj2+BQrrMTuKMWLeA/DAHKA0vJ7d
++ER/fGH5pwSZ0PQ30uTq6LdL+4f7pB90xpcTruvX9SnC3hgWGWJzU880tSQLRXmc
+iESU6Z/fm0OD5DLqWSlulowklHoQYw3nuCd+D8jCuhX01Irr5kJZfvxUcJiIkxrp
+WBMKSHt/efCErvZTWTqTkhk///sV6595MvF++WQztjakL2X8GmO/o3ke0Z9M9p9G
+Retlp9CpgAQ85yYAPYfNngiAWGzULrdVG39XrClHkwceVxZSW9JtqhV7QwVWWVkL
+NoAe33+ectUZOpeRqMIh54bUOWAQIPF6tN5JPLuRz+EEjLR3pxWGH1GZ3RLylPLd
+2oO2r4FmElQ64oDugsdE20u+PGC5IJqKg0HLXzCx3VPsv2u1ZbJapKCD/XgtaEcN
+MOLsQkcnmX0ovB8Ibd7Lp+OvdXXThgVxG1HBn0KDewo=

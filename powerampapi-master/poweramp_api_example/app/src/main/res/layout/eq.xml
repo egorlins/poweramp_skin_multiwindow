@@ -1,59 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	>
-
-	<RelativeLayout
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		>
-
-		<CheckBox android:id="@+id/eq"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Equ"
-			/>
-
-		<CheckBox android:id="@+id/tone"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_toRightOf="@+id/eq"
-			android:text="Tone"
-			/>
-
-		<Button android:id="@+id/commit_eq"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Commit Bands to Equ"
-			android:layout_below="@+id/eq"
-			/>
-
-		<CheckBox android:id="@+id/dynamic"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentRight="true"
-			android:text="Dynamic Eq"
-			android:layout_below="@+id/eq"
-			/>
-
-
-
-		<Spinner android:id="@+id/preset_spinner"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_below="@+id/commit_eq"
-			/>
-
-		<TableLayout android:id="@+id/equ_layout"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:stretchColumns="1"
-			android:layout_below="@+id/preset_spinner"
-
-			/>
-
-
-	</RelativeLayout>
-
-</ScrollView>
+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

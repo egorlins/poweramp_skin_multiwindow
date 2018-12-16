@@ -1,79 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-	<SceneParams w:forId="parent" w:scene="@id/scene_selection_menu"
-		style="?SelectionMenuSubcontainer_scene_selection_menu" 
-	/>
-	<!-- Update w:jumpVisibility on default scene, so we don't fade out when menu goes down -->
-	<SceneParams w:forId="parent"
-		 w:scene="defaultScene"
-		 w:baseScene="defaultScene"
-		 style="?SelectionMenuSubcontainer_scenes_hidden"
-	/>
-
-	<!-- NOTE: SelectionMenuBehavior assumes this behavior unloads and thus no additional cleanup is made on unload -->
-			
-	<!-- Top line -->
-	<com.maxmpz.widget.FastLayout android:id="@+id/selection_menu_top_line_layout"
-		style="?SelectionMenuTopLineLayout"
-	>
-		<!-- NOTE: stateBusId is set dynamically by SelectionMenuBehavior -->
-		<com.maxmpz.widget.BusCheckBox android:id="@+id/select_box"
-			style="?SelectionMenuSelectBox"
-			android:text="@string/select_all_short"			
-			w:stateMsgId="@id/state_list_all_selected"
-			w:booleanStateId="@id/state_list_all_selected"
-			w:checkCmdId="@id/cmd_list_select_all"
-			w:uncheckCmdId="@id/cmd_list_select_none"
-		/>
-		
-		<!-- NOTE: busId is set dynamically by SelectionMenuBehavior -->
-		<com.maxmpz.widget.BusStateText android:id="@+id/selection_menu_count_text"
-			style="?SelectionMenuCountText"
-			w:busId="@id/list"
-			w:stateId="@id/state_list_selection_count"
-			w:secondaryStateId="@id/state_list_selectable_item_count"
-			w:format="@string/d_slash_d"
-		/>
-
-		<com.maxmpz.widget.BusActionButton
-			style="?SelectionMenuCloseButton"
-			android:text="@string/close"
-			w:busId="@id/bus_gui"
-			w:msgId="@id/cmd_selection_menu_close"
-		/>
-		
-	</com.maxmpz.widget.FastLayout>
-	
-	<com.maxmpz.widget.NonOverlappingView android:id="@+id/separator"
-		style="?SelectionMenuSeparator"
-	/>
-	
-	<com.maxmpz.widget.FastLayout android:id="@+id/selection_menu_items"
-		style="?SelectionMenuBottomLineLayout"
-	>
-		<!-- Menu items are inflated here -->
-	</com.maxmpz.widget.FastLayout>
-		
-</merge>
+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
+t8hpElAEr7SYWllu4ZPUGw==

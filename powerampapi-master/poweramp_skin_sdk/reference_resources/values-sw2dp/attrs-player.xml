@@ -1,630 +1,603 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<!-- Poweramp UI specific attributes (i.e. for com.maxmpz.widget.player.* packages). See also attrs-theme.xml -->
-
-<resources>
-	<attr name="windowLightNavigationBar" format="boolean"/><!-- Just for Android 8.0, which supports light navigation bar, but doesn't have attribute for that -->
-	
-	<!-- Navbar icons -->
-	<attr name="nav_lists" format="reference"/>
-	<attr name="nav_equ" format="reference"/>
-	<attr name="nav_search" format="reference"/>
-	<attr name="nav_hamburger" format="reference"/>
-	
-	<!-- Eq nav icons -->
-	<attr name="eq_equalizer" format="reference"/>
-	<attr name="eq_vol" format="reference"/>
-	<attr name="eq_reverb" format="reference"/>
-		
-	<attr name="miniplayer_play_pause" format="reference"/>
-	<attr name="sleep_timer_32dp" format="reference"/><!-- sub aa -->
-
-	<!-- Small equalizer preset icons when assigned to output -->
-	<attr name="pre_speaker" format="reference"/>
-	<attr name="pre_wired" format="reference"/>
-	<attr name="pre_bt" format="reference"/>
-	<attr name="pre_song" format="reference"/>
-	<attr name="pre_usb" format="reference"/>
-	<attr name="pre_other" format="reference"/>
-	<attr name="pre_song" format="reference"/>
-	
-	<!-- CatImage item icon -->
-	<attr name="folder_cat_icon" format="reference"/>
-	
-	<!-- Points to array of drawables, array sorting order is important -->
-	<attr name="vis_icons_32dp" format="reference"/>
-	
-	<attr name="repeat_none_32dp" format="reference"/>
-	<attr name="repeat_32dp" format="reference"/>
-	<attr name="repeat_advance_32dp" format="reference"/>
-	<attr name="repeat_song_32dp" format="reference"/>
-	
-	<attr name="shuffle_none_32dp"/>
-	<attr name="shuffle_all_32dp"/>
-	<attr name="shuffle_songs_32dp"/>
-	<attr name="shuffle_cats_32dp"/>
-	<attr name="shuffle_songs_and_cats_32dp"/>
-
-	<attr name="vis_none_32dp"/>
-	<attr name="vis_w_ui_32dp"/>
-	<attr name="vis_32dp"/>
-	
-	<attr name="vis_lock_24dp"/>
-	<attr name="vis_advance_24dp"/>
-	<attr name="vis_advance_by_time_24dp"/>
-	<attr name="vis_shuffle_24dp"/>
-	
-	
-
-	
-	<attr name="reverb_24dp" format="reference"/>
-	<attr name="vis_24dp" format="reference"/>
-	<attr name="waveseek_bar" format="reference"/>
-	<attr name="waveseek_elapsedbar" format="reference"/>
-	
-	<!-- Menu items -->
-	<attr name="rescan" format="reference"/>
-	<attr name="list_options" format="reference"/>
-	<attr name="add_to_pl" format="reference"/>
-	<attr name="info" format="reference"/>
-	<attr name="send" format="reference"/>
-	<attr name="enqueue" format="reference"/>
-	<attr name="lyrics" format="reference"/>
-	<attr name="album_art" format="reference"/>
-	<attr name="delete" format="reference"/>
-	<attr name="resort" format="reference"/>
-	<attr name="delete_dups" format="reference"/>
-	<attr name="clear_q" format="reference"/>
-	<attr name="clear" format="reference"/>
-
-	<attr name="clear_q_24dp" format="reference"/>
-	<attr name="artists_24dp" format="reference"/>
-	<attr name="albums_24dp" format="reference"/>
-	<attr name="folders_24dp" format="reference"/>
-	<attr name="rename_24dp" format="reference"/>
-	<attr name="delete_24dp" format="reference"/>
-	<attr name="assign_eq_24dp" format="reference"/>
-	<attr name="playlist_24dp" format="reference"/>
-	<attr name="play_24dp" format="reference"/>
-	
-	<attr name="settings_24dp" format="reference"/>
-	<attr name="changelog_24dp" format="reference"/>
-	<attr name="support_24dp" format="reference"/>
-	
-	<attr name="sort_type_24dp" format="reference"/>
-	<attr name="sort_24dp" format="reference"/>
-	<attr name="sort_author_24dp" format="reference"/>
-	<attr name="sort_source_24dp" format="reference"/>
-	<attr name="sort_rating_24dp" format="reference"/>
-	
-	<attr name="shuffle_24dp" format="reference"/>
-	
-	<attr name="meta_next_12dp" format="reference"/>
-	<attr name="meta_songs_12dp" format="reference"/>
-
-	<!-- Small star drawables for list cat image (1-5 stars) --> 
-	<declare-styleable name="RatingStars_8dp">
-		<attr name="star_8dp" format="reference"/>
-		<attr name="star_2_8dp" format="reference"/>
-		<attr name="star_3_8dp" format="reference"/>
-		<attr name="star_4_8dp" format="reference"/>
-		<attr name="star_5_8dp" format="reference"/>
-	</declare-styleable>
-	<declare-styleable name="RatingThumbs_8dp">
-		<attr name="micro_low_rated" format="reference"/>
-		<attr name="micro_top_rated" format="reference"/>
-	</declare-styleable>
-			
-	<attr name="aa_elevation" format="dimension"/><!-- When on main screen -->
-	<attr name="list_aa_elevation" format="dimension"/><!-- When in list -->
-	<attr name="grid_aa_elevation" format="dimension"/><!-- When in grid -->
-	<attr name="over_aa_elevation" format="dimension"/><!-- Max. possible aa elevation - to keep some other views always on top of AA -->
-	<attr name="VisPanelFrame_elevation" format="dimension"/>
-	<attr name="item_ontop_elevation" foramt="dimension"/><!-- Elevation which is over any other standard item child views -->
-	<attr name="navbar_elevation" format="dimension"/>
-			
-	<!-- Usually corresponds to @dimen/NavbarBounds_height. Anchoring point for content above navbar.
-		 NOTE: these are specifically moved to attributes/theme to simplify overriding these offsets without redefining all the styles using these dimens -->
-	<attr name="bottom_navbar_bounds_size" format="dimension"/>
-	<!-- Usually corresponds to @dimen/NavbarBounds_height_scene_navbar_2lines. Anchoring point for content above navbar in 2lines state -->
-	<attr name="bottom_navbar_bounds_2lines_size" format="dimension"/>
-	
-	<!-- AA corners for various scenes and item types:
-		 - tracks => any tracks lists and big AA on main screen
-		 - albums => includes Albums, Genres, Playlists, etc. non-human categories
-		 - other => human categories (Artists, Album Artists, Composers) 
-	-->
-	
-	<attr name="corners_aa_scene_aa" format="dimension"><!-- Main screen big AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-
-	<attr name="corners_aa_tracks" format="dimension"><!-- List / menu AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_albums" format="dimension"><!-- List / menu AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_other" format="dimension"><!-- List / menu AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_tracks_zoomed" format="dimension"><!-- Zoomed list AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_albums_zoomed" format="dimension"><!-- Zoomed list AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_other_zoomed" format="dimension"><!-- Zoomed list AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_tracks_grid" format="dimension"><!-- Grid AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_albums_grid" format="dimension"><!-- Grid AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_other_grid" format="dimension"><!-- Grid AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_tracks_grid_zoomed" format="dimension"><!-- Zoomed grid AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_albums_grid_zoomed" format="dimension"><!-- Zoomed grid AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-	<attr name="corners_aa_other_grid_zoomed" format="dimension"><!-- Zoomed grid AA corners -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-				
-	<attr name="corners_aa_tracks_small" format="dimension"><!-- Compact list => possible only for tracks -->
-		<enum name="matchHeight" value="-1"/>
-	</attr>
-		
-
-	<!-- AA corners for miniplayer -->
-	<attr name="corners_miniplayer_aa" format="dimension"/>
-	
-			
-			
-	<attr name="EqMilkFrs_presetUri" format="string"/>
-	
-	<!-- Extra optional layout to include into TopWaveseekLayout (e.g. extra pro-buttons, but can be anything skin wants) -->
-	<attr name="TopWaveseekLayout_extraLayout" format="reference"/>
-	
-	<!-- Extra optional layout to include into TopContainer (e.g. counter, but can be anything skin wants) -->
-	<attr name="TopContainer_extraLayout" format="reference"/>
-	
-	<!-- Optional layout to include into ItemLikeUnlikeLayout, when item is AA scene (or going to AA scene) --> 
-	<attr name="ItemLikeUnlikeLayout_layout" format="reference"/>
-						
-			
-	<!-- Styles, applied to ListWidget internals (e.g. LayoutEngines/HeaderEngines/etc.) -->
-	<declare-styleable name="ListSubstyle">
-		<!-- Controls size of an item in scene_aa. Calculated as ratio * screen width (portrait) or ratio * screen height (landscape) 
-			 Usually == 100%, but can be smaller for shorter screens, to leave a bit more space on bottom for controls
-			 NOTE: fraction, to allow same dimens for TopAABounds layout_widthPercent/layout_heightPercent, which is fraction too and should be matched  
-		--> 
-		<attr name="aaItemRatio" format="fraction"/>
-		<!-- Optional max. size for album art (either width or height). As aaItemRatio can cause AA too large for given screen (e.g. if screen is somewhat wider, lower screen aspect ratio),
-			 this can be used to limit total album art width or height. NOTE: aaPadding* is accounted for max size calculation -->
-		<attr name="aaMaxSize" format="dimension"/>
-		
-		<!-- Number of additional AA items to render to the left / right of the main item. Usually this is 1, but for e.g. wide/landscape layouts, extra items may be needed -->
-		<attr name="aaSideItemNum" format="integer"/>
-		
-		<!-- Horizontal gravity for AA item -->
-		<attr name="aaGravity">
-			<flag name="center_horizontal" value="0x01" />
-			<flag name="left" value="0x03" />
-			<flag name="right" value="0x05" />
-		</attr>
-		
-		<!-- By default, AA _item_ layout bounds are limited by album art size + paddings. If this option is set, AA item layout bounds will match whole list on appropriate axises.
-			 This applied to item bounds, the album art image dimension / position is not affected.
-			 Useful for other item views (e.g. title, line2) which can be freely positioned in list bounds as needed -->
-		<attr name="aaItemBoundsMatchList">
-			<flag name="none" value="0x0" /><!-- NOTE: sync with AALayoutEngine MATCH_LIST_* -->
-			<flag name="width" value="0x1" />
-			<flag name="height" value="0x2" />
-		</attr>
-		
-		<!-- Additional margin to apply to AA layout. Usuful e.g. to offset AA item from navbar -->
-		<attr name="aaMarginLeft" format="dimension"/>
-		<!-- Additional margin to apply to AA layout. Usuful e.g. to offset AA item from navbar -->
-		<attr name="aaMarginTop" format="dimension"/>
-		<!-- Additional margin to apply to AA layout. Usuful e.g. to offset AA item from navbar -->
-		<attr name="aaMarginRight" format="dimension"/>
-		<!-- Additional margin to apply to AA layout. Usuful e.g. to offset AA item from navbar -->
-		<attr name="aaMarginBottom" format="dimension"/>
-		
-		<!-- Additional padding to apply to AA layout. Usuful e.g. for landscape or extra views inside AA "frame" -->
-		<attr name="aaPaddingLeft" format="dimension"/>
-		<!-- Additional padding to apply to AA layout. Usuful e.g. for landscape or extra views inside AA "frame" -->
-		<attr name="aaPaddingTop" format="dimension"/>
-		<!-- Additional padding to apply to AA layout. Usuful e.g. for landscape or extra views inside AA "frame" -->
-		<attr name="aaPaddingRight" format="dimension"/>
-		<!-- Additional padding to apply to AA layout. Usuful e.g. for landscape or extra views inside AA "frame" -->
-		<attr name="aaPaddingBottom" format="dimension"/>
-		
-		<!-- Max Y rotation for AA item when swiped left/right. Default value is -10.0 -->
-		<attr name="aaMaxYRotation" format="float"/>
-		<!-- Max Z rotation for AA item when swiped left/right. Default value is 5.5 -->
-		<attr name="aaMaxZRotation" format="float"/>
-		<!-- Max scale to use for hidden (out of screen) items. Default value is 0.5 -->
-		<attr name="aaMaxScale" format="float"/>
-		<!-- Dense factor > 0.0f. Values < 1 will make AA items closer to each other. Default value is 0.75 -->
-		<attr name="aaDenseFactor" format="float"/>
-		
-		
-		<!-- Normal list item size. NOTE: grid layouts have automatic cell size, which depends on screen width and number of columns -->
-		<attr name="itemSize"/>
-		<!-- Small scene_small item size -->
-		<attr name="itemSizeSmall" format="dimension"/>
-		<!-- List item size for +1 zoom level -->
-		<attr name="itemSizeZoomed" format="dimension"/>
-		
-		<!-- If true, list automatically adds status bar height to all headers, thus, in this case, all header sizes should exclude default Android status bar height.
-			 While Android status bar height is usually 24dp, it may be different on devices with notch and pixel-size fixed status bar height matching the notch. 
-			 Works only if offsetWindowInsets is specified for the list -->
-		<attr name="addStatusBarHeightToHeaders" format="boolean"/>
-		 
-		<!-- if headerSize<=0, headerSize will be list width/2 -->
-		<attr name="headerSize" format="dimension"/>
-		<!-- Larger header size for "human" categories, i.e. artists/composers --> 
-		<attr name="humanCatHeaderSize" format="dimension"/>
-		<!-- Size for header in search page -->
-		<attr name="searchHeaderSize" format="dimension"/>
-		<!-- Separator size, e.g. for search results separators -->
-		<attr name="separatorSize" format="dimension"/>
-		<!-- Text item size (first level library items) -->
-		<attr name="textItemSize" format="dimension"/>
-		<!-- Text item size (first level library items as headers) -->
-		<attr name="textHeaderSize" format="dimension"/>
-		<!-- Top text header size (basically, the Library header itself) -->
-		<attr name="topTextHeaderSize" format="dimension"/>
-		
-		<!-- Size of all-tracks subheader, e.g. Artists/Albums all songs -->
-		<attr name="allTracksSubheadSize" format="dimension"/>
-		<!-- Size of meta subheader, e.g. for any Files -->
-		<attr name="metaSubheadSize" format="dimension"/>
-		
-		<!-- Extra space to add to calculated grid cell for 1line human categories, e.g. to place title there -->
-		<attr name="humanGridItemExtraSpace" format="dimension"/>
-		<!-- Extra space to add to calculated grid cell for 1line human categories, e.g. to place title there -->
-		<attr name="humanGridZoomedItemExtraSpace" format="dimension"/>
-		
-		<!-- Extra space to add to calculated grid cell for any other 1line categories, e.g. to place title there -->
-		<attr name="gridItem1LineExtraSpace" format="dimension"/>
-		<!-- Extra space to add to calculated grid cell for any other 1line categories, e.g. to place title there -->
-		<attr name="gridZoomedItem1LineExtraSpace" format="dimension"/>
-		
-		<!-- Extra space to add to calculated grid cell for any other 2line categories, e.g. to place title there -->
-		<attr name="gridItemExtraSpace" format="dimension"/>
-		<!-- Extra space to add to calculated grid cell for any other 2line categories, e.g. to place title there -->
-		<attr name="gridZoomedItemExtraSpace" format="dimension"/>
-		
-		<!-- If defined, header image or background stretches on scroll overshoot.
-			 Should be id referencing ImageView or ItemImageView in item view and it will be stretched as background.
-		-->
-		<attr name="headerStretchyImage" format="reference"/>
-
-		<!-- Auto animation time (when clicked item/nav button) -->
-		<attr name="pageAnimTime" format="integer"/>
-
-		<!-- Animation time when manual transition is committed -->
-		<attr name="pageManualCommitAnimTime" format="integer"/>
-		<!-- Animation time when manual transition is canceled -->
-		<attr name="pageManualCancelAnimTime" format="integer"/>
-		
-		<!-- Animation time for AA auto animation between tracks -->
-		<attr name="aaPosAnimTime" format="integer"/>
-		<!-- Animation time for AA manual animation between tracks. 
-			 NOTE: the exact animation time will be less as animation time also depends on the distance and swipe velocity -->
-		<attr name="aaPosSettleAnimTime" format="integer"/>
-		
-		<!-- Auto animation between top lib page and search page --> 
-		<attr name="libSearchAnimTime" format="integer"/>
-		
-		<!-- Auto animation for AA to top lib page transition.NOTE: applied for non-shared item transitions. Shared item transitions use pageAnimTime --> 
-		<attr name="aaToTopLibAnimTime" format="integer"/>
-		
-		<attr name="topLibToAAAnimTime" format="integer"/>
-		
-		<!-- Auto animation for AA to top search page transition --> 
-		<attr name="aaToSearchAnimTime" format="integer"/>
-		<!-- Auto animation for search to AA page transition --> 
-		<attr name="searchToAAAnimTime" format="integer"/>
-	</declare-styleable>
-	
-	<!-- Custom image view, used specifically to display Album Art/icons in list items -->
-	<declare-styleable name="AAImageView">
-		<!--
-			Defines corners for: 
-			- Tracks (cornerRadius)
-			- Albums (cornerRadius2)
-			- Artists/Genres/Composers (cornerRadius3)
-			The selection is done by provider on bound depending on the item category type
-			These 3 radiuses can be defined per each scene, though there is little point in defined all of them for e.g. scene_aa* scenes (as only tracks are shown there),
-			though headers, menus, and grid/list scenes should have these defined  
-		--> 
-		<attr name="cornerRadius" format="dimension">
-			<enum name="matchHeight" value="-1"/>
-		</attr>
-		<attr name="cornerRadius2" format="dimension">
-			<enum name="matchHeight" value="-1"/>
-		</attr>
-		<attr name="cornerRadius3" format="dimension">
-			<enum name="matchHeight" value="-1"/>
-		</attr>
-		
-		<attr name="hiRes" format="boolean"/><!-- If true, larger, higher resolution bitmap is loaded. Not for use for grids/lists, but for AA layout -->
-		
-		<attr name="android:scaleType"/>
-		<attr name="android:maxWidth"/>
-		<attr name="android:maxHeight"/>
-		<attr name="android:src"/>
-	</declare-styleable>
-	
-	<!-- Scene params for AAImageView -->
-	<declare-styleable name="AAImageViewSceneParams">
-		<attr name="applyViewParams"/>
-		
-		<attr name="cornerRadius"/>
-		<attr name="cornerRadius2"/>
-		<attr name="cornerRadius3"/>
-		
-		<attr name="hiRes"/>
-		<attr name="android:elevation"/>
-	</declare-styleable>
-	
-	<declare-styleable name="EqKnobsFastLayout">
-		<!-- If true, special lines background is rendered, android:background is ignored. EqLinesDrawable attributes can be used right in EqKnobsFastLayout styles -->
-		<attr name="linesBackground" format="boolean"/>
-	</declare-styleable>
-	
-	<declare-styleable name="EqLinesDrawable">
-		<attr name="lineDrawableOffsetLeft" format="dimension"/>
-		
-		<!-- Vertical offset for top line -->
-		<attr name="line1Offset" format="dimension"/>
-		<!-- Vertical offset for center line -->
-		<attr name="line2Offset" format="dimension"/>
-		<!-- Vertical offset for bottom line -->
-		<attr name="line3Offset" format="dimension"/>
-		
-		<attr name="line13Color" format="color|reference"/>
-		<attr name="line2Color" format="color|reference"/>
-		<attr name="backgroundColor" format="color|reference"/>		
-		<attr name="stroke"/>
-		
-			<!-- Sets DashPathEffect intervals and phase. DashPathEffect documentation:
-			 * The intervals array must contain an even number of entries (>=2), with
-			 * the even indices specifying the "on" intervals, and the odd indices
-			 * specifying the "off" intervals. phase is an offset into the intervals
-			 * array (mod the sum of all of the intervals). The intervals array
-			 * controls the length of the dashes. The paint's strokeWidth controls the
-			 * thickness of the dashes.
-			 
-			 dashes are in dp
-		 -->
-		<attr name="dashes" format="string"/>
-		<attr name="dashesPhase" format="dimension"/>
-	</declare-styleable>
-		
-	<declare-styleable name="LinearKnob">
-		<attr name="thumb" format="reference" />
-		<!-- Optional thumb width, required for cases when drawable is xml and it's not possible to calculate desired size from that drawable -->
-		<attr name="thumbWidth" format="dimension"/>
-		<!-- Optional thumb height, required for cases when drawable is xml and it's not possible to calculate desired size from that drawable -->
-		<attr name="thumbHeight" format="dimension"/>
-		<!-- Hole size is the view size, thus, inner hole drawable paddings should be used to position it inside linear knob -->
-		<attr name="hole" format="reference" />
-		<attr name="pos" format="integer" />
-		<attr name="value" format="float"/>
-		<!-- <attr name="android:disabledAlpha"/> -->
-		<!-- Vertical padding between linear knob text and knob drawables -->
-		<attr name="textPadding" format="dimension"/>
-	</declare-styleable>
-	
-	<!-- NOTE: also applies to DSPBusCheckButton -->
-	<declare-styleable name="DSPLinearKnob">
-		<!-- @id/dsp_* parameter, should be boolean for DSPBusCheckButton -->
-		<attr name="param" format="reference"/>
-		<!-- One of msg_dsp_eq_changed/msg_dsp_other_changed/msg_dsp_reverb_changed to listen to --> 
-		<attr name="updateMsgId"/>
-	</declare-styleable>
-	
-	<declare-styleable name="DSPRoundKnob">
-		<!-- @id/dsp_* parameter -->
-		<attr name="param"/>
-		<!-- @id/dsp_* boolean parameter, e.g. dsp_eq_enabled -->
-		<attr name="enablingParam" format="boolean"/>
-		<!-- One of msg_dsp_eq_changed/msg_dsp_other_changed/msg_dsp_reverb_changed to listen to --> 
-		<attr name="updateMsgId"/>
-	</declare-styleable>
-	
-	<declare-styleable name="DSPCheckBox">
-		<!-- @id/dsp_* parameter -->
-		<attr name="param"/>
-		<!-- @id/dsp_* boolean parameter, e.g. dsp_eq_enabled -->
-		<attr name="enablingParam" format="boolean"/>
-		<!-- One of msg_dsp_eq_changed/msg_dsp_other_changed/msg_dsp_reverb_changed to listen to --> 
-		<attr name="updateMsgId"/>
-		
-		<attr name="longPressCmdId" format="reference"/>
-		<attr name="longPressBusId" format="reference"/>
-		<attr name="toastOnPress"/>
-		<attr name="toastHeaderOnPress" format="reference"/>
-	</declare-styleable>
-	
-	<declare-styleable name="RoundKnob">
-		<attr name="knob" format="reference"/>
-		<attr name="indicator" format="reference"/>
-		<!-- Optional indicator drawable scale. Default is 1.0 
-			 NOTE: this also scales possible drawable top padding - the padding which offsets indicator from round knob edge
-		-->
-		<attr name="indicatorScale" format="float"/>
-		<!-- Default is false. If true, also rotates knob image to the same angle as indicator  -->
-		<attr name="rotateKnob" format="boolean"/>
-		<!-- If non @null/@empty, snap will be automatically enabled -->
-		<attr name="snapTo" format="float"/>
-		<!-- <attr name="android:disabledAlpha"/> -->
-		<attr name="dependentLabel" format="reference"/>
-		<attr name="dependentLabel2" format="reference"/>
-		<attr name="dependentLabel3" format="reference"/>
-		<attr name="valueLabel" format="reference"/>
-		<attr name="valueFormat" format="string|reference"/>
-
-		<attr name="valueFormatMin" format="float"/>
-		<attr name="valueFormatMax" format="float"/>
-		<attr name="valueFormatMid" format="float"/>
-		<attr name="valueFormatMidPos" format="float"/>
-	</declare-styleable>
-	
-	
-	<declare-styleable name="MilkFRS">
-		<attr name="roundRectClipRadius" format="dimension"/>
-		<attr name="presetUri" format="string"/>
-	</declare-styleable>
-		
-	<declare-styleable name="FrequencyResponseScroller">
-		<attr name="selectionDrawable" format="reference"/>
-		<attr name="lineColor" format="color"/>
-		<attr name="glowColor" format="color"/>
-		<attr name="lineWidth" format="dimension"/>
-		<!-- <attr name="lineWidth" /> --><!-- vpi -->
-		
-		<attr name="toneLineWidth" format="dimension"/>
-		<attr name="toneFillColor" format="color"/>
-		<attr name="toneLineColor" format="color"/>
-		<attr name="toneGlowColor" format="color"/>
-		
-		<attr name="glowWidth" format="dimension"/>
-		<attr name="blurWidth" format="float"/>
-		
-		<attr name="backLineColor" format="color"/>
-		
-		<attr name="miniMode" format="boolean"/>
-		
-		<!-- <attr name="textShadowColor" format="color"/> -->
-		<!-- <attr name="textShadowWidth" format="float"/> -->
-
-		<attr name="android:orientation"/>
-		<attr name="inset" format="dimension"/>
-				
-		<!-- <attr name="infoTextAppearance" format="reference"/> -->
-		<!-- <attr name="presetTextAppearance" format="reference"/> -->
-		
-		<!-- <attr name="showInfo" format="boolean"/> -->
-		
-		<!-- Optional. If set, will scroll given scrollable view -->
-		<attr name="scrollable" format="reference"/>
-		
-		<!-- If true, frs will connect to dsp and visualize current eq/tone bands -->
-		<attr name="useDSPBus" format="boolean"/>
-	</declare-styleable>
-	
-	<!-- NOTE: DSPRoundKnobLayout view also supports all the DSPBusRoundKnob/RoundKnob attributes - they are passed to inner DSPBusRoundKnob as is
-		 Basically, DSPRoundKnobLayout is a compound view, with inner child views created as needed.
-		 Full form (with all the inner children) matches this xml layout:
-		 
-			<com.maxmpz.widget.player.DSPRoundKnobLayout ...>
-			
-				<com.maxmpz.widget.player.DSPBusRoundKnob android:id="@id/_knob"
-					style="roundKnobStyle"
-					..(parent DSPRoundKnobLayout view attributes are passed here)..
-				/>
-				
-				<com.maxmpz.widget.FastTextView android:id="@id/_left_label"
-					android:text="leftLabelText"
-					style="leftLabelStyle"
-				/>
-				<com.maxmpz.widget.FastTextView android:id="@id/_right_label"
-					android:text="rightLabelText"
-					style="rightLabelStyle"
-				/>
-				<com.maxmpz.widget.FastTextView android:id="@id/_label"
-					android:text="labelText"
-					style="labelStyle"
-				/>
-				<com.maxmpz.widget.FastTextView android:id="@id/_value_label" 
-					style="valueLabelStyle"
-				/>
-				
-			</com.maxmpz.widget.player.DSPRoundKnobLayout>
-	 -->
-	<declare-styleable name="DSPRoundKnobLayout">
-		<!-- Defines left label style. If this attribute is missing, no left label rendered -->
-		<attr name="leftLabelStyle" format="reference"/>
-		<attr name="leftLabelText" format="string"/>
-		<!-- Defines right label style. If this attribute is missing, no right label rendered -->
-		<attr name="rightLabelStyle"  format="reference"/>
-		<attr name="rightLabelText" format="string"/>
-		<!-- Defines label style. If this attribute is missing, no label rendered -->
-		<attr name="labelStyle" format="reference"/>
-		<attr name="labelText" format="string"/>
-		<!-- Defines vaue label style. If this attribute is missing, no value label rendered -->
-		<attr name="valueLabelStyle" format="reference"/>
-		<!-- Defines StateAnimParam style, activated for valueLabel on press  --> 
-		<attr name="valueLabelPressedAnimStyle" format="reference"/>
-		
-		<!-- Round knob style -->
-		<attr name="roundKnobStyle" format="reference"/>
-	</declare-styleable>
-	
-	<declare-styleable name="PlayingMark">
-		<!-- The transition ration point at which PlayingMark starts alpha animation. Should be < 1.
-		     For example, alphaRatio=0 means PlayingMark alpha will be animated for whole transition range: 0..1,
-		     alphaRatio=0.5 means alpha will be animated when transition is in range: 0.5..1, making PlayingMark less obstrutive for animations e.g. from main screen to list.
-		     Default value is 0.5 -->
-		<attr name="alphaRatio" format="float"/>
-	</declare-styleable>
-	
-	<declare-styleable name="HelpLP">
-		<attr name="help_anchor" format="reference"/>
-		<attr name="help_position"><!-- Sync with HelpLayout -->
-			<enum name="top" value="0"/>
-			<enum name="right" value="1"/>
-			<enum name="bottom" value="2"/>
-			<enum name="left" value="3"/>
-		</attr>
-		<attr name="help_inside" format="boolean"/>
-		<!-- If true, view will be positioned by one axis (depending on help_position) -->
-		<attr name="help_oneAxis" format="boolean"/>
-		
-		
-	</declare-styleable>
-	<declare-styleable name="Help">
-		<attr name="arrowWidth" format="dimension"/>
-		<attr name="arrowHeight" format="dimension"/>
-		<attr name="arrowOffset" format="dimension"/>
-		<attr name="arrowStrokeWidth" format="dimension"/>
-		<attr name="arrowLineWeight" format="dimension"/>
-		<attr name="showArrow" format="boolean"/>
-		<attr name="arrowFillColor" format="color"/>
-		<attr name="arrowStrokeColor" format="color"/>
-		<attr name="drawableTint"/>
-		
-		<attr name="html" format="string"/>
-	</declare-styleable>	
-	
-</resources>
+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

@@ -1,839 +1,423 @@
-/*
-Copyright (C) 2011-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with Poweramp application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.player;
-
-import org.eclipse.jdt.annotation.NonNull;
-import android.provider.BaseColumns;
-
-public interface TableDefs {
-	/**
-	 * Alias used for category. Useful when query is actually a multi table join.
-	 */
-	public static final @NonNull String CATEGORY_ALIAS = "cat";
-
-	public static final long UNKNOWN_ID = 1000L;
-
-	/**
-	 * Alias used for category aliased table _id.
-	 */
-	public static final @NonNull String CATEGORY_ALIAS_ID = CATEGORY_ALIAS + "._id";
-
-
-	public interface Files {
-		public static final @NonNull String TABLE = "folder_files";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Short filename.
-		 * String.
-		 */
-		public static final @NonNull String NAME = TABLE + ".name";
-
-		/**
-		 * Track number (extracted from filename).
-		 * Int.
-		 */
-		public static final @NonNull String TRACK_NUMBER = "track_number";
-
-		/**
-		 * Track name without number.
-		 * String.
-		 */
-		public static final @NonNull String NAME_WITHOUT_NUMBER = "name_without_number";
-
-		/**
-		 * One of the TAG_* constants.
-		 * Int.
-		 */
-		public static final @NonNull String TAG_STATUS = "tag_status";
-
-		/**
-		 * Track # tag.
-		 * Int.
-		 */
-		public static final @NonNull String TRACK_TAG = "track_tag";
-
-		/**
-		 * Parent folder id.
-		 * Int.
-		 */
-		public static final @NonNull String FOLDER_ID = "folder_id";
-
-		/**
-		 * Title tag.
-		 * String.
-		 */
-		public static final @NonNull String TITLE_TAG = "title_tag"; // NOTE: important to have it w/o table for headers-enabled compound selects
-
-		/**
-		 * Duration in miliseconds.
-		 * Int.
-		 */
-		public static final @NonNull String DURATION = "duration";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String UPDATED_AT = TABLE + ".updated_at";
-
-		/**
-		 * One of the file types - see PowerampAPI.Track.FileType class.
-		 */
-		public static final @NonNull String FILE_TYPE = "file_type";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String PLAYED_AT = TABLE + ".played_at";
-
-		/**
-		 * Int.
-		 * This is file last modified time actually, for most filesystems
-		 */
-		public static final @NonNull String FILE_CREATED_AT = "file_created_at";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-
-		/**
-		 * Full path. Works only if the query is joined with the folders.
-		 * String.
-		 */
-		public static final @NonNull String FULL_PATH = Folders.PATH + "||" + NAME;
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String RATING = "rating";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String PLAYED_TIMES = TABLE + ".played_times";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ALBUM_ID = TABLE + ".album_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ARTIST_ID = TABLE + ".artist_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ALBUM_ARTIST_ID = TABLE + ".album_artist_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String COMPOSER_ID = TABLE + ".composer_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String YEAR = "year";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String OFFSET_MS = "offset_ms";
-
-		/**
-		 * If non-null - this is cue "source" (big single uncut) file with that given virtual folder id.
-		 * NOTE: enforces 1-1 between source files and cues. No multiple cues per single image thus possible
-		 * Int.
-		 */
-		public static final @NonNull String CUE_FOLDER_ID = "cue_folder_id";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Wave scan data
-		 * byte[] blob, nullable
-		 */
-		public static final @NonNull String WAVE = "wave";
-
-		/**
-		 * String
-		 */
-		public static final @NonNull String META = TABLE + ".meta";
-
-		/**
-		 * tag_status
-		 */
-		public static final int TAG_NOT_SCANNED = 0;
-		/**
-		 * tag_status
-		 */
-		public static final int TAG_SCANNED = 1;
-
-	}
-
-
-	public interface RawFiles extends Files {
-		public static final @NonNull String TABLE = "raw_files";
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Short filename.
-		 * String.
-		 */
-		public static final @NonNull String NAME = TABLE + ".name";
-
-		/**
-		 * Title tag.
-		 * String.
-		 */
-		public static final @NonNull String TITLE_TAG = TABLE + ".title_tag";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String UPDATED_AT = TABLE + ".updated_at";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String PLAYED_AT = TABLE + ".played_at";
-
-		/**
-		 * Full path. Works only if the query is joined with the folders.
-		 * String.
-		 */
-		public static final @NonNull String FULL_PATH = Folders.PATH + "||" + NAME;
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String PLAYED_TIMES = TABLE + ".played_times";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ALBUM_ID = TABLE + ".album_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ARTIST_ID = TABLE + ".artist_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ALBUM_ARTIST_ID = TABLE + ".album_artist_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String COMPOSER_ID = TABLE + ".composer_id";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * String
-		 */
-		public static final @NonNull String META = TABLE + ".meta";
-
-		/**
-		 * String
-		 */
-		public static final @NonNull String ALBUM_TAG = TABLE + ".album_tag";
-
-		/**
-		 * String
-		 */
-		public static final @NonNull String ARTIST_TAG = TABLE + ".artist_tag";
-	}
-
-
-	public interface Folders {
-		public static final @NonNull String TABLE = "folders";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Short name of the folder.
-		 * String.
-		 */
-		public static final @NonNull String NAME = TABLE + ".name";
-
-		/**
-		 * Short path of the parent folder.
-		 * String.
-		 */
-		public static final @NonNull String PARENT_NAME = TABLE + ".parent_name";
-
-		/**
-		 * Full path of the folder.
-		 * String.
-		 */
-		// NOTE: avoid TABLE name here to allow using field in raw_files. "path" is (almost) unique column, also used in playlists
-		public static final @NonNull String PATH = "path";
-
-		/**
-		 * This is the same as path for usual folders, but for cue virtual folders, this is path + name.
-		 * Used for proper folders/subfolders sorting.
-		 * String.
-		 */
-		public static final @NonNull String SORT_PATH = "sort_path";
-
-		/**
-		 * Folder album art/thumb image (short name).
-		 * String.
-		 */
-		public static final @NonNull String THUMB = "thumb";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String DIR_MODIFIED_AT = TABLE + ".dir_modified_at";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String UPDATED_AT = TABLE + ".updated_at";
-		/**
-		 * Id of the parent folder or 0 for "root" folders.
-		 * Int.
-		 */
-		public static final @NonNull String PARENT_ID = TABLE + ".parent_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String IS_CUE = TABLE + ".is_cue";
-
-		/**
-		 * Set for real (non-cue-virtual) folders, means number of cue source files inside this folder.
-		 * Int.
-		 */
-		public static final @NonNull String NUM_CUE_FILES = TABLE + ".num_cue_files";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Number of child subfolders.
-		 * Int.
-		 */
-		public static final @NonNull String NUM_SUBFOLDERS = TABLE + ".num_subfolders";
-
-		/**
-		 * Number of tracks in this category, excluding cue source images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of tracks in this category, including cue source images
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-
-		/**
-		 * String.
-		 * Special calculated subquery column which retrieves short parent name 
-		 */
-		public static final @NonNull String PARENT_NAME_SUBQUERY = "(SELECT name FROM folders AS f2 WHERE f2._id=folders.parent_id) AS parent_name_subquery";
-	}
-
-
-	public interface Albums {
-		public static final @NonNull String TABLE = "albums";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String ALBUM = "album"; // NOTE: important to have it w/o table for headers-enabled compound selects
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String ALBUM_SORT = "album_sort"; // NOTE: important to have it w/o table for headers-enabled compound selects
-
-		/**
-		 * Int
-		 */
-		public static final @NonNull String ALBUM_ARTIST_ID = TABLE + ".album_artist_id";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Number of tracks in this category, excluding cue source images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of tracks in this category, including cue source images
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-	}
-
-
-	public interface Artists {
-		public static final @NonNull String TABLE = "artists";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String ARTIST = "artist";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String ARTIST_SORT = "artist_sort";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-
-		/**
-		 * Number of tracks in this category, excluding cue source images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of tracks in this category, including cue source images
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-
-		// Artists uses special where for cue sources, thus just count files is enough.
-		//public static final @NonNull String COUNT_FILES = "count(folder_files._id)";
-		//public static final @NonNull String COUNT_ALBUMS = "count(albums._id)";
-	}
-
-
-	// NOTE: this is similar to Artists, but uses Album Artist tag, where available
-	public interface AlbumArtists {
-		public static final @NonNull String TABLE = "album_artists";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String ALBUM_ARTIST = "album_artist";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String ALBUM_ARTIST_SORT = "album_artist_sort";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-
-		/**
-		 * Number of tracks in this category, excluding cue source images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of tracks in this category, including cue source images
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-	}
-
-
-	// NOTE: this is album => artist 1:1 binding table
-	// Used for Albums by Artist category, where can be multiple same Album repeated per each Artist
-	public interface AlbumsByArtist {
-		public static final @NonNull String TABLE = "artist_albums";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ARTIST_ID = TABLE + ".artist_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String ALBUM_ID = TABLE + ".album_id";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-	}
-
-
-	public interface Composers {
-		public static final @NonNull String TABLE = "composers";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String COMPOSER = "composer";
-
-		public static final @NonNull String COMPOSER_SORT = "composer_sort";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-
-		/**
-		 * Number of tracks in this category, excluding cue source images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of tracks in this category, including cue source images
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-	}
-
-	public interface Genres {
-		public static final @NonNull String TABLE = "genres";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * String.
-		 */
-		public static final @NonNull String GENRE = "genre";
-
-		/**
-		 * First seen time.
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Number of tracks in this category, excluding cue source images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of tracks in this category, including cue source images
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-	}
-
-
-	public interface GenreEntries {
-		public static final @NonNull String TABLE = "genre_entries";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Actual id of the file in folder_files table.
-		 * Long.
-		 */
-		public static final @NonNull String FOLDER_FILE_ID = "folder_file_id";
-
-		/**
-		 * Gerne id.
-		 * Long.
-		 */
-		public static final @NonNull String GENRE_ID = "genre_id";
-	}
-
-
-	public interface PlaylistEntries {
-		public static final @NonNull String TABLE = "playlist_entries";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Actual id of the file in folder_files table.
-		 * Int.
-		 */
-		public static final @NonNull String FOLDER_FILE_ID = "folder_file_id";
-
-		/**
-		 * Folder Playlist id.
-		 * Int.
-		 */
-		public static final @NonNull String PLAYLIST_ID = "playlist_id";
-
-		/**
-		 * Sort order.
-		 * Int.
-		 */
-		public static final @NonNull String SORT = "sort";
-	}
-
-
-	public interface Playlists {
-		public static final @NonNull String TABLE = "playlists";
-
-		// Fields.
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Name of the playlist.
-		 * String.
-		 */
-		public static final @NonNull String PLAYLIST = TABLE + ".playlist";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String MTIME = TABLE + ".mtime";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String PATH = TABLE + ".playlist_path";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String UPDATED_AT = TABLE + ".updated_at";
-
-		/**
-		 * Number of files without cue images
-		 */
-		public static final @NonNull String NUM_FILES = TABLE + ".num_files";
-
-		/**
-		 * Number of files including cue images
-		 * Since 796
-		 */
-		public static final @NonNull String NUM_ALL_FILES = TABLE + ".num_all_files";
-
-		/**
-		 * Bitwise flag.
-		 * Int.
-		 */
-		public static final @NonNull String AA_STATUS = TABLE + ".aa_status";
-
-		// NOTE: requires CTE with durs, e.g.:
-		// with durs as (select (sum(duration)) as dur, album from folder_files inner join albums on albums._id=folder_files.album_id group by album_id) 
-		//    select (dur/3600000) || ':' || strftime('%M:%S', (dur/86400000.0)), dur, album from durs limit 10;
-
-		public static final @NonNull String TOTAL_DURATION = "(dur/3600000) || ':' || strftime('%M:%S', (dur/86400000.0))";
-		public static final @NonNull String IS_FILE = TABLE + ".playlist_path IS NOT NULL AS _is_file";
-	}
-
-
-
-	public class Queue {
-		public static final @NonNull String TABLE = "queue";
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Folder file id.
-		 * Int.
-		 */
-		public static final @NonNull String FOLDER_FILE_ID = TABLE + ".folder_file_id";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String CREATED_AT = TABLE + ".created_at";
-
-		/**
-		 * Int.
-		 */
-		public static final @NonNull String SORT = TABLE + ".sort";
-
-		public static final @NonNull String CALC_PLAYED = "folder_files.played_at >= queue.created_at"; // If played at is the same as queue entry time, consider it played already 
-		public static final @NonNull String CALC_UNPLAYED = "folder_files.played_at < queue.created_at";
-	}
-
-	public class ShuffleSessionIds {
-		public static final @NonNull String TABLE = "shuffle_session_ids";
-
-		public static final @NonNull String _ID = TABLE + "._id";
-	}
-
-
-	public class EqPresets {
-		public static final @NonNull String TABLE = "eq_presets";
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Predefined preset number (see res/values/arrays/eq_preset_labels) or NULL for custom preset.
-		 * Int.
-		 */
-		public static final @NonNull String PRESET = "preset";
-
-		/**
-		 * Eq preset string.
-		 * String. 
-		 */
-		public static final @NonNull String _DATA = TABLE + "._data";
-
-		/**
-		 * Custom preset name or null for predefined preset.
-		 * String.
-		 */
-		public static final @NonNull String NAME = TABLE + ".name";
-
-		/**
-		 * 1 if preset is bound to speaker, 0 otherwise.
-		 * Int.
-		 */
-		public static final @NonNull String BIND_TO_SPEAKER = "bind_to_speaker";
-
-		/**
-		 * 1 if preset is bound to wired headset, 0 otherwise.
-		 * Int.
-		 */
-		public static final @NonNull String BIND_TO_WIRED = "bind_to_wired";
-
-		/**
-		 * 1 if preset is bound to bluetooth audio output, 0 otherwise.
-		 * Int.
-		 */
-		public static final @NonNull String BIND_TO_BT = "bind_to_bt";
-
-		/**
-		 * 1 if preset is bound to USB audio output, 0 otherwise.
-		 * Int.
-		 */
-		public static final @NonNull String BIND_TO_USB = "bind_to_usb";
-
-		/**
-		 * 1 if preset is bound to other audio outputs, 0 otherwise.
-		 * Int.
-		 */
-		public static final @NonNull String BIND_TO_OTHER = "bind_to_other";
-	}
-
-	public static final class EqPresetSongs implements BaseColumns {
-		public static final @NonNull String TABLE = "eq_preset_songs";
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		/**
-		 * Either folder_file_id.
-		 * Int. 
-		 */
-		public static final @NonNull String FILE_ID = TABLE + ".file_id";
-
-		/**
-		 * Eq preset id.
-		 * Int.
-		 */
-		public static final @NonNull String PRESET_ID = "preset_id";
-	}
-
-	public class ReverbPresets {
-		public static final @NonNull String TABLE = "reverb_presets";
-
-		public static final @NonNull String _ID = TABLE + "._id";
-
-		public static final @NonNull String _DATA = TABLE + "._data";
-
-		public static final @NonNull String NAME = TABLE + ".name";
-	}
-}
+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

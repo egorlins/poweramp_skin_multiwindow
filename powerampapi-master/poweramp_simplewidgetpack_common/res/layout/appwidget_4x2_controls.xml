@@ -1,61 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- layout -->
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
-	<ImageButton android:id="@+id/folder_prev_button"
-	    android:scaleType="centerInside"
-		android:background="@null"
-		android:src="@drawable/matte_prev_cat_selector"
-		android:visibility="visible"
-
-		android:layout_marginRight="@dimen/widget4x2_controls_margin1"
-  		android:layout_width="45dip"
-  		android:layout_height="45dip"
-	/>
-	<ImageButton android:id="@+id/rw_button"
-	    android:scaleType="centerInside" 
-		android:src="@drawable/matte_rw_selector"
-		
-		android:background="@null"
-  		android:layout_width="60dip"
-  		android:layout_height="60dip"
-		
-		android:layout_marginRight="@dimen/widget4x2_controls_margin2"			
-	/>
-
-	
-	<!-- PLAY -->
-	<ImageButton android:id="@+id/play_button" 
-		android:scaleType="centerInside"
-		android:background="@null"
-		android:src="@drawable/matte_play_big_selector"
-		
-		android:maxHeight="64dip"
-		android:maxWidth="50dip"
-		android:adjustViewBounds="true"
-		
-  		android:layout_width="64dip"
-  		android:layout_height="50dip"
-	/>
-
-
-	<ImageButton android:id="@+id/ff_button" 
-		android:scaleType="centerInside"
-		android:src="@drawable/matte_ff_selector"		
-		android:background="@null"
-  		android:layout_width="60dip"
-  		android:layout_height="60dip"
-		
-		android:layout_marginLeft="@dimen/widget4x2_controls_margin2"			
-	/>
-	<ImageButton android:id="@+id/folder_next_button"
-		android:scaleType="centerInside"
-		android:visibility="visible"
-		android:background="@null"
-		android:src="@drawable/matte_next_cat_selector"
-
-  		android:layout_width="45dip"
-  		android:layout_height="45dip"
-		android:layout_marginLeft="@dimen/widget4x2_controls_margin1"
-	/>
-</merge>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+UUJX1/kvnnZpiuHvN+dUIdaK//RmaUVOYPJtDxTQTyY0BrUNHtW27d3pQgcga1BA
+VcxoNWBB22qgqBV6jXqNM3Ho9mhYRsFZwHfQMk8/QYeZT0ASQWfUEyYb1mC+5QY3
+FlUXeD+hf1uTSJR6aIWjv+KRdpP67R0DIm6EydeMYc8T/5eNWzmZ1mWwUse9Z70L
+IuF54E27O1gbg/EG2/dGKG4k7586xRMmZcAAeSb3s32ASnKh87i6E5OVFJ/F6JbV
+N2RB3XbMhvOTDNJ67RCP1IXSxQF7nUak0F+IXo7XrDe9vweJRLoJ1RTPjeczdLBq
+Y3iUXWOYbTUk0U+lVo4b8XZIuN2hyHgZ1I4UGRK7eRHIfJcNe+BjRabWkrCV6Vt0
++GggYKOTBQvGAq7jBQDQjgBghPhUSo8pvFzpx+6j0MUmfdn/gxl/Ceb42hVWouzS
+Mhe/Xi6GGVp5iOst+EvLevjEPHjlg4c+Z55oWwaB6Fsb7w5vgdBdg1wPMtwUbvUm
+FOPrrd8RBtzFiYBRPr3cHrQX7eKKivHlA5l5BRkA0qbgc1gWfif4w22pnDsUGwMp
+EaTkoshdtq20wOjkZJvvEeIvgonV8t3ixZOadZhTmLG1dUTR4QlKWUDLkZ3HTJTq
+UZURnE/ljipvMFfvs68o1HhdRBvlVB2tTFk+KmiY2KRlpNAUnU0cH+xeTKRA2VJl
+3eN81ukBGqoiEOL/QWQV1QMHg8uvQz8U7mK621gmKlKfJqVP9SRzcITcKhJIcB/V
+dNQUtrfOUGsQZBcOARDh85wyz/ZN5cGQ0K0s6VJa1ReWR5NnuDrKnwm+4BK2NNDX
+NokJYw23Da0nN790SEpDMBywWeB0uex+S0TCuTBm9JtQUqS2T+b5tei+VGEpLPv4
+JxZk8LKWpHFPePqyCROQ8i9WPJU60OoqI3JfMkRQ/ohwnnAKGYAjo6Qp2fI3F1sp
+MYE/Hls+DTkNyjwlQjr7lmWqNNbU9Dv3D1T7Gdd0tpf2WmT7sGNh9dvvqIWsdz66
+/DjpkaH6l7H4YxTdiPFIG4RMRPiX+cUzRWR8ww2dH4vfHKWaZ6FbcC0xG/DK1TbU
++vKcfSt6oqXV8OllH977humEgUwzysDSDF9oWmaSQCd3hVvTA5IGbcZHzbVT4f+u
+CM1CSTQnwgMU3w3wrO7OuGgIlmkudv7uY/0PzqY93t4OBnM9GASp6SpBgK83jLnY
+d+74pU6GgBkuqaQI50hsHYJTRxkqcwfFZrNtUq/Kv0dbrEAu3FeYAWT6+X7FdxRw
+Vz6dhtQEByi3BPTqE7LyLyjRrdNig1STSj6oTdQlgOLJR8Lmgvzbw+X+JxU95jor
+gwUDM/w3vvtiOo72EAp4x/jghh09r1Jg4xT1JDxilNiPSbvqS3vtljLg9bKCvr2n
+MVTQBqq+Lw3I5EclbQdhpWyX7W6CHHBUpIkTFsQm/lwr4kCe3I5ckTDzq1F/U30g
+HwiYSKJQxk+9mv2oVI0jGeac4Y9u8xV97FJiKNxKUd3GQP0GgoptIfbEPiCMO8Nn
+ms1VCpkVhCDq89++fdCNnqte1QBrqhTdXhaN8ttI3jmKhNeYW4VT7N+kcG9tkchG
+dT+XxNlnbPB69FaC04hs0CSplwqvNTfhaKk/Okz35OnMMHq9LJauOw2gIYUhTK5D
+ORSuP4VJ7Cp7YUkiqdlrcgk3ZwxWqt3eghYtLUIeOWpFv8vz+gMokkPcYHhd58uQ
+Rj2IeMJcUbK8tGD3SIEALX3IvrntxFHbIm/Uduf+lco/cYEIsdI189g6AlELj/Jm
+pdwAA+3xLRTCauke6jnEdcxQBJBP6Yr+FyrjbPOEMh27ApUen2UhTZDnoejoEUNB
+FteY1LZJVAuCW+Izfab8pJsYZbIdHM2+W8dvLOcSAhRJni+tNKXZSUmA0iKBF8kU
+TvnYo1HwxzEfh7h3QFztEqXwnHZ0XxqndWV991wXh+AWMEj5ZLKvTBMarwnle2sj
+iLEjbKnZgNzRIwR/JrRR8TScPLke7+r5IHYtvpR+jgc/KiaexIliqsXgAbs/MaXG
+m4Qx14opg8dca5vFVEvFdKpvhUrrYBku+dZZorhfFoEs7JxazHiGwVFJNALjjZXz
+L6Et1G37pSxaHHwbZTIYI7am+VDfcmSTcRF5uBlB3ChdlRyuvWrNu7cuX0FbQ/w6
+cWNMj+nvweGgXdYUExQtRq2ySKYAMKdgdRcngloP3XxyBb8LGdEx6lsHPILSjdtx
+Ifb6A+JHuMOKqd0UYGiDy2HQMx9YBRjsmqiM56M90aA=

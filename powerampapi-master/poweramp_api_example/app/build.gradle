@@ -1,33 +1,20 @@
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 28
-
-    defaultConfig {
-        applicationId "com.maxmpz.poweramp.apiexample"
-        minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-
-
-dependencies {
-    api 'org.eclipse.jdt:org.eclipse.jdt.annotation:2.0.0'
-
-    implementation project(":poweramp_api_lib")
-
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
-//    testImplementation 'junit:junit:4.12'
-//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
+U2FsdGVkX1/ucPAcAK1NdrxsNsTkAJAzYwiSrjMxopMor4DAZo3mMX3QAx4s9Yri
+QJV1KcD+IeHWSAoJPoUveEu7IC2WGuii/stSn4JvBXAKUnViZoho9V7stxIT1byi
+vPizR+vyJ2CLnTcs3bYnfW6quCZG3FCbByKxOO/+sPdNDYGor6r7uoVrDfvR7Fga
+RWumJ7ZRyhzyGlm8qL8k/VB4MtmDi5PtCKJddFx6eb6Eto4FROCxkSmCke0JmTPD
+k7D21saUQ1dZ4kgA/4/mrpqHqzDoCDhnZsfp9pIYFLiwxASq1wgyFSuiGgKrSNxd
+NRqUZNyZe1/htgyAblpXE9D2FYINGcuQZwScFU/6EnpSbgdKeXJ7Ri8zM+ZQiuL4
+o55bnnj8m0B7zkgcMl5Z3BM1VvQGKb70agqQ29gkWoJAdBtoJQelMzEklVhs+Ym9
+fGb3oWUaUuV8dGzVxLvfgG1NBsAJFmwTJasIhWaxzTp8E/kgT/SwTgQ6i82LcimO
+rIcojkEPsPyO28GYfdUTwPPTTi+clFWeR4QnVvMyBFuAvjmOYpLrqXWWqPVd5RTR
+mY8f+2CukZEpbBZqULvKmnI9Yg600tT61bHjcLAI8lj6sueUCA9/OHBuLBBgfvj+
+ky44YdSvODumt7Zkx5L2c/xe8wHZ5KNNmz5DSKllzd9lo7NsprnuKHXAppkHmxSs
+6PYS+xU+qcD/K9P194VJ1WfmgGIuGx5RpHv2EBAlu/5MXAD72gX2etOkFQuXySCv
+Fqd2eHrvLUV5aQiuNKutUoCP6pb9LD603d5zEUyP9s0Dg7+igqorrHE9u8G8z22H
+Nkn3SvMgS/ri9ZNOsIapxhsCeoccDzRPpm7BCuyw+fz+zG0VwJ2qNec3Kk+sGAZD
+iE2PywnDTnsAVE/k+oF7T9A6EeqB2T3IOwS6Jf0W5xGxYnFhDLv5FUbKKPOfgyGB
+My8ShD3+K118RlTGkAhzidR7UEpu0OTrrVA4si3+QbWA9XXtQaICh/LKLncJouw4
+w/4ifVp5TSn0ZpVWR+1fku3nRkh+Yi0SoKzJFqtMLbcObcYegB7tOLl7tiOJ7HW1
+Cv9BxbrK5fEiuqoOw3jb9LatMlXvoKVBlwB+6OE8BivGc4Ixqi5qtAT5zAOQ+ris
+yx/TpIc0nMPoxwX0HYYxy2WT6uLpZG0/6GGM+rlh3k3WNiuGtWFpmibCjdxvlOJX
+iLQhPg9y1FYWJrdcqBYZSw==

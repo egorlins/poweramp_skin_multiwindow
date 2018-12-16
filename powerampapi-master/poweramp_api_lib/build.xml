@@ -1,85 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project name="poweramp_api_lib" default="help">
-
-    <!-- The local.properties file is created and updated by the 'android' tool.
-         It contains the path to the SDK. It should *NOT* be checked into
-         Version Control Systems. -->
-    <property file="local.properties" />
-
-    <!-- The ant.properties file can be created by you. It is only edited by the
-         'android' tool to add properties to it.
-         This is the place to change some Ant specific build properties.
-         Here are some properties you may want to change/update:
-
-         source.dir
-             The name of the source directory. Default is 'src'.
-         out.dir
-             The name of the output directory. Default is 'bin'.
-
-         For other overridable properties, look at the beginning of the rules
-         files in the SDK, at tools/ant/build.xml
-
-         Properties related to the SDK location or the project target should
-         be updated using the 'android' tool with the 'update' action.
-
-         This file is an integral part of the build system for your
-         application and should be checked into Version Control Systems.
-
-         -->
-    <property file="ant.properties" />
-
-    <!-- The project.properties file is created and updated by the 'android'
-         tool, as well as ADT.
-
-         This contains project specific properties such as project target, and library
-         dependencies. Lower level build properties are stored in ant.properties
-         (or in .classpath for Eclipse projects).
-
-         This file is an integral part of the build system for your
-         application and should be checked into Version Control Systems. -->
-    <loadproperties srcFile="project.properties" />
-
-    <!-- quick check on sdk.dir -->
-    <fail
-            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var"
-            unless="sdk.dir"
-    />
-
-
-<!-- extension targets. Uncomment the ones where you want to do custom work
-     in between standard targets -->
-<!--
-    <target name="-pre-build">
-    </target>
-    <target name="-pre-compile">
-    </target>
-
-    /* This is typically used for code obfuscation.
-       Compiled code location: ${out.classes.absolute.dir}
-       If this is not done in place, override ${out.dex.input.absolute.dir} */
-    <target name="-post-compile">
-    </target>
--->
-
-    <!-- Import the actual build file.
-
-         To customize existing targets, there are two options:
-         - Customize only one target:
-             - copy/paste the target into this file, *before* the
-               <import> task.
-             - customize it to your needs.
-         - Customize the whole content of build.xml
-             - copy/paste the content of the rules files (minus the top node)
-               into this file, replacing the <import> task.
-             - customize to your needs.
-
-         ***********************
-         ****** IMPORTANT ******
-         ***********************
-         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
-         in order to avoid having your file be overridden by tools such as "android update project"
-    -->
-    <!-- version-tag: 1 -->
-    <import file="${sdk.dir}/tools/ant/build.xml" />
-
-</project>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf5Lyu2sbOOSlinevma4xDkl
+9cket7hFLoYk0mSdCoJmqbvpRqyTxXjzxKmjHbLxWijB+4BHyOZU2sqLpVa6CAP0
+yvkJa/2U5WB2EvlIhCWJI4I/NPexL4HCEViEpTYBggPfDHdkCB5gElhrff41roYG
+yfPjXkIa7xLWbGn7zMbgNw9ENZ88vewnBIdH7kjIxbwVR1+3iIJxEml/4kfG/9Fg
+R4/u4o3QCLs2Tp0CRnA4y6kSaxogzrRq69S558acy0nUyYSKryGU5S/Th9vuan+r
+fdjbMQGmt5vF8gwEy++uun7Cx62Dfty0emuWLsFtZ0eikz2D6Uq17G6Yi5g/c2TB
+77JKBRX8cJhFQMOkALnSTcgcYvaEz91ITmoOdITCtUoHWqNGuP5NUgQHx+J2Ptci
+tsS7U5x9Dz8ZQpaMWB6YTV6rVydXqemWKlTngnE4fZHG7cFdy7CtB+wumV2ASNZR
+L79sKOWPycVsr/h3t2AAlmpE9H+Bmr7vDWiK0GF+R5y8CveAId1t6qH4ht8FoaQz
+R5Tpb1cMAm8M/hc3E4kY4PXr94q+Mgb90e039k2fx2PHXcMMkOCSH9wZy+6/74yh
+aRc037DYt0kDFYDSXymQkQyYIaUr5ehDuoM0LAZ+T/9fYcPsOgo4uLBU7tVZB6Q3
+O6G0cRkJLi87+96EK0STcTTB1+2P4qqjMb/rv/IVv9/+MbTAXkIqRAqzuYIL4lz0
+QkMZZackYOEgt3GPXK8mGAwyz8yFd/j0Iw5zgUC0fvZTaCbEWbmLzJRCRSYzhFtM
+KzO6wWognDIEveyf25Z62Um2inriL4AHKQAYUD4DSjqwLbGOj/u1d6DHn4BKmNIW
+GunBn4u+ypY/s527ghMUGfuHdrZG/ZnYsphtNnJzSn7j7Wrvw0aWlRmuK8usD1gH
+x+j5AJ0OiFO7AQj2RYskrescXbvA3O5gcEcqO12fYFpfsWW4+sDq7eBUNRcM01bT
+VRUycouJQRNbkC1fpwEXFaM+hIrzOc2N7r6SZIYm7TK+VBE3ODpUDUrkbjqQxzQs
+WqhVpY25r6RER3UUqk/nT0nPAQoFCzBLkxQwgu9ynDUYrgsMvCntVVdMIeclpm/2
+vaSz4TRoTz1XK+vqgGenXO1Sot9nkJshr25OhPv2NtRaPLtdudVGwR82b+GBXsA5
+44rFmj9n1HfUKK+8ajYniOX/5Q/EKd1yDKtkXGJ9/X7sC+vU+Ys6wFWFvkjOnLGY
+6huhbBZI9hZ8kkdyIAn+GkkFmIraY7CZ6odUz1xkwMubSQxr2DRLQRKrhvx+Mthb
+mEHVGXe44D8Y2QZ5NshZukDNq1Dy/8D7qVpxkG5VWhXiIbUpUeBMBfg3uSTF+0Uf
+oc6vRTkWePZ6azfQuuI4jkGgq8tR12bRVtbLK6DFKOTdXIh1g6Q3I+bUDgoVi2xa
+Np9NcJ0KBuvClFppd/dILloCwXL9nU4V6a7pRyO1QAHFK0DHBcRUqsli1L3Y9Fc8
+eLtaU0oatzfxFsIOe/cXPGZj53fEwfGpGD41ITjXJI3b4JwmKtyUyL82xrIT7mth
+ixKlVp4RRT8jcUWkZUW9r4lsNo6PwHAyG5VXeXDn2n0S05R+ZF9qZuQxSaHUgJMC
+Xd/Y0SFskYo4qQX9aR9t4tgpdyprMwdoUmqMJTTa80uTcZFLTadUyNxiZ7WXaymA
+oYW6acdYxD8brZ0B/gHx+B2dw9A8jRRDxkiaBhRs9eYzBFmMAF1GJsKvE0y3NwGY
+wPZMXFwNdbzAt4yuGQzsaJ5hoM4RIMutIMYd5LGzrsbhsljsX9DxU6fXH6En1E/y
+NZT/ii9FSyJowQlaytttpBqA45zESvkFJxtSMX8dAfXm+NgmV2zA64SP/83l/yK0
+XuYQOi6Ue1wrxqbfvsSlY1uI16cRfX+T+6i117InQVHYels9/5vO//NrIVlnJWn2
+VWuoJ+PmJwXZm7MK+ZlM7xukIrtElO4A/oH1Qy6tgdAIrQhylW+dWvB20uuS5TqU
+NE6CphHHwFnAu4Hw1e1hcVwtpC5LHHJ3COIlltddMn1VG/9DUpEaYm07Yx0l5DkN
+fngXE1DpS82BrHQXVc055bgZsNYgno5aK9O8XxY5l1ytqBVUp7ByikKykPG/OYP5
+oFmK4p1EGxBOp4cLXaayQDrRjiSDeVCBWDw3Zc2qYtKDSwdQTvIigizpmeBNWrh+
+E2UKOyHUFk9DAwrE5DFv+uTKLXf7aO4d6TABcVRo42KoRTaA1KRaZW42PnNgtGP3
+YLLH+dGDB+zKhnO7F7FAXhvpz8xoopOAus2V6q/gdwhLk2BjVqa9e8CEbiztVzYa
+jmTnfEUCETRY8rMdF5GbU87OfBGn3J0wA7xi3PdTBVskbArjpMTTPDwjA3EOVmAK
+J7tvmY8c1tdIrjhN4rRCHzeHvPCBRZcYQY+bUEncgrOM1rpRy+CxcR5rwJoIdrXc
+YKVNikTjJhtPl+k/S0hsu3rgydVaSWGmR591mqfdpxJbwd2/rzIC6ooksIdUCmnw
+6XOl7HS+D8XEgh1bAqhAbZS3lCgP2FQoQYdZ+sa0BeC6J2TeYZ3eqQg7i90SF/DQ
+Qc+KH9F7h62whktfHtEI+lVc4Y9e4ytKf/YLOS9CfNLuh0UHnL8PVfSTIVlkcq3i
+iOd4k2SnMXuzhg92/lHsQgFOBlCv3R2BsZCbUjnzomeTGERNzIhGHIw6ON834E+s
+M4pZQ0aY26rB/+C7901gp8WgODcbo69uA79/LGfEckALebzTJAmHt6H96C6U2A41
+w4yMKfSZJZQBBHYKguyTDVKi8xes53yZfSTiE23TzufGrWG1m2vR70Vqqac2Q5mf
+gZbqdal7bd9wjjGo2q+F7ygZ73fWn6FpIjFsJoeQGdlbxVcRaxmsWXX3TI4zvm1p
+RoDCFZIu6wDaBsOQHpDGwwO5BCg59Epeqjo0BhLF3oC3zLU5S9KIMqbqByaLKU3q
+OA/H1V54wJxNt1XrsHuihKA9C9IRejaSFXsHt5O0PLgTLDqsq3Qsx/k0E7FOHZ5+
+gvcePY/Ee6P7NzOI8eQg0G0J4elVhWdcRTlnmXdaDc7B89pMP2srUKHbXXiH7+z6
+RbQU8MHLEidRoM9rsTon9yefQXsa90xZ1jbrg8ndvNX6+R6f8SoAoUV1IR/zqs2b
+fllJdyO+oGitCR6p3CXbTqgznZJWIUpx86OF9hIQFqLYDqZ/vxcnXNbHKcqoB0EL
+H1V2H34IaW91ds3TRLUBXrlNR/l36MkF6SGB56aCOFWoaVgS+2/NQZknnQLbdZuv
+92kxh4eX6XuKKe2MxGDIAkni4YOoEuh5WR0UOLId9OtsFyviHXSL707WoJDWI0tK
+zeFZitBx8Ji59Oo/YofwoqVHnfgUORpVrzTSKqfXJcI1Djx35HlvaRuT7NzuiG7H
+vADudoHJEbOPm0RVN6Y1AUvSU9b++B9NAQ1d9S+BFnc4mmAQZATmfT/Q1IW+Lx75
+Gt4ExUnbMf9vmD30k3HdbWyxhBNrU/jq8Mui8N5y3M6a35e1vAj6QRLikeMBsqhV
+EoJdOozzWLOZdf2nFZUAKVC+pCydsAkeuyVmffw3Zh13ES05RdzFSlVzDEVFmOGf
+rWXLvbI/Bs+P+R/t3e5+3jlGF5ZOFtSL+yO5YaVCuVAbmlnoDx0G3aDWkmuIne9I
+Z2pxHWVq3gmz4VhlAFcbl/hinFHrsfCTZrxTPt+QNYNyJYB694nvekrC6EsopLwQ
+LHMQkVEoazGeUBiLQrP5pThg/Uk4WHaJF/76xQ+LcAfHMKPu7Mh0aOxCn76dWMQS
+MnEZhBF0tqn9kGCE1iMiDqsByeJG5F1e0Fe82hr6hvrW+lRCMoQGCtqFH/HNOWjy
+s5FyDsZQEosHuhfNDOpO/uDFIepgof3oAPExdZQp4axdaQDc3QdG8fBsKFx2yRED
+N11af2zkqyrOPgMIyuBJhDWw7WUgAa7k2UdMqKS9LzPwLW/akVqusognP21FlpgF
+fHSzFKNWuLx9L/WUuBnaRo0ukKPjAR/XMwfynyIsNdDQC34x1/KLWU41HsEtJGoS
+62ubPFX8ADq7278MOb2Yd9dEUPWd8iX6gAuYuH+33aSEjU7otBC9mvSa1Rq5m6K1
+5WGVpXrzksGwpLGla1/hJpO/tBivRjBghYc/dTOJaU6YF7rzQzHAUMLzVJZ2e7vT
+hGL/5BLinoxg2T8YzUKiKWmueDtFmP0wkUfdRp/akeZ5rV+WngzwDeGzlbTp0Lya
++rgf6fzRvDSkM9jhXxdqsuek1LRDQre7Y8gIs7am2FnvzOLuu0yKceFwMeZR3bw4
+2phoXs/K+61X9fhNBPByfRJMnt3pb1r6McXupl/jzTA1eh8u18kL41MuTek37heH
+x7PpVzQcp2G3lvDfib1p64d6yeeW5B7EqUX3JDwuDoMeanmnJBN0qTcwg3qYv0no
+t0FHTwsN00iaphIG3BDVTeVpC79A5EzP7IefU7vJVeE=

@@ -1,229 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- layout -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
->
-
-	<FrameLayout android:id="@+id/aa_cont_layout"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_alignParentTop="true"
-		android:layout_alignParentLeft="true"
-		android:layout_alignParentRight="true"
-		android:layout_alignParentBottom="true"
-	>
-		<ImageView android:id="@+id/logo"
-			android:src="@drawable/lock_screen_logo"
-			android:scaleType="fitCenter"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			android:paddingLeft="16dip"
-			android:paddingBottom="48dip"
-			android:paddingRight="16dip"
-			android:layout_gravity="center_horizontal|top"			
-		/>
-		<FrameLayout android:id="@+id/flipper_frame"
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			android:layout_gravity="center_horizontal|top"
-		/>
-		<FrameLayout android:id="@+id/flipper_frame_alt"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="@drawable/widget4_shadow"
-			android:layout_gravity="center_horizontal|top"
-			android:visibility="invisible"			
-		/>
-	</FrameLayout>
-
-
-	<ImageView android:id="@+id/deck_bg"
-		android:visibility="invisible"
-		android:src="@drawable/widget_bg2"
-		android:scaleType="fitXY"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:layout_alignTop="@+id/playing_now"
-		android:layout_marginLeft="5dip"
-		android:layout_marginRight="5dip"
-		android:layout_marginBottom="5dip"
-	/>
-
-	<ImageView android:id="@+id/shadow"
-		android:background="@drawable/widget_shadow"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:layout_alignTop="@+id/deck_bg"
-		android:layout_marginTop="-5.85dip"
-	/>
-
-	<RelativeLayout  
-		android:id="@+id/playing_now"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:padding="4dip"
-		android:layout_marginLeft="5dip"
-		android:layout_marginRight="5dip"
-		android:layout_marginBottom="5dip"
-	>
-		
-		<RelativeLayout android:id="@+id/album_artist"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-		>
-		
-			<TextView android:id="@+id/title"
-				android:singleLine="true"
-				android:ellipsize="marquee"
-
-	    		android:textStyle="bold"
-    			android:typeface="normal"
-    			android:textColor="@color/matte_text_color_1"
-				android:textSize="12dip"
-		
-				android:shadowColor="#F0000000"
-				android:shadowDx="0"
-				android:shadowDy="0"
-				android:shadowRadius="2.0"
-				
-				android:gravity="left"
-		
-				android:layout_alignParentTop="true"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-			/>
-			
-			<TextView android:id="@+id/counter"
-		    	android:textColor="#000000"
-				android:background="@drawable/matte_rounded_bg"
-		    	android:textStyle="normal"
-		    	android:typeface="normal"
-				android:paddingLeft="4dip"
-				android:paddingRight="4dip"
-
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_alignParentRight="true"
-				android:layout_below="@+id/title"
-
-				android:textSize="11dip"
-				android:visibility="gone"
-			/>
-
-			<TextView android:id="@+id/line2"
-				android:singleLine="true"
-				android:ellipsize="marquee"
-	    		
-    			android:typeface="normal"
-    			android:textColor="@color/matte_text_color_1"
-
-				android:textStyle="normal"
-				android:textSize="12dip"
-		
-				android:shadowColor="#F0000000"
-				android:shadowDx="0"
-				android:shadowDy="0"
-				android:shadowRadius="2.0"
-		
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				
-				android:layout_toLeftOf="@+id/counter"
-				android:layout_alignLeft="@+id/title"
-				android:layout_marginRight="4dip"
-				android:layout_below="@+id/title"
-			/>
-		</RelativeLayout>
-	</RelativeLayout>
-	
-	<RelativeLayout
-		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-	>
-		<ImageButton android:id="@+id/repeat_icon"
-	    	android:src="@drawable/matte_repeat_levels"
-	    	android:scaleType="fitCenter"
-	    	android:padding="8dip"
-			android:background="@null"
-			android:layout_height="48dip"
-			android:layout_width="wrap_content"
-			android:adjustViewBounds="true"
-			android:layout_alignParentLeft="true"
-		/>
-		
-		<ImageView android:id="@+id/type_image"
-			android:scaleType="center"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_centerInParent="true"
-			android:visibility="gone"
-		/>
-
-
-		<ImageButton android:id="@+id/shuffle_icon"
-			android:src="@drawable/matte_shuffle_levels"
-			android:background="@null"	
-	    	android:scaleType="fitCenter"
-	    	android:padding="8dip"
-			android:layout_height="48dip"
-			android:layout_width="wrap_content"
-			android:adjustViewBounds="true"
-			android:layout_alignParentRight="true"
-		/>
-	</RelativeLayout>
-	
-	
-	
-	<LinearLayout android:id="@+id/controls" 
-		android:layout_width="fill_parent" 
-		android:layout_height="wrap_content"
-		android:layout_above="@+id/playing_now"
-		android:gravity="center"
-		android:layout_marginBottom="6dip"
-		android:clickable="true"
-	>
-		<ImageButton android:id="@+id/folder_prev_button"
-			android:background="@null"
-			android:visibility="gone"
-   			android:layout_width="1px"
-   			android:layout_height="1px"
-		/>
-		<ImageButton android:id="@+id/rw_button"
-		    android:scaleType="centerInside" 
-			android:src="@drawable/matte_rw_selector"
-			android:background="@null"
-   			android:layout_width="38dip"
-   			android:layout_height="38dip"
-		/>
-	
-		
-		<!-- PLAY -->
-		<ImageButton android:id="@+id/play_button" 
-			android:scaleType="centerInside"
-			android:background="@null"
-			android:src="@drawable/matte_play_big_selector"
-   			android:layout_width="48dip"
-   			android:layout_height="48dip"
-		/>
-	
-
-		<ImageButton android:id="@+id/ff_button"
-		    android:scaleType="centerInside"
-			android:src="@drawable/matte_ff_selector"		
-			android:background="@null"
-   			android:layout_width="38dip"
-   			android:layout_height="38dip"
-		/>
-		<ImageButton android:id="@+id/folder_next_button"
-			android:visibility="gone"
-			android:background="@null"
-   			android:layout_width="1px"
-   			android:layout_height="1px"
-		/>
-	</LinearLayout>
-</RelativeLayout>
+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
+8E2Ek+cDqHP2dA68Oj7ZHw==

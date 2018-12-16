@@ -1,71 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- values -->
-<resources>
-   	<dimen name="widget4x2_height">200dip</dimen>
-   	<dimen name="widget4x2_playing_mode_width">-1px</dimen><!-- fill_parent -->
-   	<dimen name="widget4x2_playing_mode_marginTop">0dip</dimen>
-   	<dimen name="widget4x2_playing_mode_marginLeft">0px</dimen>
-   	<dimen name="widget4x2_playing_mode_marginRight">0px</dimen><!-- not used -->
-   	<dimen name="widget4x2_controls_marginLeft">0px</dimen><!-- not used -->
-	<dimen name="widget4x2_controls_marginBottom">8dip</dimen>
-	<dimen name="widget_shadow_offset">5dip</dimen>	
-	    
-	
-   	<dimen name="appwidget_4x4_minWidth">294dip</dimen> 
-   	<dimen name="appwidget_4x4_minHeight">294dip</dimen>
-   	
-   	<dimen name="appwidget_4x1_minHeight">62dip</dimen>
-   	<dimen name="widget4x1_np_marginTop">10.66dip</dimen>
-   	<dimen name="widget4x1_title_size">16dip</dimen>
-   	<dimen name="widget4x1_counter_size">11.5dip</dimen>
-   	<dimen name="widget4x1_line2_size">14dip</dimen>
-   	<dimen name="widget4x1_controls_marginBottom">0dip</dimen>
-   	<dimen name="widget4x1_aa_marginLR">6dip</dimen>
-   	<dimen name="widget4x1_aa_marginTB">6dip</dimen>
-   	<dimen name="widget4x1_controls_paddingLR">2dip</dimen>   	
-   	
-
-   	<dimen name="appwidget_4x4_lr_margin">7dip</dimen>
-   	<dimen name="appwidget_4x4_width">-1px</dimen><!-- fill_parent for atrix -->
-   	<dimen name="appwidget_4x4_height">-2px</dimen><!-- wrap_content -->
-   	<dimen name="appwidget_4x4_height_config">450dp</dimen>
-   	<dimen name="appwidget_4x4_tb_margin">0dip</dimen>
-   	
-   	<dimen name="appwidget_4x2_controls_padding">0px</dimen><!-- not used -->
-   	
-   	<dimen name="widget4x2_aa_size">140dip</dimen>
-   	<dimen name="widget4x2_title_marginTop">5.66dip</dimen>
-   	<dimen name="widget4x2_lines_marginTop">0dip</dimen>
-   	<dimen name="widget4x2_counter_marginTop">4dip</dimen>
-   	<dimen name="widget4x2_controls_margin1">0dip</dimen>
-   	<dimen name="widget4x2_controls_margin2">-4dip</dimen>
-   	<dimen name="widget4x2_controls_marginTop">-4dip</dimen>
-   	
-   	<dimen name="widget_keyguard_width">-1px</dimen><!--  fill parent -->
-   	<dimen name="widget_keyguard_height">-1px</dimen><!--  fill parent -->
-   	
-   	
-   	<dimen name="appwidget_small_configure_width">-2px</dimen>
-   	<dimen name="appwidget_small_configure_height">200dp</dimen>
-   	
-   	<dimen name="appwidget_4x1_configure_height">100dp</dimen>
-   	
-   	<dimen name="appwidget_2x2_configure_width">156dp</dimen>
-   	
-   	<dimen name="appwidget_conf_options_width">-1px</dimen><!--  fill parent -->
-   	<integer name="winget_conf_gravity">1</integer>
-   	
-	<dimen name="ambilwarna_hsvHeight">240dp</dimen>
-	<dimen name="ambilwarna_hsvWidth">240dp</dimen>
-	<dimen name="ambilwarna_hueWidth">30dp</dimen>
-	<dimen name="ambilwarna_spacer">8dp</dimen>
-	
-	<dimen name="widget_play_padding">0dip</dimen>
-	<dimen name="widget_rw_ff_padding">0dip</dimen>
-	<dimen name="widget_cat_padding">0dip</dimen>
-	
-	<dimen name="widget_conf_options_padding">8dp</dimen>
-	<dimen name="widget_conf_options_space">4dp</dimen>
-	
-</resources>
+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

@@ -1,191 +1,193 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<!-- TODO: move non-base values to values-player.xml -->
-<resources>
-	<integer name="ORIENTATION_VERTICAL">1</integer>
-	<integer name="ORIENTATION_HORIZONTAL">0</integer>
-	
-	<item name="WRAP_CONTENT" type="dimen">-2</item>
-	<item name="MATCH_PARENT" type="dimen">-1</item>
-	
-	<integer name="VISIBILITY_GONE">2</integer>
-	<integer name="VISIBILITY_VISIBLE">0</integer>
-	<integer name="VISIBILITY_INVISIBLE">1</integer>
-		
-	<integer name="ITEM_BG_LEVEL_INTERMEDIATE">32</integer>
-	<integer name="ITEM_BG_LEVEL_POPUP">16</integer>
-	<integer name="ITEM_BG_LEVEL_FEEDBACK">8</integer>
-	
-	<item type="id" name="_debug"/>
-	
-	<item type="id" name="_tag_scene_zero"/>
-	<item type="id" name="_tag_stateAnims"/>
-	<item type="id" name="_tag_activeSceneAndState"/>
-	<item type="id" name="_tag_merged"/>
-	<item type="id" name="_tag_scene"/><!-- Top level scene, if exists, attached to rootView -->
-	
-	<item type="id" name="behavior_dialog"/><!-- Top level dialog behavior -->
-	<item type="id" name="behavior_back_button"/><!-- Top level back button behavior -->
-	<item type="id" name="behavior_menu" />
-		
-	<!-- REVISIT: move to better place - player related ids needed for styles - otherwise appt can crash -->
-	
-	
-	<item type="id" name="scene_grid"/>
-	<item type="id" name="scene_zoomed"/>
-	<item type="id" name="scene_item_menu"/>
-	<item type="id" name="scene_button_menu"/>
-	<item type="id" name="scene_button_menu_closed"/>
-	
-	<item type="id" name="_item_type_null_content"/><!-- No content placeholder for NullLayoutEngine --> 
-	<item type="id" name="_item_type_track"/>
-	<item type="id" name="_item_type_separator"/>
-	<item type="id" name="_item_type_basic_header"/><!-- Debug -->
-	<item type="id" name="_item_type_text"/>
-	<!-- <item type="id" name="_item_type_aa_le_decor"/> -->
-	<!-- <item type="id" name="_item_type_miniplayer_track"/> -->
-	<item type="id" name="_item_type_menu"/>
-	<item type="id" name="_item_type_menu_shade"/>
-	
-	<item type="id" name="anim_scrollbar_pressed"/>
-	
-	<item type="id" name="scene_dialog_scrollable"/>
-	<item type="id" name="scene_selection_menu"/>
-	
-	<!-- Navbar -->	
-	<item type="id" name="navbar"/>
-	<item type="id" name="navbar_shim"/>
-	<item type="id" name="navbar_extension"/>
-	<item type="id" name="navbar_nav_buttons"/>
-	<item type="id" name="navbar_extension_content"/>
-	<item type="id" name="navbar_list"/>
-		
-	<item type="id" name="scene_navbar_2lines"/>
-	<item type="id" name="scene_navbar_1line_sheet"/>
-	<item type="id" name="scene_navbar_2lines_sheet"/>
-	
-	<!-- Popup menu -->
-	<item type="id" name="menu_placeholder_scene_menu"/>
-	
-	<!-- Dialogs -->
-	<item type="id" name="dialog_shim"/>
-	<item type="id" name="buttons_layout"/>
-	<item type="id" name="scene_dialog_in"/>
-	<item type="id" name="scene_dialog_in_loading"/>
-	<item type="id" name="scene_dialog_in_progress"/>
-	<item type="id" name="scene_dialog_out_progress"/>
-	<item type="id" name="scene_dialog_in_toast"/>
-	<item type="id" name="scene_dialog_out_toast"/>
-	<item type="id" name="scene_dialog_out_alt"/>
-	
-	<!-- REVISIT: move bus/msgs/state/cmds ids to separate xml -->
-	<!-- Bus ids -->
-	<item type="id" name="bus_app"/><!-- App level bus, also a state bus -->
-	<item type="id" name="bus_app_cmd"/>
-	<item type="id" name="bus_gui"/><!-- Gui only messages. REVISIT: no bus_gui_cmd for now? -->
-		
-	<!-- Msgs/states/cmds -->
-	<item type="id" name="state_app_live_activities"/><!-- int. Number of created and not yet destroyed activities -->
-	<item type="id" name="state_app_active_activities"/><!-- int. Number of started activities in state between start and stop -->
-	
-	<item type="id" name="msg_app_active_activities_change"/><!-- bus_app, arg1 => num of active activities, arg2 => boolean STATE_TRUE if it's activity start, false otherwise -->
-	
-	
-	<!-- Called by list onProviderOrDataChanged() on data change -->
-	<item type="id" name="msg_list_data_loaded"/>
-	
-	<!-- States -->
-	<!-- NOTE: "boolean" here means integer with 0=false, 1=true -->
-	
-	<!-- List -->
-	<item type="id" name="state_list_selection_mode"/><!-- boolean, also a msg -->
-	<item type="id" name="state_list_all_selected"/><!-- boolean, also a msg -->
-	<item type="id" name="state_list_something_selected"/><!-- boolean -->
-	<item type="id" name="state_list_one_track_selected"/><!-- boolean -->
-	<item type="id" name="state_list_selection_count"/><!-- integer, also a msg -->
-	<item type="id" name="state_list_item_count"/><!-- integer -->
-	<item type="id" name="state_list_selectable_item_count"/><!-- integer -->
-	<item type="id" name="state_list_empty"/><!-- boolean, also a msg -->
-	<item type="id" name="state_list_search_text"/><!-- null if current provider is not ProviderSearchSupport, otherwise search string, including "" (empty string) -->
-	<item type="id" name="state_list_nav_allowed"/><!-- boolean, also a msg. Msg is sent only when state_list_nav_allowed state becomes true -->
-	<item type="id" name="state_list_view_cache"/><!-- obj=>ViewCache -->
-	<item type="id" name="state_list_current_uri"/><!-- (main list) obj=>Uri which describes current loaded list state -->
-	<item type="id" name="state_list_current_pos"/>
-	<!-- <item type="id" name="state_list_aa_cursor"/> --><!-- obj=>BaseCursorQueryArgs -->
-
-	<!-- float, also a msg. Msg arg1=float ratio -->
-	<item type="id" name="state_list_transition_ratio"/>
-	
-	<!-- int. -1/NO_ID = no trans, 0 = to main scene, to scene_list, also a msg -->
-	<!-- For msg, -1/NO_ID = end of transition, other values => start of transition -->
-	<!-- int=type. Also a msg. Msg arg1=type, arg2=ListWidgetBase.FLAG_TRANS_TYPE_* -->
-	<item type="id" name="state_list_transition"/>
-	
-	<!-- Sets gui to modal mode: used for popups and other modal-like use cases -->
-	<item type="id" name="cmd_gui_set_modal"/><!-- bus_gui -->
-	<item type="id" name="cmd_gui_unset_modal"/><!-- bus_gui -->
-	<item type="id" name="cmd_gui_reset_modal"/><!-- bus_gui, no anim by default, optional boolean arg = anim (PopupMenuHelper only) -->
-	
-	<item type="id" name="cmd_list_select_all"/>
-	<item type="id" name="cmd_list_select_none"/>
-	<item type="id" name="cmd_list_toggle_selection_mode"/>
-	<item type="id" name="cmd_list_selection_mode"/><!-- arg1=0 disalbe, arg1=1 enable -->
-	<item type="id" name="cmd_list_up_nav"/>
-	<item type="id" name="cmd_list_search_text"/>
-	<item type="id" name="cmd_list_add_to_q"/>
-	<item type="id" name="cmd_list_delete"/>
-	<item type="id" name="cmd_list_info_dialog"/>
-	
-	<item type="id" name="cmd_list_play"/>
-	<item type="id" name="cmd_list_shuffle"/>
-	
-	
-	<item type="id" name="cmd_list_prefer_aa_scene"/><!-- arg1 == scene_aa, scene_aa_playing, scene_aa_vis -->
-	<!-- Cancels any transitions, modal states, menus, etc. in list -->
-	<item type="id" name="cmd_list_cancel_all"/>	
-	<item type="id" name="cmd_list_lock_aa"/><!-- arg1=boolean (lock==1/unlock==0). arg2=animMs. Disables/enables any possible updates to milk from list / le -->
-	
-	<item type="id" name="cmd_end_selection_mode"/><!-- this is sent to target bus by selection menu -->
-	
-	<item type="id" name="cmd_selection_menu_open"/><!-- arg1 == menu layout, arg2 == target bus for selection menu cmds -->
-	<item type="id" name="cmd_selection_menu_close"/><!-- no args => closes recent selection menu. Selective: arg1 == menu layout, arg2 == target bus => closes matching selection menu-->
-	
-	
-	<item type="id" name="cmd_alert_dialog"/><!-- To alert dialog -->
-	<item type="id" name="msg_alert_dialog"/><!-- From alert dialog -->
-
-	<item type="id" name="msg_activity_on_create"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_content_changed"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_new_intent"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_start"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_resume"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_pause"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_stop"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_destroy"/><!-- bus_gui -->
-	<item type="id" name="msg_activity_on_save"/><!-- onSaveInstanceState, bus_gui -->
-	
-	
-	
-	<!-- Other bus msgs -->
-	<item type="id" name="msg_version_info_changed"/>
-</resources>
-	
+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

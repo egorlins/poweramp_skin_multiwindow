@@ -1,48 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.maxmpz.poweramp.apiexample"
-	android:versionCode="1"
-	android:versionName="1.0">
-
-	<uses-sdk android:targetSdkVersion="28" />
-
-	<application
-		android:icon="@mipmap/app_icon"
-		android:label="@string/app_name"
-		android:theme="@style/AppTheme"
-		android:allowBackup="false"
-		>
-		<activity
-			android:name=".MainActivity"
-			android:label="@string/app_name"
-			>
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
-
-		<activity
-			android:name=".EqActivity"
-			android:label="Eq">
-		</activity>
-
-		<activity
-			android:name=".FoldersActivity"
-			android:label="Folders" />
-
-		<activity
-			android:name=".FilesActivity"
-			android:label="Files" />
-
-		<receiver android:label="PowerampAPIReceiver" android:name=".PowerampAPIReceiver">
-			<intent-filter>
-				<action android:name="com.maxmpz.audioplayer.STATUS_CHANGED_EXPLICIT"/>
-				<action android:name="com.maxmpz.audioplayer.TRACK_CHANGED_EXPLICIT"/>
-			</intent-filter>
-		</receiver>
-
-
-	</application>
-</manifest>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+pYJp9bcMkgYxPx4X6CltsuRpRlFUE0ICWPaGScilE328t+Xk/2DN8dnQHNJrJrs3
+U5CxL+lHSHXVUhtPQjwrsXCCo9JXI0ZYJL2NC9YZmrksflWKC/r3DVqcItboBwT1
+qT26S6Lac0nQ62SqYPe7Dmktt+C3lVgAk4UYHiPUhxHtI/RSHYuph9Ad1vu1YMnV
+tkacf8kGzN/G0IqEKLS338FLdflqChyqlvhUyV3IqgacQSuSr41XjyuhU68V5ONt
+WArolglpJCXEyuJ+zom7AIiSyoj1BDhGKR0a3xuB8qpsBwMR6kHxU8CeUTQ4UL+7
+/YBMP4GvaomDRWKU9JS8WUoqSKo77BktYmP/4BcIB0WWWeyi7GhIrKS8b/JJKO3U
+doWdvVr7QhL+aLxzpAWkY4G2YiXOHfPhJ8tZzttuCR/tbe4Pnzf4r15JBy5pnJ17
+FV4YK3GDGb6i0t3Hqd9cNRp+U6EFTaKzMLRH3LBbmiq82AvONNY+zZl6Ozir3xt7
+rhJYKFGW8ahBcBXPYGqDwQPfrXdvpYwtIdoOaBqyXSdjdLN4KT+hRZmZCG0aupL4
+9+rA76KR46EQP5lgpLzbl5POftZYCXjh6k8r18kFKb6Nr68FThOMixvz/IF4/Bq3
+jCIVsZBZry3E+E4wHaC+K2CaZgPDreglLjqbwmEkTJX4bU4mvtEwQaHhl+kbbz8w
+a3DLJuR0CSQdK8pRoBS0xqxMggYTmfUL3/jqIx2SNeJPWycNsD3ISgp1s6kzPR5Y
+vGyn00T2ZF9H63WjG4eKXmsNr3NFM+AgPbjhgw2suxJeM51aov42jG+ju1Ra8x5i
+lS5Cjm7WGpoVtLqqLw9rqa9CMHNNnHWeM0NuRF9jUuESnohtBFPTy8RT5tH4DFAU
+5cNVyPg58Fp9ooVFX6KsBkDy2NqupKPd6DXbgjS5/HXE5EARHPQakmWOm4Vt46Ew
+la23XOwjqfFjYsKu6chYyonw/pvKfKEK5oC46VWDWR+WYSzRdrlfmvywspqgw2aP
+QIO1yFf+slxbJ/ukune6tetSGdWRja0V0Dotx4vAaGb21LIomLpNVpFl9ogHJntt
+nT7ji1cGInxxrMqNfbWaNrq/35gSAFGPGeF6kwZfO4QqNtfyHaEtasn0uJycUfDq
+sHUQc9DeiuYFD/iOXuSdPbUMSLpca7U5FpHhcUOs5mnkLjWTcqRnpVQhLVqkB7du
+k+IgisuY4c1/8BzTIb1IYoQL159JrodETm3m20nYE1xfXc4Y6DoKR30XBoxcuV58
+uin04xXkD3jkJkR5SjG/+csvuYe3G3KEyE0S+AnRJTQn4h0Ou5rCEo/e3Eozu0dY
+fnUzn5Q390uhs6OThLuSoUALkxywg7D3RJWZiuq+yAkKmQoppskdb27UGY2SAK1g
+Kn94OrFtQmctpd7B21iDfHozRp98n7O5rJ4rjH2nnWWuLY3+jrQYDQ0kEOPJYnB1
+4kzsCUV98C2tJSCwgRjQIT8H8RrEJ8VAUMFKZnDpYAHrAzYO0H43xS7lnxiqzBDA
+6nvmtyD+WLFyvet5uOIQVAVM9gIXbtwpUhMGpqXCDDM=

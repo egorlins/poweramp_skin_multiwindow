@@ -1,39 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<resources>
-	<dimen name="NavbarBounds_height">48dp</dimen>
-	<dimen name="NavbarBounds_height_scene_navbar_2lines">102dp</dimen>
-
-	<dimen name="AAA_TopWaveseekLayout_height">130dp</dimen>
-
-	<dimen name="AAA_TopPlay_marginBottom">20dp</dimen>
-
-	<dimen name="AAA_Seek_marginBottom">16dp</dimen>
-
-	<dimen name="AAA_TopTrackElapsed_marginBottom">0dp</dimen>
-	<dimen name="AAA_TopMetaInfoLayout_marginBottom">8dp</dimen>
-
-	<dimen name="AAA_TopPlay_maxSize">80dp</dimen>
-	<dimen name="AAA_TopPause_maxSize">70dp</dimen>
-	<dimen name="AAA_TopMediumButton_size">50dp</dimen>
-
-	<item type="dimen" format="float" name="AAA_ItemLikeUnlikeLayout_scene_aa_scale">.825</item>
-	<item type="dimen" format="float" name="AAA_ItemTrackTitle_scene_aa_scale">1</item>
-	<dimen name="AAA_ItemTrackLine2_scene_aa_marginTop">2dp</dimen>
-
-	<dimen name="AAA_ListSubstyle_aaPaddingBottom">60dp</dimen>
-	<!--<dimen name="AAA_ItemTrackMenu_scene_aa_marginBottom">31dp</dimen>-->
-
-	<fraction name="AAA_TopAAItemRatio">100%</fraction>
-	<dimen name="AAA_aaMaxSize">340dp</dimen>
-	<dimen name="AAA_ItemTrackAAImage_scene_aa_margin">8dp</dimen>
-
-	<dimen name="AAA_ItemTrackMenu_padding">4dp</dimen>
-	<dimen name="AAA_ItemTrackMenu_drawableSize">24dp</dimen>
-
-	<dimen name="AAA_ItemRatingBar_padding">4dp</dimen>
-	<dimen name="AAA_ItemRatingBar_drawableSize">24dp</dimen>
-
-	<dimen name="AAA_ItemRatingBar_scene_aa_marginTop">4dp</dimen>
-
-</resources>
+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

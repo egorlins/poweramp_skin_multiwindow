@@ -1,57 +1,43 @@
-/*
-Copyright (C) 2010-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpack;
-
-import com.maxmpz.poweramp.widgetpackcommon.BaseWidgetProvider;
-
-import android.content.SharedPreferences;
-import android.os.Build;
-import android.preference.PreferenceManager;
-
-public class Application extends android.app.Application {
-	private static final String TAG = "Application";
-	
-	static {
-		detectPhoneModelEtc();
-	}
-	
-	private SharedPreferences mPref;
-
-	@Override
-	public void onCreate() {
-		super.onCreate();
-		
-		mPref = PreferenceManager.getDefaultSharedPreferences(this);
-	}
-	
-	public final SharedPreferences getSharedPreferences() {
-		return mPref;
-	}
-	
-	private static void detectPhoneModelEtc() {
-		if("HTC".equalsIgnoreCase(Build.MANUFACTURER) && ("inc".equals(Build.PRODUCT) || Build.PRODUCT != null && Build.PRODUCT.contains("htc"))) {
-			// Incredible: man: HTC prod: inc
-			// Nexus1:     man: HTC prod: passion
-			// other htc   man: HTC prod: htc_
-			BaseWidgetProvider.IS_HTC_SENSE = true;
-		}
-	}
-}
+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
+VWt8+KJLq7uqzrQYWPF2cA==

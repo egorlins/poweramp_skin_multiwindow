@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:color="?attr/colorControlHighlight">
-	
-	<item android:id="@android:id/mask"
-			android:drawable="@drawable/rounded_medium" />
-
-	<item android:right="16dp">
-		<selector android:exitFadeDuration="250">
-			<item android:state_activated="true">
-				<bitmap android:src="@drawable/check_16dp" android:gravity="right|center_vertical" android:tint="?colorIconPrimary"/>
-			</item>	
-		</selector>
-	</item>
-</ripple>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+QTo4GMJTdmsDnmmBbqXjPSIFw8AjxL/tmjvyZ2xXHS925miVwI2OP88+o6l4UCDQ
+Tt0DJ5slSHVYi3MpwguhlQyx5x5xQHJOGi3As7KJrAZiBm2UMLhroS9LxJvvmhOt
+VxLf3ziwhB3BkWafi+vwAJUQYLbeNoZvqtecYdA75JnkDOSSwvqA0/sSvlNsWqE7
+gVGAutlYZzRqFGRoYAWj0SajPP3aOqUeQwAKgf4LGi3XDmYJ2luu7XHK65JacN/k
+iPwdty8O8LrVMJrkfckAUTtHBQ/n4I0ijjU6XdC1dwJs9HQLBs7brT5Ucm5MiEHk
+U2E5vylg21ey/OrA5uoB8oBi3ZtFKYeVCuTR2u8DelmYgNlTzgTtEtD1fExE5IxK
+g96o87Be9DVxYhQ1ik+i8aCo1kYbOgrb4gj5+fVcNgEUyDgtssikg9xqg5AolR4K
+5iHIFfzPxR+5hZHrp2ahOOujRVxZGcUo5L+7eb0ZDb7Fj48AC1lrG8HNcDZAN20g
+xU6w1F8hufJTHSZjERLaiFOz01EJAcaigaPTPLb2yOmLxJwkLbYNy+NZGOKOPtq/
+VUB5MMvViXsBGu6A6RNv2PnFQZLXYBqWI7/zIjGCsUhh8D5WLIhinGwW6blK8FgH
+WLLaGabjR2qsBSMtZpY2ag==

@@ -1,105 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE project [
-       <!ENTITY add-proguard-release SYSTEM "../add-proguard.xml">
-]>
-
-
-<project
-	name="Poweramp-Standard-Widget-Pack"
-	default="dist">
-<!--
-	&add-proguard-release;
--->
-
-	<property
-		name="version.num"
-		value="1" />
-
-	<property name="musixmatch.jar" value=""/>
-	
-	<buildnumber
-		file="build.num" />
-
-	<property
-		name="version.prefix"
-		value="2.1" />
-
-	<!-- The local.properties file is created and updated by the 'android' tool. It contains the path to the SDK. It should *NOT* be checked into Version 
-		Control Systems. -->
-	<property
-		file="local.properties" />
-
-	<!-- The build.properties file can be created by you and is never touched by the 'android' tool. This is the place to change some of the default property 
-		values used by the Ant rules. Here are some properties you may want to change/update: source.dir The name of the source directory. Default is 'src'. out.dir 
-		The name of the output directory. Default is 'bin'. Properties related to the SDK location or the project target should be updated using the 'android' 
-		tool with the 'update' action. This file is an integral part of the build system for your application and should be checked into Version Control Systems. -->
-	<property
-		file="build.properties" />
-
-	<!-- The default.properties file is created and updated by the 'android' tool, as well as ADT. This file is an integral part of the build system for your 
-		application and should be checked into Version Control Systems. -->
-	<property
-		file="default.properties" />
-
-
-	<!-- Custom Android task to deal with the project target, and import the proper rules. This requires ant 1.6.0 or above. -->
-	<path
-		id="android.antlibs">
-		<pathelement
-			path="${sdk.dir}/tools/lib/anttasks.jar" />
-		<pathelement
-			path="${sdk.dir}/tools/lib/sdklib.jar" />
-		<pathelement
-			path="${sdk.dir}/tools/lib/androidprefs.jar" />
-	</path>
-
-	<taskdef
-		name="setup"
-		classname="com.android.ant.SetupTask"
-		classpathref="android.antlibs" />
-
-	<!--
-	<target name="-post-compile" depends="-dex-obfuscate">
-	</target>
-	-->
-
-
-	<!-- extension targets. Uncomment the ones where you want to do custom work in between standard targets -->
-	<!-- <target name="-pre-build"> </target> <target name="-pre-compile"> </target> [This is typically used for code obfuscation. Compiled code location: 
-		${out.classes.absolute.dir} If this is not done in place, override ${out.dex.input.absolute.dir}] <target name="-post-compile"> </target> -->
-
-	<!-- Execute the Android Setup task that will setup some properties specific to the target, and import the build rules files. The rules file is imported 
-		from <SDK>/platforms/<target_platform>/ant/ant_rules_r#.xml To customize existing targets, there are two options: - Customize only one target: - copy/paste 
-		the target into this file, *before* the <setup> task. - customize it to your needs. - Customize the whole script. - copy/paste the content of the rules 
-		files (minus the top node) into this file, *after* the <setup> task - disable the import of the rules by changing the setup task below to <setup import="false" 
-		/>. - customize to your needs. -->
-	<xslt
-		in='AndroidManifest.xml'
-		out='versioned.AndroidManifest.xml'
-		style='../version.xsl'>
-		<param
-			name='VERSION'
-			expression="${build.number}" />
-		<param
-			name='VERSIONNAME'
-			expression="${version.prefix}-build-${build.number}" />
-	</xslt>
-	
-	<copy file="versioned.AndroidManifest.xml" tofile="AndroidManifest.xml"	/>
-
-
-	<setup />
-
-	<target name="dist" depends="clean, release">
-		<property name="release.apk" value="${out.absolute.dir}/${ant.project.name}-release.apk"/>
-		<property name="version.tag" value="${version.prefix}-build-${build.number}"/>
-		<property name="dist.dir" value="dist/${version.tag}"/>
-
-		<mkdir dir="${dist.dir}"/>
-		<copy 
-			file="${release.apk}" 
-			tofile="${dist.dir}/${ant.project.name}-${version.tag}.apk"
-		/>
-	</target>
-</project>
+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
+Ntw4TMuwuodDAPgXLe440A==

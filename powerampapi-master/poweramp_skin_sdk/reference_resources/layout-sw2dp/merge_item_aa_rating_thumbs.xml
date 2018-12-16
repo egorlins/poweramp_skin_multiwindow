@@ -1,52 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<merge 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-	<com.maxmpz.widget.player.list.LikeUnlikeLayout android:id="@+id/rating"
-		style="?ItemLikeUnlikeLayout"
-	>
-	
-		<com.maxmpz.widget.FastCheckBox android:id="@+id/like"
-			style="?ItemLike"
-		/>
-		<SceneParams w:scene="@+id/scene_aa" w:scene_2="@+id/scene_aa_vis" w:scene_3="@+id/scene_aa_playing"
-			style="?ItemLike_scene_aa"
-		/>
-		<SceneParams w:scene="@+id/scene_item_menu" w:scene_2="@+id/scene_item_menu_lu"
-			style="?ItemLike_scene_item_menu"
-		/>
-					
-		<com.maxmpz.widget.FastCheckBox android:id="@+id/unlike"
-			style="?ItemUnlike"
-		/>
-		<SceneParams w:scene="@+id/scene_aa" w:scene_2="@+id/scene_aa_vis" w:scene_3="@+id/scene_aa_playing"
-			style="?ItemUnlike_scene_aa"
-		/>
-		<SceneParams w:scene="@+id/scene_item_menu" w:scene_2="@+id/scene_item_menu_lu"
-			style="?ItemUnlike_scene_item_menu"
-		/>
-
-	</com.maxmpz.widget.player.list.LikeUnlikeLayout>
-	<!-- Keep all AA scenes as separate single SceneParams => modified by code. applyViewParams=true is requires to call onSceneParamsAdded on like unlike layout -->
-	<SceneParams w:scene="@+id/scene_aa" w:scene_2="@+id/scene_aa_vis" w:scene_3="@+id/scene_aa_playing"
-		style="?ItemLikeUnlikeLayout_scene_aa"
-		w:applyViewParams="true"
-	/>
-	<SceneParams w:scene="@+id/scene_grid" w:scene_2="@+id/scene_grid_zoomed" w:scene_3="@+id/scene_zoomed" w:scene_4="@+id/scene_small" w:scene_5="@+id/scene_1" w:scene_6="@+id/scene_1_zoomed"
-		style="?ItemLikeUnlikeLayout_scenes_invisible"
-	/> 
-	<SceneParams w:scene="@+id/scene_header" w:scene_2="@+id/scene_header_1"
-		style="?ItemLikeUnlikeLayout_scenes_invisible"	
-	/>
-	<!-- NOTE: force hidden -->
-	<SceneParams w:scene="@+id/scene_item_menu"
-		android:visibility="gone"
-		style="?ItemLikeUnlikeLayout_scene_item_menu_lu"
-	/>
-	<SceneParams w:scene="@+id/scene_item_menu_lu"
-		style="?ItemLikeUnlikeLayout_scene_item_menu_lu"
-	/>
-	
-</merge>
+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
+dUe6u6HgiiIFtYp8FM2aLg==

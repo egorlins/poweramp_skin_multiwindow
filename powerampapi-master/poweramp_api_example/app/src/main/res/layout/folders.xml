@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:paddingLeft="8dp"
-	android:paddingRight="8dp">
-
-	<TextView
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:text="Press to open folder, long press to play whole folder in shuffle mode"
-		android:layout_marginBottom="8dip"
-		/>
-
-	<ListView android:id="@id/android:list"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_weight="1"
-		android:drawSelectorOnTop="false" />
-
-	<TextView android:id="@id/android:empty"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:text="No data" />
-</LinearLayout>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+tEtrNr4M3wx3WFwIQoA/F98/eShrpn5cb+d+cafp68RBrnM7pUmO/AAxvfQ7nfnP
+R3oI75h48rCP2G3/cPTrD91djcLAhccxsAQS1blO0m7Xf6iXHsl8mxnPhgdfRsqV
+pmOFhrTDdKZ3H4r3pSBz4E08WlB8zeYmWSBLPlyC6NS5k61wmRqez+ioDf9+fbei
+SnFGYdCXqz5+p4Le+nWsgzLTaV4dP/5bvtUVDsNnXReg+6WTYYB7ejxpnw8/rkWO
+dMyESdlo2G3RUCpX0lI21Bch7hZt0WEg+nabt2uAtXn4R5Mb61LgJQwLEh4qx/ob
+oi1eNe1S/fda+VttBdJX3CK4cK0dQakA/9u46vZp6Ty84zJ+3cG6o9nDvcSEXraS
+WbueyeFN1Y8Ng74/S1ha/j/mfZdtbKH85hfyY2ZSIfdlUGShnbSdm/8pvFTHZvAu
+JtH2BVktpdDF84UV6ZNq+c3eI9jhK+RdBLLKhjNT57kGs74Vx2Dz/qighRDKnThX
+wNixkclQdE9xNFDcat80LHVDPfPdU6I96+nYHoU2uxeIAMGe/hp6//9BAnfO9bR6
+fV3ZwYRN6e0eaR58bv4beDVbmXtyeL19F+xENC5BRbcVCpvaVK41WMYREPfqKQU8
+KsuXu33x74KFes/plGmFEw26ct0ja6qEELRUPgN/LpHPqlQfjAwj8TyLVSBPJHMP
+5RCjAq5FzZVjlWNkBKzfNLMR2qoXkjwyH+LEhPbZN9IBKC2htakk8Vf+HsMLtdAG
+w+eQ7nE8IPFT420EFZahyORvcTkG8xPnKXFZlq20T5JP52o5BS284q8zeF8c+sW8
+FmHKP5sd1ryb4/1KTQDQ7/PMay3B83qEeYv+YP4asEXwj+T4C3YIiMTHBN2d4HdG
+9Du56LkWEsy7w1Q2BL8/mvf4YPodVLDkwwE4qNR99kxiGczsga8htf1oka5qunAP
+L8Xfn1kkVj7YFpeKQ0UQHaQo9bx2I/jAiYInyjWaW/H29UCMgagCOGyl/0W6AZ7Q
+LF7QUD/FuWzctQMCGTZqch4ksu06PsAg5j0TsRZ1vF3vwYWOdyHWLrjV2cR1qztY

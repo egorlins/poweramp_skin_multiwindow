@@ -1,92 +1,67 @@
-/*
-Copyright (C) 2011-2013 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for widgets, plugins, applications and other software
-which communicate with PowerAMP application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-package com.maxmpz.poweramp.simplewidgetpackcommon;
-
-import com.maxmpz.powerampapi.simplewidgetpack.R;
-
-import android.content.SharedPreferences.Editor;
-import android.content.res.Resources;
-import android.graphics.Color;
-import android.os.Build;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.ImageView;
-
-public class Widget4x2Configure extends Widget4x4Configure {
-	private static final String TAG = "Widget4x2AAConfigure";
-	
-	public Widget4x2Configure() {
-		super();
-		mWidgetProvider = new Widget4x2Provider();
-		mConfigureContentLayout = R.layout.widget_configure_content_centered;
-		mConfigureOptionsLayout = R.layout.widget_small_configure;
-	}
-	
-	protected void setDefaults() {
-		super.setDefaults();
-		
-		Editor edit = mPrefs.edit();
-		edit.putBoolean(mAppWidgetId + Widget4x2Provider.PREF_AA, true);
-		edit.commit();
-	}
-	
-	@Override
-	protected void setWidgetFrameSize() {
-		final Resources r = getResources();
-		mWidgetFrameHeight = r.getDimensionPixelSize(R.dimen.appwidget_small_configure_height);
-		mWidgetFrameWidth = r.getDimensionPixelSize(R.dimen.appwidget_small_configure_width);
-	}
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		
-		CheckBox aaCheckBox = (CheckBox)findViewById(R.id.aa_cb);
-		aaCheckBox.setChecked(true);
-		aaCheckBox.setOnCheckedChangeListener(this);
-	}
-	
-	@Override
-	public void onCheckedChanged(CompoundButton v, boolean isChecked) {
-		if(v.getId() == R.id.aa_cb) {
-			Editor edit = mPrefs.edit();
-			edit.putBoolean(mAppWidgetId + Widget4x2Provider.PREF_AA, isChecked);
-			edit.commit();
-			updateWidgetDelayed();
-		} else {
-			super.onCheckedChanged(v, isChecked);
-		}
-	}
-	
-	protected void setDeckBG(int color, ImageView deck) {
-		int r = Color.red(color);
-		int g = Color.green(color);
-		int b = Color.blue(color);
-		deck.setColorFilter(Color.rgb(r, g, b));
-		int alpha = Color.alpha(color);
-		deck.setAlpha(alpha);
-		
-		findViewById(R.id.shadow).setVisibility(mShadow != Widget4x4Provider.SHADOW_ALBUM_ART && alpha > 0 ? View.VISIBLE : View.INVISIBLE);
-	}
-	
-}
+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

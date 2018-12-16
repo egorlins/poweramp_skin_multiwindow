@@ -1,37 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<com.maxmpz.widget.SceneFastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/content"
-    style="?VolumePanelFrame"
-    w:enableStateAnim="true"
->
-	<com.maxmpz.widget.player.DSPRoundKnobLayout android:id="@+id/volume_knob_layout"
-		style="?VolumePanelKnobLayout"
-		
-		w:param="@+id/dsp_master_volume"
-		w:updateMsgId="@+id/msg_dsp_other_changed"
-		
-		w:valueFormat="@string/f0_percent"
-		w:valueFormatMin="0"
-		w:valueFormatMax="100"
-	/>
-</com.maxmpz.widget.SceneFastLayout>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+4OufRiBmcXfHy7DQ+tjPqjgaA+DPLqEOWL6SgG475wGhv+/w9dAESe6xWp6HY/xI
+/SO230t/vy+GFS4AGp7uVCwGyuVENut1Qb6eIY5H2t5on6YGSCcgGHOZUmQft3IB
+Ere+pukT38NA9g3yQWHCs3X+oIg4ffxqwGTaNk/TWwMAYtlq9VJedxLYhfcH2rwm
++d9DkzTpFAlNsqrNCgKAIlljRq2PDilHRtk/Z44D4Z6ij3sO7TetCyfHaC48IgK0
+4iCReW6QP9tToQjmuhc+u9BwttY/+LKKTI+LOINOy+dXrH6Bm+HW96S2chgLEvc4
+q1cZfFAnArAcjDVRjdiJCo4+68ILyuVJ1jm5OqFd6PfLAyWnKaXWjM2R3CNEqaP8
+spJMLMQI0A+2YQFs0vnq/ebysF5HLipc9BzUUIwz36WdM2WJsHoATl4JULa8E3gx
+ZT2IyvR4OHtJVlqyLQ+khHrK5OCJxiUuA48Jp4LnRyfCbJWXg+zNcWkvs7A8w8g8
+897dnABG1dj6Du+ucJQC9TVozcPJqZjgg0FjZsLmvKlL1QJy0//ZwUy0j85eFjXM
+S+khaTLIokn/0zAOVmWm9ekuilcnVMustV9I5NsYhNLF22jmpJ1wah/xOSwTqbez
+A7Z04XRQBHqVy6D6RZlzPtDGWm3HHtHz1Mt6CWftVGqn6maRKqZN6htm/BvvWwxU
+rm4uRsByEOl3tOzgVrRh9RwNfCaVFsoa0XyzRBbzuEGEXi2T82MoRNiUYyu3iFih
+VWZLuUHGZ0Ez0uEFifh6IpWCcRXXlyM64bhZW7lf3ERQRNgpGJRrQRUjpDOLTUvD
+k0iHxlY4XAr3LGTK67XlAb+5KLGt4YfdHZpS0J5dWEds/mgDN9oTt75HgIkC7zSh
+fLHs5Uiah7YVwxiHARNyyxies7yrzCDjmmJsje6bWm6CohBrrCfJrvSwmMdKylKv
+gxE8DoM+kF1CjuXA6rk5qHnLKY92FWZUnmMgxhFuV08NTFQgDszAyGWA64NN1A86
+ym9HgfTy8CVWwGmzGfN4Oye9cEoCJZ04uknaHbO0y9ZdfsZn5mR7fvKc0+0PBZc7
+QDyMTtlSTk25GYe+a8BVMQEBqlT2EkUDfhdEWhEXGP3aJ0/nv1yQLlyGkGtXiGPV
+s2d0rZ77WgzunFR2yBQcLkJ8d5PXsB4R54+1+jgk6xW2Fuzjt8LxDMhOd0DByGFA
+dnbb/q4xFnQY8LFx8OT8nyYTXMmxN9t/nFGJZFAfkadUL6vHamxBjkASiGpBPaTk
+t1BUsUJQKzkzJ1g0iHtmKRBXXlWSdJiUzQ/BCXrjiXC9miCAM8unyh2GTFGJq+Qe
+ulbem8XjGHZgApWXPqpwkjoNapO+WvXoYOoapuB3NygtEUo+X4V2L5xlyj7jMaN3
+kYQz+DEwIi08BWlo4FxTcgoJY1c4muBUu8NNEHBzngK/FGBDC/qfjn187Xv0LB9a
+0yN/Nfxq+D8iiwvRUab9vE8MuQA3EyZ//RxDkK9h21VFGmiTJl0ykNJTJPMhxILM
+Pu6vsFYKMIQ5avtkgbelXkMicPon+I3YqlH0uRV8ysnfIXsnC9sPQaoqMYeZGgJH
+7N8foLc6ZriuSaRM09akBjZ9fij5L6x7qDOQF4uxPPDPFDresWhgNFI5qh4onJwr
+oV/n3sB6b+w5KOIDiJj4qYsXCDCm2lgznRPIP+KAKkn6oFIo0FmPdVzKS9T8X2lS
+XUNKOYgH/jfVnFnHsec8LQJ3YkPAfrF4M/gpXu5k/31RgfCSH6txKz3PAiXkmTmw
+0xvmIm9iRceAgGrQ7hvNw+Gb7oCJEJG0uXoTjrQJe7NpzZH8nOF64gayZzQ7XiXx
+Gz2H4IrYcuXvMReQAyvzjbz1O479VAV9TSpVuHhvWHCu8GWa8+ipDkGF+e+DfAnA
+bjp6zEKAq5f0d4gk6W6xLZGLuRQcvtUqPrJlbWcPewhPJuOD6EiI+4yGqu+B3bsK
+zSwUgysf9kip0shOsFpUjBoCTOhNTPNb+/1B7jzA5/3AIn8pkSs7tq88hGMKjs+n
+yvcR9wStFbQIB5aNXMIPbPjrFB1WEFXcDuL+NQGB1qYE/HBNW6hakuN/VY6nKMXt
+ZNXcUeWgybO5DZHjvM4I8Y+ZpHnOJjVFHAB1sz4uaUw=

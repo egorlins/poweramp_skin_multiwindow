@@ -1,27 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.maxmpz.poweramp.dsppluginexample"
-    android:versionCode="1"
-    android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="18" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.maxmpz.poweramp.dsppluginexample.MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+pYJp9bcMkgYxPx4X6CltsixP2ix0Z6/bEWo8CMvYnrYk8L1jWvIDZx+tued6km5y
+T5WUTXttFyM5tIMUaVsL7XMRPW0T7enb25v+aAAiazuXwmQzkHrWzPqTiKg2y5lc
+EnghyXEnMQJJ3WwjCJD6UyCnsDmfAgmWkR5ldOpfb8ROB6QwFjYtuD/0k/aA1T3C
+Key9YXDFScXSK4+TnwTAn3x1tep6PlnticTXn0sgU260raN5cTu0DDwl4KWKL2HX
+uRA6I1CQDCe2CgpcQEdOpOvjtAvrypdtLSo5DQ/ggXUfUJbWK23W8I3+axoT2D3q
+gPgsxO3yVScocsUXyD1OrjJ8xf4ZB1qLJ/ovMYh5HCterftJf0P+2E7yO1lg/q9s
+wAj5aMZRvw57kGh/Sivjw2pw/0g74OoSfyYl2EedEpeUKC9NBheexTPCQM2gLpcS
+9EoT4ks6/rmkCRBkrIWFeG1ati7OSN/KmekeLLU8DPgTeOB0gtCoIT9yQ0CbZzt7
+ATFskQ6xoTr9dkTM6K1ByyHqa4Xu+9E58EkfOf+ZRRlhWS8HEo32H2xrjNRn3yJM
+11QqDu0xzVwqMDzuI2cnT8dkzm/wJ0pVO8RD+CvR7jVzMQqyAghjac1Fmzfd0FRX
+3XTd5r4vRlL8LxyCmulAY5dd6apL43jll69VtI+yXZeJGdaQXnPl4v1F8MkpCsMf
+31FoKj627SSQdmget4yQaoptR5QYGLGr3nbT4lhvgyS05UaHqGqcdz1gU7TGaWPm
+6Hq4HB6M5tRBOfZhPR+q2rE7WSyo1ZenNPY1gbH1ybIb9TyTlDGuTFjOLdn+XvVj
+0VTz50ildMsvn4FrfYOQgCQAzMRyWh0THpTi2aNq+F2NWx2eBaa4CwCZLo4A005c
+4ie9/xV+kA0jZR4BOm24FIjHb10CHvQxdxvPdDvgEWHI2HyJPwQOkRrlnGcJeqT3
+u/mx+XRDVYA+y6ZhYY9aPPcvGbeENeyLyNhEwxM4qjlPIzCcrhrnycFt48JOnmi5
+WHPU/cHEYe8dOHpcWSWoorsRQS3F/ss1mmG60+XdTnNnTEDrcbJasLPeXWggtYeL
+PrvPupxC9ukEPtIeLcMstS5iWkrqSXgGfT+z/ZLhiLblGRDu+zSq+zOxBEb6Lcxg

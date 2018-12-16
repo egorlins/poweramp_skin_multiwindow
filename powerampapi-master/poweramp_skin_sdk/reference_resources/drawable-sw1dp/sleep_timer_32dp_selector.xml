@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="@integer/selector_fade_ms">
-
-	<item android:state_activated="true">
-		<bitmap android:src="@drawable/sleep_timer_alt_stroke_32dp" android:tint="?colorLessContrast"/>
-	</item>
-	
-	<item>
-		<bitmap android:src="@drawable/sleep_timer_alt_stroke_32dp" android:tint="?colorIconDisabled"/>
-	</item>
-	
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9mIvUq/d7icCy5liFoDcUX69KyAKVc7J67q6YaptuFkE
+Nc9VBuxayp89jCyubWvLu+xV/2wumFaBDSTsrAPIyn/ax6qA5eclOw0ADZMsvg/0
+IwSrepFynhsxk/Rlzp0UqOGk6pMvjBtGxhoOKklz+A4hjpV8ANPHKEjb9nLULlYb
+V8JLQix7WG8WO+ph8h9i7S+OzgeR9RCCcc/VGAGov4j+r/nqasVnPigF/72seYgl
+v8wslb0XX134fsit6tOzykfrofZsXK/vqOIvMPKJSGbvme36MQMMYHZGO9h9sTIU
+okJSm5MGqiwxQdNmwjs34lLy0Twy3vCULLClajCIu/1/5M1F70X04n9XJMTDxtZc
+X0Oeq5PY5Xcr5KqsE1Nv34hi0RXsgAl2e33tKVPtxyXewlAGZeYI+cUSsEjHcJJ4
+tRg4vVW/0lcq/FLuK3i5kNBzEM9lI+1ZUiU2YCixJ1Y=

@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<merge
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
->
-
-	<!-- Include standard Poweramp skin extra buttons -->
-	<include android:layout="@com.maxmpz.audioplayer:layout/merge_topwaveseeklayout_extralayout"/>
-
-	<!-- Add our plain seekbar -->
-	<com.maxmpz.widget.player.Seek android:id="@+id/seekbar"
-		style="@style/AAA_Seek"
-	/>
-
-</merge>
-
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+AgqSFsgC9gyvUTPNNJeHP56NtpzuNVqstsoP4II0bF2S4ilOU+GbDq5nlvjg7/CY
+uodQ41WjebEG6MAvpE03HSVP30B42xEPgrL7Ki+bjh2JW1KaZhloAVAn7Xp15t0h
+ezmR+dH2slkbehGmm9pR7MN5WYEA1nHY04PjlxIuJWUPqN8jdBXWZhSdn2+7Kwtb
+R98Xrs3CkstfjLaStdyIY3mMqmhfPqRcHX1Kyk0be3WzkyLs3AyMf+5aJdfelXiw
+soN5jeuC+3ZOVWlup6bIAPMiF6rLuzH/d0hhYQNKnVSCmAP2UQYjFtx+5ppAaHKj
+oMxBIxr4auQA56dN9qUHJu3tgrlA7Xsg/H9TgzAIJ/q0z/Eo74HQWka3QB+buqR0
+X7kbvrKctK3A0LgRXGydew2YB0yTBG/35PFUmB12UCZX00rFfq4WoJUUJvYEmOqy
+yrq4qmN6twj5Ajq4tqF/OfK8aba9F/RzBkwJC2vEErE/DsyEPmmcCJMhBUt7xHjE
+gytVljZPUYFlXvpenDeatx3iyZyMy4jdzGhgxhwbw7w=

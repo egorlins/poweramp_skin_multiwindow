@@ -1,54 +1,20 @@
-[preset00]
-fGammaAdj=1.0
-bWaveThick=1
-bModWaveAlphaByVolume = 1
-fModWaveAlphaEnd = 1.0
-fWarpAnimSpeed = 1.0
-fWarpScale = 1.0
-fZoomExponent = 0.9
-fDecay=0.980000
-
-zoom=1.009006
-cx=0.500000
-cy=0.500000
-dx=0.000000
-
-
-sx = 1.0
-sy = 1.0
-wave_r = 1.0
-wave_g = 1.0
-wave_b = 1.0
-wave_x = 0.5
-wave_y = 0.5
-
-# Select bars mode
-# none = 0 
-# FftLongBars1 = 1
-# FftQuadBars2 = 2
-# FftLongBarsCenter3 = 3
-# FftQuadBarsCenter4 = 4
-# FftTopBars5 = 5
-# FftLongBarsReflected6 = 6
-# FftQuadBarsReflected7 = 7
-bars_mode = 6
-
-bars_rot=90 # Bars Rotation
-
-bars_thr = 0.5
-bars_thr_color_t = 0xFFFF0000
-bars_thr_color_b = 0xFFFF0000
-bars_thr_color_l = 0x00000000
-bars_thr_color_r = 0xFF050709
-bars_color_t = 0xFF98c8ff
-bars_color_b = 0xFF050709
-bars_color_r = 0x00000000
-bars_color_l = 0x00000000
-bars_sx = 1.0
-bars_sy = 1.0
-bars_num_x = 256
-bars_num_y = 24
-bars_smooth = 0.85
-bars_sensitivity = 0.5
-bars_spacing_y = 0.3
-bars_spacing_x = 0.0
+U2FsdGVkX1/ucPAcAK1Ndj75eZzP0TXLLHjuxw1aUO5jbCFmV7qWufiIkFiL+c2b
+W870WVm5Izh/4bqtTvufF0vEhtNCXyhICeeEKQSh92jZNnscDKbn2tS+r+NiENw7
+YLMIbls1KP6/RByyNne7LE8qT41vwO6zpPbhNsSN/uOQdAOniiQQQXbGppCaQQjN
+WAIW8dKYpb+2xfrVEZeHCSqJ9vj0GN4ph4uLoi6d8FK0+siOIMZ0qWWt+QkrqMh3
+PL9KISiQj9RBlfEJUd6E1H6/e+xc2HnCSjstiIbyNv3MJxaBOYNVcpIAdLJQXkpX
+EIfYkv0z0TO05sD1SOeByJd3Ee94sq4stvYDtTDSQQLXaKm9GfaSRuDs5PRmI2iq
+w05ONmCUyFUnsiJHNrGHkXOElZ4YDU9loXtp6p0oQGQdUtxU2Rj1/q8iw6wQuZw5
+q0aa8cyjDf584PCbNdQ+Ogaq/3lHzKdfM0JmuAGoXRlNjRWS9rHVfTz8lO1h5CNu
+AREUAv/IyJ+JdOu+BCpFxiQn4Am2zXgjOAmWVAP77smMFDpXfFJO204b3bga2R0j
+0PdrMw9sQ/Ckfu4c+Fa/Dym2MTQGWs2DdsuwGeChvrW2BK9e7zCdmGZIPMUd1rWQ
+KW0V3zLuTfoMAm4KX+95TK8eYQoTsnnhbscISFUj5z/4ndWFX8q2B0QnANMOqraG
+vZ6iHTJrQOAnRkQzYuwz9COpX+cSbL0EUEJDh4swmyPG/LZ7LyypVb+Q4fkcgzOa
+0uHHHu13/x10ZPdsTb/ZxiI4b+i+7HokPO3/Xt1D9dfYXP6Vrzaa0VMZAwQpioQZ
+lF3CITIStjvsnT6y1C/6SwEyQGcwfSBgYr3Qd3TEk5nzdj39bsMHzfCXYK/clSlu
+xgZOqolITPSacYHYd2S8LMlDsEYRBL1M0RRd7kqy9SM7oK3sLHpasgfgx0r3FIaW
+N1yXOundwR6kkGKU1V01isLt8r9o9Tesoh+A2PAVjLTqA0pJawfZN7FG+rTwVw+N
+KFZtUdNRLXG1N60GYCfei814fduxut7gNLtgyKBUVf1E8ba4FYacdQ7T5FvroVQH
+HWlx7idFItNbAFkM/1m9TiyUrKh8YmTkXWwX/xzDDWmQhd1jPvleX32dvNdUsbVQ
+7uLYYg1Up1VdXS7mD66dclX3tmKXIXXAvb+YflCvkzF+h5z3i2HK3xMdfAE0okGU
+VlzOjcEEmaWyi9Zeo29+1W6hhbWbnFcmZ+0M311mKBk=

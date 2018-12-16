@@ -1,34 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<merge 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-	<com.maxmpz.widget.RatingBar android:id="@+id/rating"
-		style="?ItemRatingBar"
-	/>
-	<SceneParams w:scene="@+id/scene_aa" w:scene_2="@+id/scene_aa_vis" w:scene_3="@+id/scene_aa_playing"
-		style="?ItemRatingBar_scene_aa"
-		w:applyViewParams="true"
-	/>
-	<SceneParams w:scene="@+id/scene_grid" w:scene_2="@+id/scene_grid_zoomed" w:scene_3="@+id/scene_zoomed" w:scene_4="@+id/scene_small"  
-		style="?ItemRatingBar_scenes_invisible"
-	/> 
-	<SceneParams w:scene="@+id/scene_header" w:scene_2="@+id/scene_header_1"
-		style="?ItemRatingBar_scenes_invisible"
-	/>
-	<SceneParams w:scene="@+id/scene_1" w:scene_2="@+id/scene_1_zoomed"  
-		style="?ItemRatingBar_scenes_invisible"
-	/> 
-	<!-- NOTE: force hidden -->
-	<SceneParams w:scene="@+id/scene_item_menu"
-		android:visibility="gone"
-		style="?ItemRatingBar_scene_item_menu_lu"
-	/>
-	<SceneParams w:scene="@+id/scene_item_menu_lu"
-		style="?ItemRatingBar_scene_item_menu_lu"
-	/>
-	<StateAnimParams w:stateAnim="@+id/anim_ratingbar_pressed"
-		style="?ItemRatingBar_anim_ratingbar_pressed"
-	/>
-</merge>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+dlqVKIQiNuIiRhISQrvfM4g+1YF+TyYc+mwKvbdxG7HkQ5jErGIOqNdb6BY0RGDv
+nSrGaqFLk3WmC+AKBYwFvpqFqqXs6dbdr9F9xPyIL2R0RV9LXouorhKY4ccm2jxB
+5M/4pHmNAt1dYmdhudvwajbXsE3n+t2pcFR750EqRZ0G2XvYbMFPrJJsw3PXE7mi
+esIPKqrqPPvpjJao4Z0iOvtaSUVMRGOr1rM1nCUosiAFldvyqsYu5Xp7aT6Z3MYH
+yaR2RvFPVtkERR7804eb+lbuPK9iUJKKUWUrMNFxkEVwbo+6MMhKGk/FFZnFfzgr
+CbbpRVOueo31w1QpPZTTKHuo1M/W/W4PxdeFGxHJUzQO9oBAXojaFQrEMNJNbhH3
+Cysf17pht1QMzCDgsWs6AqI9BoNat4DPxDc7Eh7Rp/9IWguXrWDTeJYzZvmf0ZdE
+FxR0N5jFO65X2dwiuYe57mgS3sUEfo4ESp5V1nVdclaBEmABZdHDgEmYJYqK/dFG
+GOnhf0xVE3bdli1SegkjAdG3RgMMOj52vQDeBaSn03ShN1rvuySSOF1by7dccmpm
+JEksO4+zGNC1VO8/RQGOf8gE4punWDHcdmzMQ7pvYG2pWsSDe/AIQLRi9e4euN3C
+zR1ozCbyqzpqL/jZGEstVEhXllP7LsVwU1HLHw1QAw1cqumSDua+PRFpkAB97jze
+EyBJwt+H6CZXS0xToaAc2w1wIXnlKmhqMPwqTyc4/0ZvoIrwxb1u1G0BeeH5ACnq
+47UJTGoZoXiIyK+el/92auTLrSJMOa5p2ht0c/oBOghHvkWALdXXMN5yBKiMOncm
+dzH2JpVHjeFvfsi7shfi01uQcQuJKeHJhSzkak+J8vFNkCK6uN9D19LS1EDP8vQs
+v/f4uwt+8nEZuezY0y/zHc2Lc+zNXgutbPtl4vevxYXuSb60gnZsDdIzl3iF3XAw
+zEdJJ6hXoRTg2qMDzcv93RUuqIMS8E/7wA4jHPOwaAghS1bS//hz5UPci0hN6fF1
+fLDtBw8kXqsqvFfchN3rmQEpmxcmojA2+NkD7P97FskbUZ/ejwgoZuecY/JFUnKP
+WYZIDHh2+m6/IqlM1ATZ2Qi5S/6+o7WY1zWkqAzWNF7+fvveATJQYQ8UPotW3QSS
+inCkR1Y7yuMe6eOsGDdvmS6aoXBrjc8Jk734ryJ8I99jIHqjZgf6vDglXBv4/a7+
+0T7GJSMMcvicJh3ze2hM0K7WgcOq/oW/FEnEpCqQASx5jyUrJOoANzRpY8H8mznI
+ftf2+WeQI4cSQTyvrfyoSzX8M+I7EHOh9zpBzRkq02wC0Vu0510vJZ8jf7QKGA4T
+Ri2p10DEDuAEjsPSyeT6yufZVJE31+q2gt3yGd4ImOORQqK7xl8Rqgg6bouuu3Jk
+ackSivZCS/OWjt+vWG+XOzLWPUAOswSDJidThIpehDqsuUZKPGR/pXHO4SVVwOg7
+XJx566stjFzTi1WzeU9+1eBA2w4wU9/q7n5lRI+9oypGTZ4eBfQhdX2HmmMNjfUM
+VoaXN9/xVp3J4fOxk4x2VS5/ZdueEvtdLkSvxChAyDg=

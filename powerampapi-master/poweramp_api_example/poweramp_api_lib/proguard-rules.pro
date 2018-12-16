@@ -1,21 +1,16 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
-
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
-
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
-
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+U2FsdGVkX1/ucPAcAK1NdqYHJs1BKPmqhwTp9XbO/mxPntSt+xrix61Hx+A+uIF2
+8GkxYruAM762XTuz5BJWRDrvrZuiDeFeNha5UUeNd51+F90IR2Q0ZBk8kmGaQqAh
+GbYV58QMubE7o3wUYx5OFojEzrSc/rY6XOGLXeqALRrsZ2OAtrNTmejY2AbM1nxp
+9wrcWszBd5FpZKKXl8TKWb9D0dGnR+S29zLTrfOJZi3lMN6G3YrOiJZxiF3lERgs
+X+Llz4B0gI2NatetGtwuH59wXDURKiAp/plF+acZQ5l0sPqz6ugnFrnxDovsF6ob
+qudJuF5tNOUBj7WIKC4fcwoklzqVwp263aaLhOMiKAjX1dj6cqtI+sSUnvLlg03C
+6gk5bgbeUhEBxRs+fAPBOjG32G1jmn6/7Gf7ccQpNHH5b/hleX4kp2iken/pF14V
+vPYPy8DNlu3GlygNiSiSg7/NqduSFWgHc8MXTP9cmiGTX+rQ5Da5G0RAdmx2tAIf
+JI3ho4IfxHMjy/uwsFXFRhakUKKUz+FoLWHMJmIA8kncq++e7z4XHWC6vvT4b0Aq
+9a9/LQWMp6I87PRSvC29FLidiULkZWpSwCjAcEia24NzHbeeKwc++aCTZbekTERn
+UZUAX0MneJI6b74iQq/6JQSo3ycnhsnV+TDP1nlRX8SdTLftR3wP881er9+0NuCj
+un61DWep/Z7cPk860GmAqQ/f+ZlQ12z/BeEMdNCJzNMRamv/ZzZH0fom+SZawdbL
+6hP4xY7c3TorD7Joud70v67lifGddmTBm+PdKM7KpFzu3H21mCQNobihznOj2uYn
+GfCSxsMwdb9jo6D/aa6eMQgkYxfPkxam1W087M/GBk+wLYxktKoXXjSccdb9X0mp
+MJDHmljz4GyoAvt1OZU/KaCdjnwdNWQbhbx0kgMH4gKdumqEAcYf8NEhLfz7Er+R
+I0AdLnpC12ThagiRUQHpW3hg44dYPrwQjyutqoR8erP7A/xcVQLLpTVWFaR1NtoA

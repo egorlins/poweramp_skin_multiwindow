@@ -1,537 +1,457 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<merge
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-
-<!--
-	Top scenes:
-	- 0 == default. Paused. Scene with large AA
-	- scene_playing. Playing. Scene with large AA 
-	- scene_lib
-	- scene_search
-	- scene_eq
-	- scene_vis_w_ui (playing implied) - scene with small AA (internal list scene) + vis controls, optionally alpha faded. Should be separate <SceneParams> as it's modified by code
-	- scene_vis_temp_ui (playing implied) - scene with both AA + vis controls, alpha == 1 (to allow all UI use cases, e.g. popup menus)
-	- scene_vis (playing implied, nothing is visible except vis surface)
-	
-	NOTE: for main screen TOP containers, scene_vis_w_ui should be ALWAYS separated from other scenes, i.e. scene_vis_w_ui  
-	should be the only scene in SceneParams tag. This is due to alpha value set by code based on user preference for these SceneParams. If multiple scenes co-exist 
-	with scene_vis_w_ui in same SceneParams, all of them will be affected by the user preference alpha value
-
-	NOTE: it's OK to combine any scenes in non-TOP containers/views and in non main containers/views as user preference code affects only
-	_main_ screen _top_ containers
-	
-	NOTE: styles are located in files named styles-[prefix].xml, where [prefix] is first word of the style, e.g. TopContainer style is in styles-top.xml,
-	and NavbarShim style is in styles-navbar.xml  
--->
-
-<!-- NOTE: keeping it on top for now so service start/connection starts before inflating anything else -->
-<com.maxmpz.audioplayer.widget.PlayerConnectionBehavior/>
-
-<!-- NOTE: this handles navigation between top scenes/pages -->
-<com.maxmpz.widget.player.TopNavSceneFastLayout android:id="@+id/top_container"
-	style="?TopContainer"
->
-	<com.maxmpz.widget.player.MilkWidget android:id="@+id/milk"
-		style="?TopMilk"
-	/>
-	
-	<com.maxmpz.audioplayer.list.ListWidget android:id="@+id/list"
-		style="?TopListWidget"
-	/>
- 	<SceneParams w:scene="@+id/scene_lib" w:scene_2="@+id/scene_search" w:scene_3="@+id/scene_playing" w:scene_4="@id/scene_vis_temp_ui" 
-		android:visibility="visible"
-		android:alpha="1"
-	/>
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@+id/scene_vis_w_ui" 
-		android:visibility="visible"
-		android:alpha=".55"
-	/>
-	<SceneParams w:scene="@+id/scene_eq" w:scene_2="@+id/scene_vis"
-		android:visibility="gone"
-	/><!-- list -->
-		
-	<!-- Invisible view which matches (more or less) list AA layout - thus should also match aaItemRatio as used in ListSubstyle style
-		 Used to attach other views to it, as @id/list itself spans the whole screen
-		 Also defines visualization size for bars in non-full-screen mode (aa_bounds padding accounted for this as well)  
-	-->
-	<com.maxmpz.widget.InvisibleView android:id="@+id/aa_bounds"
-		style="?TopAABounds"
-	/>
- 	
-	<!-- NOTE: layout for a waveseek is needed so the waveseek can be centered vertically between sub aa buttons and nav bar + have max height -->
-	<com.maxmpz.widget.FastLayout android:id="@+id/waveseek_layout"
-		style="?TopWaveseekLayout"
-	>
-	 	<com.maxmpz.widget.player.Waveseek android:id="@+id/waveseek"
-			style="?TopWaveseek"
-		>
-			<com.maxmpz.widget.NonOverlappingView android:id="@id/waveseek_cursor"
-				style="?TopWaveseekCursor"
-			/>
-			<StateAnimParams w:stateAnim="@+id/anim_waveseek_pressed" w:stateAnim_2="@id/anim_seeking"
-				style="?TopWaveseekCursor_state_waveseek_pressed"
-			/>
-		</com.maxmpz.widget.player.Waveseek>
-		
-		<!-- An invisible "button" behind play/pause. Used to capture presses for (probably) visually small pay/pause buttons -->
-		<com.maxmpz.widget.BusActionButton android:id="@+id/play_pause_behind"
-			style="?TopPlayPauseBehind"
-		/>
-		
-		<com.maxmpz.widget.player.Elapsed android:id="@+id/track_elapsed"
-			style="?TopTrackElapsed"
-		/>
-		<SceneParams w:scene="@+id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis_w_ui"
-			style="?TopTrackElapsed_scene_playing"
-		/>
-		<StateAnimParams w:stateAnim="@id/anim_seeking"
-			style="?TopTrackElapsed_state_seeking"
-		/>
-	 		 	
-		<com.maxmpz.widget.player.Duration android:id="@+id/track_duration"
-			style="?TopTrackDuration"
-		/>
-		<SceneParams w:scene="@+id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis_w_ui"
-			style="?TopTrackDuration_scene_playing"
-		/>
-		<StateAnimParams w:stateAnim="@id/anim_seeking"
-			style="?TopTrackDuration_state_seeking"
-		/>
-		
-		
-		<com.maxmpz.widget.BusActionButton android:id="@+id/pause"
-			style="?TopPause"
-			w:busId="@id/bus_player_cmd"
-			w:msgId="@id/cmd_player_toggle_playing"
-			w:longPressMsgId="@id/cmd_player_stop_playing"
-		/>
-		<SceneParams w:scene="@+id/scene_playing" w:scene_2="@+id/scene_vis_w_ui" w:scene_3="@+id/scene_vis" w:scene_4="@id/scene_vis_temp_ui"
-			style="?TopPause_scene_playing"
-		/>
-		<StateAnimParams w:stateAnim="@id/anim_seeking"
-			style="?TopPause_state_seeking"
-		/>
-		
-		<com.maxmpz.widget.BusActionButton android:id="@+id/play"
-			style="?TopPlay"
-			w:busId="@id/bus_player_cmd"
-			w:msgId="@id/cmd_player_toggle_playing"
-			w:longPressMsgId="@id/cmd_player_stop_playing"
-		/>
-		<SceneParams w:scene="@+id/scene_playing" w:scene_2="@+id/scene_vis_w_ui" w:scene_3="@+id/scene_vis" w:scene_4="@id/scene_vis_temp_ui"
-			style="?TopPlay_scene_playing"
-		/>
-		<StateAnimParams w:stateAnim="@id/anim_seeking"
-			style="?TopPlay_state_seeking"
-		/>
-		
-		<!-- See @layout/merge_topwaveseeklayout_extralayout -->
-		<include android:layout="?TopWaveseekLayout_extraLayout" w:optional="true"/>
-		
-	</com.maxmpz.widget.FastLayout><!-- waveseek_layout -->
-	<SceneParams w:scene="@+id/scene_lib"
-		style="?TopWaveseekLayout_scene_lib"
-	/><!-- waveseek_layout -->
-	<SceneParams w:scene="@+id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" 
-		style="?TopWaveseekLayout_scenes_playing"
-	/><!-- waveseek_layout -->
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@id/scene_vis_w_ui"
-		style="?TopWaveseekLayout_scenes_playing"
-		android:alpha="0.55"
-	/><!-- waveseek_layout -->
-	<SceneParams w:scene="@+id/scene_eq" w:scene_2="@+id/scene_search" w:scene_3="@+id/scene_vis"
-		style="?TopWaveseekLayout_scenes_invisible"
-	/><!-- waveseek_layout -->
-	
-	
-	<!-- See @layout/merge_top_extralayout -->
-	<include android:layout="?TopContainer_extraLayout" w:optional="true"/>
-	
-	<!-- NOTE: extra container is needed for the proper animations during top scene running - e.g. vis_mode => touch => scene to temp vis ui + label change relayout -->	
-	<com.maxmpz.widget.PrivateNonSceneFastLayout android:id="@+id/meta_info_layout"
-		style="?TopMetaInfoLayout"
-	>
-		<com.maxmpz.widget.BusActionPopupLayout android:id="@+id/meta_info"
-			style="?TopMetaInfo"
-			w:menuItemsLayout="@layout/merge_dsp_info_popup_layout"
-			w:busId="@id/bus_player_cmd"
-			w:msgId="@id/cmd_player_switch_track_meta"
-		>
-			<!-- NOTE: avoid anything except visibility in scene_button_menu to avoid returning to a wrong size -->
-			<!-- NOTE: msg_player_repeat_mode_changed is needed as it can change next track meta info -->		
-			<com.maxmpz.widget.player.BusStatusText android:id="@id/_label"
-				style="?TopMetaInfoLabel"
-				w:stateBusId="@id/bus_player"
-				w:labelStateId="@id/state_player_track_meta"
-				w:iconStateId="@id/state_player_track_meta_icon"
-				w:updateMsgId="@id/msg_player_track_changed"
-				w:updateMsgId_2="@id/msg_pipeline_started"
-				w:updateMsgId_3="@id/msg_player_track_meta_switched"
-				w:updateMsgId_4="@id/msg_player_repeat_mode_changed"
-				w:noUpdateInScene="@id/scene_button_menu"
-			/>
-			<SceneParams w:scene="@+id/scene_button_menu"
-				android:visibility="gone"
-			/>
-			<SceneParams w:scene="@+id/scene_button_menu_closed"
-				android:visibility="visible"
-			/>
-		</com.maxmpz.widget.BusActionPopupLayout>
-		<SceneParams w:scene="@+id/scene_button_menu" 
-			style="?TopMetaInfo_scene_item_menu" 
-		/>
-	</com.maxmpz.widget.PrivateNonSceneFastLayout>
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@+id/scene_vis_w_ui" 
-		style="?TopMetaInfoLayout_scenes_playing"
-	/>
-	<SceneParams w:scene="@+id/scene_playing" w:scene_2="@+id/scene_vis" w:scene_3="@id/scene_vis_temp_ui"
-		style="?TopMetaInfoLayout_scenes_playing"
-	/>
-	<StateAnimParams w:stateAnim="@id/anim_seeking"
-		style="?TopMetaInfoLayout_anim_seeking"
-	/>
-	<SceneParams w:scene="@+id/scene_eq" w:scene_2="@+id/scene_search" w:scene_3="@+id/scene_vis" w:scene_4="@+id/scene_lib"
-		style="?TopMetaInfoLayout_scenes_invisible"
-	/>
-			
-	<!-- 
-		NOTE: android:scrollbars defines standard android scrollbars. Setting it to vertical disables e.g. AA scrollbar (which is horizontal, but not used)
-		Also, horizontal scrollbar will require larger width (==parent width), but now width is set to narrow value => for a-z and vertical thumb modes only
-	--> 
-	<!-- NOTE: extra padding left for extra touchable area. Padding is not visible -->
-	<com.maxmpz.widget.ListScrollerView android:id="@+id/list_scroller"
-		style="?TopListScrollerView"
-	/>
-	<StateAnimParams w:stateAnim="@+id/anim_scrollbar_pressed"
-		style="?TopListScrollerView_state_scrollbar_pressed"
-	/>
-	<SceneParams w:scene="@+id/scene_lib" w:scene_2="@+id/scene_search" w:scene_3="@+id/scene_playing" w:scene_4="@id/scene_vis_temp_ui"
-		android:visibility="visible"
-		android:alpha="1"
-	/>
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@+id/scene_vis_w_ui"
-		android:alpha="0.55"
-		android:visibility="visible"
-	/>
-	<SceneParams w:scene="@+id/scene_eq" w:scene_2="@+id/scene_vis"
-		android:visibility="gone"
-	/>
-	
-	
-	<!-- SubAA -->
-	
-	<com.maxmpz.widget.SceneFastLayout android:id="@+id/sub_aa_buttons"
-		style="?TopSubAAButtons"
-		w:privateScene="true"
-	>
-		<com.maxmpz.widget.BusSelectablePopupButtonLayout android:id="@+id/vis_button_layout"
-			style="?TopVisButtonLayout"
-			
-			w:stateBusId="@id/bus_gui"
-			w:stateId="@id/state_gui_vis_mode"			
-			w:msgId="@id/msg_gui_vis_mode_changed"
-			w:arg2="1"
-			
-			w:buttonsLabels="@array/vis_modes"
-			w:buttonsDrawables="@array/vis_icons_32dp"
-			w:buttonsBusId="@id/bus_gui"
-			w:buttonsMsgId="@id/cmd_gui_set_vis_mode"
-			w:buttonsArg1="@array/vis_modes_enum"
-		>
-		</com.maxmpz.widget.BusSelectablePopupButtonLayout>
-		<SceneParams w:scene="@+id/scene_button_menu" 
-			style="?ItemPopupMenu_scene_item_menu" 
-		/>
-		
-		<com.maxmpz.widget.player.SleepTimerPopupLayout android:id="@+id/sleep_timer_layout" 
-			style="?TopSleepTimerButtonLayout"
-			w:menuItemsLayout="@layout/merge_sleep_timer_popup_layout"
-		>
-			<com.maxmpz.widget.PopupButton
-				style="?TopSleepTimerButton"
-			/>
-			<SceneParams w:scene="@+id/scene_button_menu"
-				style="?SleepTimerButton_scene_button_menu"
-			/>
-			<SceneParams w:scene="@+id/scene_button_menu_closed"
-				style="?TopSleepTimerButton"
-			/>
-		</com.maxmpz.widget.player.SleepTimerPopupLayout>
-		<SceneParams w:scene="@+id/scene_button_menu" 
-			style="?TopSleepTimerButtonLayout_scene_item_menu" 
-		/>
-		
-		<!-- NOTE: arg2="1" means we override arg2 when sending message by chaning modes by pressing BusSelectablePopupButtonLayout.
-			 This only applied (and overrides possible button arg2) ONLY when BusSelectablePopupButtonLayout is pressed, 
-			 otherwise, while in popup menu buttons send their (or buttons* based) messages/args -->
-		<com.maxmpz.widget.BusSelectablePopupButtonLayout android:id="@+id/shuffle_button_layout"
-			style="?TopShuffleButtonLayout"
-		
-			w:stateBusId="@id/bus_player"
-			w:stateId="@id/state_player_shuffle_mode"			
-			w:msgId="@id/msg_player_shuffle_mode_changed"
-			w:arg2="1"
-			
-			w:buttonsLabels="@array/shuffle_modes"
-			w:buttonsDrawables="@array/shuffle_icons_32dp"
-			w:buttonsBusId="@id/bus_player_cmd"
-			w:buttonsMsgId="@id/cmd_player_set_shuffle_mode"
-			w:buttonsArg1="@array/shuffle_modes_enum"
-		/>
-		<SceneParams w:scene="@+id/scene_button_menu" 
-			style="?ItemPopupMenu_scene_item_menu" 
-		/>
-		
-		<com.maxmpz.widget.BusSelectablePopupButtonLayout android:id="@+id/repeat_button_layout"
-			style="?TopRepeatButtonLayout"
-		
-			w:stateBusId="@id/bus_player"
-			w:stateId="@id/state_player_repeat_mode"			
-			w:msgId="@id/msg_player_repeat_mode_changed"
-			w:arg2="1"
-			
-			w:buttonsLabels="@array/repeat_modes"
-			w:buttonsDrawables="@array/repeat_icons_32dp"
-			w:buttonsBusId="@id/bus_player_cmd"
-			w:buttonsMsgId="@id/cmd_player_set_repeat_mode"
-			w:buttonsArg1="@array/repeat_modes_enum"
-		/>
-		<SceneParams w:scene="@+id/scene_button_menu" 
-			style="?ItemPopupMenu_scene_item_menu" 
-		/>
-	</com.maxmpz.widget.SceneFastLayout><!-- sub_aa_buttons -->
-	<SceneParams w:scene="@+id/scene_playing"
-		style="?TopSubAAButtons_scenes_playing"
-	/><!-- sub_aa_buttons -->
-	<SceneParams w:scene="@id/scene_vis_temp_ui"
-		style="?TopSubAAButtons_scenes_playing"
-	/><!-- sub_aa_buttons -->
-	<!-- NOTE: alpha is overriden by user preference -->
-	<SceneParams w:scene="@+id/scene_vis_w_ui"
-		style="?TopSubAAButtons_scenes_playing"
-		android:alpha="0.55"
-	/><!-- sub_aa_buttons -->
-	<!-- Needed to be invisible so waveseek properly attaches to it -->
-	<SceneParams w:scene="@+id/scene_lib" 
-		style="?TopSubAAButtons_scene_lib"
-	/><!-- sub_aa_buttons -->
-	<SceneParams w:scene="@+id/scene_eq" w:scene_2="@+id/scene_search" w:scene_3="@+id/scene_vis" 
-		style="?TopSubAAButtons_scenes_hidden"
-	/><!-- sub_aa_buttons -->
-	
-	
-	
-	
-	<!-- eq -->
-	<com.maxmpz.widget.LoadableBehavior android:id="@+id/behavior_eq_layout"
-		android:layout="@layout/merge_eq_layout"
-		w:loadForScene="@+id/scene_eq" 
-		w:insertAt="thisPosition"
-		w:unload="never"
-	/>
-	
-		
-	
-	<com.maxmpz.widget.FastLayout android:id="@+id/search_layout"
-		style="?TopSearchLayout"
-	>
-		<com.maxmpz.widget.FastLayout
-			style="?TopSearchPanel"
-		>
-			<!-- NOTE: we consume space from right here, so search text view is not taking full width -->
-			<com.maxmpz.widget.BusActionButton
-				style="?TopSearchCloseButton"
-				w:busId="@id/list"
-				w:msgId="@id/cmd_list_search_text"
-				w:string=""
-			/>
-			<com.maxmpz.widget.ListSearchEditText android:id="@+id/search_edit"
-				style="?TopListSearchEditText"
-				android:hint="@string/search"
-			/>
-		</com.maxmpz.widget.FastLayout>	
-	</com.maxmpz.widget.FastLayout><!-- search_layout -->
-	<SceneParams w:scene="@+id/scene_search"
-		android:visibility="visible"
-	/><!-- search_layout -->
-	<SceneParams w:scene="@+id/scene_lib" w:scene_2="@+id/scene_eq" w:scene_3="@+id/scene_vis" w:scene_4="@+id/scene_playing" w:scene_5="@id/scene_vis_temp_ui"
-		android:visibility="gone"
-	/><!-- search_layout -->
-	<SceneParams w:scene="@+id/scene_vis_w_ui"
-		android:visibility="gone"
-	/><!-- search_layout -->
-
-	<!-- NOTE: anchor invisible views which match Navbar dimensions. Navbar itself is rooted into independent scene/layout, thus, we need some anchor views
-		 in top container for other views to be aware of navbar size
-		 
-		 NOTE: these views can cause navbar shadow to be cut off on some devices if placed after navbar - looks like bug for some (actually quite many) hwui/driver implementations,
-		 thus it's View and it's visitility == VISIBLE 
-	-->
-
-	<com.maxmpz.widget.InvisibleView android:id="@+id/navbar_bounds"
-		style="?TopNavbarBounds"
-	/>
-	
-	<include android:layout="@layout/merge_navbar"/>
-	
-	<!-- NOTE: loaded once and never unloaded. NOTE: TopNavHelper assumes vis panel is loaded via behavior, otherwise change vis_panel_faded_alpha logic there -->
-	<com.maxmpz.widget.LoadableBehavior android:id="@+id/vis_panel_loadable_beahvior"
-		android:layout="@layout/merge_vis_panel"
-		w:loadForScene="@+id/scene_vis_temp_ui"
-		w:loadForScene_2="@+id/scene_vis"
-		w:loadForScene_3="@+id/scene_vis_w_ui"
-		w:insertAt="thisPosition"
-		w:unload="never"
-	/>
-	
-	<!-- Putting indexer popup view above possible selection menus but below navbar (so we hiding it with our shade) -->
-	<com.maxmpz.widget.ListIndexerPopupView android:id="@+id/list_indexer"
-		style="?TopListIndexerPopupView"
-	/>
-	<StateAnimParams w:stateAnim="@+id/anim_scrollbar_pressed"
-		style="?TopListIndexerPopupView_state_scrollbar_pressed"
-	/>
-	
-	<!-- NOTE: this is the view where popup item view is moved and transitioned to popup menu and back -->
-	<com.maxmpz.widget.MenuPlaceholderLayout android:id="@+id/menu_placeholder"
-		style="?TopMenuPlaceholderLayout"
-		w:privateScene="true"
-	/>
-	
-	<!-- NOTE: for now, need selection menu over menu placeholder, as we use selection menu for popup lists -->
-	<include android:layout="@layout/merge_selection_menu"/>
-		
-	<!-- NOTE: privateScene is important to avoid scene-animating toast contents with main scenes or other layouts -->
-	<com.maxmpz.widget.SceneFastLayout android:id="@+id/toast_container"
-		style="?TopToastContainer"
-		w:privateScene="true"
-	>
-		<!-- NOTE: PlayerToastFrameLayout listens to various player related cmds to give appropriate toast feedback (e.g. repeat/shuffle/etc. modes) -->
-		<!-- NOTE: while initial visibility is gone, ToastFrameLayout specifically makes itself properly INVISIBLE before scene starts -->
-		<!-- 4 scenes here:
-			 - 0 (default) - collapsed with icon
-			 - scene_expanded - expanded with icon
-			 - scene_collapsed_no_icon - collapsed, no icon
-			 - scene_expanded_no_icon - expanded, no icon
-		-->
-		<com.maxmpz.widget.player.PlayerToastFrameLayout android:id="@+id/toast_frame"
-			style="?TopToastFrame"
-		>
-			<com.maxmpz.widget.FastTextView android:id="@+id/icon"
-				style="?TopToastIcon"
-			/>
-			<SceneParams w:scene="@+id/scene_expanded"
-				android:visibility="visible"
-			/>
-			<SceneParams w:scene="@+id/scene_expanded_no_icon" w:scene_2="@+id/scene_collapsed_no_icon"
-				android:visibility="gone"
-			/>
-									
-			<com.maxmpz.widget.FastTextView android:id="@+id/title"
-				style="?TopToastTitle"
-			/>
-			<SceneParams w:scene="@+id/scene_expanded"
-				w:baseScene="defaultScene"
-			/>
-			<SceneParams w:scene="@+id/scene_expanded_no_icon" w:scene_2="@+id/scene_collapsed_no_icon"
-				style="@style/TopToastTitle_no_icon"
-			/>
-			
-			<com.maxmpz.widget.FastTextView android:id="@+id/line2"
-				style="?TopToastLine2"
-			/>
-			<SceneParams w:scene="defaultScene"/><!-- NOTE: needed so line2 scene is properly manipilated by code -->
-			<SceneParams w:scene="@+id/scene_expanded"
-				w:baseScene="defaultScene"
-			/>
-			<SceneParams w:scene="@+id/scene_expanded_no_icon" w:scene_2="@+id/scene_collapsed_no_icon"
-				style="@style/TopToastLine2_no_icon"
-			/>
-		</com.maxmpz.widget.player.PlayerToastFrameLayout>
-		<SceneParams w:scene="@+id/scene_collapsed_no_icon"
-			w:baseScene="defaultScene"
-		/>
-		<SceneParams w:scene="@+id/scene_expanded" w:scene_2="@+id/scene_expanded_no_icon"
-			style="@style/TopToastFrame_scene_expanded"
-		/>
-	</com.maxmpz.widget.SceneFastLayout><!-- toast_container -->
-	<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis"
-		w:baseScene="defaultScene"
-	/>
-	<!-- Alpha is overriden for this scene -->
-	<SceneParams w:scene="@id/scene_vis_w_ui"
-		w:baseScene="defaultScene"
-	/>
-	<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_eq"
-		style="@style/TopToastContainer_scenes_non_main"
-	/>
-	
-	
-	<!-- NOTE: status bar bg should be atop of everything, so putting it here as last, thus higher z-index. Helps with e.g. header => popup menu poping over status bar bg.
-		 By default, status_bar_bg/navigation_bar_bg don't change anything for scenes, but this is provided for skins, which can change them -->
-	 -->
-
-	<com.maxmpz.widget.FitsStatusBarView android:id="@+id/status_bar_bg"
-		style="?TopFitsStatusBarView"
-	/>
-	<!-- All main screen scenes match default scene, thus, not transitions for these scenes -->
-	<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis"
-		w:baseScene="defaultScene"
-	/>
-	<!-- Alpha is overriden for this scene -->
-	<SceneParams w:scene="@id/scene_vis_w_ui"
-		w:baseScene="defaultScene"
-	/>
-	<!-- All non main screen scenes have single style --> 
-	<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_eq"
-		style="?TopFitsStatusBarView_scenes_non_main"
-	/>
-		
-	<com.maxmpz.widget.FitsNavigationBarView android:id="@+id/navigation_bar_bg"
-		style="?TopFitsNavigationBarView"
-	/>
-	<!-- NOTE: all main screen scenes match default scene, thus, not transitions for these scenes -->
-	<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis"
-		w:baseScene="defaultScene"
-		w:applyViewParams="true"
-	/>
-	<!-- Alpha is overriden for this scene -->
-	<SceneParams w:scene="@id/scene_vis_w_ui"
-		w:baseScene="defaultScene"
-	/>
-	<!-- All non main screen scenes have single style -->
-	<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_eq"
-		style="?TopFitsNavigationBarView_scenes_non_main"
-	/>
-		
-	
-</com.maxmpz.widget.player.TopNavSceneFastLayout><!-- top_container -->
-		
-
-</merge>		
+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

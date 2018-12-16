@@ -1,23 +1,15 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.poweramp.v3.vispresets.sample">
-
-	<application
-		android:allowBackup="true"
-		android:icon="@mipmap/app_icon"
-		android:roundIcon="@mipmap/app_icon"
-		android:label="@string/app_name"
-		android:supportsRtl="true"
-		android:theme="@style/AppTheme" >
-
-		<meta-data android:name="com.maxmpz.PowerampVisPresets" android:value="true"/>
-
-		<activity android:name=".InfoActivity">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
-	</application>
-
-</manifest>
+U2FsdGVkX1/ucPAcAK1NdmTDEf2CC9KznHygQqLJGRl5fuM0SAsJGBiPjcBzuxnc
+yRq0+KaktUnFzrPKxQpDVIJmriWX7oMTse9mcTH3I7dLFabc/9ebiDkcP3OrGa6G
+HXeVWqR4eKNrfL7oBBNLnYyyGjb8rZipFpTmDwUYmIfS+lgfUOHRcxo8SuegPdrv
+8Qv/xmbXCGzcBmuSX0M5/GqlteLcTEb0GJ7RS3uvwXlyXnK3IlOkBOlBYqsBrUbt
+6hItM8L/zOIvfO0LkqpCzlHfAJal/aVYy0IPr9ywqGjumUdT1v0Tyyamsmm9uMhJ
+jR+5LmoPjG+xh8EKwm51IizMRFRs1/4POxk6EZw5JXm1O8nTKJuG7oEVYVx2DkEb
+N2aGh8UpyzI9YEz3CdpyuZKScjX/7ZUk3U5vXErCOaWRWTpohZcbeZTQeqXW/sYP
+A3l2wDgoFRs0OXgEZa+ssxz/nD/RCm+kpxquDGdLQQ6abHu6UziGyqlP6N1FmYY6
+f30cnqTkfiXnHC82cQ2ma9Tn++GK9ScwqrjxQivxKPgh6C7jb5zHsjci3lct/sbP
+FPU7Sgw1UALZEZ2fg+m5SNgSnvxM7zi+uLMPKJKF4PS76XdvOI6FUvuKrSD6cYZw
+qmHQP5rxvGXMXEX5nCOCA+7fsHxBFhAMLwaCaGgq7bsLFLTci50a2DuH+rmfGX+Q
+vMBSS1zOllug3AKJC2ijTpoY6iTj+fj7Jn74OdfXYuj0DlU4X11p5QJGzVGHL6Sg
+5BzZwEoPZY8U27WBCMLrfRvgSbkttmpCeBhZf46C7lUluHpAFwYHLH73vC/vS2Ck
+4t/sAvmVYN6iWuQQlRKUyCGFAZVD/JXCf5UZd6+8sn4TJjdszLacrpvuz4mOt5Ci
+TDixiKXtC/9zE1N+tnn9kw==

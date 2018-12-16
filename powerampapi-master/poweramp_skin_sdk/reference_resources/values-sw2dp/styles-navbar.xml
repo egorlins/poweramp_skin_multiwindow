@@ -1,162 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<resources 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:w="http://schemas.android.com/apk/res-auto"
->
-	<style name="NavbarShim">
-		<item name="android:background">?colorShade</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">match_parent</item>
-		<item name="android:clickable">true</item>
-		<item name="android:visibility">gone</item>
-		<item name="android:outlineProvider">none</item>
-	</style>
-	
-	<style name="Navbar">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">@dimen/Navbar_height</item><!-- 48dp -->
-		<item name="layout_attachBottom">parent</item>
-		<item name="android:layout_marginTop">8dp</item>
-		<item name="android:layout_marginLeft">8dp</item>
-		<item name="android:layout_marginRight">8dp</item>
-		<item name="android:layout_marginBottom">8dp</item>
-		<item name="android:clipToPadding">false</item>
-		<item name="android:elevation">?navbar_elevation</item>
-		<!-- <item name="android:forceHasOverlappingRendering">@bool/v28_forceHasOverlappingRendering</item> --><!-- True for Android 9+ -->
-		<item name="android:background">@drawable/navbar_bg</item>
-	</style>
-	<style name="Navbar_scene_navbar_1line_sheet">
-		<item name="layout_attachBottom">parent</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginTop">8dp</item>
-		<item name="android:layout_marginLeft">8dp</item>
-		<item name="android:layout_marginRight">8dp</item>
-		<item name="android:layout_marginBottom">8dp</item>
-	</style>
-	<style name="Navbar_scene_navbar_2lines">
-		<item name="layout_attachBottom">parent</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginTop">8dp</item>
-		<item name="android:layout_marginLeft">8dp</item>
-		<item name="android:layout_marginRight">8dp</item>
-		<item name="android:layout_marginBottom">8dp</item>
-	</style>
-	
-	<style name="NavbarExtension">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_marginTop">8dp</item>
-		<item name="android:layout_marginBottom">2dp</item>
-		<item name="android:clipToPadding">false</item>
-		<item name="android:visibility">gone</item>
-		<item name="layout_attachTop">parent</item>
-		<item name="shim">@+id/navbar_shim</item>
-		<item name="animTime">500</item><!-- Extension enter anim time -->
-		<item name="animExitTime">200</item><!-- Extension exit anim time -->
-		<item name="twoLineEnterAnimTime">500</item>
-		<item name="twoLineExitAnimTime">500</item>
-		<item name="android:duplicateParentState">true</item><!-- Needed to e.g. state_playing to propagate -->
-	</style>
-	
-	<style name="NavbarExtensionLogo">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">24dp</item>
-		<item name="layout_consumeSpace">vertical</item>
-		<item name="android:scaleType">center</item>
-		<item name="android:layout_marginLeft">4dp</item>
-		<item name="android:layout_marginRight">4dp</item>
-		<item name="android:layout_marginTop">4dp</item>
-		<item name="android:layout_gravity">top|center_horizontal</item>
-		<item name="android:drawable">@drawable/logo_navbar_hamburger</item>
-		<item name="drawableOnly">true</item>
-		<item name="drawableTint">?colorIconPrimary</item>
-	</style>
-
-	<style name="NavbarExtensionLogoLabel">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">18dp</item>
-		<item name="layout_consumeSpace">vertical</item>
-		<item name="android:layout_marginTop">2dp</item>
-		<item name="android:layout_marginBottom">4dp</item>
-		<item name="android:layout_gravity">top|center_horizontal</item>
-		<item name="android:textStyle">italic</item>
-		<item name="android:textColor">?android:textColorPrimary</item>
-	</style>
-	
-	<style name="NavbarExtensionMenuLine">
-		<item name="android:clickable">true</item>
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">44dp</item>
-		<item name="layout_consumeSpace">vertical</item>
-		<item name="android:paddingLeft">0dp</item>
-		<item name="android:paddingRight">16dp</item>
-		<item name="android:drawablePadding">20dp</item>
-		<item name="drawablePaddingStart">28dp</item>
-		<item name="android:gravity">left|center_vertical</item>
-		<item name="android:background">?android:selectableItemBackground</item>
-		<item name="android:textColor">?android:textColorPrimary</item>
-		<item name="drawableTint">?colorIconPrimary</item>
-		<item name="clickDelay">@integer/activity_start_navbar_click_delay</item>
-	</style>
-	<style name="NavbarExtensionMenuLine50" parent="NavbarExtensionMenuLine">
-		<item name="android:layout_width">0px</item>
-		<item name="layout_widthPercent">50%</item>
-		<item name="layout_consumeSpace">horizontal|reset_auto</item>
-	</style>
-	
-	<style name="NavbarList">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">44dp</item>
-		<item name="android:visibility">gone</item>
-		<item name="layout_attachTop">@id/navbar_extension</item>
-		<item name="android:duplicateParentState">true</item><!-- Needed to e.g. state_playing to propagate -->
-	</style>
-	
-	<style name="NavbarNavButtonsLayout">
-		<item name="android:layout_width">match_parent</item>
-		<item name="android:layout_height">@dimen/NavbarNavButtonsLayout_height</item><!-- 44dp -->
-		<item name="layout_attachTop">@id/navbar_list</item>
-		<item name="android:layout_marginLeft">2dp</item>
-		<item name="android:layout_marginRight">2dp</item>
-		<item name="android:layout_marginTop">2dp</item>
-		<item name="android:layout_marginBottom">2dp</item>
-	</style>
-	
-	<style name="NavBarButton">
-		<item name="layout_widthPercent">25%</item>
-		<item name="layout_consumeSpace">horizontal</item>
-		<item name="android:layout_height">match_parent</item>
-		
-		<item name="android:background">@drawable/ripple_rounded_medium</item>
-		<item name="drawableWidth">@dimen/NavBarButton_drawableSize</item>
-		<item name="drawableHeight">@dimen/NavBarButton_drawableSize</item>
-		<item name="drawableTint">?colorNavbarIcons</item>
-		<item name="drawableOnly">true</item>
-		<item name="drawablePosition">forceGravity</item>
-		<item name="android:gravity">center</item>
-		<item name="android:clickable">true</item>
-		<item name="animOnClick">true</item>
-	</style>
-</resources>
+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

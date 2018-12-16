@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<level-list xmlns:android="http://schemas.android.com/apk/res/android">
-<!--
-	NOTE: levels should match Poweramp API ShuffleMode:
-	 
-	public static final int SHUFFLE_NONE = 0;
-	public static final int SHUFFLE_ALL = 1;
-	public static final int SHUFFLE_SONGS = 2;
-	public static final int SHUFFLE_CATS = 3; // Songs in order.
-	public static final int SHUFFLE_SONGS_AND_CATS = 4; // Songs shuffled.
- -->
-	<item android:maxLevel="0" android:drawable="@drawable/matte_shuffle_none"/>
-	<item android:maxLevel="1" android:drawable="@drawable/matte_shuffle_all"/>	
-	<item android:maxLevel="2" android:drawable="@drawable/matte_shuffle_songs"/>
-	<item android:maxLevel="3" android:drawable="@drawable/matte_shuffle_cats"/>
-	<item android:maxLevel="4" android:drawable="@drawable/matte_shuffle_songs_and_cats"/>
-</level-list>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf5Lyu2sbOOSlinevma4xDkl
+50tquoSoKvzVoy4EGVnECTYTygONXHWLawMxeaiw+h0K3exfRQ0fnFIO3jwox8Ub
+31YYrX65oiROmSK1s18zMknoKugSXn4GpB0fSB/oefY55KR431ForwXWsbGxUcao
+uIaacgL075QM3CFInCkODjAu0etf61yrMkcxcwuQbGoDZTSagmGbUacG+988f+wf
+rySLUPp9Tm27EdG2PSfNYzD7fNr+BjVZTFWHBrg112LJOHvlBGaZ0urJQF7rZQVh
+fFQTKxpnu6E/erN6NAVKLwlLNnc/O1YWT2dom105Lokk93N2y+UwoD6YuCvDT89Y
+lVzWi3JuZMT8dFq/0n/9OEjzzjUCl5lIybxeB+dhoOKnjwroYZDZ4P2D/LSmWzTA
+ZGeLJgV+11i6yFiySxqOQhowmfiBHWb3F7r9/uDG9irCMrC/dhQGBHZ8znD7uBaZ
+eI4NT2XigaVa+4oUgdzKAnCxZIiCLUFyx/z3GI4M0Go7Q2zDKLnSNOt3v2IZRvVy
+qmgK0NO4wq1XxDDmkQ9EN0RslZtWv8Bk9XxGy+NZes24Spvvv1o9/tCJ5e7oZXOS
+yvs9b75BOXidStwEuO3PsnHyK21NSkvH9N9YivqhyVLPm4lGCQTpZw3ke9zVt8P+
+UjU0grC3dhNQDJqHRJu4BMr8VXLZi6R9y0eLfMKLXxt42lQbDOLlsC3KR7MBXNiQ
+STOEO5ONh9efifQ8hYSP83LwiG+3ufn1OMNgF2b8YGZjWsfLfpl82ugQ+U+cWBOk
+PHzMdquQpI1qkt/mgMhneO3iHwnTbeW1HihGTw6Rtk8sXKxCmAklNBPC6igz+Fs7
+/sApVoffGo/3EOUSU1lUXdTjUvgn8kO8kXt8H9ER/c5o3/Ruc0vdYPdBVvZTJwJ5
+GuhCGmQdLsmXF7HB4eHbpxjqr8dUd5iTpgTVoeBuPUEdXkJFrZSi3sFFz0giEyjg
+aY/wRipnktBltU5YHXhxhsEqdW11aoxJkFaf+v/GAGJwncKFYDId2Y2ldIwuLXpF
+giISsTxLxidF7LEATNiOkdaTDHeXdDHxloJLl/wP+++1ZwXavsN9uBKIVuDYqKCw
+sVPT/0c7abYGPic6I+yWJw==

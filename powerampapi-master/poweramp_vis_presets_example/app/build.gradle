@@ -1,26 +1,18 @@
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 28
-    defaultConfig {
-        applicationId "com.poweramp.v3.vispresets.sample"
-        minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
+U2FsdGVkX1/ucPAcAK1NdrxsNsTkAJAzYwiSrjMxopMor4DAZo3mMX3QAx4s9Yri
+QJV1KcD+IeHWSAoJPoUveEu7IC2WGuii/stSn4JvBXAOhgS0usFu9CZk0b095nlL
+mbaD+da8/2MtLeJGGtx+kRtxuFYPyzDcK5ymBoP4LnhsfxH6Nqel8CicIPb6EWAb
+f/eeFKrMAf9I6ViBYbpZmk9tUIaoLADpEXrkYPt86ind4ukE17l3VvetuKhcrzSE
+pCf9CRqELihKsK/nueV0587cLaGRHOsTNjPbZpNFz2Xzs/U+2KgBvKsIzLHDcwC5
+YrKee1KCze0jMQMm7FH5KmI7JzBWOWLLRXYb0XRsOoG+4INE7Q+uQnC4SnteNh3S
+WGQHBPQY/GDcngjkioQL8dhrcihbP0eb5/Z43sMXhitbUAH7aLWBAPllmOa77p+L
+6OWMDvgob8L7z4WbA7SDiYNXsyV9DeojC7gjYPyruKdJYFMFNUeMdUww9IEANPlc
+rrh4vi60fBgj8bjxXAUOGuOYBcSrxO+lX2ALpBhuHHA1C/0YWRKgOyt4+dHsXEUi
+qYRwyBLuWZYEOUf7dNOQVQZCvSgOnxjS6yR5r2eDdkhA9On/WhfmLp0SlhRkhgbK
+IJaVjDw2vT9g2e1UDtCshTuluItI04NxTALEgN1XwyxrfHF/HDHmshanG2WT9+i/
+IFk1WYcpCWxlF+0oCJbD9V4ibpmpiRzn1SMGPrBrSIyGKtx6LVYEx+727hgcgbcE
+B3zVN05BpbAeUuxGH5TDWooQQl+kwZuLRVdG4zoWlC/NgNK8YtfVIg2PS/Bfz9+1
++7IVp+Fy5ZH1hcaq5Nmz1Iri9zRKCJIlHC/YBztfQXF+EufvP/84XVLG1daMSotO
+sHs1y8AaIJDXyJH7vCUYxwxKylYttoiNJM62qMxJbKMzyye32Zuge0pKq3RAHmsx
+VHCWn/Z5IY2hwglUVUKnGicxjOPhjzK1Wejj8pgv1w1dL6yxIGV7dYtywSJ5Egl4
+DAWpMVeI5dbT4HS02sDvY49xzdq3dhfOEseah9dPvHgRCWCjiNZzmHhRPF4UTY0l
+7zrGjZrQcLp/Ef1dEv+rtg==

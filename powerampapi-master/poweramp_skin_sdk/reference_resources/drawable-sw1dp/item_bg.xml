@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- These should be sorted in desc order as they are in fact bitset values (android selects first match) -->
-<level-list xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="200">
-
-	<!-- Set when item needs background as it can overlap other items, e.g. when it's dragged -->
-	<item android:minLevel="@integer/ITEM_BG_LEVEL_INTERMEDIATE" android:maxLevel="@integer/ITEM_BG_LEVEL_INTERMEDIATE">
-		<shape>
-			<corners android:radius="?corners_medium"/>
-			<solid android:color="?colorAABgColor"/><!-- Match activity background -->
-		</shape>
-	</item>
-	
-	<!-- Set when item becomes popup menu -->
-	<item android:minLevel="@integer/ITEM_BG_LEVEL_POPUP" android:maxLevel="@integer/ITEM_BG_LEVEL_POPUP">
-		<shape>
-			<corners android:radius="?corners_popup"/>
-			<solid android:color="?colorBgPrimary"/>
-		</shape>
-	</item>
-	
-	<!-- Set when item needs touch feedback, e.g. on long press -->
-	<item android:minLevel="@integer/ITEM_BG_LEVEL_FEEDBACK" android:maxLevel="@integer/ITEM_BG_LEVEL_FEEDBACK" android:drawable="@drawable/ripple_rounded_medium"/>
-	
-</level-list>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+q5QhAz3qRFzdQf4a0Pw1skOLKNkO57rnupUp5pKphKzKje0wulN0Qk+nJghL588c
+Kn9gDXnRTe5+c53Rt1UE/QNP0Ov9P0fvrXGHriyRpR/Cl8gSD0pN9yatEFS29VPT
+kpjq6g9qNlf/oG/Dy0CdEQMxQU9MpcbfJl7Z1UsuHvIf1qvJOGFds3aEDi0sSTPd
+/Rrk3Gq2nueXXGsIvBo1oRmoSOF6ZreGbFKemBxQQReVrMtzru0tpE4Id05a/F8A
+cN8ZPZiyUkkR4JRTiWBfcDhWJRjNWN7WGCZ7gmQndrf1vr9vpmASCrttais2Q5cp
+vh0Cf6Mpad27AHyjaa5bz+YTAtAtwcgDmoZA4tJHfiv9umS/+mrijWa0h4OIoQ+N
+h9EhRYp7eCDvlQUdAf2xwlKkWVzYa61XvXUrpql1DEn9f16MfpybQMwbMg68ttLJ
+G9rhu4RmoWPo97TKdTNN15qVrL7NFxu0TcrvFaiY+9kyz4YD6tzUrMdlTtri1SwZ
+gtzt8T8jnE1ewZMHKIv+hhRR0jNpsjBk4R32C9VODZ76xeRIRs5RAQndl8A0OIjk
+/Ci/8b0jJz9jl7RDt1nk1w42oBkAIoKBTju2k98tNaDoKf9NvJujrUFp/ey9ZEWB
+zwzu6oVM2LfMAgVldCb8iK7XQxpa27OQtxT7t7OG7yv8BGIRsAHg/1l8KgACnNgs
+joGF9x6zoMyoG9TK5K0BnFiD+vMGJGsHQPIGsQ4lzmLwSKDvevfFR2/bi2PfLfSI
+tTUKpu4JDe4rXGpYTHZUE3vl+vA9gnc0K9l8WcAcpOsOBylrbtmKPkW/l1ESBBLp
+84bBT3ElipJTNXCq93MPmDoK18s+VloL2YSuKLUV/GeY3Bt8hyTQXG/6kGMzDEiJ
+lAPwAHEAvXGRF2qZLsnDxORJV1mpQeRbRHzspI0PsGM6e6lRNjCJIM8YjTOIqYmG
+vNJo/pLqcnaoSfrTC165hAoWqUIein+3i8+q8hk0CRCuiaFEPNHyiW24ATM9g14e
+C9jOXZ5zpOEZl9yCphY1PCWy22vqtb83L28ozFZ1nbxKrb2qP/pLRwnVOPojtyu2
+KBV+uL3rbr1xOBNDcMYUSGvhO0EWKGHp1GnK0NiogUXSUCruzBroXVqxctjp7vTX
+n59P3J63ex+AL5YD6fKdys+tErz/H3pQgl3iqbhzfO9/B7E2eG2EJkg+rK5UYsPw
+GYPIhIeN7ODsMDwDDCpYdYCKDWKXHfPCdqNME8WJ0CY8pOOml7W4zsRQ3B70Fp4Z
+M5D3iTEtGIW55fz+ewNxwDTQ+g+P+Fk5xdTA7IihtOjv6+jCmVZx3vTrUTYnFEpd
+N2xYNfNy0wMaNyjZyDO5FDggOTH09p8NMVbxFcL53O4XnyNZF/QbolanRu2IA6Hl
+Yc4VhnBTQzzaS0gYVeJuh7ed5B4Yirj+T0gBVcAgmnw7H9KV/Wem2QQJ0lnq9MRh
+FprHMWjJSz0iZ3RVKcLgKQ==

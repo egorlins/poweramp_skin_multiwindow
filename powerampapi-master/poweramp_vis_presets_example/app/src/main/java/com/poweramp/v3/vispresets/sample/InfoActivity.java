@@ -1,31 +1,24 @@
-package com.poweramp.v3.vispresets.sample;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-
-public class InfoActivity extends Activity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info);
-    }
-
-    public void startWithVisPresets(View view) {
-        Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.maxmpz.audioplayer", "com.maxmpz.audioplayer.StartupActivity");
-        intent.putExtra("vis_presets_pak", getPackageName());
-        startActivity(intent);
-        finish();
-    }
-
-    public void openPowerampVisSettings(View view) {
-        Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.maxmpz.audioplayer", "com.maxmpz.audioplayer.SettingsActivity");
-        intent.putExtra("open", "vis");
-        intent.putExtra("vis_presets_pak", getPackageName()); // If vis_presets_pak specified for open/theme, will scroll presets list to this apk entry
-        startActivity(intent);
-        finish();
-    }
-
-}
+U2FsdGVkX1/ucPAcAK1NdsnhQHa6tp6nZwLMvFOq5r0QZhc1cXDukYFC8QNB+m2Z
+ip0xuzljpkUJ1YQ/92xhhDsn99W6Bqqmfd/3DX7wvXmjYtgLOdwTm+yhsXY5Vda5
+lRJZGHNTqO0L+KIMhw0H5yWswhInKfGwkCW0GKXBa0aqwortSH6xq4HyUJbDF7Zl
+UpT7lmIJ8Ah+moD2GY1+++6S2Z7LeytcXo+/u/6QXzxBE0LUbRjejvKwmkm4uWHe
+8k468EIZ+L8+0j9u8rEregMZo6iMXV+CLqQMSgzQN6eFJu6ZHm6+mbHU4wSBN96n
+lci2bVcpTdhlzqVE/yu1Q63+oWa0tuHrngM0E3/DsD0z+bJzmb/CcJsjr9PIw1X+
+bgM3dWDCyCwXlxW5Uw7ehWLXO0wQinUVdHQObPWCY0P04News1pBrvz5PtNuZOK1
+1Lus4RrC10kNuXcihgutYQeQYr9UuItIowCXxvCFNj2H+WIRGEBNm9wDm+sbxTz/
+JP6DxlzCExtUqFBYrmDzXd3mTmmiCu59GttkVLHZTVAbOqBmzZnGr/vLFqKisTL/
+CLZ2h3C70wgmSUkDFGPCjAW0dCzg/vjiXF0sObDxeAVLZA8K/Ij7k9IsFwpcY9ng
+LxmyFrA5dsA8LBvYLU27zMzCosP7Z5KXz7JRMWRxUH4tzFeVYSmKPFziLUKqrKtK
+iROc9TW7AVf/uC3lZ38w0wqXUfnwsvoemBjPd51DaW2G2ZRktj7IR3Jw0+fRzaOg
+wSf4ux0jMlI7J1+yw4RsRMH3ZTvI0Y/aYTdo8CnWTDIpkbvqU7j8537ZQYU+rOUI
+tMlnj9+pZOUTp4bfiRgEsL0/rg7YNYjxYnx2orrGXZ/CcoxJ9m8m4RvRgJA167kw
+/4wnrrbQWo9mcZTkBxJyY9KSc1QSIw3AeZlVXcHPK0yPFgyYFTd+Iwqw4ZW4kUff
+ZYkRtAhu62z1Ox/iSi5/7Mu6xGwxJyly0cpjYIPz4OQ/RKwa8cKQ6/jMrEIXDBDJ
+45ahgG6BIVwKU4v/GvS8wYXPBr0RJfVmXPU3A/cwr9SQEAouRdzDFPcdU1fOAkf/
++UVAQXhyoR3ay8OW6plOzdE2bw5Ed6t3fM3btSPVfxnLqlbVVLNSHNXAxnE4VREt
+f9YyXdxDB0jSVSIgkMIs2QUEhjIrg7r7pe856rHGj/dDFEa/CTz6Eg9oxQVZKHeY
+lUJBsGsZeJE6fg6tSqhvEBVzhX9DCeIfJMma3FIZjaxcdAcaf7vKs8Z7ulSQtmy4
+vzKGtl0M53YZCKhQEXGQHhwx1Osc0UIyDWfo8+l9Xq5eTcou7b8Yox5w/cn6zv+N
+2NYi4kkkhug/HW7NoCaE0BgC/yH2N9sqWoChdpXLqjohBvmTVMXyxninu8gEULo0
+tmDAE/VizG9b6j1pOiGnKw/wwmXBXHhPPteykCH5ERMNrYOUfYfggz/wMltqD9Nc
+ANCFUiK12+zS0bLgbsawwaLr5cZTkdoVP9KUHG5vrc4=

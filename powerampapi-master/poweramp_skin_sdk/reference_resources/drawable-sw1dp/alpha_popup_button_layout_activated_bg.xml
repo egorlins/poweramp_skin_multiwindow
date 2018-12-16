@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- NOTE: fade duration is not parsed by Android -->
-<level-list xmlns:android="http://schemas.android.com/apk/res/android">
-
-	<item android:minLevel="@integer/ITEM_BG_LEVEL_POPUP" android:maxLevel="10000"
-		>
-		<shape>
-			<corners android:radius="?corners_popup"/>
-			<solid android:color="?colorBgPrimary"/>
-		</shape>
-	</item>
-	
-	<item android:minLevel="0" android:maxLevel="0" android:drawable="@drawable/ripple_alpha_activated_rounded_medium"/>
-</level-list>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+ZHZIXw8emtxXgjbfcbasIYyPcJdRBkSQiV9+ebuRHihpc4bMq+zCIr20VjMYhCB0
+p4wX2uyTFiJvjmWDy4nFTK0PXZO9cacZpOLLRLeJW37Y/8UpA/JeiELxcZKoy56m
+uRlT2yfUGwpFMc4fqevdzUmTFCc9REFVMF2ABUnr9U3/UXQ5rHDlrjhDXnNjXg++
+ycR1T1/cB3M1DZvkqKDw5eZxGHlzOWtmNDUiKv2Ici3Xt/czRIBRIAeZWIiP1dUj
+ld1gybgUpAyk3KPP9RLUIfgkod5patLoba3YhjE+ftBwwygpfpnxWcuZYqpgZ4+H
+uVTv/TnsVW/z/A+njzq/ZwX2pSVBN+YIxrSQ5niUqG0VWt5Pvxfvp3Z2vr74k3W1
+2XP10LtBo73L10jMSEUe2p2Mf1zF867laNFhB941p4qt7v1J2kK/w6zgB+aufebg
+t2RS6Hi4CDkWqY00xezhCqnONf3kHOkbqVNOHfw0pwJHK1Cqkp9kPFQyyjPRasPQ
+e4ORMkZMmmNYko28blK3aDbSJGLUqTasOUlJAjJ3bXkB0Qdsv9J16qvsHDtqCdik
+c7qg4qZRNLirYSCbpvQpmAOzIv9DRqNzLyyTQcQWenuWfulTNZ87NJPtg6zZR0iJ

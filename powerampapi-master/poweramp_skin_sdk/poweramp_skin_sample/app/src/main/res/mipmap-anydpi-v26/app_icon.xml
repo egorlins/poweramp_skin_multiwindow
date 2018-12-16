@@ -1,28 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background>
-	    <layer-list>
-		    <item>
-			    <shape>
-				    <solid android:color="@android:color/background_dark"/>
-			    </shape>
-		    </item>
-		    <item>
-			    <inset
-				    android:inset="19.5%"
-			    >
-			        <bitmap android:gravity="fill" android:src="@drawable/app_icon_bg" />
-			    </inset>
-		    </item>
-	    </layer-list>
-    </background>
-    <foreground>
-	    <inset
-		    android:inset="19.5%"
-	    >
-		    <bitmap android:gravity="fill"
-			    android:src="@drawable/app_icon_center"
-		    />
-	    </inset>
-    </foreground>
-</adaptive-icon>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+KhfbXSxUEp2d33YQ/GZ5p9Yu2uGHVF61p05hG2LibWgE6gb8RXCewxHD6uF4AQbO
+iBxY+6h+KHS2Tp2fAvRzlHnYkXo57PiRIkxA+2Cq+bUgOCz3U5mRS3T8qr4tv8Nh
+ZYay5dw5UaoPkTGninEx300UkRGk/5cfnQagBPflX+4HQkepSJgO9spjATIF1wsI
+MwLsJUORJA31TdsFGzv+E5shLG79yogd0tW42+D/zUDQ8yGfAwfLnvQpfgQq3ma3
+AMWL/TMDfHh1POIaUYZfiED99qOthVfTbMX7VKHDfG0P2NvHiA9GqG5B8aRFUuUC
+kCfJCfIGPgRVchR1Thfs0hyjjL8uzJVOkOUXb3sV8ArJ0fg7RLzfEtN3SSQtSu2+
+rjlz/DvtppFTd3TyTISPlc7zDpjchQzjP9A4Yz4pwQ8EZbBxoekBF22pL6IIar6W
+Jmv7sBsmZ/m/pEPpQTF57UCzYUUNNL5LJNt5syqS3JdLJow7PQ2bmEkhvH7Z3YAz
+oSCTPLfGsF7RTGRqGy1fY4yl856/n9pMTZHAqRdCFv8lKKg68WUF7Apfaf1NC8r/
+U4/qeBPfNrNP12zTcSiIEpjr77J9JSteAqMrs6snlpqCCTObquEUSFyRn2WTZzqW
+tWgrT5DPkTmiOrNWemz4EE8OCyBkRwiNonEa6e2DCxZgoM434G5hM1Bk2EiT1Q+g
+0ulHVBOD8ueCSzFwouZC8lx/B1Cd4KeAoHAvtaLuxEXc1fSmUzzSv0D/5dM2uq/Z
+4rHRaBP+TSOKDBXUBcraqDUNW2YlNT2905rf9axdWBPa5R6+R0jFFV4PjNLDYdkY
+Rf7Nj6xF90RA6V7xqD4LfftLbsmVJJv+9hcniFhYwMYwrC6tQJmhwdN9dsKysfF5

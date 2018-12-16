@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="250"
->
-	<item android:id="@+id/pressed" android:state_pressed="true" android:drawable="@drawable/fast_scroller_thumb_pressed"/> 	
-	
-	<item android:id="@+id/normal" android:drawable="@drawable/fast_scroller_thumb_normal">
-	</item>
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9mIvUq/d7icCy5liFoDcUX69KyAKVc7J67q6YaptuFkE
+l0wn+YgndHUJtDwarzQmLFyz07kFJllS0oqF3bs8NG1iFkNJ1CNwCZ0O1dX9xA+P
+0v+Rd+OQQtrTfEci4GqM9NzlwNAFLBgE0pNpES9j3A727m2EMRh84f/fu2//KPOR
+fdWQ2PG4NX7gixKO/2g9TGY7lgODaFCNbMBfKN89aNRj12sNpN+4JHVtdjgXWYJg
+Al9bN2jDM5hrXAxIuztlIgjqwf1TeSgdqRpmijoqIOeK8IzbisAs43i193UznDiD
+OkEnwM3UnBnyPVotIOZaVm0w+2TLWMr8V0NWJjI1q7NbZRNu+Z/U874rSV+nGhC2
+X/tZubLnl/y8rYnfyP/kDQ==

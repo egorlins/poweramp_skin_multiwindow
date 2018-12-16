@@ -1,31 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:color="?colorKnobRipple">
-	<item>
-		<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="300">
-			<!-- NOTE: solid is needed for ripple -->
-			<item android:state_enabled="false">
-				<shape android:shape="oval">
-					<stroke android:color="?colorKnobDisabled" android:width="1dp"/>
-					<solid android:color="?colorKnobBg"/>
-				</shape>
-			</item>
-
-			<item android:state_pressed="true">
-				<shape android:shape="oval">
-					<stroke android:color="?colorKnobPressed" android:width="2.5dp"/>
-					<solid android:color="?colorKnobBg"/><!-- NOTE: solid is needed for ripple -->
-				</shape>
-			</item>
-			
-			<item>
-				<shape android:shape="oval">
-					<stroke android:color="?colorKnob" android:width="1dp"/>
-					<solid android:color="?colorKnobBg"/><!-- NOTE: solid is needed for ripple -->
-				</shape>
-			</item>
-		</selector>
-	</item>
-</ripple>
-
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+QTo4GMJTdmsDnmmBbqXjPSIFw8AjxL/tmjvyZ2xXHS925miVwI2OP88+o6l4UCDQ
+Tt0DJ5slSHVYi3MpwguhlQyx5x5xQHJOGi3As7KJrAYa7pmADuG8fwJoBDDZGm/C
+CKNDuaNkvQ2Bkwt0Pw/K7wVt4xA1Bz9rrc3Mrx4Wv3M+xt3neTz7SJWbQzW9IaTm
+nrYMoU39C/E2elKZ6GVo4XZQFKvm09wOl5z02khrWf3Fq6DdGS0jeGNjIKV481Lb
+MC6NkrN2NtHq/45goTdGUsdOeAqgpSv0ufDOiHo/gf20oYRW6lA7UE50Qh+13Hk8
+eWr7hpBuXPQMfMVRHTotbxwYSTtOVWMUeUwbcpFeP2g82st62GLgaRFobeUCX1Ck
+aZfw5/zmi3cxKWrL0I8XqW+feYm694mfjVE1fsOt8WU4AUPqIfNENAiSj108Gc6D
+ofkH0ulfXQ2Xe/nMETFwn0y0RellS7gWraVwI8LcbxJF6WDjBDUIie5jkFXcZVo/
+0xMJO2ppXaci3m2jTe8437QkcmZkVXhQDkUojOqqP5kg1+1IdEmL6A5DJkbQK9kO
+RPXApqqN5RXXe+lV0Vu7f2VTf4X+31MA9z5XgxuPSEvL/glU+beTeKFuv1XUnxM0
+G9mgEBY7cZMWyhIeEX8uoLvmDmRMvEB0tAwMmWP24DFso+cxf9qyh91b/LH5NkBg
+goxnHsgCczVLLxRBT7UsKqz7oVVWuckBoGDd0LGbOF5Fy+OHkuJApm4qM9Zw/Hto
+hTc9Yu1Jz38QAOkUIu9tMzjSKWM4RYl22E2vpX6/51oETjRPiW06kmodeQwSd6Cj
+LtPYQ0UyneA2SBzkRp1zTW0Uz82H7iFOljsHAvl4IqbJSw7oYoWd+Ygzc0SwqEng
+irArArKJhehhmzAG2BkOoaOErVG1yjNzMZOmyUu7VHptUVXgifYV56kLW9i+syAi
+fNwkbSMNPGUuXTEEcClwyRwivnE39asilKzDatSADjG5uyCj6ol2R11em531kGSC
+Rdi8R9FcU1arpjbrxg2DRTE5HY3VgLVT+AhZFDMjE+ajxsjfr3MY3W0gSjL4iLmn
+IO616cBw5MOdoSefyL3bNthuGXKwNNb1qv1gXabRWc7OqUoTJ50bYmCNXTsSNn27
++DVA6hML7uGMI/kYzjubtnfclsR8DSkNB3QMZcWNzc0ipRm9OJmoYdbnIA33wUk5
+W/KWwbMzkCRa5hb2pVUcy4MJj5XkvLKnlA5WLJFcRWV9xf/8CxWp398GXDy78b0Y
+c2wR18+tjRspYvDer9T3Sloe8SPU5YJjAKtusrjkVFA=

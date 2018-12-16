@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="@integer/selector_fade_ms"
-	android:constantSize="true"
->
-
-	<item android:state_activated="true">
-		<bitmap android:src="@drawable/check_16dp"/>
-	</item>	
-</selector>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9mIvUq/d7icCy5liFoDcUX69KyAKVc7J67q6YaptuFkE
+Nc9VBuxayp89jCyubWvLu+xV/2wumFaBDSTsrAPIyn9XyEz8HfDdBda+42KT97qg
+c5tMRlPWDFWpTrDplbW3bL5q9FiLDQdpqaSZqG/oEo7l40wXFGydez1KDvMs9CIg
+ZJpvPbZbYhYcwKC8IsZ7BG6kT9O9FcHLXINBpWlBXz55NCWffoFE90+FwzPWg0QB
+wA6TKGm9D5VsjK6TLgrGoaGfpbcTRwXcyrNG2R8aYOc=

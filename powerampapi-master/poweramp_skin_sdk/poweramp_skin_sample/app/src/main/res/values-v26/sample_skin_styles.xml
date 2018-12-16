@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
-
-	<!-- SampleSkin_transparentNavbar variant for v26+ (Android 8+) -->
-	<style name="SampleSkin_transparentNavbar" parent="SampleSkin_transparentNavbarBase">
-		<item name="android:navigationBarColor">#0000</item><!-- Make android navigation bar transparent -->
-		<item name="android:windowLightNavigationBar">true</item>
-		<item name="com.maxmpz.audioplayer:windowLightNavigationBar">true</item><!-- Needed for Android 8.0 as it doesn't support android:windowLightNavigationBar -->
-	</style>
-
-</resources>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+SyKoqcOZDIaM3Slo48y5y5W+flVgQcQ3MtWPHP5kKniw/S8n9+OCcOn073VbLnEm
+m8Jsx6qz5A/awCgiypqRaQaSXSsI6ayLmuGji9xtKlFTMfbAvwKIpAWmI1tbHGte
+xRIkOv3spqMSjHKLUyvPLtVQTC38H68XmKCvfcb7f1Md0aN0HuOXdm6LR/LcOhR9
+RcOPYL7m3ob952LdOQ6E2r7rSjiESSVDrg6SLyUNuED9EvbC50LXa6w8bguIjLTd
+6XjJ9xBsghCHa4wrAAizhRbBfs2AvyI3S/p5WhYwmJcu6nwuEjCpIlPsfbH2TW4+
+IXiwldHbGGD+LDlXih31hs3gQPTUgKaGTdjrI98mdckbjAHEXoUgM11nx1hn9HqI
+xZ7hgdMXOXnrv3v20thC3EqfRk5e3mYbCUgegHQ28vRh7MUxw1HnOJi7Irdsi/37
+vOrJCRxdFy5lGS8TJ5THso77hOlyyqzx1k9U9vSATTFjiMhD96S2dbfd7zeplvYl
+bQXcHNpfgfeYSMSVSfbleUohwszYcb1hxyZ7xE70J6cYOXPysm4zCPR7MCpkNzAc
+9gWk55jy9cgTvDmVUIHtmIJOU92pEERvTGf5IBVAs4MnyPlitAKNJMa4mIFbasLo
+L7G/QKFyf65ahBP6h32vo3m6TffdsZS3/OJLY00OU+IrZ8+o9gr0Oiy0jSZcdAfS
+eqSvuS0kychGKXfqC7qtrkdFv5jQsQYHf8Hsb0Y83y60w6pkFXXThmoyakn7S62y
+Ig2R6Tj8tRgSQ7463tcZZmWyQ1cuG0uZJyvYaHeoUIkFWz7rZVW0R1TH5zIRSDVr
+I/9eY4QoJC6J22iRv8A0fTYPtadftBboo4PHZMuii5Bzr4mmup8Ht7l61h1fKnZn

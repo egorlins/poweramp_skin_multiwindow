@@ -1,50 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-Copyright (C) 2010-2018 Maksim Petrov
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted for themes, skins, widgets, plugins, applications and other software
-which communicate with Poweramp music player application on Android platform.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<resources>
-	<attr name="colorAABgColor" format="color"/><!-- NOTE: this is basically main background color for application, as Milk + AA blur is used as background -->
-	
-	<attr name="colorFrsSelectionBg" format="color"/>
-	<attr name="colorFrsSelectionBgPressed" format="color"/>
-	<attr name="colorFrsSelectionBgRipple" format="color"/>
-	<attr name="colorEqKnobsLines1" format="color"/>
-	<attr name="colorEqKnobsLines2" format="color"/>
-	<attr name="colorFrs" format="color"/>
-	<attr name="colorFrsTone" format="color"/>
-	<attr name="colorFrsToneFill" format="color"/>
-	<attr name="colorFrsBackline" format="color"/>
-	
-	<attr name="colorKnobHoleDisabled" format="color"/>
-	<attr name="colorKnobHolePressed" format="color"/>
-	<attr name="colorKnobHole" format="color"/>
-	
-	<attr name="colorKnobRipple" format="color"/>
-	<attr name="colorKnob" format="color"/>
-	<attr name="colorKnobIndicator" format="color"/>
-	<attr name="colorKnobIndicatorPressed" format="color"/>
-	<attr name="colorKnobIndicatorDisabled" format="color"/>
-	<attr name="colorKnobPressed" format="color"/>
-	<attr name="colorKnobBg" format="color"/>
-	<attr name="colorKnobDisabled" format="color"/>
-	<attr name="colorPreampBg" format="color"/>
-	
-	<attr name="colorTrackMeta" format="color"/>
-</resources>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+4OufRiBmcXfHy7DQ+tjPqjgaA+DPLqEOWL6SgG475wGhv+/w9dAESe6xWp6HY/xI
+/SO230t/vy+GFS4AGp7uVCwGyuVENut1Qb6eIY5H2t5on6YGSCcgGHOZUmQft3IB
+Ere+pukT38NA9g3yQWHCs3X+oIg4ffxqwGTaNk/TWwMAYtlq9VJedxLYhfcH2rwm
++d9DkzTpFAlNsqrNCgKAIlljRq2PDilHRtk/Z44D4Z6ij3sO7TetCyfHaC48IgK0
+4iCReW6QP9tToQjmuhc+u9BwttY/+LKKTI+LOINOy+dXrH6Bm+HW96S2chgLEvc4
+q1cZfFAnArAcjDVRjdiJCo4+68ILyuVJ1jm5OqFd6PfLAyWnKaXWjM2R3CNEqaP8
+spJMLMQI0A+2YQFs0vnq/ebysF5HLipc9BzUUIwz36WdM2WJsHoATl4JULa8E3gx
+ZT2IyvR4OHtJVlqyLQ+khHrK5OCJxiUuA48Jp4LnRyfCbJWXg+zNcWkvs7A8w8g8
+897dnABG1dj6Du+ucJQC9TVozcPJqZjgg0FjZsLmvKlL1QJy0//ZwUy0j85eFjXM
+S+khaTLIokn/0zAOVmWm9ekuilcnVMustV9I5NsYhNLF22jmpJ1wah/xOSwTqbez
+A7Z04XRQBHqVy6D6RZlzPtDGWm3HHtHz1Mt6CWftVGqn6maRKqZN6htm/BvvWwxU
+rm4uRsByEOl3tOzgVrRh9RwNfCaVFsoa0XyzRBbzuEGEXi2T82MoRNiUYyu3iFih
+VWZLuUHGZ0Ez0uEFifh6IpWCcRXXlyM64bhZW7lf3ERQRNgpGJRrQRUjpDOLTUvD
+k0iHxlY4XAr3LGTK67XlAb+5KLGt4YfdHZpS0J5dWEds/mgDN9oTt75HgIkC7zSh
+fLHs5Uiah7YVwxiHARNyyxies7yrzCDjmmJsje6bWm6CohBrrCfJrvSwmMdKylKv
+gxE8DoM+kF1CjuXA6rk5qHnLKY92FWZUnmMgxhFuV08NTFQgDszAyGWA64NN1A86
+ym9HgfTy8CVWwGmzGfN4Oye9cEoCJZ04uknaHbO0y9ZdfsZn5mR7fvKc0+0PBZc7
+QDyMTtlSTk25GYe+a8BVMQEBqlT2EkUDfhdEWhEXGP3aJ0/nv1yQLlyGkGtXiGPV
+s2d0rZ77WgzunFR2yBQcLkJ8d5PXsB4R54+1+jgk6xW2Fuzjt8LxDMhOd0DByGFA
+dnbb/q4xFnQY8LFx8OT8nyYTXMmxN9t/nFGJZFAfkadUL6vHamxBjkASiGpBPaTk
+t1BUsUJQKzkzJ1g0iHtmKRBXXlWSdJiUzQ/BCXrjiXC9miCAM8unyh2GTFGJq+Qe
+ulbem8XjGHZgApWXPqpwkjoNapO+WvXoYOoapuB3Nyj72Kut3zUTZfVhi1+X4PgJ
+amyVyp6w/88TGIrbKht8Oe0SQpQvzwVsUvmfAz8R/KA0FVflRbP3l/VUsbzMBzYs
+kq6ZFWnUOyhvSacF328U7nh3AdRKqmwXcfj93J7BzWw6vd4S7vRrG+jAVtxDoENI
+LdMwbdwVpPzvuk++0fKe691XUukmgscEsRoMRevrvNPc7xdyKSpTEeK7zgEkCkLa
+0yZpoz0AX1J/Tp01tC5qUwse3K1w7vmyV0bdpDOY9P8m4+IAqFqOq7QelUWXSexV
+pagpuzRjomChnjx+UkpkTgOdgJ9iGmvz+giKABTTiePjPpMxc2top4VBlZW1jKFg
+OvmvyJpd56SDZ1WltmNPCUBdHJL3msjh1Dgdf4w+3UWrqS3qjsffEjrbxLU+gw7O
+gENV0nFh0+m0yHXHaic29j3PbTj2LmF5+Qs3SAAoj1N+qTidlYEuVrQOt3o6lCd3
+MCWTnQk3sH8z9TURywSmB8tcBAbD/NJ3Ej2KyCpiQUxnDcln4iOpZx2ceAReo9eu
++35vWv6bFIy0i07aaPDB94Z83GlCBDkbmlnU4sCjNHKiE2H8/QsmQhgAxeledNsg
+uQuOIRolBFEVucYNOwBB6A5fVFXukkWJ+m1xH0/9YxtlYJVLq/xAjXvm1kzaNxFh
+YBzN/ufBdohFoNxbb/ZILQY5T1o9Vfd9Pl6gELOyGF5K29XVyAk3fU0Q4Nn/NSJL
+lTK0gZgbEI95Uts8Zvr6yRRt88UVtpABm/ECjkCNtcnUa4RQVBSf/AMKnBFkNzi+
+YauNxa2jNagCY6WvEXTlPQKHtjXm9Dn2Du+DNfQi79S5Dyss+p5NHsgJ6jEacCF9
+ovWCqe9HKKoCozWYGSSpSrr0SK75Ari2uz6hxMs3jZg2Keiv2PIHHadU7msbuBWG
+uP/IuxLEdnP/unbL4f5UuzKmBGAW762s7hCgqxrfGo0qiFfkHuh8Fe5LxCKkZCxG
+emXl3FN6s18H94A3k8bk7SWIFun8zpOxYyS5HvvhCgLpjWOIdtjnOKCsKawLuYPf
+ATLVF8F71cD/wXLQm89BiDIRL/6fRNBqhgW1ceGOSuHbtRDa6G07pIC3fZ472M34
+44jasnSsU+9AI8kvE4U8BSnhyKafm+PPvuHDc4KJSFj9oeS8UdnckCvgWaO0o2/n
+Wrh1S+2FhNlZCdtAKFbG8doPxlIQ4hfnhKQ3TEd84exePTLOeX42W4v3botjcETv
+TTI6Uo4zc+Pq+JWaFdSVv3KZbvc/M36d3EWqBm8MEapM7SuS7Y2zEOJxlJE1u0u+
+qhnlhTk686zWI/g9PKaDkQWMDsEL9U7u63a6dcdw7JFjfssfbieBqit/d2l62nD+
+xIxubbsyY8Iux9vNz0suO479v+DacEspI4nncRQbYpX5ifrR+97eiPT7EcBcatuB
+o4Nt0fYvBUuzi6pSN70RZZO0S07rQs/owIyex3NXPCb4nh7TQEKm7YZmQrObstLC
+RgTkQtQsaDdoxFtOlPsJAZ07mLfp5xLvnd1EHHs3cQu8dnH9giIfAiezekkddKP2
+aewESxgiC9R9A5YH59Ss4qVcYTfeceAcoZdQ9nGjvDVpYamdExPKEwMdB83gyJU/
+BX0jQlhI4Yj9OlrqnleUNZkVtiywvP082+LzUfcygm+9JPUik0zErD5jp5tl8Ljf
+JNr9aA/tAlAH+tiCy+6NVB1AiwLbPEAyqWNroCtZiWc=

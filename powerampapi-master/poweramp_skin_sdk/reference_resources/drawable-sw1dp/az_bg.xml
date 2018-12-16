@@ -1,19 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-	android:exitFadeDuration="250"
-	>
-	<item android:state_pressed="true">
-		<shape>
-			<solid android:color="?colorBgPrimary"/>
-			<corners android:radius="4dp"/>
-		</shape>
-	</item>
-	<item>
-		<shape>
-			<corners android:radius="4dp"/>
-			<solid android:color="?colorBgPrimaryAlpha"/>
-		</shape>
-	</item>
-</selector>
-
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+BxeQkb2uz20cRHEl02KmW7jBV75krLxkX4DWsnRGJJv8qXSEH4aIaeQTi6bDJJFo
+gob7/pNRO0p8m6hxvu9/9mIvUq/d7icCy5liFoDcUX69KyAKVc7J67q6YaptuFkE
+xe3k9Hy+/n4jckmnEbfpsZKajJqnaqhc/XlbvxzVU13fNwWfNcP0r4aU//Xi8swJ
+asl2lPJoj3xTUClEya/ITi2/A5CYsumm/3t1SHWGr0fIOik1OSASEOtNWlHl2wjf
+rrgMVH6FeLAu73+NPkuiyeh+JDSYDrlu9DdqOyemBVXWjyyFkcuQDOnkXarmAecN
+1i7Br9C9HjULdakPh3YCOqSQ4tLojE2yCBwrJ32bfcoNRlYOCc7XKd0otyYmU3Wh
+Oo3SGm+gDAyqzpi3/7aiX56FJaJNXkpikE1lvfPHCCVQrHj5468QJTPfWscus43m
+VvwDligErj6U8Qdf21YQvMqRbo7r7BR5gVE3qbfOASZ/AlTyvmuMN70S2gaUaXf0
+ULA1BEu13sOQ4NR02KfFyA==

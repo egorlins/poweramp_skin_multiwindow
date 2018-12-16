@@ -1,39 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/container"
->
-	
-	<!-- <include layout="@layout/widget_configure_content"/> NOTE: inserted here by code -->
-	
-	<LinearLayout
-		android:id="@+id/options"
-        android:background="@drawable/widget_options_bg"
-        android:layout_alignParentBottom="true"        
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/widget_conf_options_padding"        
-	>      	    
-		<FrameLayout android:id="@+id/options_frame"
-	        android:layout_width="@dimen/appwidget_conf_options_width"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:gravity="center"
-	    >
-		</FrameLayout>
-			
-	    <Button
-	        android:id="@+id/done_button"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-   	        android:layout_gravity="center_horizontal"
-	        android:layout_marginTop="@dimen/widget_conf_options_padding"   	        
-	        android:text="@string/done"
-	        android:minWidth="120dip"
-	    />
-	</LinearLayout>
-</RelativeLayout>
+U2FsdGVkX1/ucPAcAK1NdrTnrlduPT/xCdbJsrK1lf6wGZEI7jbO9B/OVwz0vWfU
+NEDVWCURC8IBRfceLJQx2HXark2eAA98SWYug8XTQ7TkfyMOwmDrh5bfmPYX7/pF
+fQW9LJbXYrykApGzLamL6Fsqew69Fj312CvByJ0IbO0ZI9ulbPuHe3FZT3vdWiH0
+g5BzMN2d8FN7Y77cs9SLUb1Mp+8xiVp/ua1Ev+HXo8xl5HyhKD9D2uEnQKGYdNHu
+p5xcnPlRNKiSqUDbdfoP1qE7H68PuCs8tlJJzFWFLfDa89RvQj1ZHEOREYvU6gS7
+OTwgdXxN1nyM4GB7d0wHaCmv6H10J/Q3Hdlobs9GmC0QLwcQQcu1y7TXNlec3guk
+cRqQRbBqIhJdbMsVgJOm+R69xx52CZAgZhHX9wRsgyzBC7l/iu+O6wg/dDAjcUuS
+SCTOYhE2PQ217k1zuqXeA9kOP2JdNMEBq9PQSABGVXAm9RiFp80bWdOCwK3AE+HI
+JoGMmAf3ib5cUqW/TNDrZfZpzKAina62nbKsKdzkyDQyroQtHeH0xFy5fE67B95I
+Co7nkDo2y2Z6TVckiQazGAE5Pgw19Aev65wwBhMdfLNoTEXZ6iwFb48f92ucdzoA
+POJgf+CB88sAOT9QyhGCWZmURrhBp85cpbWykE/fA0xnpn4Nfv2hvanHizbeO/6N
+xOyVjdMs4C4CJ50pp8hJcqKkcvB96waSYTrmjmlzK9LyU+frhPY0byUBpJNqEbvK
+c4Uuu9VDdQIH+1hhlu5fiZn2Ql/nsM24RYHwLKyKKSMEdLWl4fO2IDnSo3ttMYcK
+5Ffs77pNAufqlPvAGQsXBkfhUk863X1+cYaC0eaB+Pu8L9i1F8Dhdlcd2Zfv1KP1
+ysRigEBkKmiWLD8zsGjWC/v3B+smpDJb2JaP6X6yjqfq9HOWWShNDh1jM16KHs3u
+WtDpelN7PBtPuXnSUPhhxSrIVce0jsCSsLQeOs9cHR9PzaxyM9yBzGmHF7XMhwFc
+Z4uj7sCqtrByOrwRIvJyNf11xOzH5E17cyaykMEojWIzrc4phQWavIJqgyJoi8vZ
+ceBmGHDhQIEhMon94urrSh51mmyJX7PdP8Ij8TZujh4A3EDN3SDEgBpy2H4qMOZB
+a8UjchAKq+aBlFdd7bzcpxj8sVvCc9USpL8NNTF1eh47tvutByaJkrHkE5jN9tMI
+6l+9lGd00CmlmRCfdwXYbb+IpKaTFo1fl1yt+9DqZFHkBPts8cscCxPQSgyCKoZV
+VFZ4m9v4GHam2abLufYlpAli7FLDXURlUTZWnb/ljXZbvPekrdr7ULtmNuXJLRCC
+ph8OUP4ygHbvAq3G7aWqI3Rm4995p9qKAz40UJjdW06k2edv9u7C+wE/RfkhWw9C
+3Plov3PQXao8VclQZ2FDKLGdLq6YlfOe1R4VfPvdds0vGr6O1kM8PwT+olt95OAu
+FjBvIq4xN9+r3mCsS/4VbvUK3RB73ATmIT1yIILA+RI/8k7H2k9pd9ZhB7/i7/RR
+MsnnUBsC6lBK0mL97SP/aUkMNzTspJPeBF+2oCOb6hGCy8Qe8yGohRzotOMOmEKz
+qmQb7v0fxwvJ6+sMgo+dHYe6uIZedDJvdldwg+X78RJWtX2NJIO8Gaezs6TpppbO
+WWXYjQVV1hjzIj1kvkq8roy/Kxr1Gb139KP+By6nhiGzC68w1i7DMYCMpz0TZHBU
+NOYG65M7Zt2EaoqespA+OqP4Vh4AJu0DCyAlqgb45fhg8sRx9Ww2aSPmg6J1ZxX/
+Rcy5lrb6ztQ/SSAHUvn8UUTlofpjn4vYrgSNhnc88GmLZD7tp2W+530AplimKcVq
+WHJSSx4UGQIYE7xdVd8k8g==
