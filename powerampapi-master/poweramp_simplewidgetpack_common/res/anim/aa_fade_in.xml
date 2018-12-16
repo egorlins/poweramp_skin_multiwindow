@@ -1,7 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-7W/owgB849qTXRosh9cB5MPpjQUccZDX5n21dyt8iIt2QyMzUYz/VmLfKvJhyKRV
-81VskfC47Zp9ietQU70v3q/hqRS8ys/YERbFO3xEDBhenhtykIN9mwzn+VLZPAeq
-BzgxiCIZHvzHMqTM348RwgWeUpYix56shkRC350iNeHxPk30IizWeAsPmeCfXfPe
-TbOEOfaemq011IMcSMPANdgeUjnvgQfdb7RJau7/7j/LMlUgv1U4yT7EzOmsHrKj
-LV2sNJxm5sN03ATiv+YR6+VPotfJFMGeCqxSTpvNOodZCS13t+B+SLwnOkXF5w0v
-GwIrCPS0O8EkGp561c3l4YDLpVfEDSA3xr314Oh7JhRq++wqrv4/mmvN65ajxHPl
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        >
+
+	<alpha android:fromAlpha="0.0" android:toAlpha="1.0" android:duration="@android:integer/config_longAnimTime" />
+</set>

@@ -1,5 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-/tW56zzJi6mrtAkIpm7AaejOujNe1BLAl/+ZUJuro2lYmPuJuLWCGd1md08mis64
-SG4/ZjBB+ecB6rF0xy4uswBmzyD/etIcKWOPM8/OSLPkDY5yx1infFOtjzAAGilq
-G59Q/W8OyPp5tdphjIHWe6w4VFkSXq/A51zGGqwg5ZWQxA/6PD+eFEyZW5D5TOx7
-jDYwvM3YZZhOtMl9/wi62STrGa86QLQc7sN/aJfoR609qyCMS+LkZEPzEuwMXgCz
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="unknown">Unknown</string>
+	<string name="unknown_artist_name">Unknown artist</string>
+	<string name="unknown_album_name">Unknown album</string>
+</resources>

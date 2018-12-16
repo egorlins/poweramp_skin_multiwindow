@@ -1,8 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9xA6wO6dGU39a/AP8UBqSIA3gcNPZiL41+F5Qql+cA3U
-JpQHtItBaYcFGc0q3lzUCO4BagJRuSzsB9+Bf2MoOztyo7hfBt5rxkoXN3UX6Bql
-Ch50JhdkZgQ3492J/tdySmwew17BZnLObQTUygtUuXh/uOx3ugw+oa2r3DlUpSZx
-YIiKNNUyNxWm1PwUoP8vSwUk6UiK9EoZizm6Z+6hM8Tf2QQocFcBE+YKvh0SBN+I
-Ue1PaIxltzFYynZKL5xz8KVsgPkg/hSNiftVRxoPOQArPNdc1DBQfWcE7B49+4ni
-QD+zfTo/v2sHloLW3oQRe05zpj6Cpq0H+FwaxwuqQi8=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"	>
+
+	<item android:state_checked="true" android:drawable="@drawable/ripple_checked_rounded_large"/>
+	<item android:drawable="@drawable/ripple_inverse_stroke_rounded_large"/>
+	
+</selector>

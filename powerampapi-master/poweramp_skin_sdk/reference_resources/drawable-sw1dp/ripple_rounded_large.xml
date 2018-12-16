@@ -1,6 +1,7 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-Ebrj3NMR2Sh9IORfbVvrY6J/3Q9g4QUElLCsiTRvfUaOpsTLiCgQHoSR2SE4cSBk
-WeM8WQh0a7R4o9cZnHnUUuhcBPCN111p47Z1YqojTycgLc3jgJA8U9fxV4Ihp203
-4HqUOzbc65I6917hnl/Kg9Y83+b1D78MMPqyTuMB7LQghqJjkYF7aeZXZmwUdZV1
-RRfmkGs0o/dB86R/0jMaUul/sLmVwJoNL3j095yqgQPT93gf9XUZlNDL8IcZZRJ5
-VjWhyY5cqY46ScHpHrcdrasnDIffNX0r0sZDXYr9yeQ=
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:color="?attr/colorControlHighlight">
+	<item android:id="@android:id/mask"
+		 android:drawable="@drawable/rounded_large" />
+</ripple>

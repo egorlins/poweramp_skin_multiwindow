@@ -1,5 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-LA1ieIqgxWQ6YiK+H9KT7XARgEaVeyVn/A20nkLc92Ygbw596sIpDxjB7uu0fQTK
-0tl2aOlm4M1LY9NhkriLgcNlGT98cUQY4yMt1hz1/s6dmLqNps2sa9kboLt0PdWx
-8/mOzHN7MhrqI0GJoF7WpBbesUdZny6zsmixUh3gwb9f62xHrq3R8IRqWtWcx4ja
-cGmKOLL+NzK3A0pF4TFoxl3m7aTUGsnimmhmC99ysCHJxou4EDy8/4RNbsDedhSW
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<corners android:radius="?corners_medium_plus"/>
+	<solid android:color="?colorBgPrimary"/>
+</shape>

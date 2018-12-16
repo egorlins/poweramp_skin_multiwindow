@@ -1,3 +1,5 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04kJk9v8Lh8PWJJ1pRv8BO3i+QgyRFgkBm111PrKHKOVm
-+hpCIwi7E7oaJUfOf/+G4YecPj6X81HCPb2DpU5nngM=
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<dimen name="AAA_aaMaxSize">380dp</dimen>
+</resources>

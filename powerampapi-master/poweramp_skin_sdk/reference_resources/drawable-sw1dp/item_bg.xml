@@ -1,25 +1,26 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-3ZWLlro5HMvSB3uZWSeOcGHtdQiOfVd+hh6mQcO0qoeUmAdWLzhmlJ/Bb8TM00qm
-GOav3yAx0plqjHP+pcDP3DakwCfRYetvVp1kZzGQLJV0cYTFsFhLXKgpyUIr2TEp
-k1QqHG9YknbIDurUkSc1Z9a0psrHIxlJmmmp2gakdDIfzyOzN7WIILol/SKeasNw
-fJjr3f1iZ9Gu5onBkwjJOzkyfbghwqBpDsI94m2Qo3ZQm1IjoL2KX6ouZgPGHxfL
-RvJGw2vJ1qi/GnCF/sP8kL/IUJMOaUdNeUWFOfv0Jx10qKnZ1pqp1irG6ODSGKh/
-dNyyOZFn4iAsm8j6LCfy+3K5+1P6H6v5iJooYMn7Ha1/6AsYp1mUxsiMrBe5QiOV
-dCO9feFNnd5XmqJQLp1VW1yzTg+Wg1U373yAGWoY6WQImZVIhpFqotwGimYSgaMs
-mTkPDnqNuR5iG8aMJ3c53OPm1N1sjTW6Ix8ZMZUYCNIn4rR6o+IW0Njc6heFFcQK
-dwATx6qBfw2TJc8/AXC8il+1J4rg/damHezivlatQOpThodQ508HBrs1sMIcCVWk
-U6yvGfQqHvjJrDmJUfWHlDJyOINaTcW2CXkRqyQDMHW5CsHSiPqjU1ZqeGyEZ7f+
-w01WpErARnZt8H+zraveWOYN+5s7L/l78kkwo9KjD+MbQzgko0VRTEWqQwSWZgYa
-RGkyczeeia7xIxRd0bf8Qf+zinnUZqKNhOK2Ly4eYx5ocPHQF+TlIYZIEr4322WB
-lRfwdzO+7fgSzVTyc8PQS8UeEO0X5SKQvt6hC/tr1sjJeGlBGJlLcvkq6PA7jD3J
-TKpuetRXA34y/TzMU/0Xoc7lIaIkz4v8XuKZjsrGAObbUWd7oUT2NDMESPJ0Ofyu
-G741zilJcSJ1BWt2o2ZDw0FuAKGvHhJYNH51of7ne+TAV/04bIOf3fVkjH5JitVQ
-aqHBTCknhMMp7FuFqIiViO9QCB2eQX+810XH4YX3fygph8iMNUGJQjeirC6CoCy2
-vGCY7pjZWrAq6DiIHbSkb2NdYIp0Qxksn3Gp+CSzqZOHwkpG/muGAcma7BU1irYB
-Bp3mPCJMOZnxmp/C9pbKHkQyHGZXqx+Q7vcMmkuu0TXhBNfMBZKLICbaoUuWyG65
-fOXVkl5Ip5ICRJZmCyYFkXFlle2Blmwe8e23y+F5d6+WPNzQyABevoM7SF3fVNij
-ho/SMcVNBIImjNHUmCpBOs7+2FhF8iHLI2/OUN58kVrizn1aj+VHbtt4FHzNPkYM
-bgdUmNs+c9NhRqXPCcZpXp97ipeZvjjPQP+duG1Fke67XYFNsCQSlegnKyxeCAD4
-YrXMBIgLj48NRYwtj+4KQZt8hami3B5it8d7/9QNy3WjQH7ir5AujN3cJP1NXI6F
-vNhAknOkwgLbF2mhlXOvBcDqtRTYRPEUGb5hQl91G926wr9NjYnfzUs6DZQY4JyC
-GX/nQqcel0rTWL9UGU3xmw==
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These should be sorted in desc order as they are in fact bitset values (android selects first match) -->
+<level-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="200">
+
+	<!-- Set when item needs background as it can overlap other items, e.g. when it's dragged -->
+	<item android:minLevel="@integer/ITEM_BG_LEVEL_INTERMEDIATE" android:maxLevel="@integer/ITEM_BG_LEVEL_INTERMEDIATE">
+		<shape>
+			<corners android:radius="?corners_medium"/>
+			<solid android:color="?colorAABgColor"/><!-- Match activity background -->
+		</shape>
+	</item>
+	
+	<!-- Set when item becomes popup menu -->
+	<item android:minLevel="@integer/ITEM_BG_LEVEL_POPUP" android:maxLevel="@integer/ITEM_BG_LEVEL_POPUP">
+		<shape>
+			<corners android:radius="?corners_popup"/>
+			<solid android:color="?colorBgPrimary"/>
+		</shape>
+	</item>
+	
+	<!-- Set when item needs touch feedback, e.g. on long press -->
+	<item android:minLevel="@integer/ITEM_BG_LEVEL_FEEDBACK" android:maxLevel="@integer/ITEM_BG_LEVEL_FEEDBACK" android:drawable="@drawable/ripple_rounded_medium"/>
+	
+</level-list>

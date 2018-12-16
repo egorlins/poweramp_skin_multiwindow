@@ -1,6 +1,9 @@
-U2FsdGVkX1+yCff3nBptWMOPlkbSMdhTnr/l6BkBa+ab9qXkZ3FHCAhxDkdvYam4
-VFmosxhoHS31+ntOb9oYM9Su6QJKb4pWzTeyEPQxT0GgyTLIjz4NlZmxRAwGrKoe
-A4/O/O6nKaqPedDrPyAzsUsv2OZyZysJ4OCWckp+UanF4Rm4ua7dmIqoZdQbwpfz
-LR0WdB9QzU1USAkA3Q9+0if1XzeCs8OygpyEA3DrE3W5A25JTsMiWxx889GSNYYe
-rukmmefPvoRMgt74nzAzyp9Krcj3hWeYov1wEuZ4hWEDgKfdSTm1PbEvr1RObWW+
-n+hd8DlU9/ba68AbBwBpXA==
+Poweramp APIs
+===========
+
+Please check https://forum.powerampapp.com/forum/13-developers-area/ for more details
+
+Also see [poweramp_skin_sdk/poweramp_skin_sample/readme.md](poweramp_skin_sdk/poweramp_skin_sample/readme.md)
+
+
+

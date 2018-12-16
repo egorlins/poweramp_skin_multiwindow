@@ -1,7 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa96bf/5S39CJEJMfwV95ZjsMrE/coRZpteVh8rgM73/ag
-2/zdJuWUexe64+Cb8f09P56fyX2PQjb7y0/Wgsmwpje5gb/1cj5FGdQJmBJjLaTS
-cq4p5WvRifE+7nfQM2HzF5fW4voXZVh8GwZ6aM/TY6vHrRdmyg/++trELAOQG81C
-/azvK6FlbWvx4yamhYxZExUBm5KrZihmHRNotC2US6bZtu+zqcG3pvjV2nJyBxcM
-ANnHHIv9c2lNPUdmz4sgjcQ8/aoWCDmlJOEUZ7V8nUpwv2uLyU8uU88M2PutP2Zt
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_activated="true" android:color="?colorPrimary"/>
+	<item android:state_pressed="true" android:color="?colorPrimary"/>
+	<item android:color="?colorNavbarIconsLessContrast" />
+</selector>
+

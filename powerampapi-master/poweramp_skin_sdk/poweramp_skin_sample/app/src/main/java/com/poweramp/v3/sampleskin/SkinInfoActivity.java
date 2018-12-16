@@ -1,34 +1,41 @@
-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
+package com.egorlins.poweramp.v3.skins.my;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class SkinInfoActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_skin_info);
+    }
+
+    public void startWithSampleSkin(View view) {
+        Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.maxmpz.audioplayer", "com.maxmpz.audioplayer.StartupActivity");
+        intent.putExtra("theme_pak", getPackageName());
+        intent.putExtra("theme_id", R.style.SampleSkin);
+        startActivity(intent);
+        finish();
+    }
+
+    public void startWithSampleAAASkin(View view) {
+        Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.maxmpz.audioplayer", "com.maxmpz.audioplayer.StartupActivity");
+        intent.putExtra("theme_pak", getPackageName());
+        intent.putExtra("theme_id", R.style.SampleSkinAAA);
+        startActivity(intent);
+        finish();
+    }
+
+    public void openPowerampThemeSettings(View view) {
+        Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.maxmpz.audioplayer", "com.maxmpz.audioplayer.SettingsActivity");
+        intent.putExtra("open", "theme");
+        intent.putExtra("theme_pak", getPackageName()); // If theme_pak/theme_id specified for open/theme, will scroll to/opens this skins settings
+        intent.putExtra("theme_id", R.style.SampleSkin);
+        startActivity(intent);
+        finish();
+    }
+
+}

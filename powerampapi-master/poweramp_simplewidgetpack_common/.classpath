@@ -1,11 +1,9 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ0yKISJ06U3Uu5JsYx0nnvA
-8OXqLVRe68jsAOZ2ZV5ZB4GPIHLvdPYjIgD9Zgnr3Ek+Mx3q2FkY52oCKOdI80l+
-qEkEeR5UR0RFhTFoNAe5gn9NSKTAmnMf9cT1IeH733jKz5IQXse9BAwlviyChz1y
-BZwRuoFADG8cpR1XAC6oec5FKmzic1DleLciDa11cbcBkcmFm9DmhIRHAkgjipfc
-QuuNelbud9GGNqbod8imjVM7qj44a9ErbPSfsqF5UmW6kffW5qW2hOOZshSo3Hg9
-+Ezg3eskPrzclntMBYiKB6JvlJeg6hyKwaiHTx3x7AEitSnyKiK3w+falTsuo5GR
-BtVua7Y4A1A/oPUrrke1NyUtsN+GMz9JeVTrqTtOryMC6qWs9GjAMSWOVl4hnCxY
-JCr9XjeTQNOzqOX9fGd6OmLfQ1gAj/txZdnWoacFGGcBiKYYuCNoaT0Hq9Xpx6jh
-xT9iaxbzIfp4bPC8b7KVWwzosdyPzQSysFzZqXcaZNYwngOwQ6cpNNAYZJrnk6xO
-NNJUG5vw0mCWQ+SCE9hyErPoh0OOVE3S8Or6T3SwaNXMadory62hVVPXltsYoDXe
-s4yqeayna69mhfosXvkmFQ==
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

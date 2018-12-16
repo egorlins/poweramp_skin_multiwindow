@@ -1,69 +1,88 @@
-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
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.apiexample;
+
+import com.maxmpz.poweramp.player.PowerampAPI;
+import com.maxmpz.poweramp.player.PowerampAPIHelper;
+
+import android.app.ListActivity;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+
+public class FilesActivity extends ListActivity implements OnItemClickListener {
+	private static final String TAG = "FilesActivity";
+	private long mFolderId;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.files);
+
+		mFolderId = getIntent().getLongExtra("id", 0);
+
+		Cursor c = this.getContentResolver().query(PowerampAPI.ROOT_URI.buildUpon().appendEncodedPath("folders").appendEncodedPath(Long.toString(mFolderId)).appendEncodedPath("files").build(),
+				new String[]{ "folder_files._id AS _id",
+						"folder_files.name AS name",
+						"folder_files.title_tag AS title_tag"}, null, null, "folder_files.name COLLATE NOCASE");
+		startManagingCursor(c);
+
+		SimpleCursorAdapter adapter = new SimpleCursorAdapter(
+				this, // Context.
+				android.R.layout.two_line_list_item,
+				c,
+				new String[] { "name", "title_tag" },
+				new int[] {android.R.id.text1, android.R.id.text2},
+				0);
+		setListAdapter(adapter);
+
+		ListView list = (ListView)findViewById(android.R.id.list);
+		list.setOnItemClickListener(this);
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long id) {
+		Log.w(TAG, "file press=" + id);
+
+		Uri.Builder uriB = PowerampAPI.ROOT_URI.buildUpon()
+				.appendEncodedPath("folders")
+				.appendEncodedPath(Long.toString(mFolderId))
+				.appendEncodedPath("files")
+				.appendEncodedPath(Long.toString(id))
+				.appendQueryParameter(PowerampAPI.PARAM_SHUFFLE, Integer.toString(PowerampAPI.ShuffleMode.SHUFFLE_SONGS));
+
+		PowerampAPIHelper.startPAService(this, new Intent(PowerampAPI.ACTION_API_COMMAND)
+				.putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.OPEN_TO_PLAY)
+				.setData(uriB.build())
+		);
+
+		finish();
+	}
+}

@@ -1,10 +1,12 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-MdxSXzveEA+gclFaw13D6Jeo5FH4c9nc1MKFeFe0uifGDeJIKkZ1ClSBlLIVDlC5
-/8MC0a+h85LQr3iDg5EbfVwwBWyNupFFcjTabB58Hh33iGFOM3CdkVPf9WKQ7+SK
-0jAYPwRCJNAqSmiE+TrqaeBr8YgygmOK/QIG0JQ9p1epzDxcEipcDQzZsE2c29Og
-HbByhCI/xJxxlv9rpvOBMFawsaRnboAnoDe73Ioqp+2Lo36sGpkloZbx3F3RFZgJ
-v+G4zxTBy/GOGm5SJJ57vecGvBZOnSdljOC/+peQA25B00N8thesCHt3cjzuXQVB
-fmscx3X1rnqaKLCSIxMvQh1Wh4aNKdBIUZDtdGSq6Sk4svj60mFr8SSrZxooTgvo
-3Oq95QsClQKNHiXBSI6dkBKe1v71jSFNgk/CpRGp1MkoYvtD09Jv6YyKHEV27Cfb
-RCdbown/9vowjqFf5VscxUycDLr6cD8XfEHQh5hCm0ClMnUfcz8kyluSd37jvMjW
-XjhDF+ld5GZzlUzPJ+f/HQ==
+<?xml version="1.0" encoding="utf-8"?>
+
+<appwidget-provider	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="294dip"
+	android:minHeight="62dip"
+	android:updatePeriodMillis="0"
+	android:initialLayout="@layout/appwidget_4x1"
+	android:configure="com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x1Configure"
+	android:previewImage="@drawable/appwidget_preview_4x1"
+>
+
+</appwidget-provider>

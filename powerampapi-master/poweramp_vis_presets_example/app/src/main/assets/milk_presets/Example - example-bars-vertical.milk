@@ -1,20 +1,54 @@
-U2FsdGVkX1+yCff3nBptWBCtJGrbwJUdek+grDv7Uk/EskmeSn7fo4BA0K1g2v1d
-/Mng+76A2e/YGkGwvilV/Xde0xHsVfozAqVLhOO6474NSWEsxJa3EvQVltC4nRB4
-w9BzyFKOWscsmoNIP/gS6cXWY0xftFaTrfBcx7FcS96mJ5CqFWxlT7LvaTJH3Ky2
-iJImK1x2b0j67f9hFFHgfWm/T8W09Nn4U2ZCr5mTjBwUOpBr0Um0XHqGgHNXN8Lw
-R5nBcYMcriYqbDUPuy6k9CJ9/MmJi72dX59Liioh4J+c9jiMGneRQh3jeGW2bCoe
-e9tJUoX+3llVchlO9K13bM2Azu9Q8J3Gou98/IayT7OFwJQYZq2H9IBHSZh6rZ3n
-aN5AGmerM2HMEzBXwGpmOqN52gcJZimBuzNKGWq7h5gGFA4CzEQGeBMypt0Z/M6a
-PzDHT8Xf+hPUu1bLMPff+vlgRY6x3I+nCGDhim6Z1Fl4R64dDu/a0ImUB9FyMKrX
-Zo/EVXBrx9JTCwUQSROVbQTW49zObNJBv8mDsxfXSkVsHcX+K7q+VPt3gMjZWQ98
-W/V86umA9DeU7nmdO8YjBrV2UG5zPHdTvs08lgdKvgtz1cJD3tXSWN8NORWb/j6F
-/pCXGM29IlpS42qcQVL8oTVIWUvYiTn/+ovPe2yoP4W6hW6YS38e9YdPxVFb3IWc
-bjaRCYQg9Q4XkphOPXNtWLjY4DW+3B1szmNTKO/z4JEYzuayJbB/gsKGV2Q2u7W8
-xzwk3uPpRLoTbyOVuKsBu7DvmQ2Zlu34Wz0fy0RKmSQd/mw9/0Yrkw3TDKtApbLn
-1x9ejZXSi+RMJYu1qZkZSISdgOtMmf4v+bNRBq4Z6GHvYBuAdKdOgsJzPfcYoOb+
-TtrfN8iwdSDpWPpSc0zIRVKbb7NZN62Sfj7vZihsuC/stkHYgiaRNcDs69n97KP9
-Io0+TsAIxtjC60whIciHqUhjHwizMMnJZYDZM3cedSmxWAMovcdF+UmhnBi/Uy0G
-mNW6Wb5Y2SX6rex5s+A/tMcr2nBn6JqFy+FbIkSHeHyZU5OrvhdXLGYbhfzPDwUS
-NE35Q/6XWE2q388Xqh3vVPbllt/5KfwUZA8VFjTUGfvGG1ELuiewz7SunuijkCCa
-CLhe4HdoLo8X9pptWAQ4rxpYjTwU5UCkBkmQfq1ocWRHW9ADt5DAHkzH3bMfIFA8
-dzG10cpqRvP4qWd5ELm1bHwQ4PvonfirU4A3v4261A0=
+[preset00]
+fGammaAdj=1.0
+bWaveThick=1
+bModWaveAlphaByVolume = 1
+fModWaveAlphaEnd = 1.0
+fWarpAnimSpeed = 1.0
+fWarpScale = 1.0
+fZoomExponent = 0.9
+fDecay=0.980000
+
+zoom=1.009006
+cx=0.500000
+cy=0.500000
+dx=0.000000
+
+
+sx = 1.0
+sy = 1.0
+wave_r = 1.0
+wave_g = 1.0
+wave_b = 1.0
+wave_x = 0.5
+wave_y = 0.5
+
+# Select bars mode
+# none = 0 
+# FftLongBars1 = 1
+# FftQuadBars2 = 2
+# FftLongBarsCenter3 = 3
+# FftQuadBarsCenter4 = 4
+# FftTopBars5 = 5
+# FftLongBarsReflected6 = 6
+# FftQuadBarsReflected7 = 7
+bars_mode = 6
+
+bars_rot=90 # Bars Rotation
+
+bars_thr = 0.5
+bars_thr_color_t = 0xFFFF0000
+bars_thr_color_b = 0xFFFF0000
+bars_thr_color_l = 0x00000000
+bars_thr_color_r = 0xFF050709
+bars_color_t = 0xFF98c8ff
+bars_color_b = 0xFF050709
+bars_color_r = 0x00000000
+bars_color_l = 0x00000000
+bars_sx = 1.0
+bars_sy = 1.0
+bars_num_x = 256
+bars_num_y = 24
+bars_smooth = 0.85
+bars_sensitivity = 0.5
+bars_spacing_y = 0.3
+bars_spacing_x = 0.0

@@ -1,10 +1,15 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04qPFYGGUpXaxsvf1g8jLjo51iYmtRTfskNt9NfRw1wRt
-dJXEL5+k47KO/fvEgcd6flSortmruH/lpQvI5Ynh+jsY27m1xopcRH9SIaqA7J33
-zQVzbeTy/4+j5phyiLxWuI1MpzaCWPf05FqQoEQpPxkO2XdlkgwfkhbQBt4cgW7H
-v6pqX+CRKSC//sSIzL0WHXqZp1sVfa7L/ZqGyMm0JPSXSBeHRWJmFS76uE2t4i/u
-RfVOcO+FmUd79uv4nKWNZApO83Z6m1hlnedKWjK7doa5CFRrIChGhhSckFP23dhu
-p9e/E7LPBhidKyrb05WbkLPKfai1qLByTxgxomrZfY8JMLFlOIe0URKgfNee9y9p
-NR7pBJXREoRz0OLfJf3r7uiiDOpTGjS0ppi9wiII1OUQl2G+VQMvJ53cG9f90GLF
-ev9+BT2TZzbCf6VniZlyzg5WRtxoziH5OzaIPyYczxZ3YcGoNuk6hfxh5eelmPyQ
-QFjQ9KEzgEtT05FE9b2BpgGyG3X9VVXf1rH566TWbrlAQm4qB/RaepQkeeRCmqFI
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="AppTheme" parent="@style/Theme.AppCompat">
+		<item name="android:buttonStyle">@style/Button</item>
+	</style>
+
+	<style name="Button" parent="@style/Widget.AppCompat.Button">
+		<item name="android:textSize">10dp</item>
+
+		<item name="android:layout_height">16dp</item>
+		<item name="android:paddingBottom">0dp</item>
+		<item name="android:paddingTop">0dp</item>
+	</style>
+</resources>

@@ -1,9 +1,10 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9zZuHIMooj7L/3ShsSCPydAIo57APxGzFpoqiaUMpO09
-7hi8gJqdmQF3eapMA/7N68FEdin1p4lEeCFFiJ+DJlL1d3hiGmxBokymgegoQgym
-gmP9CgxxE+fSEIe1yYW4USFNLy8Xsc3PWbmX9YEoZ7PHb75G0xvPOltd5NyTC5b6
-a94F3Zc63+5tXW5zEf3md8/t2U+MFNz4stbgSOgrM+OEdBpevZVT4aM1xPCdnd38
-/5WlGA+TNU5Ka/S18wEACGIxt2Qqnj5UwbaTZV/FHVh3erIXWdyfdj++oW9+wJte
-T4HgdWob5cQ7klOK4jVgfUAXhpPNodPUFjiIM8Lsxs1BJShkVnsTWxXPQ7z7T+6p
-WmRIe5MVsmHJhS+Yw2liZGMGlobVTyyfFoRw7cRvy2c=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="@integer/selector_fade_ms">
+
+	<item android:state_activated="true" android:drawable="@drawable/hamburger" />
+	<item android:state_pressed="true" android:drawable="@drawable/hamburger" />
+	<item android:drawable="@drawable/hamburger_stroke" />
+	
+</selector>

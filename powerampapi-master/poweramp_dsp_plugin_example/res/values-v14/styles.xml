@@ -1,9 +1,12 @@
-U2FsdGVkX1+yCff3nBptWOlCqaO1xA7e1vB24vsWvwQzgN6bpNuXL3HiVxTvuvSs
-F4IEbj8Y0CW1SG/L3wO0+XGcG24h0GyqfoshtmlB/Sz+Z1OTikDBm1vjspYH1I9T
-hR9Nkmr/DkZts67XuuAwOEiWThTbafZ/2I4zQpjYLC2cAY+rmh9PElUu1R03Y9sZ
-JkaSjhYN+5Nw2X85sK31Xax6m7QjH3rVwhJIOiA/JEhkj1MCEOoeC68UdxXPdOBf
-zSoie6y4rTXIFaIsP8ecgX2zJzMy8/niB+1abCszoP+1t3es4q8o8ndU+UInLIml
-LI14sDv5xUXMuwTOVrLq7oxKNYQdZDJvoPcs84Ztcrt7HRzqkhpH25VPBCBf2Who
-bKeP80AYgLDiwhDvZ5peP3/1nuo5EZ7vPwBd6ChwYxWp/oW0lMPUuGTfgasUvTN+
-pk43e5uEZ0kaP998UpECKgtW1lEfGx+HMAowT8IZZQVZk0hhXKQSfNjCz5AUNgkl
-J8lQ0oQJj33CvUSUzFBnXw==
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+</resources>

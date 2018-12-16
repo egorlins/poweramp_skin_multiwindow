@@ -1,91 +1,117 @@
-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
-pzIHSavtpznqiN1PgRivzA==
+/*
+Copyright (C) 2011-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with PowerAMP application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpackcommon;
+
+import com.maxmpz.poweramp.widgetpackcommon.WidgetUpdateData;
+import com.maxmpz.powerampapi.simplewidgetpack.R;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.graphics.Color;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.RemoteViews;
+
+// NOTE: keep in mind that this provider gets instantiated and destroyed for just any update or other calls.
+public class Widget4x2Provider extends Widget4x4Provider {
+	public static final String PREF_AA = "aa";
+	
+	protected boolean mAAEnabled;
+	
+	public Widget4x2Provider() {
+		super();
+		mWidgetLayout = R.layout.appwidget_4x2;
+		mGlueAlbum = false;
+	}
+	
+	protected void onWidgetDeleted(Editor edit, int id) {
+		edit.remove(id + PREF_AA);
+	}
+	
+	@Override
+	public RemoteViews update(Context context, WidgetUpdateData data, SharedPreferences prefs, int id) {
+		mAAEnabled = prefs.getBoolean(id + PREF_AA, true);
+		return super.update(context, data, prefs, id);
+	}
+	
+	protected int setShadow(RemoteViews views, int aaColor, int shadow) {
+		int flipperFrameId;
+		switch(shadow) {
+			case SHADOW_ALBUM_ART:
+				views.setViewVisibility(R.id.shadow, View.INVISIBLE);
+				flipperFrameId = R.id.flipper_frame_alt;
+				break;
+			case SHADOW_BOTH_DOWN:
+				flipperFrameId = R.id.flipper_frame;
+				views.setViewVisibility(R.id.flipper_frame_alt, View.GONE);
+				if(aaColor == 0) {
+					views.setViewVisibility(R.id.shadow, View.INVISIBLE);
+				}
+				
+				break;
+			case SHADOW_BOTH_UP:
+			default:
+				flipperFrameId = R.id.flipper_frame_alt;
+				if(aaColor == 0) {
+					views.setViewVisibility(R.id.shadow, View.INVISIBLE);
+				}
+				break;
+		}
+		return flipperFrameId;
+	}
+	
+	protected void setTheme(SharedPreferences prefs, int id, RemoteViews views) {
+	}
+	
+	protected void bindNavigation(Context context, RemoteViews views, WidgetUpdateData data) {
+		if(mAAEnabled) {
+			bindGoToMainUI(context, views, R.id.aa_cont_layout);
+			bindGoToPlUI(context, views, R.id.playing_now, data.apiVersion);
+		} else {
+			bindGoToMainUI(context, views, R.id.playing_now);
+		}
+	}
+	
+	@Override
+	protected void updateAlbumArt(Context context, SharedPreferences prefs, int id, WidgetUpdateData data, RemoteViews views, boolean altScale, int flipperFrameId, WidgetContext widgetCtx) {
+		//final boolean aa = prefs.getBoolean(id + PREF_AA, true);
+		if(mAAEnabled) {
+			views.setInt(R.id.album_artist, "setGravity", Gravity.TOP | Gravity.LEFT);
+			super.updateAlbumArt(context, prefs, id, data, views, altScale, flipperFrameId, widgetCtx);
+		} else {
+			views.setInt(R.id.album_artist, "setGravity", Gravity.TOP | Gravity.CENTER_HORIZONTAL);
+			views.setViewVisibility(R.id.aa_cont_layout, View.GONE);
+		}
+	}
+	
+	protected void setBG(RemoteViews views, int color, int shadow) {
+		int alpha = Color.alpha(color);
+		int r = Color.red(color);
+		int g = Color.green(color);
+		int b = Color.blue(color);
+		views.setInt(R.id.deck_bg, "setColorFilter", Color.rgb(r, g, b));
+		views.setInt(R.id.deck_bg, "setAlpha", alpha);
+		views.setViewVisibility(R.id.deck_bg, View.VISIBLE);
+		views.setViewVisibility(R.id.shadow, shadow != Widget4x4Provider.SHADOW_ALBUM_ART && alpha > 0 ? View.VISIBLE : View.INVISIBLE);
+	}
+	
+}

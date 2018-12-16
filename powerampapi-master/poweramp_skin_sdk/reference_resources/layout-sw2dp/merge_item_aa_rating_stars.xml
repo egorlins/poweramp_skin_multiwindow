@@ -1,26 +1,34 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d40um6OEMcuyIWA9jV2Z1e6rzIrjJKAVA9lBvx6cVwtwZ9cz4UcTX5vUHA3VCUWT
-oIOjkGJeC28v7CF1UE7l+jdED++DC6puMzn4nvN+3PeUyBQSNP3OeQSnkeG5K8uE
-wTGIamJ7RdALqFv9mAQ42qAchPQ2tfJKV7BeGoqKyUn7w6nwqLK4WsWmMRPkGA1J
-I6302/ciC7blVmSw4U/VZkY4ZRj5zegZWC3oucYVtO/yfCDgwiT4qG6kBpMLf+Kn
-FIVXnFfGhy+kNsvu8g7jh/2irbeuEGB/IamX8527fUf+XJWReABF3LBZd54NhYkB
-rUEnwyM43UPGsc0Dd+65um2ugQFWg2LOd0MlEXFddZ2R/NSYsx/KUpg7SWoPlCHc
-piaAdl/2g80JuNbQY2G/Rnh1JrjOOGt+4GRo2OoJ8C7aDXGBs8jJKWDoXD1FlTay
-wGv4fVijcwRMddgpkF18OPICi7PtEyL/LrVGNLpA0st841WtLoedc47olHiV6WWJ
-rhcU/wZ81NLLPjgSNi0dQHl//479hM1hELvYQcW8vNMfmL6sqHXBohFw/Kb3fMg2
-uV6jsmV2YJj3jvCRW8fhGMgh/0RZ6puwzj1AnRnVU6DHKCPm3g1fd/H4nKHnfsLr
-Au9sZbN9p4+jmRpKYu02Xf2tcAF4ZVwMHeepmh6lBT9Rcb9baoZoOmGMKMYCgkXi
-jrhoX3aTO3mB/U/4VHy7ua9Neg66y0xf2APdTfM76599it/o+TKFLc9MWIX8JoEY
-YYy1sKFE5XuaNFkjycyZsL1HAWCb/CNi7nCGjKJRxKO9sn08jiGbTKiRgajYcU4T
-87LPBEdt0I29siWb6wJAvNcyAb2wpzTWAvLBk6nT7ygf/apkfE7KG6c0f1n4Cl06
-DIf2jhALpcLrP/2Qoe9dPzkUnSAyeniU6vYVh/quRA3dw4J7ny+p30d0zOOG+g1b
-Wv7ABLMGWE/Aeuv9m8Pl/ShRonuA+yPeltjJyX2KPFOiOB1cffYxVsRuXKW6UYkC
-v8gmgM94XMsq+sZ+D696dJGQkaun86/R395CdCIknPX+urApNfUV1OcMzeioTOAA
-xMMS/6BMFUXoLFYa7112lKEk1VCLoPo8gSClOOPDKRpEcQ9tbLHbshOIeaFUzxwy
-pyaiMf89sMiNA/ppJSm8k/b3wqfRklKo4X2og6HSoz1OAL2fiYCFHlmJae11k9Ye
-tuk3fwAk2Nn225iV6EBbi9JfEWvbvRsGZSfBDpYj98DONUCwd+SeAri0E2Ip+ixT
-NQvZ3BjAWML9YIfHdrDBjrQ30M+CEuCEddWG1Fv0m8jt4L3kkkaklbuHH68CWVEi
-3fr/i+qrbJ3UZ+kB5rUwQ+xuakMzLUM/xLlIQL1ar+k/0Z4CcTxT51pHfAFk4luk
-BUhlvslHFkuTu7pR+L6oUoeLFAYxEzSZQ5sUHqt2eFIG+ccyFpqm6kCpr+P4o3H4
-1/J8eFdkb/n+lZggcvN2UQYIuPsb763z6KrutfoAoaaPZPLEffKbX87QH7KDrMqA
-z/ZUwtUqrlpu3EUZa7BXDEED3T/6J5SMpvoPTjhLZMQ=
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:w="http://schemas.android.com/apk/res-auto"
+>
+	<com.maxmpz.widget.RatingBar android:id="@+id/rating"
+		style="?ItemRatingBar"
+	/>
+	<SceneParams w:scene="@+id/scene_aa" w:scene_2="@+id/scene_aa_vis" w:scene_3="@+id/scene_aa_playing"
+		style="?ItemRatingBar_scene_aa"
+		w:applyViewParams="true"
+	/>
+	<SceneParams w:scene="@+id/scene_grid" w:scene_2="@+id/scene_grid_zoomed" w:scene_3="@+id/scene_zoomed" w:scene_4="@+id/scene_small"  
+		style="?ItemRatingBar_scenes_invisible"
+	/> 
+	<SceneParams w:scene="@+id/scene_header" w:scene_2="@+id/scene_header_1"
+		style="?ItemRatingBar_scenes_invisible"
+	/>
+	<SceneParams w:scene="@+id/scene_1" w:scene_2="@+id/scene_1_zoomed"  
+		style="?ItemRatingBar_scenes_invisible"
+	/> 
+	<!-- NOTE: force hidden -->
+	<SceneParams w:scene="@+id/scene_item_menu"
+		android:visibility="gone"
+		style="?ItemRatingBar_scene_item_menu_lu"
+	/>
+	<SceneParams w:scene="@+id/scene_item_menu_lu"
+		style="?ItemRatingBar_scene_item_menu_lu"
+	/>
+	<StateAnimParams w:stateAnim="@+id/anim_ratingbar_pressed"
+		style="?ItemRatingBar_anim_ratingbar_pressed"
+	/>
+</merge>

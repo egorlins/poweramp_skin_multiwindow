@@ -1,20 +1,28 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa992ek6eqCBf/N6LV88aOivWkKUFfoWcLsJ/Y52qSSbvt
-rmS9berlyQz41BYezdmPHJpxuHJUxP6V0Gdd7s9MYriOPZRXWXWqu6VUuew0TJgt
-6RYouCvwSftOBuVImj8TU4Z/DrmKp5vSdJp9T3PeNsT1S9SgizPl9s7tNNcBOHCe
-PCRkBxWUxRi9daUV/gTgSwOPLRJqC+ihmGjIbjdpOje1Q8CANpPKF1hzv/3UxIEB
-KYbBCR0mz+uf19i15bRr/NfSqnnowpNA+n6K3jdpQnWfXYRo7LhmSiYDP25DDqvY
-AytQK39Jc8ZXfLu1mVwujUsdyfx9ZtywkVHEsPD3My5MOZGysLoXo5jYszYQAoTp
-jXXSYDG3C1p+1qhLvwfha0qE59mTgQKwXwyjHxH/rH141S1s4dVMeOJw3jA+JQvz
-EYAfH4wsFRkJVKGWf5novOdP4clTGZskGbkNJDbw4u5ss6bSxTTgmdMuIGV6LjiS
-OgbZbfEtEMpQl54+BBPjNY6IAwVzy8qB/+E8HmtNVBl/AqmU5TAChFm1BYZPJ+bS
-wpaUOuPq5kwQqxZlakyq7xoBw1WK7azoPHLOF2x8XMXxziLMpSu0oDUwGzueMS6i
-9p5u10QIeiWeHLOJFbS8EFwlb0u516wugspYvkIx3wTeKaDRNBz9pyJ5DjKit5pw
-H1qyCiONrzglFKb9tcoEZ6dWTt4kjEA4W4tYsXlS9RKEICNR57YYNKKrmJmeYIME
-XUYKORypyeDymH2SRNSf6pe8N4e+pgK1EKokeAF0SJ7V0VuE8GORnmZg1jDzRIot
-NIY1P8BltQth2241bnU4LvdVwdOqFYveevtQwrOHptPvXhkjkP1CqJdIJj0rpLvQ
-R5ESzW58rGVyoCzsFpKJWMHifB2E5THHab5UgkCVhQL1tnr9rmS0IaFgDBQnrJxg
-WKWna5mb8LvaWo2f8aKJ4au6LDd5et62lBg4sPmVg5hhHn4HysbjEIMva4fOjOZi
-MFB6VpZD2cKYEe+xfYIrI2qpI1yAKYewpbQEn8apaQLGRCQNsKi6yS2zO3RtEY+k
-S61BWBLf3incBMJEvR74Zg==
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="250">
+	<item android:state_pressed="true">
+		<shape android:shape="ring"
+			android:useLevel="false"
+			android:innerRadius="3dp"
+			android:thickness="3dp"
+			android:insetLeft="1dp"
+			android:insetRight="1dp"
+		>
+			<solid android:color="?android:attr/colorControlNormal" />
+			<size android:width="@dimen/AAA_Seek_thumb_size" android:height="@dimen/AAA_Seek_thumb_size" />
+		</shape>
+	</item>
+	<item>
+		<shape android:shape="ring"
+			android:useLevel="false"
+			android:innerRadius="2dp"
+			android:thickness="2dp"
+			android:insetLeft="3dp"
+			android:insetRight="3dp"
+		>
+			<solid android:color="?android:attr/colorControlNormal" />
+			<size android:width="@dimen/AAA_Seek_thumb_size" android:height="@dimen/AAA_Seek_thumb_size" />
+		</shape>
+	</item>
+</selector>

@@ -1,9 +1,10 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9zZuHIMooj7L/3ShsSCPydAIo57APxGzFpoqiaUMpO09
-7hi8gJqdmQF3eapMA/7N68FEdin1p4lEeCFFiJ+DJlL1d3hiGmxBokymgegoQgym
-gmP9CgxxE+fSEIe1yYW4USFNLy8Xsc3PWbmX9YEoZ7PHb75G0xvPOltd5NyTC5b6
-/0nSsw5FEBmIztUSS2ApyMsMvVQTJ1N8zl9UoFLbOnBqmPWj5lv61dByWc7Vdu5J
-0XJS2n0REE/Bn4mOzibBzWr2hieJvHiPdIdYAZaHGTSQDzC+m16KVcndcoVtyX0P
-mJy8MtcRE72AM6aHuab7aoou50e6MrDmprrCM/vP8zPSayuBIxON4i0fbLzSobAN
-a4wd5pkkXbG5h9rK5rcgXf+7jwfSOB66XXfTThG4EZ8=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="@integer/selector_fade_ms">
+
+	<item android:state_activated="true" android:drawable="@drawable/search" />
+	<item android:state_pressed="true" android:drawable="@drawable/search" />
+	<item android:drawable="@drawable/search_stroke" />
+	
+</selector>

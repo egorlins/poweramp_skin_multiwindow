@@ -1,7 +1,12 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-h0QL4mwJBUsPzmEiM361laaiPiJRSpXdg8GUoBkcYqEKKPKUAtitMXgC6pXI8zPW
-XLJ6mxpw8B9aNXFTGgQbc4Sj1B65Tv6U270zer6D4UNVN9kC3iVf7gS3C/rijFXA
-b48RkY7UmNeDlUFC5IMNs3Nf3WHPknFwpZAQKbGKe/eNY/Bzvne8Yb7+zVVPTHXm
-EYdnOi0jg/InAfqyRXnp/obuv01+7Am1qntB8qBeWSl6ZTQ0rxwcwxb4MEqogtH+
-y7fvDbg9er+ZbxzrW/SFcJJQq82RUMSU6BUIki4+XnwabIzHXHAaqcbp7Anp/lFs
-YU/Ftw+mCZrHVlJTFP2yMAl9Kn/1AoIYRGm7U2ZWFKU=
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/view_flipper"
+	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	
+	android:layoutAnimation="@anim/aa_layout_fade_in"
+>
+
+</FrameLayout>

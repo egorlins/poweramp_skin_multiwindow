@@ -1,47 +1,71 @@
-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
+/*
+Copyright (C) 2011-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with PowerAMP application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpackcommon;
+
+import com.maxmpz.powerampapi.simplewidgetpack.R;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import static com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x4Provider.*;
+
+public class WidgetKeyguardConfigure extends Widget4x4Configure {
+	private static final String TAG = "WidgetKeyguardConfigure";
+
+	public WidgetKeyguardConfigure() {
+		super();
+		mWidgetProvider = new WidgetKeyguardProvider();
+		mBgColor = 0x00FFFFFF;
+	}
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+	}
+	
+	@Override
+	protected void setDeckBG(int color, ImageView deck) {
+		int id;
+		switch(mShadow) {
+			case STYLE_3:
+				id = R.id.deck_bg3;
+				break;
+			case STYLE_2:
+				id = R.id.deck_bg2;
+				break;
+			case STYLE_1:
+			default:
+				id = R.id.deck_bg;
+				break;
+		}
+		deck = (ImageView)mWidgetFrame.findViewById(id);
+		
+		int r = Color.red(color);
+		int g = Color.green(color);
+		int b = Color.blue(color);
+		deck.setColorFilter(Color.rgb(r, g, b));
+		int alpha = Color.alpha(color);
+		deck.setAlpha(alpha);
+		deck.setVisibility(View.VISIBLE);
+	}
+}

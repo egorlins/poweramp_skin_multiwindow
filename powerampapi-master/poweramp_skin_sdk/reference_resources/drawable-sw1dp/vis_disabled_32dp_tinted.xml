@@ -1,5 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-wgAffQy+1duiuxodQwTj4CoJ5D8TJo78yIkaAh8cO7p6vrIQY1TbQ7iiOh9nT+if
-LJ8d7x1urMfiAIpk9aJg3D5H9NiphnbWFLdDG2BJmSBXINzcXYgUoPdVM4nk82et
-Ja+b7VTIRXyNl488+GO/qKjh86GkbKm/QaASZUvirOhQijcxlQF5sraJLB+3zG0H
-4NBAi+UNIbCquJ71TOnOzQ==
+<?xml version="1.0" encoding="utf-8"?>
+
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/vis_32dp"
+	android:tint="?colorIconDisabled"
+/>

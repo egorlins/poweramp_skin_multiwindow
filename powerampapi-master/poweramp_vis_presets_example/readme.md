@@ -1,142 +1,131 @@
-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
+# Poweramp v3 Visualization Presets APK Example
+============================================
+
+This is an example visualization presets project source that demonstrates .milk presets loading into Poweramp via APK.
+This project can be directly used to build APK which can be installed on the device and recognized by
+Poweramp v3 (**build 796+** is required for the correct APK handling).
+
+### Poweramp v3 visualization presets
+
+Poweramp v3 supports Milkdrop v1 and v2 (with shaders) presets (.milk). In addition, Poweramp also supports spectrum bars rendering defined in .milk presets with the extended syntax.
+
+Milkdrop presets are presets used in Milkdrop visualization plugin for Winamp.
+Some documentation for Milkdrop presets can be found here: https://raw.githubusercontent.com/afedchin/visualization.milkdrop2/master/visualization.milkdrop2/resources/Milkdrop2/docs/milkdrop_preset_authoring.html
+
+Poweramp understands .milk presets placed by user directly into the specific folder, or it can load presets from 3rd party APK.
+
+### How Poweramp v3 visualization works?
+
+Poweramp parses .milk file and translates .milk preset internal Eel language to Lua, which then executed in internal LuaJIT VM. Shader code, which is DirectX HLSL shader dialect, is
+translated internally to Open GL ES GLSL shaders, preprocessed and loaded for the preset.
+
+**Due to the non-trivial loading process and multiple translations, not all .milk presets can be loaded or properly rendered by Poweramp. Please test all presets in Poweramp v3 before
+publishing the presets APK.**
+
+### Poweramp v3 visualization presets APK
+
+Poweramp skin is a pretty much standard Android app in APK which includes:
+* meta entry in AndroidManifest.xml:
+```xml
+<meta-data android:name="com.maxmpz.PowerampVisPresets" android:value="true"/>
+```
+* .milk files in **[app/src/main/assets/milk_presets](app/src/main/assets/milk_presets)**
+  * Poweramp parses preset file name using "name - author.milk" scheme, where name, author, and APK name are separate searchable labels in Poweramp presets list
+* optional textures in **[app/src/main/assets/milk_textures](app/src/main/assets/milk_textures)**
+  * jpg/png/bmp/tga formats are supported
+* an Activity which can be started by user. This activity may include actions to open Poweramp visualization settings or directly start Poweramp with target preset APK loaded
+    * the activity is also used for the development to force Poweramp to reload APK under development
+    * the activity can be further customized as needed
+
+### How to start own presets APK (based on this example project)
+APK development is done directly from Android Studio (3.1.4 was used for this project).
+* clone this repository, rename appropriately and change **[values/strings.xml](app/src/main/res/values/strings.xml)** labels
+* change application package, preferable to something containing **".poweramp.v3.vispresets."** as this is the substring that will be used in Poweramp to search for preset APKs in Play
+* build and run presets APK as a normal Android app
+* when presets APK activity is started, "Start Poweramp With This Preset" button can be pressed to force Poweramp immediately reload the presets APK
+  * if the last loaded visualization preset was selected from this APK (via presets panel and may be filtering), this preset will be immediately reloaded as well
+* APK should appear in Poweramp Visualization settings page as well
+
+### Poweramp .milk format extentensions
+
+Poweramp supports extra rendering object - spectrum bars - which is defined via "bars_*" .milk file entries:
+* **bars_mode**
+  * 0 - disabled
+  * 1 - long bars
+  * 2 - rectangles
+  * 3 - long bars centered
+  * 4 - rectangles centered
+  * 5 - top aligned bars
+  * 6 - long bars reflected to left/right
+  * 7 - rectangles reflected to left/right
+* **bars_num_x**
+  * number of bars in x axis, max=128 for long bars; 32 for rectangles
+* **bars_num_y**
+  * number of rectanges in y axis, max=24
+* **bars_spacing_x**
+  * spacing in 0..1 range between bars horizontally
+* **bars_spacing_y**
+  * spacing in 0..1 range between rectangles vertically
+* **bars_rot**
+  * rotation in degrees
+* **bars_sx**
+  * scale by x axis
+* **bars_sy**
+  * scale by y axis
+* **bars_smooth**
+  * bars motion smoothing factor 0..1
+* **bars_x**
+  * bars x offset -1..0..1
+* **bars_y**
+  * bars y offset -1..0..1
+* **bars_sensitivity**
+  * bars sensitivity related to frequency amplitude
+* **bars_bass_sensitivity**
+  * bars sensitivity related to amplitude in bass frequencies
+* **bars_color_t**
+  * top bars color in 0xAARRGGBB format
+    * .milk syntax is hexadecimal 32 bit number 0xAARRGGBB, e.g. 0xFFFF0000 for red
+    * .milk code eel syntax is $xAARRGGBB
+* **bars_color_b**
+  * bottom bars color in 0xAARRGGBB format
+* **bars_color_l**
+  * optional left bars color overlay in 0xAARRGGBB format
+* **bars_color_r**
+  * optional right bars color overlay in 0xAARRGGBB format
+* **bars_thr**
+   * for non reflected bars 0..1 position where threshold color starts
+* **bars_thr_color_t**
+   * for non reflected bars: top threshold color in 0xAARRGGBB format
+   * for reflected bars: 2nd half top color in 0xAARRGGBB format
+* **bars_thr_color_b**
+   * for non reflected bars: bottom threshold color in 0xAARRGGBB format
+   * for reflected bars: 2nd half bottom color in 0xAARRGGBB format
+* **bars_thr_color_l**
+   * for non reflected bars: optional left threshold color overlay in 0xAARRGGBB format
+   * for reflected bars: 2nd half optional left color overlay in 0xAARRGGBB format
+* **bars_thr_color_r**
+   * for non reflected bars: optional right threshold color overlay in 0xAARRGGBB format
+   * for reflected bars: 2nd half optional right color overlay in 0xAARRGGBB format
+
+### License
+
+Copyright (C) 2010-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for themes, skins, widgets, plugins, applications and other software
+which communicate with Poweramp music player application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+

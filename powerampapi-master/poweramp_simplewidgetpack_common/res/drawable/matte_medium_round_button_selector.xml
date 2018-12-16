@@ -1,11 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9/8h5/rUfgemSwTZK9SeL8bRQZicl2EEUPcW3VKgckit
-aeQ1S3CkCpAgc0xkyi9LhdTg0iHI61JPDwmz1B4YkWj1YrreHq20pZBtULgyPeFK
-BDCoTYGa1s9pvvGMEGCDTPSRNy6YBVnRgY+KdqVzeuNw9WJe8BQ3H0xGp66wJbC1
-XyQiLdaspQlp4bWKS/O9Om30Q4PpwDjz59HpcToHeXiiNOIw6xs1nI8Ise5clGYH
-P9D2YPXQRcTXrg9UvUcXSj5mLgLcGDzUNO+Jj4nyk2LOwvpIqvJTb/YW/7aVDsLv
-gM2+Q+fOjMo+zGeuTF+pwjFFzg9theC+8sWJeCO1ysSdMplLyJOeFJIGGvcFYIVQ
-Gh7259Ur+UF/g4TrEmWxUNKVW4j84kj+MjADWejcPtQA6kZMtn4hECxQJJKDqd0E
-5bE1aw2cUeeRvvFVXi035CM24zZ7Sit+UiubxvGdbqIzLtrLyfxGoXgg0bwQiC78
-QQzWu4FOaXyehbTm26s1nQtJqGeNI57sei+0RkcqQ1plTW4R6ZWidHukljJHk4N5
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/matte_medium_round_button" />
+    <item android:state_pressed="true" android:drawable="@drawable/matte_medium_round_button_pressed" />
+    <item android:state_focused="true" android:drawable="@drawable/matte_medium_round_button_focused" />
+    <item android:drawable="@drawable/matte_medium_round_button" />
+</selector>

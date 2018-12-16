@@ -1,30 +1,39 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-n8keS0ULWJmKD29hFcuxxv4tGoKOVGfN4saNugYkWE5ykE4H4K7OyYLnU1z/tDyW
-U9ANN3gdVtA5zMcKj6YQLApbjwbqbaS/D6pFMvUQ1Ts6VRRJv83FQF3F9Wtoouio
-JyCR0W8w9y5aiWiZ7wfkGy88KnW7yQXVRtJfUeC28Qwi2RIwllm8uqy7UpbylfHA
-3ppNUQPFG8BbtyxlGlA7DWbOlwdcDGKUwFjW6m8nceddM6VyqQve1/MNyd+n/0QO
-R7nmR77FUy1lpv6ApwmtWWhtaaPDpRyNXDSQZq10VXbVi8GhLfAAurDFnNdefGPY
-VL5bKB+mVI3VL5wXSoBjdLbTyBopJub88JHoIfsLUL+1IBCPamJQ0mNt2m0B/dsn
-e+J+rPrbclZgJiM+nerhrHYyKPEevCD+/In3KyGrzIQkjjnBFU2NB2C7K3JhwvlB
-rpv+LVk+4bcVCdJ5CwFb4t+fkFcXSzx9Tnu7h2XEjnrDMKU7uV/qxwgZn0H34P5k
-FEMwYiexN2kNRopOP4DGDE/gQmp7dt1NFruAsv9yFtX4Vt2aD6/5afPX4T/9cChm
-h/2tjAbzpQOi6UGEyUMsdfTuxQEBXZ1U8OmsgWoEjfm4W+sCZnKpy3f60z6KiZna
-dyrEJwdzo5AwrTz5MAjkMvuIVn4C8H4GtjsK15OUvl2l7Qs/+ZDI33fpZ5EFXULZ
-BMcXsxD3IcmI2wJ4v564IK3ZIjOwRImOWbSlCS3Q2GUSmo4gcuLydZcA0PisxX9u
-u1yn5EuaRsCNUtzUKvnbktrslb7oJCQ1GTbaBiyiKu1CmVLDKMzplFvikZpi4ofl
-GsqtXFCr8NPn1sv3kZeLF+uZz4yLYUAoNYbsrlR641veeBs1VWV2KLDw14yIRyQ5
-hZAPdbOLtnIp7GfI9O1nQEyfXgpY02008zoOxVXGSe4NTvDjuAaxf4XCsqL0/TWD
-cZw6/KkIK8cr5Ih8zvrm3OfJaY/cth9kHZPR1F1Mvw7AR3LkfW5uxCHGb1o9pCO6
-VkVA3eDeHg179jjS2SbZjwdpEtvzIs4mq6X9/VRfULiQKdsR+jARkic3QdzpSPz2
-hJt9U4IJmBOqp9mzYep6/JxyAP3cRed6SKGKWqUgzvrEIyA6yD1kNvqD0ttW5Yk8
-rSYcWD8nrOfc+aCV8atGVSz06Yuzu+kF8lz7MKQOIoXyZM5H/cRB6zuRNMvMG1FD
-XPHCxMJpcoqTqhfkoEQJckJGW57xk0TgOEQkj7xmXM0hVD6jau0FLAftDAOtuKuz
-TgwYCyLILibpM6nA8Dy39QuxHW98Y0Az2OoIixaLoZz0ehCg63RDUnVVCuYZxkpt
-n+1bqJzdBT39AAN+TyhnguCQHrMQnMN1QKNe3nq9+WIZYYHcK0oIcCrK0BwoUeMy
-ilXxyHgOf3wZaBRBmHBYObZ/pTpyi7KjJAsf4yY1bXN5t/0WLhocLJa5pIxEPy/1
-M4S5bMa3m0MtS4cSxZTvNXzEgdLvtUugnIZ6lgDUDRbFs8aiYt+ljQvSbKCAsVJJ
-Z/DBDrDxbKyJZNp2F0n27ikSsEnNin4DHJ6HnMetmGdg6mba5f5h8HBQJUmVRwNu
-QBagwbO68mkZsun/TKOgEndv94iD2/nN3COE5pbNhk61Yh90oyCNcGpIS1CX58I9
-bwSZF7e/2qLlaonNJfXWL2nGO1tP4f9b6D8RtxNolVQBZM0VykrgIELJHi9lGreR
-3dZXi4Z5IZjQT9JLgwit2Hz7qOnQgowwX1SrGEmPsHO9aiZAdd7MVSbwjBSO+eHo
-m63q4VghX0jnGyp/Uc8hVA==
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/container"
+>
+	
+	<!-- <include layout="@layout/widget_configure_content"/> NOTE: inserted here by code -->
+	
+	<LinearLayout
+		android:id="@+id/options"
+        android:background="@drawable/widget_options_bg"
+        android:layout_alignParentBottom="true"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/widget_conf_options_padding"        
+	>      	    
+		<FrameLayout android:id="@+id/options_frame"
+	        android:layout_width="@dimen/appwidget_conf_options_width"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	    >
+		</FrameLayout>
+			
+	    <Button
+	        android:id="@+id/done_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+   	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="@dimen/widget_conf_options_padding"   	        
+	        android:text="@string/done"
+	        android:minWidth="120dip"
+	    />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,117 +1,110 @@
-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
+/Andro/Andro509/public_api/poweramp_dsp_plugin_example/obj/local/armeabi-v7a/objs/powerampdspexample/plugin.o: \
+ /Andro/Andro509/public_api/poweramp_dsp_plugin_example/jni/plugin.c \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/jni.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/time.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/cdefs.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/cdefs_elf.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/android/api-level.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/time.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/stdint.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/_types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/_types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/posix_types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/stddef.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/compiler.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/posix_types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/kernel.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/sysmacros.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/time.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/siginfo.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm-generic/siginfo.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/stdio.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/stdlib.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/string.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/malloc.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/alloca.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/strings.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/memory.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/limits.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/limits.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/limits.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/internal_types.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/limits.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/syslimits.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/page.h \
+ /opt/android-ndk/platforms/android-18/arch-arm/usr/include/android/log.h
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/jni.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/time.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/cdefs.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/cdefs_elf.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/android/api-level.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/time.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/stdint.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/_types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/_types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/posix_types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/stddef.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/compiler.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/posix_types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/kernel.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/sysmacros.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/time.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/siginfo.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm-generic/siginfo.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/stdio.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/stdlib.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/string.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/malloc.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/alloca.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/strings.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/memory.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/limits.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/limits.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/linux/limits.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/internal_types.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/machine/limits.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/sys/syslimits.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/asm/page.h:
+
+/opt/android-ndk/platforms/android-18/arch-arm/usr/include/android/log.h:

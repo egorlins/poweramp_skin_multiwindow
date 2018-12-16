@@ -1,27 +1,49 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ0yKISJ06U3Uu5JsYx0nnvA
-53XDMZuohRmkCMoYgDVW/6muW84QsFvVArRL0yFCEZrQpmbXGzNvWHz0kYTkLAxt
-1ax2lFDYqihTvm3h7AvO64C7rImgqxoDDgavKr5rPbSPfc5YsguS9HkSZuQZOGmZ
-gDdHicdAn3ZKVK3GeyN6o20ppAhkCV+gamlaunmSU5PaiCdEB8WHBxz1kNEyMNQy
-C2i+pvcK+xIN1Zg4IDbY9sEQ8mKpnM3ZMKvkZXtuqHnOw55jpWcp4lOVx6+e+Rqo
-wiWdO+rGdGqO0FUYXLgFid2eADiMquCFOaZbQKOE1cbV8tPXp4sxQeix16CWefXX
-09KyYguC7jOsD9m+7LkeIGeAOxsN+spZT3PcX+l6kkeT+/QRFmT9ZWX++jlCpukG
-6joLejNh5dyf1n27NOYcfikma0UUCmecxg2rZEcDx1zymXUK/CyoLIWC1J1+vry+
-tEcD8JRWwhJDEBf6TAfOYuEva4uxuCRE6Kaz4B6UoU/PS+NVqUaVypnuAkqsLhVM
-Sja4ladyWP9+/Hfjgw4fueJdBDxA+HCckrXHhi7ENUZageyUGkRaHznEK5UfwaMt
-2J2ioa15PjlkSFVuoeZq81Dsw/g97dIDF21cOC2ydB4yPwkr7htw97WTCtvw8sai
-NPdHqZSdSTRQ5xotqlZGAfDBEslnebHeneUqzMUe9a+Px9aPE1oYGPZfprk9g0a3
-PkIRAglCH98L9nI9gZyonHZ73OAIdF2u3MGMjn9xN9DgVvNCNUuHPfhi2k5jg/NX
-vwMNBKBirFHx3O8q7GFOP8OUxrdrJFSNR8RTX6asyXvF6LsnbVYBJJailvFYwToE
-5tlvE4JYujyA5bI9sbf/Xje9rEu1k5ef9sJ902epuyKwMZJHYWTNOs7/tTKInyah
-snKgRDiIb2UpF8GSrWYMp6UofZj8GHsAdUmbC7cMQlOb4f/5RE5OPDHIG7WJHgNe
-ahygDN14DGcQHQvOf0kkGvOXuUN9KOuxgy15Dm33TV9sjIOmDM0juVLkQx71LW8E
-pb5cXRT1YnnLvoUJ+mDjjdwgMBR1jG+8V+yIZ0UslkHqNXWH6BDk+Ks1BBOXTXif
-xoQvEOJwCBbh/SoDhC4ZufEYiIpY4ntEgeAgfvw4AEN/kC3oJ4x8oWJwWjxRMlB/
-KHo5px9UizTUzBTjVrHjVodEPFKLxnQZ0hFT2U7yFLIA8bphhvzVdUqBXTdqQipw
-FKqmEZMnkmQ8+5eneKsOYuTJrtqJ9Ob1XrSn09zIG+kjHmYlqCwAwgijdg8KqUVe
-rDo0bvFrkrtdFS9cVb/JyywNZvBxciq1LBvp3WvpD3wK0HRuC4lOTktaV6yNcAz6
-0Q/n6i9l2MKMrcp20DTGjLTIOIqLgHv3gqn1zaWI7Ghn0eQv6IApOjisicIufgRt
-b7whGHPVToHpt1kVPiGUjRlbujXLU+OA6Er1AU2HgqZ4HyuUxE3DzqNFH97r9151
-/YNbTf/0Ap2LFKjp55DYMgNKJ3/eqTgvlH768ZgAiuoRL/GbKHIt6OubH50IhipE
-D5mHd3PA/SC7nQTJTC73EtCM41R99pVxxZLYVy55KBnT8IL6qo4hYnXU1ypUY8v8
-U/+jIRNvJMmnYeACmk9dqw==
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>poweramp_dsp_plugin_example</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.andmore.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.andmore.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.andmore.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.andmore.AndroidNature</nature>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

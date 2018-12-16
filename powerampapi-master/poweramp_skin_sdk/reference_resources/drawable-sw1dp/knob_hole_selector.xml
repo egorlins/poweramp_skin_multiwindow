@@ -1,27 +1,36 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-G1lp7I4P+vcuhdYjAf2Of+UeJL8LDl+awMyhNypTyfiX/N8mi5xf2ckmXcWX7XKh
-CcjGLPJQqXlflOWTWCm6/FiV/zhKQjrE1JLk4Wav19PpdXBpNG2MRX3/wbywxoVZ
-Jx9+NdG4C2VOmsFzNP/8/5rcAOUPHMckisI0i5KEMsKDrjJd7sELyf3qx7IFdSOy
-iATtF/ygAxO1KaRnqv2qpgUO+3KyLMp98nygajYPeWwbQNg56ee8vK9f2Sj62i4x
-dQOwG0pFAgMq2tisUhiu2hDnlqKMWEh+1eG3C9eVYcCYC1cy9ymS2sqQD2IF49d3
-oC7Pvw7zUJqREW/hY9qvl2vlsAahS4BID1KSzo3emKBM+OsvPCwITz0Cl8CRr16R
-v8F8nNI37v9Fj1S9TV5JdgTtTuhtKtOPq66rJ+meDau9MZ92SARk1WVRvZ4r27xW
-VxViFwpinXIXLXl8EyccYBBLQc7tfAfPi7uYACbq0DHEMMe5pcIKwmEE7ylV/sVv
-ZCdARu2S2tMZuiAZBmrXsUgUJP07A7iBrwB/pqhG3/9yOSzMMYwsBWe3E/tzRs5U
-g1ofCim/I8FpetVcT+AQpfi5FPoJoiOWljWc4EfyKkmHtZA0v/9RXqNflaN3Gl3w
-NidzCdxVAKDbi3a2aMdXAtd5vN31TCV4zAz3ID4kYm1/ogN9NXFUzbeQdLIbLvPh
-KRnGK+vKRQWJIpit4ktNwUYWiI/O8rb5mw20cPse2imFYSyLwDJ5w3RuTuGZB5qI
-++jm/QBy+22w68X5P9OVnht6vq1tKYwGWekD62LWkzx32Y6QgCWuIkKxKFZ4oXPN
-hfiVH+21WKohgOydTUj8EJrBaogRUEQ5OO3XhBdbIV7KBc+tPu6FbjT8aGIcRj+l
-BWcfFpFO663Nizg4Hu/rNehMoUTx2K2CHgXXvzftGmYRJJK+Wm77NPz+LAQZTgPv
-M+aaq6Z4BaF7U67ru4Z8tppa1yUocKj+EAsA+UwouUz4q6ZQClXIShPO7bBODTju
-tTdo9zLiAYH5JHtOFBs8h58A1NGitJUStaHAUCLTIr5DWSlveMQJinY7JvRP4DVN
-+nMRmxfYDUIlQxqX2avtwXDpGPaFJK3CrUny7g7QJXr6e47DkUSLPKyPGL3lgVWJ
-oMdsHM4lHOuf1E2INE+VNWlgBVDKbnIVhQ7LWY5wdlPWSyDQDH99bjB0GEOWzjCP
-zCP7atYsueGp+5DvpHHO1tryWLqiILYAwuA0trdLu1mki7j8pCQ1OSTxdMPagi5O
-9atRGBrGGXFdAko8z4JeB5iLVtoV7IElcB+f68O9EWjgxc0wIBr9+UA7rRRI8Cc0
-UzQcydQz0G+vaJq1K9JUM9K5qZO0QRBozt8xW9TrVzWskzBMvlnoLMnJGLhcTS2A
-u3w5fLMS4y2p/EKjKKbvVRlf+diJBOdkQz4BM+UJtAme8nZ0Aee7zoh7ZgMSrTlG
-LfHPUkU7Ou92IRFiiTLY/eo84GqOG2AyI5pjZ3bvEKr2jYhtQBAHiIhvaDuWEL6D
-ekfNOR9p3ZNpOnTQRNfrgvmlIRA9M5flkDa8he5ZDvqr+1uJ3AcHZq9vn4QiC6TE
-cKMtscJLs22i9LSf92CWWOoH6UWNsEyKGRzxTGYrmZ4=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- NOTE: can't change size of drawable, thus, emulating bolder hole when pressed with invisile (#0000) stroke -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="300"
+>
+	<item android:state_enabled="false">
+		<shape>
+			<size android:width="3dp"/>
+			<padding android:left="18dp" android:right="18dp" android:top="20dp" android:bottom="20dp"/>
+			<corners android:radius="3dp"/>
+			<solid android:color="?colorKnobHoleDisabled"/>
+			<stroke android:color="#0000" android:width="1dp"/>
+		</shape>
+		</item>
+	
+	<item android:state_pressed="true">
+		<shape>
+			<size android:width="3dp"/>
+			<padding android:left="18dp" android:right="18dp" android:top="20dp" android:bottom="20dp"/>
+			<corners android:radius="3dp"/>
+			<solid android:color="?colorKnobHolePressed"/>
+			<stroke android:color="?colorKnobHolePressed" android:width="1dp"/>
+		</shape>
+		</item>
+		
+	<item>
+		<shape>
+			<size android:width="3dp"/>
+			<padding android:left="18dp" android:right="18dp" android:top="20dp" android:bottom="20dp"/>
+			<corners android:radius="3dp"/>
+			<solid android:color="?colorKnobHole"/>
+			<stroke android:color="#0000" android:width="1dp"/>
+		</shape>
+		</item>
+</selector>

@@ -1,17 +1,20 @@
-U2FsdGVkX1+yCff3nBptWOMcB9sZyUyXblG8v/4xWla3JIHH1OTKSZYIaGM4DIED
-3A8Y/A4kGARdpB7wVM94Hw1Mfhr5eq+35GLjuICdyQ1/itWY+ojkTecQ8WWiHvje
-2Fmmum4EAj/RnRZQ3kUuOFxD25T/8MmUkSVeXVw9auSbaS7A2o48nm3Im+KunlJk
-KftNeFY0+IXcuzSA2w9/TxDVosO/JigmE6mZa0+CoNPCZQc5Hf9eQLDn0YGks/gR
-7IU7aCVobarHqQhPI72V/X2NzLiGoyNp4w8tGcC7bJEpDoKPjXCmeaHDz2M8YwdA
-SSHfEf6EeLRn3blw3+KJqBLZyJ+3qKyqTCMaJGCIEozeeQQc3E2xjTB/E4zYXaFe
-tJ1FUFQhmMc1MBxIoAS3O/9+tlnKqp6uugSH5HgCxDxSMRYv2DuVnDg8luxRBOoR
-rPR3/nuF5ljdXnrXRKYSpT1i1cj2FoMEGlpGbpZIUzQD0TU/oM3tSRb3cP4/UgHu
-1xtm0eDOIVHBGuhnQ7yfA6oukcHE8zuyVbC4ZoX88gBlUCFnAkCG+JpFDkuUJsxW
-PZPCU5+tsM51oXHaLMQAiFUi2Iw23ElPCZLw0EGDXLfff1uZVcoZSbdDSUqmq8pZ
-eSqTJCfeHd5W/B6G523ct40DEgSSWOaispqHry7xSwc0EkycCoiKRVEv+ZXcmSv9
-Ddob2vusQtTYyTW6lKLdFJCgo807d3K7mbmtyWmG7vLpOceum5DT8VdPxyedUDgG
-UGHOMnCEjByDbNzwbxXXsBhKSDvjjQegpcONGkYceNKWUQgFEaeu6/wchZzpZBso
-yLZVzsHSN5HrUDAKYfI87bsRQHEHuSZSQiQpRzNovFBXQVA5l1n0wURD8IyzRaRw
-W+gvdHYhmI2+uk+Kr3wu41MSvjVWOceimVqKQfZG4ZFmtpPmfSIpSqai9Z9ONgBh
-skMyro0i9WJHRWCQaKw6xw5sQJAJwzfaRju69P5p5D892NPWvNBpIX66BvaHEzrZ
-v3q5O4CLeK8S3Q788W7A6j6TrXOHJvYEUezG6EdfGGI=
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}

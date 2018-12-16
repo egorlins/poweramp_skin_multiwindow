@@ -1,5 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-wgAffQy+1duiuxodQwTj4CoJ5D8TJo78yIkaAh8cO7p6vrIQY1TbQ7iiOh9nT+if
-LJ8d7x1urMfiAIpk9aJg3D5H9NiphnbWFLdDG2BJmSBXINzcXYgUoPdVM4nk82et
-mzQPYq38YF+ezp4s6JgFnnwBFvVnNbkq6JHml6acCEwvdvar36VXZPGcQmmWoRzj
-N8dRiKDVal8htBHPpllGjg==
+<?xml version="1.0" encoding="utf-8"?>
+
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/shuffle_songs_32dp"
+	android:tint="?colorLessContrast"
+/>

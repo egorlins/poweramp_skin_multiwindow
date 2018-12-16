@@ -1,7 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-IbmuBr3qgmcezvki7VA0ZDZUC3gtGo22hUwzJ41HR8dOQK+LmBmQYjOGZ3nrgTAU
-02wydO4tKd/aCsyCJxEdc+IGRPYzHJrz5UkRM/YXKaDU69FmuTAfXqZoDiBuRByk
-46ji5+5pz+TkChmNfpFCxj8EgRvnOwCJuP4kMiU4HR3VAXpR4/jqwaLf1NL2Wj+V
-yCV7hD3qrA7rb0rQbU/Hcuo28sd/OihiiT90FmKJSMvjFbF7nGWg4d2wIqYBDjnh
-oimWr9Zn3EJx1IkflUC1zKRf6LdkVRVol3+KPmXo5EiDg/1lIefAPZqk+3bEYZhc
-uXxAvF1qG6R7DprdCR7MQYYCNpHQdC4+glRWAP3mhPI=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- v8 -->
+<resources>
+   	<dimen name="appwidget_4x4_lr_margin">7dip</dimen>
+   	<dimen name="appwidget_4x4_width">-1px</dimen><!-- fill_parent for atrix -->
+   	<dimen name="appwidget_4x4_height">-1px</dimen><!-- fill_parent for SGNote -->
+</resources>

@@ -1,4 +1,11 @@
-U2FsdGVkX1+yCff3nBptWALmwKrdY2mJMRGdEroCU/BDIIqaeYbGP838Dm48uzoB
-FfaKJ7o1jdSR7DmiOucwD9ve45NZpjloSzVbL/qfOt4oqzaJ23PoGo5bdhgMTcRK
-okR8GoxSADHdX2YMNjzH2EhJdl9mCXz8vtuXWajymeLgv8UEw1eG0Jl97GtzxjrB
-FsMahoYesq1D7rsB9asyJ3ehLLIC7czY3XACFwB8QHY=
+*.iml
+.gradle
+/local.properties
+/.idea
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild

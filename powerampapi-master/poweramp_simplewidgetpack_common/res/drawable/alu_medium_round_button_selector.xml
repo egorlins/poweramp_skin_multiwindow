@@ -1,9 +1,7 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9/8h5/rUfgemSwTZK9SeL8bRQZicl2EEUPcW3VKgckit
-AQ2OvZG5oahH77BdFgxUWafIoqS+TocFurN2OhHnE7hgA7VX7GMOE4Q4ZJcLDsEZ
-7clbM8kZRIsiGSvqooQDBpnszxTXDiDhzs8BBDCHZgvZ3bMeAisdSUDfyCvl4Kuz
-E7qGzOSpLNV8jSeUp6e/4BtRUgyQAks8cbBGQ/7HuXkSsVLWJhxXD+21r9avT0fw
-SlcGXZHwLyR3I4t3xb30JXo6pDsCYwNtkPuraaRLj8QWr0CFV8ZXgoaTJJKrZISN
-IJQL3gsT9uPoHfeyrmrCfDe3HQfxZ9PvqsGJUhmKc4Z5iXS92l5NVE3j2vQwF+3t
-bsgsdnDmjbvFpDqgYmzb5/tVnKWxN5qWIkN23yBnvEQ=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/alu_medium_round_button_pressed" />
+    <item android:state_focused="true" android:drawable="@drawable/alu_medium_round_button_focused" />
+    <item android:drawable="@drawable/alu_medium_round_button" />
+</selector>

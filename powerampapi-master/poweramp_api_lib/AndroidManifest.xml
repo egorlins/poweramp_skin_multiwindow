@@ -1,6 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-Sxa55y8aJEvv9fXhwSEcsl4d++IIRN+DkY5WrNJN+sY8M4qVoD5P9JSR6AWNH1iw
-gPiy/dzuiUMlUQXA94zCq8Tgj3/0/RKM4aVU6hNMtSIWuT3Hz5WdFZHVO0SnnIYX
-emhACZXhch7fdRuU6MNhIlIfsdhMdqpBbbtaVXcoV2ZDYG0maq+JbuoZFUelM/yt
-9f1zz6E8483pjiwxVUymprDRzVQOJPVtXPCu87qqptjhHUkqzIZcSO9Ne9ji9q/I
-sBX3PkSYQdYxno1NWMnlig==
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.maxmpz.powerampapilib"
+      android:versionCode="1"
+      android:versionName="1.0">
+</manifest>

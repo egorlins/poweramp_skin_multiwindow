@@ -1,88 +1,78 @@
-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
-jLHyw+TSvIOzjNmxh2Z+8Q==
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.player;
+
+public interface PipelineConsts {
+
+	// For getPipelineParamInt()
+	public static final int SUBSYSTEM_PIPELINE   = 0;
+	public static final int SUBSYSTEM_DSP_TH     = 1;
+	public static final int SUBSYSTEM_DECODER_TH = 2;
+	public static final int SUBSYSTEM_OUTPUT     = 3; // probably change to pipeline?
+
+	// For queueMsg()
+	public static final int PLUGIN_ID_SUBSYSTEM_PIPELINE   = 0;
+	public static final int PLUGIN_ID_SUBSYSTEM_DECODER_TH = 1; // NOTE: sync with NativePlguinManager.PLUGIN_ID_SUBSYSTEM_LAST
+	public static final int PLUGIN_ID_SUBSYSTEM_DSP_TH     = 2;
+
+	public static final int PA_OUTPUT_PARAM_SAMPLE_RATE         = 1; // NOTE: requires deviceId arg, otherwise returns for 0 == HEADSET
+	public static final int PA_OUTPUT_PARAM_SAMPLE_BITS         = 2; // NOTE: requires deviceId arg, otherwise returns for 0 == HEADSET
+	public static final int PA_OUTPUT_PARAM_ANDROID_SESSION_ID  = 3;
+	public static final int PA_OUTPUT_PARAM_RESTART_LATENCY_MS  = 4;
+	public static final int PA_OUTPUT_PARAM_ANDROID_AUDIO_STREAM = 5;
+
+	// Internal
+	public static final int PA_OUTPUT_PARAM_AUDIO_IO_HANDLE     = 0x80000001; // NOTE: supported by atoutput only
+
+	// getPipelineParamInt() SUBSYSTEM_PIPELINE
+	public static final int PARAM_LAST_DECODER_IX       = 1; // Never used ATM
+	public static final int PARAM_LAST_DECODER_ID       = 2;
+
+	// getPipelineParamInt() SUBSYSTEM_DSP_TH
+	// NOTE: sync with dsp_threads.h
+	public static final int DSP_TH_OUTPUT_ID            = 1;
+	public static final int DSP_TH_PIPELINE_LATENCY     = 2;
+	public static final int DSP_TH_OUTPUT_LATENCY       = 3;
+	public static final int DSP_TH_OUTPUT_CAPS          = 4;
+	public static final int DSP_TH_SAMPLE_RATE          = 5;
+	public static final int DSP_TH_OUTPUT_FORMAT        = 6; // The output format from features (e.g. the target format, not actual output device format)
+	public static final int DSP_TH_BUFFERS              = 7;
+	public static final int DSP_TH_BUFFER_FRAMES        = 8;
+
+
+	public static final int PA_OUTPUT_CAP_ALWAYS_UNITY_GAIN        = 0x0010;
+	public static final int PA_OUTPUT_CAP_NO_HEADROOM_GAIN         = 0x0020;
+	public static final int PA_OUTPUT_CAP_NO_EQU                   = 0x0040;
+	public static final int PA_OUTPUT_CAP_FLT_EXTENDED_DYN_RANGE   = 0x0080;
+	public static final int PA_OUTPUT_CAP_PAUSE_FAST_VOLUME        = 0x0100;
+	public static final int PA_OUTPUT_CAP_SEEK_FAST_VOLUME         = 0x0200;
+	public static final int PA_OUTPUT_CAP_TRACK_CHANGE_FAST_VOLUME = 0x0400;
+	public static final int PA_OUTPUT_CAP_NEEDS_VOLUME_PROVIDER    = 0x0800;
+	public static final int PA_OUTPUT_CAP_CUSTOM_MASTER_VOLUME     = 0x1000;
+	public static final int PA_OUTPUT_CAP_NO_DUCK                  = 0x2000;
+	public static final int PA_OUTPUT_CAP_TRACK_PLAYBACK           = 0x4000;
+	public static final int PA_OUTPUT_CAP_NEEDS_VOL_UI             = 0x8000;
+
+	// NOTE: plugininterface-internal.h
+	// NOTE: used for get_options() only
+	public static final int PA_OUTPUT_CAP_FORCED_UNITY_GAIN      = 0x20000;
+	public static final int PA_OUTPUT_CAP_OEM_VARIANT            = 0x40000; 	// Used for caps as well
+}

@@ -1,4 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04kTuRF7OHOcnBa7wac0WJ/axPdibarjsuw6f7b7hxtz6
-vOZnIvJ+6qqflsIU/+TedE5OSe2jc6ixQ3pDKJA8qUpkh1/gZl4sj7LxpA9pKzQR
-POfPEcpEkUopeQvGXbMgr526h5FmVXWQbXv/4aa8eA4I56WLpWIIxCYUzRbwAh3I
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<color name="matte_text_color_1">#e4f2ff</color>
+	<color name="widget_options_bg_color">#99000000</color>
+</resources>

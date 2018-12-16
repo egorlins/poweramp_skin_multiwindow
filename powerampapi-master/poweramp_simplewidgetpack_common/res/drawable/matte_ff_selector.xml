@@ -1,8 +1,7 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa96bf/5S39CJEJMfwV95ZjsMrE/coRZpteVh8rgM73/ag
-QP1s49bZinPrebaFDsZg3/ayr+32sPNUO37eJCl4W9kORcv5i5heliFb36hywVNb
-sD1fsM9JnDmbiVV1+o8kjcWVz0YyPkhXWK0isYBKonAUJ3rKLKfbgtiWOwBmZtYG
-3k0h23EdBBoq8OsWzdsrpR3t+S9etRwne/6Xba0z/E9GrxqAxVb1WryMSyHkdFVQ
-lBh7z6GrpkZ6zWSMq1OGHmu6xAvJ4zOxNuKJlEE+ALyPaOnIMGmYwJEF7Gpg4QoQ
-ZtQKjNkeADnKEX1TD9uM+GkqewjFYgWVKf2iCWp/JVk=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" android:drawable="@drawable/matte_ff_pressed"/>
+	<item android:state_focused="true" android:drawable="@drawable/matte_ff_focused"/>
+	<item android:drawable="@drawable/matte_ff"/>
+</selector>

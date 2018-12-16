@@ -1,17 +1,21 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04qgrOt6X/XzChd4TU7UgFJjCTfORPuxB8Pq/OioORZjq
-MXonOzJSeY+/bBBeaJF0Z0dw3VfpJffKt3nFD0Zp+QrcqwDfulwITqgxlzv5x19q
-VBvPVSiToNFfPkkFLFYCBd9oz0npvVVOh8pPuwdOnXh7QgswY12Fq7cdJHgj75cH
-Y+ldsgxNgvMPZAgJWtYu9zabVs6aNU5eIsei/tVZdGo/EU4+DwCzjaoAXdrOLDf1
-Me2Dn5M8XTu6rAKJLxs4m8GDGf6mbCmcb6EkhmWm1YU0iZllvKHXCt+X2IT2OZzH
-WYpAkJcbPfdqXsSKRMn3c6meyMZk2B3FWx9Ok57mDijSpv7Lvx9nbhxTpEMeF8zW
-jnht1gQrgilxOyRK+OBm9vGBWmWoGPjiss/K1RjZAxmUtu2XDHoC+YiI+xPU0349
-pvNeqgD65ilaVrQWCvQ4X50IENeD3JSRuPbMbOsKbCsCG7gzftLtA2HzUOVVdph3
-4d9YR4niA0/we3qGQKDXVhspKxGn+ldvqbUqtFzA+IpC62yL3AI4WWWuyj94glKv
-21DZrnPiSs3IkuUGfT2kIiya5zxmnd/lnws+ALcBlvMtb9jv0Cawhcu3BOpoCt7Q
-l86P6ncXcs/ny9BSmIPD1N0lRHP2yhXJS3cPp2w6nyIdqeD4dLxAcpYrxxm2W3h6
-pSVd5z/daivG2bwEG/C9NhSg0DLnIKdkeYRn0u3Cd8xebJyyMFiII+CNLZacTAqg
-xrDcQUyLxaryV+75oBiK/rFgGBPrYeeBIOcwm0UrOUCes5/RYrYYUZqZJFNsRWHt
-ePlwiuBXkohgTEpPm5q2hhnjnFe+MV41WJK77Bn+QlAPkhtCukaZOIzR9Eje4AgY
-7wOqEhZFN/bnC59a4XlocELI9OfG2IZyIYd/IwtrtFIuK5zfRpvnezxmBJALOIbP
-3MlDFY/T7tnRLK/j1W6jj/woCXa6Dj9hkYu4evjmrB4=
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string name="widget_4x1">Poweramp 4x1</string>
+	<string name="widget_4x2">Poweramp 4x2</string>
+	<string name="widget_2x2">Poweramp 2x2</string>
+	<string name="widget_4x4">Poweramp Large</string>
+	
+	<string name="configure_widget">Configure Widget</string>
+	<string name="background">Background</string>
+	<string name="alt_scale">Fit Album Art</string>
+	<string name="done">Done</string>
+	<string name="bg_opacity">Background Opacity</string>
+	<string name="album_art">Album Art</string>
+	
+	<string name="widget_style1">Style 1</string>
+	<string name="widget_style2">Style 2</string>
+	<string name="widget_style3">Style 3</string>
+	
+	<string name="widget_no_songs_selected">&lt;No song loaded yet&gt;</string>
+</resources>

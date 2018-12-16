@@ -1,13 +1,16 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-3ZWLlro5HMvSB3uZWSeOcGHtdQiOfVd+hh6mQcO0qoeUmAdWLzhmlJ/Bb8TM00qm
-GOav3yAx0plqjHP+pcDP3DakwCfRYetvVp1kZzGQLJV0cYTFsFhLXKgpyUIr2TEp
-k1QqHG9YknbIDurUkSc1Z9a0psrHIxlJmmmp2gakdDIfzyOzN7WIILol/SKeasNw
-fJjr3f1iZ9Gu5onBkwjJOzkyfbghwqBpDsI94m2Qo3ZQm1IjoL2KX6ouZgPGHxfL
-RvJGw2vJ1qi/GnCF/sP8kC906esi3ZC6FDBZqyDVmKNIvT8ZroqP5PAva3fvDbPN
-7ADg4e16LuSe7NeVccK2IFhAopXzNGI1J/4vgblvbkib8RzXiOTGLRdsU+mDOPnM
-4Ng3tbSaRpboOpsf9l+0YO+FBLns7nPUBz0eiGLrYaReI6lD3DAdwcoYI4N14D+B
-4X9jIiYa9DgFnPtYjr7QSzp0xd42eRIV36hhPsv12tL8w3ned7aLl5+5kM3r7jdo
-yAtWXtra13i7XY5kR+X466Tqdfr1zkX4XROGOqMUU4QFFUMNusD/K5tHAlGI+nVw
-g4cE3G5LCVnT8lag89pFl4F1Hh3PJUvz84/UEsBSOUkZ+YIST+pgRT0II6YOwkDZ
-27LamE6O/rb388Nwvju04EUV+QZta1IfEuqNz40Uxtzfjfa3BXxWSInYFxl9Yo53
-b1Gg92bbH0iv14b2/+XxiBwx5GeUdRiH7+/CMlXtt5k=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These should be sorted in desc order as they are in fact bitset values (android selects first match) -->
+<level-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="250">
+
+	<item android:minLevel="@integer/ITEM_BG_LEVEL_POPUP" android:maxLevel="10000"
+		>
+		<shape>
+			<corners android:radius="?corners_popup"/>
+			<solid android:color="?colorBgPrimary"/>
+		</shape>
+	</item>
+	
+	<item android:minLevel="0" android:maxLevel="0" android:drawable="@drawable/ripple_rounded_medium"/>
+</level-list>

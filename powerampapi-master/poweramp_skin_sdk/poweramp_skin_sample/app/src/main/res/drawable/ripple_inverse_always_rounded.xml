@@ -1,6 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-Ebrj3NMR2Sh9IORfbVvrY6J/3Q9g4QUElLCsiTRvfUaOpsTLiCgQHoSR2SE4cSBk
-WeM8WQh0a7R4o9cZnHnUUnbBhLNTfk+bK/qqzAFnq2YNmMpsZBMQllbSSwtcjKUJ
-YrP8xj8Xgp/RMhCi9VjreUcgrkOwnYXu9G8Kc6zipX9WiN1U5SZBMsJcj8E5pz9d
-Mdv5320Ntc9cakFzhPiEnPat0/9JyIW78cVf162feAAVuJUrhq9o+DIJUp/0/jqa
-KBkgDqm/xJP69pI/05YGgQ==
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="?com.maxmpz.audioplayer:colorInverse">
+	<item android:drawable="@drawable/inverse_alawys_rounded" />
+</ripple>

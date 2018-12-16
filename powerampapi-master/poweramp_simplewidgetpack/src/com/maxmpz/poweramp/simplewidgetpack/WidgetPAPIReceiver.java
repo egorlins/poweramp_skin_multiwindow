@@ -1,35 +1,42 @@
-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
+/*
+Copyright (C) 2011-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with PowerAMP application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpack;
+
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+
+
+/**
+ * PowerampAPI broadcast receiver.
+ */
+public class WidgetPAPIReceiver extends BroadcastReceiver {
+	private static final String TAG = "WidgetPAPIReceiver";
+	private static final boolean LOG = false;
+	
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		if(LOG) Log.e(TAG, "onReceive intent=" + intent);
+		context.startService(intent.setClass(context, WidgetUpdaterService.class)); // Just redirect event to Service.
+	}
+}

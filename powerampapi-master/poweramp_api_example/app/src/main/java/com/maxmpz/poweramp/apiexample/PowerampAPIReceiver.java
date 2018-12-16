@@ -1,20 +1,33 @@
-U2FsdGVkX1+yCff3nBptWHBa7XEDCy+BQ+/9OpDo8vmSiBlA0C2NoQYvRQdVlTvm
-0JKt8DEja25PZuOTKeOUQVb8LzYzTLqV7Y8lIkTgXyW3UgIVZZr3Vdqq966XcV16
-B6K9AY4b9kE3W0P0sDDWKO06RnJInywibMd6cWHTmMfU0MUlKCCRUv6QYj7n8QSU
-TvEsqjl3ohGiMFvcLxcwsR5sjaBT9G+V+7vmp+F0c4bOsl7fZVUYYl3KwPazBupK
-c60FzWSfmENe8/FAe6J1GK1tFZ5nXyDCJoTovwjOYMYvUOmpPUcK66JQUGx+RpDh
-GPJGcm0FEikjPB76MWGE2ENFU+11pLO3oP/8Rz198W14qlmR/hKbU0P9r9P7FcUt
-pZIZZdw/C7RaTHQ5wDsuMdm/p52iWgIQEZsLS1gJk8clnn32D8RMDrnzLttf4ltQ
-GnthEiOdaEv4v5HPZCCRUEXdOJS5ayxZ5V1YQu3qQJj8gcYZzKFWOsYlJAqRRKyx
-He94yFLLf/s7XTw3aH1DunZ7+aLhf2KAsxIRjCm8AUOi/ISceZ/EeV1cetOxim70
-+Qq08EFINsn1a9XUs8ovkm4Nejc2WyAXfJ2e4t76Z5Gk6DoNYqMvhTIOuR1hOK82
-lN59hKcH9hCrlmPy/I37u/JHnQbJwy5fO7lP7f4L6uFkOCCwc1F8nYuz+5FLZVmo
-mRAVRJ86L2BDEEVWmeQmFC3kBMD2JvszMVOJ6NNSkgZIGTAn4VE+zocQcq4ZHTfu
-d0gY5kTa6sXdDkiyh4Js/d2KiQHkqMu3tYEJB6Km+gZjEE1HlLpNABs/9Pc30ZYV
-gj5KHkoHVp99oUNY1ORrQEDLj7PhTlSuRql6kc+fL3PwgABX2BLyedxMo7uwb0a9
-+XmTOZj7bAAwMZjQqDH5XgzypcMQs4gUTjXor5PaPDcm3BjCGg0z1Aqahyj7XoDq
-2RyzHYRuieOsB4obVvTuJZArOuvmxSi1QEfh9MMFhwUlKO6tsU4ZJreZ21JBhqEa
-RQnmjgCmNH57R3d9+J9O8ZrBknGZMCgJ7cDxZ2Pgt4S6sOafLVSfvUNa1mAUZUjI
-qjsQbReETqsEOU0+PQ39wly35iRUlO7wcvnpFwZ5vz7ZkcpxvCZDqLXR95Q8oDEv
-gOk5ZZxaox/croYp8PGxpB+pTNmp1l81n74w+3Q5CGucaeu7Zm9nudtVLAUFFsBZ
-8SbvMtdU0sfH7Y4PRrnXWBdHVJ7L2QgP1iBNri7g8vk=
+package com.maxmpz.poweramp.apiexample;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.util.Log;
+
+import com.maxmpz.poweramp.player.PowerampAPI;
+
+public class PowerampAPIReceiver extends BroadcastReceiver {
+	private static final String TAG = "PowerampAPIReceiver";
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		String action = intent.getAction();
+		if(action != null) {
+			switch(action) {
+				case PowerampAPI.ACTION_STATUS_CHANGED_EXPLICIT:
+					MainActivity.debugDumpIntent(TAG, "ACTION_STATUS_CHANGED_EXPLICIT", intent);
+					break;
+
+				case PowerampAPI.ACTION_TRACK_CHANGED_EXPLICIT:
+					MainActivity.debugDumpIntent(TAG, "ACTION_TRACK_CHANGED_EXPLICIT", intent);
+					break;
+
+				default:
+					MainActivity.debugDumpIntent(TAG, "UNKNOWN", intent);
+					break;
+			}
+		}
+	}
+}

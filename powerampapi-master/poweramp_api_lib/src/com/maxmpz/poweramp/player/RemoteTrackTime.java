@@ -1,97 +1,153 @@
-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
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.player;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Handler;
+import android.util.Log;
+
+
+/**
+ * This class tracks Poweramp in-song position via as few sync intents as possible.
+ * Syncing happens when:
+ * - your app calls registerAndLoadStatus() (for example, in activity onResume).
+ * - when Poweramp seeks the track (throttled to 500ms)
+ * - when track is started/resumed/paused
+ */
+public class RemoteTrackTime {
+	private static final String TAG = "RemoteTrackTime";
+	private static final boolean LOG = false; // Make it false for production.
+
+	private static final int UPDATE_DELAY = 1000;
+
+	private Context mContext;
+	int mPosition;
+
+	long mStartTimeMs;
+	int mStartPosition;
+	private boolean mPlaying;
+
+	Handler mHandler = new Handler();
+
+
+	public interface TrackTimeListener {
+		@Deprecated
+		public void onTrackDurationChanged(int duration);
+		public void onTrackPositionChanged(int position);
+	}
+
+	TrackTimeListener mTrackTimeListener;
+
+
+	public RemoteTrackTime(Context context) {
+		mContext = context;
+	}
+
+	public void registerAndLoadStatus() {
+		IntentFilter filter = new IntentFilter(PowerampAPI.ACTION_TRACK_POS_SYNC);
+		mContext.registerReceiver(mTrackPosSyncReceiver, filter);
+		try {
+			mContext.startService(PowerampAPI.newAPIIntent().putExtra(PowerampAPI.COMMAND, PowerampAPI.Commands.POS_SYNC));
+		} catch(Throwable th) {
+			Log.e(TAG, "", th);
+		}
+
+		if(mPlaying) {
+			mHandler.removeCallbacks(mTickRunnable);
+			mHandler.postDelayed(mTickRunnable, 0);
+		}
+	}
+
+	public void unregister() {
+		if(mTrackPosSyncReceiver != null) {
+			try {
+				mContext.unregisterReceiver(mTrackPosSyncReceiver);
+			} catch(Exception ex){}
+		}
+		mHandler.removeCallbacks(mTickRunnable);
+	}
+
+	private BroadcastReceiver mTrackPosSyncReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			int pos = intent.getIntExtra(PowerampAPI.Track.POSITION, 0);
+			if(LOG) Log.w(TAG, "mTrackPosSyncReceiver sync=" + pos);
+			updateTrackPosition(pos);
+		}
+
+	};
+
+	public void setTrackTimeListener(TrackTimeListener l) {
+		mTrackTimeListener = l;
+	}
+
+	// REVISIT: not used to update duration here ATM
+	public void updateTrackDuration(int duration) {
+		if(mTrackTimeListener != null) {
+			mTrackTimeListener.onTrackDurationChanged(duration);
+		}
+	}
+
+	public void updateTrackPosition(int position) {
+		mPosition = position;
+		if(LOG) Log.w(TAG, "updateTrackPosition mPosition=>" + mPosition);
+		if(mPlaying) {
+			mStartTimeMs = System.currentTimeMillis();
+			mStartPosition = mPosition;
+		}
+		if(mTrackTimeListener != null) {
+			mTrackTimeListener.onTrackPositionChanged(position);
+		}
+	}
+
+	protected Runnable mTickRunnable = new Runnable() {
+		@Override
+		public void run() {
+			mPosition = (int)(System.currentTimeMillis() - mStartTimeMs + 500) / 1000 + mStartPosition;
+			if(LOG) Log.w(TAG, "mTickRunnable mPosition=" + mPosition);
+			if(mTrackTimeListener != null) {
+				mTrackTimeListener.onTrackPositionChanged(mPosition);
+			}
+			mHandler.removeCallbacks(mTickRunnable);
+			mHandler.postDelayed(mTickRunnable, UPDATE_DELAY);
+		}
+	};
+
+	public void startSongProgress() {
+		if(!mPlaying) {
+			mStartTimeMs = System.currentTimeMillis();
+			mStartPosition = mPosition;
+			mHandler.removeCallbacks(mTickRunnable);
+			mHandler.postDelayed(mTickRunnable, UPDATE_DELAY);
+			mPlaying = true;
+		}
+	}
+
+	public void stopSongProgress() {
+		if(mPlaying) {
+			mHandler.removeCallbacks(mTickRunnable);
+			mPlaying = false;
+		}
+	}
+}

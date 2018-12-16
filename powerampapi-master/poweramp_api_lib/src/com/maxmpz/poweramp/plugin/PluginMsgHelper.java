@@ -1,114 +1,154 @@
-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
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.plugin;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.IntBuffer;
+import org.eclipse.jdt.annotation.NonNull;
+
+public class PluginMsgHelper {
+	public static class PluginMsgException extends RuntimeException {
+		private static final long serialVersionUID = -5131019933670409856L;
+
+		public PluginMsgException() {}
+
+		public PluginMsgException(@NonNull String msg) {
+			super(msg);
+		}
+	}
+
+	// sync with plugininterface.h
+	public static int MSG_TAG 			 = 0xF1F2F3F4;
+	public static int HEADER_SIZE_INTS   = 8;
+	public static int MAX_SIZE_INTS		 = 1024;
+	public static int MAX_SIZE_BYTES	 = MAX_SIZE_INTS * 4;
+	public static int HEADER_SIZE_BYTES  = HEADER_SIZE_INTS * 4;
+
+	public static int IX_PLUGIN_ID      = 0;
+	public static int IX_PLUGIN_ID_INT  = 0;
+	public static int IX_TAG            = 4 * 4; // 1
+	public static int IX_MSG_ID         = 5 * 4; // 2
+	public static int IX_FLAGS          = 6 * 4; // 3
+	public static int IX_DATA_SIZE      = 7 * 4; // 4
+	public static int IX_DATA           = 8 * 4;
+	public static int IX_DATA_INT       = 8;
+
+	public static int FLAG_TYPE_MASK            = 0xF000;
+	public static int FLAG_TYPE_SYNC_NO_CONTEXT = 0x1000;
+	public static int FLAG_TYPE_SEND_OUTSIDE    = 0x2000;
+	public static int FLAG_TYPE_BROADCAST       = 0x4000;
+
+	public static int FLAG_BROADCAST_GROUP_MASK = 0x003F;
+
+	// Volume updates
+	public static int PA_BROADCAST_VOLUME       = 1;
+
+	public static int MSG_ID_BROADCAST          = -1;
+
+
+	public static int calcBufferSizeInts(int desiredSizeInts) {
+		return HEADER_SIZE_INTS + desiredSizeInts;
+	}
+
+	public static int calcBufferSizeBytes(int desiredSizeBytes) {
+		return HEADER_SIZE_BYTES + desiredSizeBytes;
+	}
+
+	private static void writeHeader(@NonNull int[] buf, int pluginID, int msgID, int flags, int desiredSizeInts) {
+		buf[0] = pluginID;
+		// 3 ints are zeros (reserved for Poweramp msg header).
+		buf[IX_TAG / 4] = MSG_TAG;
+		buf[IX_MSG_ID / 4] = msgID;
+		buf[IX_FLAGS / 4] = flags;
+		buf[IX_DATA_SIZE / 4] = desiredSizeInts * 4;
+	}
+
+	private static void writeHeader(@NonNull ByteBuffer buf, int pluginID, int msgID, int flags, int desiredSizeBytes) {
+		buf.putInt(pluginID);
+		// 3 ints are zeros (reserved for Poweramp msg header).
+		buf.position(IX_TAG);
+		buf.putInt(MSG_TAG);
+		buf.putInt(msgID);
+		buf.putInt(flags);
+		buf.putInt(desiredSizeBytes);
+	}
+
+	public static int[] createIntMsgBuffer(int pluginID, int msgID, int flags, int desiredSizeInts) {
+		if(desiredSizeInts > MAX_SIZE_INTS) {
+			throw new PluginMsgException("bad desiredSizeInts=" + desiredSizeInts + " MAX_SIZE_INTS=" + MAX_SIZE_INTS);
+		}
+		int[] buf = new int[calcBufferSizeInts(desiredSizeInts)];
+		writeHeader(buf, pluginID, msgID, flags, desiredSizeInts);
+		return buf;
+	}
+
+	// NOTE: returned ByteBuffer is positioned to the first data position
+	// NOTE: direct buffer makes no sense in our case and is slower.
+	public static @NonNull ByteBuffer createBufferMsgBuffer(int pluginID, int msgID, int flags, int desiredSizeBytes) {
+		if(desiredSizeBytes > MAX_SIZE_BYTES) {
+			throw new PluginMsgException("bad desiredSizeBytes=" + MAX_SIZE_BYTES + " MAX_SIZE_BYTES=" + MAX_SIZE_BYTES);
+		}
+		ByteBuffer buf = ByteBuffer.allocate(calcBufferSizeBytes(desiredSizeBytes));
+		buf.order(ByteOrder.LITTLE_ENDIAN);
+		writeHeader(buf, pluginID, msgID, flags, desiredSizeBytes);
+		return buf;
+	}
+
+	public static @NonNull String msgBufferAsString(@NonNull int[] buf) {
+		if(buf.length < HEADER_SIZE_INTS) {
+			throw new PluginMsgException("bad buf length=" + buf.length);
+		}
+		return toString(buf);
+	}
+
+	public static @NonNull String msgBufferAsString(@NonNull ByteBuffer buf) {
+		if(buf.capacity() < HEADER_SIZE_BYTES) {
+			throw new PluginMsgException("bad buf capacity=" + buf.capacity());
+		}
+		int pos = buf.position();
+		buf.position(0);
+		IntBuffer intBuf = buf.asIntBuffer();
+		buf.position(pos);
+		int ar[] = new int[intBuf.capacity()];
+		intBuf.get(ar);
+		return toString(ar);
+	}
+
+	@SuppressWarnings("null")
+	private static @NonNull String toString(@NonNull int[] array) {
+		if (array == null) {
+			return "null";
+		}
+		if (array.length == 0) {
+			return "[]";
+		}
+		StringBuilder sb = new StringBuilder(array.length * 6);
+		sb.append('[');
+		sb.append(array[0]);
+		for (int i = 1; i < array.length; i++) {
+			sb.append(", 0x");
+			sb.append(Integer.toHexString(array[i]));
+		}
+		sb.append(']');
+		return sb.toString();
+	}
+}

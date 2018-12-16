@@ -1,16 +1,15 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-bLRhZW6dTc2jRc8Y6Hsbn68cfWLJ8anBGX4tJtr0qC80rFET7eT11/d+JmOPAxp6
-5AtlW35ZSnFhIAU8TRejy4iITWFbILo856W+6WTTa4pBemAdF2TQby/wpZOg5Pit
-i3pHRna9Fzi03GfoVOQjSj4vOlwfgrWwexGug6XPKVUQW2YYHnDCW2tgCm4K8bya
-0neQoldqZT1aHfTbHG884ts7WMLNuMBBPlNfNW2JfIEY/Fqtrmm1Sd+HBoZX5Km/
-Kn/oacDZdrEPVQNq0va7K+jl8zOTDLfT0JZy8pH/CfylfziMKOS5S8hGmUdV65Nz
-oQjnJUCX37IXp72DErLOsCXoc1mUyNtDa2ZddRc3cP/KT/xNSI+EfzLG3s8AqOS6
-z7bBha4QhXHB4CX8jRhxYn4exWTyAlnS3+9e3qTMKisAA9lsCn2ZUNDgPd/CYzv1
-yLhbgjNj1MUFkx+Wt4wGFw/I9VKXPcX3fny0S4Z1TpHi9jdwnvVOehrQL15hdb1R
-J3h8c2loFJdOTL+Lf74Ug3eSNr7oHR7kA7N/qXv8OZ6sYsm4ggZpaVMCp7bc3s/N
-2/eYxEQIyzY96s3/UNCDT46nomgSTG56WkVomolHN/9yoLJ2qozF91H6YRg7GPem
-Y3trhrOCsua6nhJG0cXplocaYx0Oqac4lXDTCkZF9VqETUzdZ0TzJehW+T6aukHg
-dy4eV0Xj4HHaUCaFP9LMDgROwRek55vgpVghXp9Bm41/DgdPWVTNWQOr02kMHqMB
-4sVVyjma0NBprNTuCRz+V9hxHENgdbh8OQJlHrLLQ1fTSk3KpdrqpaHodXFh/Ivl
-dfLp399uLzaRMXGESar4Y1sUxb7xFFmqQXBbiVz1kcf/OKqrIyIa7V0L8aBLyCsx
-2mE5aXYAWbQSBXbMxH0wpw==
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- values-normal-hdpi - Samsung Galaxy Note (ICS)/HTC Butterfly? Butterfly reports normal screen, but still eats values from here. -->
+<resources>
+   	<dimen name="appwidget_4x4_minWidth">350dip</dimen>
+   	<dimen name="appwidget_4x4_minHeight">430dip</dimen>
+
+   	<dimen name="appwidget_4x4_lr_margin">12dip</dimen>
+   	<dimen name="appwidget_4x4_tb_margin">0dip</dimen>
+   	<dimen name="appwidget_4x4_width">-1px</dimen>
+   	<dimen name="appwidget_4x4_height">-1px</dimen>
+   	<dimen name="appwidget_4x4_height_config">520dp</dimen><!-- FILL_PARENT(-1px) is now broken on N7000/Butterfly -->
+   	
+   	<dimen name="appwidget_small_configure_width">318dip</dimen>
+</resources>

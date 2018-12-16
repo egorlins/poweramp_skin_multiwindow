@@ -1,8 +1,15 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-tSTp46DHuZD7rbGGsG5g1xyBGIWqLRwgKC9jvf9nT/YEFBD0QuuDg1pS5E9m8FdP
-jdb120ox4b0Wnrx6S4jcdrUJOuFXWIP+bEJQu4MFpY2XVeiEl3Z3aTwUlMHDOAFj
-0IYtP5d4kXDvV9TXESAfpO8icNz6bUkvVMq6llN1Mk27UniqA5XCGBq0PNQLbwrX
-ZjF6BEQFRgnQPFryJcum1xx8iacXevPvN7/izs85r0+PgIjQUJEaDx8evhMebZcX
-3FkBJmMWIl+DTxCGvMVB5ALIcoNbf0i0LPBoLiyxfhiksw8tUth3sz4ZrhL6Qhyw
-d6sQwOGHv6LM87FNvMPojWsQqMfK9Wt0kFtPUAgFjucXtFPonL7OxRNOVUze99MZ
-t4lXyqADqczETTlJoWLSOpSGJvQzHwXSHx6xuxrrosU=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout -->
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/image"
+		
+	android:scaleType="centerCrop"
+	
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+
+	android:adjustViewBounds="true"
+	android:minHeight="500dp"
+	android:minWidth="500dp"
+/>

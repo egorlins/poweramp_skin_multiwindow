@@ -1,13 +1,15 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-bLRhZW6dTc2jRc8Y6Hsbnzrxt8BRK8bue+jRYgEVK786OV4Z5KfQI5q8joCLFreY
-Rioy21lOxrrnbNEmlKfVzHborEHyKAl88AJ87j3ZbvjZTP2mploRVwFlE9PCFJs0
-XtXP1uJdMWP0CFK17AyO0KFzvi+869PA4nKz4Yq9FX57XVG2vBpDZ+p4QFrXccss
-j2Pok08RgrZkb6rA9SSNwduhKnAkfbZ51hplWx+9HJuVfNlDgFo0yNZ2zi1hq/5R
-CD3Gi7B89f5llNyU9f4WJJJHVxi/58dsnJBjyXfdLCocGOn1see+bABpaOX46iJ0
-zzuJSBS+DkaiQuKVAkRJIZ1CDZXZosMz8iPUdZsaMv+U+8YEfrFmdYWCgDvw4sjd
-44oCAAt30lttCdOowUjTHTRAJPGcuG981E8gSrw9aE2ufLD5EeOE+ElqlyCUr49I
-9tITaSDrWyzs8YH2HS1DBWgc84UBwiwiwmpoDWYSN0FLVQJJ/d3Q7PxrXPFNGmNq
-g1pCo2kwYdUY3BYP8PdlM6wfcyq9xrLJ1TPIfJob0bIJHWU0WHd2L8QgGWxh5/jA
-SFjH4o1uwBG1STu6StgviqyhOqUu6c9nAED33tYceWOZpXyPYjFPkImIcVCGVeoP
-fe+WEGCRqcU5bHUUtSA7YmhoKnZbO6yjMSkZ35Eo/TpIgitbbsASXfnWSPpjWpTl
-HK8AMkqTcdNyY4TLjAkZmRs52t80bMw9uoSheXmqV10=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- values-land -->
+<resources>
+   	<dimen name="widget4x2_height">-1px</dimen><!-- fill_parent. Overriden for tablets. For phones use all avail height. -->
+   	<dimen name="widget4x2_controls_marginBottom">2dip</dimen>
+
+   	<dimen name="widget4x2_lines_marginTop">2dip</dimen>
+   	<dimen name="widget4x2_counter_marginTop">0dip</dimen>
+   	<dimen name="widget4x2_controls_margin1">-8dip</dimen>
+   	<dimen name="widget4x2_controls_margin2">-12dip</dimen>
+   	
+   	<dimen name="appwidget_4x1_configure_height">76dp</dimen>
+   		
+</resources>

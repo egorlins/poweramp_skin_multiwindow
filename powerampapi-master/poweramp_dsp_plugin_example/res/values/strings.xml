@@ -1,6 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-/tW56zzJi6mrtAkIpm7AaRNeGSY1MnCQLz7azu3lPdgwgfCKJvl4yMKc2+xpm8z6
-HZbYPK/ZlZZIaawg4T7JMCQn9TxSj0F6Huc8B/iMy1YDAdvy/MFUWFRQoaEn2S7M
-HO3/YooLyJDIcET3u9xx8hIskn0N5oOMNU3yPXQIRWoRmlUsI5SZGw8LNtjsm40c
-e5wUlMDW3AF1cBvL8uvnJDbQEKeZQI5yQ+gXb4JhdTNAOere284kkSCBPsoBxoeL
-hjWI38ipyRcux58WaDnIiw==
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">poweramp_dsp_plugin_example</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

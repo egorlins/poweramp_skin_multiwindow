@@ -1,9 +1,9 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04qPFYGGUpXaxsvf1g8jLjo6z2kI+YfhfeSmGq6hhngwB
-3nw3Brf/5cogIQNoyVWDfeCCcKlV5Ypd5/cTmss0kuGzXxdQ490CbEp2Xt4fWyNr
-BJJzayipVi//oCMPvjYOSK5UXPkB7lfdR4kc0VP2AE+PThPBVuCB+LLgSrhx5vKP
-jEWJnYx0R0P2u6fUPqhjw5ut65SRRUYvEdI9bzMEn91T3u8sU7tvk7qSCIQMScvT
-ZiAdEt+ZyByjv+fN2Tids4xy6JHvnn6I60+gm4md5X7Cp7RNbToMtzqMxJQzdgtz
-bXpLvl8qybNGKbETryhiiROzeh8UOTUQxwtpvO7rnp7VFMGv0ziH7kBtALmKSkXH
-ljeJ9NtgIc4mfJTEJf31hY9/Q7T9v334PaCyzUoy6mHknzK2peamjlqD3ZN2D7H8
-qpXAL58+SqY1nQaEYXbAFg==
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="ActivityWidgetConfigure" parent="@android:style/Theme.Wallpaper.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+	</style>
+</resources>

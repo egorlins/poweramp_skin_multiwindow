@@ -1,11 +1,19 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9xA6wO6dGU39a/AP8UBqSIA3gcNPZiL41+F5Qql+cA3U
-JpQHtItBaYcFGc0q3lzUCKvrU2K/NV+bKeE31gVxNJZ5b8hmTr+OQAhc+cXxH2Ns
-aAkNPpzt1UYvAxuDyPmw3bXBdRYVlUaoM9ad0ZmVaQxtzwWDmEEmBcRZpzFTvlp3
-KKNBRByPCD//84UvxIWU/8BBbM4v8nmJ/Ig29Tu/dReIdXkdgBDHjMGZFkuvZony
-4CR0Dp/JdLScgMlVMdhl5RlY740M9h4Lvz5P9orXNWOJzXrzx2pCPRXdxkoZ96bx
-KpJxVDQa/24xYmyeHQvKn7rOSoJgNpeSshenu1WVW+BUzTrxWdN0YlvIkMN5/6gI
-nIiSL5bxMfOkxXYVWqewPTx64D25p7z4ta+S4e7EaaY/Qr/QOyfHaxbGwugRz/p7
-jJJmyu7dI8EH4n9O0PVG5c5pCP+mvU8aWAA7+nwippY7bMr2UZhohbU6aO8uItpn
-mGDADOcp99WvTu3GvzEuCmnDYxw5DsRM2BG17nY1sLAGgFzWO9Fvt242rwkUkQNs
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"
+		android:exitFadeDuration="500"
+		android:enterFadeDuration="250"
+	>
+	<item w:state_toolbar_in_header="true">
+		<shape>
+			<!-- Empty. TODO: requires extra state for e.g. expanded state -->
+		</shape>
+	</item>
+
+	<item>
+		<shape>
+			<corners android:radius="?corners_navbar"/>
+			<solid android:color="?colorBgPrimary"/>
+		</shape>
+	</item>
+</selector>

@@ -1,114 +1,167 @@
-U2FsdGVkX1+yCff3nBptWC2s9K0Gy1RIRGt/O7cJ+Ooz11kIMMZKcdy3HZHM9uSK
-epLurRuyNCtuSZ2uuZsl/9X1/bgfhEtRvGl6wggM+R4lcl976UNo2cs57VyXVC0Y
-9CGE1+vcJXbts5pwG9936ikIq5Hn64l8WOF1JgK7GBTptzAcmnbhO7ne5CXiMwmX
-iu24xRq4ui+2hVCTwgEyPwzYhxYwM4KtuExvYHQh1GERyjnKe+rXxWS1I+kGjftb
-Vrn+4qMLWzaqP/QELf2qQfHYZEWIOU+OUpNP5RXmCFITSN4Z2MilLXD5KXrquIqk
-Zxt8ePmi4yxUkB3LTiHIrEBau5dkTFgKEjNcXHxzxjLNjNBN/euEEaVXKHUJhbJg
-8mMMtHSJ/xcVTJ03/dQ1YOsZW1cqdxBl74bxzm6kpzkKM37RYsLURvRV7fBSYfLu
-Tq8WPlpC1DX0tUk0s9osJaqjalxmPNJTOlm36onSOB0nfCSiUJaQ9Ids5YMVWa19
-nX3B7oP09YxmHxkcg2js5F9rAJMfu1TleSvKxlfSJTAlLTIQpZHPEDkCZnfQJCrh
-ckDDgCZrX4GrhNnv1r5wdBjsLLfORJUw/zIT9bpF2FU2fMDyWv9RVuLlMTk/puHo
-QBwRgkgfD/2JeDqQbgCnvcny8PeOR/pa+jmZnPIPwQdHG4jloE70iJQuLx8KiZUR
-WSO8fkF3IPzF0Lq4bN6QJoOw4Jm6hAJQqgp4Qbz9RSHRRt6FvoWcBWhC+f37zliM
-2kKs027UPLo+FQZr8sdeVIkwmEUpWLGZvgJYct8eG643yNX4DLZPlzumt8vbCr9u
-yJJaxkud56HBAahPQIhv8TvX+GbEIf8VfEII1jtj20bvJy/4VY04Sb++XWaJkC7T
-ef4Y1f21aoxBUYCKfidDmh4VoHBQS45W4zH0IwUQFR7UKI6v7wiuh5Lkcu9QoWPN
-iHhPpbPt1+4TdBtEsECbF2rZpOqHnXpjPSjYaoDvhDY3V1WHMiaPwbLCB8PFfuqe
-ZmtqOeSLQ8XUhzn/XadmUa7SiRmPZdRwKSLgI5c/gCLF5rLiyPJdeimN6PvKNx+x
-yr+EWQUluhwM+6FcI8DSQos/qXEd2ukgXLY8FdbETa1NThbcOMOvPQmDRvA3PiNA
-sjcdMca90DSbkFgbzKZpY8HS1pEveCn4+JXqQHcfCXTjvfFjpGV6rTuVQ/ktsBMn
-I92WQJDboyawqoG/NBo6s2yR7nhDAD4bAC6dEoEPOP2JFAwl7IE8hEB+N+psvVPP
-3rKp5a9WLSZrcG5QOYi/0ebm+0IjIDld/mHKlSxR9A00mpyTA2570Zm5Opal3T3f
-bZZrOnIkD81oNwz3H0fFdlkgrKdqYLE93Gr6S40S9MgFSzfbSyJDbrasqlt6o4ah
-klZORPmRfGg8/a5jaj97Ionvmyw3nrpfLeLbohjMUkMLLBUFX7ab2jkst9tNnZKv
-zCacGwlG9YikhVkb6mhTm7eYEcaD7BP2FuwT27y+Y9iLx4Y+c1qN2dydqraholYG
-UfBypSiHhSxgiai+PhCVv0xpAMoyhPTpCkJEHRyFfZgCBw9n3aON/kXQpDz0VVGX
-qqJwIui46PTnrYds8rHCq1U2bwM07Xl5LAOnfl5Pid8M4zZWKENdUqATrV7W+e0g
-MS80+sgdBBtSt3FZx+VEGOyaZjxw38uEkLgPQoSktYqqPpcSIHnUN0aLcymJgJoK
-mmb2YPeu93Q2Sqi7Xgh+nOXou4ieyEv8ab2OahDdZ3Oh3H9S3QeS2U3C304xaZ2R
-P7HUUlWyohgJRePxqci5rCWDgtGXgqrE4IC8tHfnpqvZ5ma0SQz3DtqfRlJW/Ws5
-07wAKfrcXxRe9YXYmhJwh2wT8CDIi+6GRyMwjvLYxbST45C9bfp6jNDiQS7GV+2J
-k7yOM+by7SAPBL8BaAk4215PxUZq44DX/TpGH7nHsRFkS5ay/ITK18MR1mq/dVwo
-5IVbVZ2HkfvPdiakCiT+SXAOyF8wZidVgUL64TL6xiJggsYp9E4biUnVV9GsbjU5
-bErYBN6X5dkyV5fwI+Matn5r4nmC9ryloOBbdFwdVpfmRPJVwaMzOtD1vZR3a0Zb
-GVuZaFzVQ45XgR8cS3aSOZZQ+6u0iU3bFG+PfL6pnkSx0zawaYM2yO33moRB5dAn
-EuN6nu4Umj9uaheBhI5WuhKoZ9/ZwIEr8SQvh25Ke/luxNJ6R12ytLy84GFA8UAf
-QJ5y76mC1pkEFTLplz5GpL95+weEP+QUx95YPm7+St+IfyU2Rqo5cwDoDUZsjPam
-uYm9DgsJaE5XEcMSQHLSyLk/cdS85YdFAE01KBTltA6Z6UWqbCIQI69+y6cfBW7+
-IX8UZLYokqeKE4WEDz4EdBkXCB8lNvSuxYs9d7CnYhxDeIAEV0l15XzaC4XIlJZV
-vM/67Tfrhw/8hjDWrZeY7vWpEg6eqcT0WG7hZbI3eAeJ5CnnZx/2htBksUDJhaKg
-Eh1W5I8nm6KDKyT/geUW9Th2vveC7qaYVwKtr+h+RvhqnU1Bph/ATRNrm9i+uzfU
-JW/SiPT5pM8Hnx1n9Vrtq/id0qeyfefHin2ETXllEuXrj4B7ojzZ2EYuoNL8caej
-PszHJ261KtGm+Ox4Mgg4rQI0szv8sio10hF6YyfhmhQoYuuI0Fc8wp+wk3/WooER
-fNWuBxDYtyKtX8sjovuhK1uiN3GSOH27OaZwqEm3mu7DOb2FJczpCvgcdEk911MD
-0DKcYqu5fM15z8dhvA8ti50zV/HoP+tsbsdEgW4a2w1vbEWiyYMFZH6fJfjtbzH2
-XAeGpag+0VUQ2o5RPz8RdDIKU3ULtjCPH6KaIVuVLWV/AEiChhciGZFulsLCka5t
-Utl/0/QvBZhhHXiSfCEgzC0lHbWmEAUZH5DERdXkYWang67MB+Rj8FEg2ZdtIOb6
-rcP98NDcEhYY3Od9vXiAdIg5qP/nJS398WkUKungyHTYBMRKR+YNHBTD4GAjoeRk
-f6R3wB/qPVuWwLMfR5GTxrZHzJ8dzMzlsvSluU43YR29CbIZIB6jqPfcJ5Wscn5p
-yMpczZUsn9fiIk2ZCwmtkL7adHBoSZRJ2NPQu/9uYSUddpLWd3KZuIBPR/2X2u99
-GgjUTxKUCcnasp4ClbtJysiahywe4gWzHUVi1FwCyShGBl/DSeyLul+jg8XlslNC
-rks5GQiM0kjXMcWxy5IJYvdOwwH/cWmehPI/iggPVxf9wEt13WF0E5st+cxDj906
-QowOi2V9yUbHwHvkAXYOEBxaNYyr6RJ8Woq7rUtkN9XQv7OCuA5m7LNEJeBJ8Kl1
-pS+qtbu558SuxfOgzygUwrM1B+oMFblc1Mq3Pue7U86IFZRAH/CLBulj2AcpwsYw
-7cN4BWJu+6fx1tKZDDLccJgt8g9mRp0hKDIfmkMFduUBsw87c03QqqpH6zkvCAhD
-0ivddcR5wYoHxX/fkOrxhCGztjP1VU8Jhw+K/2UvgknXB4Vc0+LPXBYPhNwyCovd
-qn8WrHouRrKxm1mPkRYtRRLhMTOyvdW2JeDWZ6e6mDQagL3MeOtoUDUZk7smwH13
-TgA7paQgUY5+PsVBCv4Z00+DCZFGH768JALqk8caMDvKjcppAj5cEt2nvaBgxeSr
-0V+I9v1b0mlevaTW+74xk8GiH6jBMZrVjmJYMimNTEXoz4XkyFMeHW9hdU2H2qZa
-DwWV7GiyOKwANay4hXjOs2bZwHMekLWOSAjT4ZOpIkYlVxm8Wlt/a2VqhPrdX+4m
-LFVNUN91iNPzZZdCrjiV3bE/ZAU2Z5LdnzzFRfJG+ii/YBghCkEMfKxWYK39wbRy
-5lKdmq5cj8kY66Ougi1kcfymQgg84l/F7i4MaW/45Wt3F9PVAKNxsPzs8tA+PmvD
-qBhNnhH6bKC4InZvSiYtBQPD2oggFvYnmiCWFstqHXzIG/tC/qoU3WULOhLu47Pu
-e5YgIvya3UiI/jbxuc+HOYVl7naJp/K5dhfRsYJHy99iaLz8YZUn2PeT3LbhH+EU
-OBtJ6Y0EaWMQPGHJsYGGDiRMYkE0uBq0KHDWowtLddh5v2FHDeVS4lXUh2p9lsH4
-9UY0yFOslWh6FCrP60G1txiaEHZ2jfQRgC8gwIAsnCtF/6L141N+II/4av2o9A9u
-A81qn0mHWmSkGXXI+IJtTF9jd0j8skHQR/K6NyZ0OoNpZJPBEU4DvutnRGC1dG1z
-FXpK3OO1ULE/J7R6Q60tiYdk2wu+mC23UIGV0hc+iW+2v0ZLo2816NaDL5444Qqw
-FXk+OGoD5T/zjrgLk/dTvmIKrORDiLFLp9uwyLaSWFYwkaFsZ4P2J7VcDqGe0AES
-zFyEtw1MQMB0+YYpoN6jErX083YpG6yYEvHRJbrvQJU4rVNF7N1PEY3RZRUQeUZZ
-w6hCm1lzxpp9m7W80wyAHnYPhK8VIPljP8Vo+qRJj2nnFKvqdHZpu5+oxlFM60iW
-SiqpvCITRQF8h0ehtkHv1cqODm1BYIqMUyIIVa7YRB0xV4i3ZewSjQaRiApiymZz
-0FDA9qxc2Nv+1tYvFRtkVe4ijWvZF7r98N/l6tEiTDOp/rpmv5501cX4CbP5z302
-BDlwNZWfO3hDMmb8C2mraGivEFvOpULVsyajaHV6pRg6w5VswBTeg85sRmS1OtSW
-EpGCXOKcUN1ufIIWjb7YNzv3+al16SgLPpSYeL8DU1wQB+PghPBs2DnHeQxPJBQh
-rvTKwxwMs7uJiX7wblSoscL4OVOtCFgo+pCw0uSj1EICJbotM5lBRDnB36Qhme7Q
-uPKyJV6e5bpSnztH6F49HGLp86SKHHcHhMhH0OXjJ9hooZH/nFWQVnKhzgHZNbnE
-61s3e+AyHQYGTbEOi4WpECLsyTl0he4ns79JrEk9kVrPfLr3jgIRtrzBv4sknPVA
-I2lNd+uMzzPBbdbLJ/A1/cEd78lN67u8scUCHT9nPeJABW5gTiGE8qDo0ieyzCYr
-+XW7ipi5ezP8z3V/9DHLV5LA6zh4PQeF2Rzs0AIvr5sm0PqP3/e+T1usPxAMilay
-EOYsTYP36OYHtRjXl4wJC3NaRvwmbhrFudU9XpzdiRIQJeib5HYS47RBriKztvLx
-dJ0EiEN9msWAtkhb7fGK061gAX7m8TTy/jd7Dr4Qp/Ayy3QfsI1kdeHi9tos/v75
-Vc5n49caQYcz9S8YMl44cOj70smvwr6wWedAbFfhpCwsuvPH38lMLGtV9N7e1Xeb
-nlMKTdn53Klb38kMCnyP2aOnApwkM1XuWbk0xnh+b/3Qb2bO6jE2VntHFGlS5ewM
-GNtuCJ7bNFVcAhfxDfc/5cw7iX6/AGkxkvuvQOtVOFFWHNNpUXg1EBVuz6EXo5Tj
-JF9I0dk68oep+tOSx8ln1nxWV3/6ujjJFtW7d1BpJO6umbYcScVt5PCDQmGmtS+y
-GKj90wSjd2ExazTKsQGoWNzJ7jJCG2T37p6rYlkN+YyGN++cIBtnPORw1nQ55qfL
-9UDaDT050JPG1T4QWv7KbEYNAQHd/Wtshx+W/0AU5OHsHEQogkx/BUktbM741eld
-uSP2mHG7NHa9ffdtdhIngpEbs0EBlwWExvmzyt6IDMoMYKD2wrPLR0EY6dom7Nmr
-A9k+cjUbfog0PgDDG8YXGBmOCDQqnvjM4Y3lH3pTdZSk+q3NWD6hC+LEM4zSZprc
-1RbI8dNLQ55zjr8CwQRUGuako1SIOkdl6D9z5ZI7c19GBAxri59CSX4c8hf+rzzy
-MogDUOuH4eb3Vu+YID8Ju2kOOaBClQlY/bZmTJk+ncko+n4yFDlPZLixZhtCQHAT
-TdNtG5TrgkxdBTQP7FWYDdBOT8NWxHAhHZG9rxfDw/fSGadEbC6XgwDwbIMyBNlP
-dO5kBUZfTIR5Wz/+spjrpF9ZyPbXNXjqKcbXMifg1PgejtecOjS8v0D86kIRlvD9
-Zwq2Jp/j45I66umutXZC0rDFmUJZ/lQcdawjm+GSpvhwuINUxex5wh4aSfQ7n53D
-jXVvUEaWc/j8S2I18JIp5marnuyBuD0E16890IXCq740wsR0RHQhbBpfd22n9zM/
-RV9NS44ihYt9BUyjgzXLv69SUB9hO4A3Fi3js3QL64mHN7ci6w+sAf0OQ95FVkQ7
-9CWsoEDSxT7siNP87JBXr9pSekuAdTGOMzwzZvP1mGhx8ilh1cI/18R9EA584SVN
-zBZmECvb8kZP+yolaqAv8WxA4B6dd5y4yu8HG370ADxlGjNLxfw5Z6oTfgPVwJb/
-OUkjV2sdrK1UuZ827E9XCj4pVoNnUaDhVpLo5Z3ZbIeyUilahkSUJyzhdKlPgkT3
-85dTsnscRHjW9UEk12yCf2J47A1jGj2hnfA1qIvWBgd2ymngSr/VFEaF33eJfbkH
-y3UPi3HfVBkiXTnVyOs5ngNkpAZolDuieqnA789VX6xfrSYhG6FkftznAV+Ko2D+
-XZQlFK8h+KD5z+ABHWax36i5BSUhvtHxpoY5SS/jCXpHLJ7OKLypCOOorruL7LvG
-v55qKdg16mdm2WAZ8RVMBpIVYH3vp24l5xNARGHhKrgCQArFCSb6RtRmXakJk4SB
-2uZF3wiByFqtR/s8++q/A0BX/sG0i2epEcZ6Sg9MHMMn8Ypgw2ph982abBx8zVhW
-s+1MKnURHqCfnLZzq9P3XJyx4ISfeA2HUjCIzIcdME08QIfDG01y75dpQAvI1NIn
-1DBJhcQ01ShKmRtOKGudTxKjZ+N51TDc9pZIALv7QgOUu6wq0GJDcgLshRljKkIs
-QQWUtu/s8anvNS9nub6AuMvdRR5KdQY33WJlnqt80PQDkkjARQcJaDyBtVg9O9El
-4vHNCusqrE4YrfQn8A2kIb60nmT0fS5RTtXr15kUqmu9h2pk0qtsH0eY971fIIgl
-2xTwmJkcoL/UkI0+2DeEZKHR7ui5ZL6pNJ6WYBGhk+r84SGzN4ARbB9JzvkNkJja
-P01vzB3kVDiqu29DJbXYRNKYAykOTdYjBoDxFpDMyM8ZLGO7v4w2MPvXIATci9lk
-nKWIicuk2BL55HnlkJF+AIiMH/6H2TfcLly4o1OVzZCaLxx00ZYG6Al7blRtrmZp
-DujH55RUdw33u8rftaw6WjFL+vLyB+/crkKe1E0qd8N+Ld/uHuRKKJ7PZ73wDodv
-dNX/rdRD3vD2GGRa66/3GrjYov/LY70f3oDk0wIz8osjFMcbPMsSJaE7j0JxGLmc
-U0VPg4SeVYuFwZLbGBxviPa2CEHSxfl9wVtuofv7AUaoBL6Uq9T6ANMg8VE23zas
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.widgetpackcommon;
+
+import java.util.Arrays;
+import org.eclipse.jdt.annotation.NonNull;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import com.maxmpz.poweramp.player.PowerampAPI;
+
+/**
+ * Base widget provider for PowerampAPI based app widgets
+ */
+public abstract class BaseWidgetProvider extends AppWidgetProvider implements
+		IWidgetUpdater
+{
+	private static final String TAG = "BaseWidgetProvider";
+	private static final boolean LOG = false;
+
+	public static final int WIDGET_PACK_PREFS_VERSION = 209;
+
+	public static final int API_VERSION_200 = 200;
+
+	public static class WidgetContext {
+		public long lastAATimeStamp;
+		public int id;
+	}
+
+	public static final class ShuffleModeV140 {
+		public static final int SHUFFLE_NONE = 0;
+		public static final int SHUFFLE_ALL = 1;
+		public static final int SHUFFLE_IN_CAT = 2;
+		public static final int SHUFFLE_HIER = 3;
+	}
+
+	public static final class RepeatModeV140 {
+		public static final int REPEAT_NONE = 0;
+		public static final int REPEAT_ALL = 1;
+		public static final int REPEAT_SONG = 2;
+		public static final int REPEAT_CAT = 3;
+	}
+
+	/**
+	 * Min. AA image size to show (otherwise logo shown)
+	 */
+	protected static final int MIN_SIZE = 32;
+
+	/**
+	 * Creates and caches widgetupdater suitable for updating this provider. Called when provider is called by system or by widget configure. Implmentation should be thread safe
+	 * @param context
+	 * @return
+	 */
+	// REVISIT: threading - actually always called on gui thread 
+	protected abstract @NonNull WidgetUpdater getWidgetUpdater(Context context);
+
+	/**
+	 * THREADING: any
+	 * @param context
+	 * @param data
+	 * @param prefs
+	 * @param id
+	 * @return
+	 */
+	public abstract @NonNull RemoteViews update(Context context, @NonNull WidgetUpdateData data, @NonNull SharedPreferences prefs, int id);
+
+
+	// NOTE: called by system
+	@Override
+	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+		if(appWidgetIds.length == 0) {
+			if(LOG) Log.e(TAG, "no widget ids");
+			return;
+		}
+
+		if(LOG) Log.w(TAG, "onUpdate ids=" + Arrays.toString(appWidgetIds));
+
+		WidgetUpdater widgetUpdater = getWidgetUpdater(context);
+
+		try {
+
+			widgetUpdater.updateSafe(this, null, true, true); // Immediate update, ignores power state
+
+		} catch(Throwable th) {
+			Log.e(TAG, "", th);
+		}
+	}
+
+
+
+	// THREADING: any
+	@Override
+	public WidgetUpdateData pushUpdate(Context context, @NonNull SharedPreferences prefs, int[] ids, boolean mediaRemoved, @NonNull WidgetUpdateData data) {
+		final AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+		if(ids == null) {
+			try { // java.lang.RuntimeException: system server dead?  at android.appwidget.AppWidgetManager.getAppWidgetIds(AppWidgetManager.java:492) at com.maxmpz.audioplayer.widgetpackcommon.BaseWidgetProvider (":139)
+				ids = appWidgetManager.getAppWidgetIds(new ComponentName(context, this.getClass()));
+			} catch(Exception ex) {
+				Log.e(TAG, "", ex);
+			}
+		}
+
+		if(ids == null || ids.length == 0) {
+			if(LOG) Log.e(TAG, "pushUpdate FAIL no ids");
+			return null;
+		}
+
+		if(LOG) Log.w(TAG, "pushUpdate() ids to update: " + Arrays.toString(ids) + " data=" + data);
+
+		try {
+			for(int id : ids) {
+				RemoteViews rv = update(context, data, prefs, id); // java.lang.RuntimeException: Could not write bitmap to parcel blob.
+				appWidgetManager.updateAppWidget(id, rv);
+			}
+
+		} catch(Exception ex) {
+			Log.e(TAG, "", ex);
+		}
+		return data;
+	}
+
+
+	@SuppressWarnings("static-method")
+	protected boolean getAANoAnimState(WidgetUpdateData data, WidgetContext widgetCtx) {
+		if(data.albumArtNoAnim
+				|| widgetCtx.lastAATimeStamp == data.albumArtTimestamp
+				|| data.hasTrack && (data.flags & PowerampAPI.Track.Flags.FLAG_FIRST_IN_PLAYER_SESSION) != 0) {
+
+			if(LOG) Log.w(TAG, "same AA, noAnim=>true, same ts=" + widgetCtx.lastAATimeStamp +
+					" or FLAG_FIRST_IN_PLAYER_SESSION=" + (data.flags & PowerampAPI.Track.Flags.FLAG_FIRST_IN_PLAYER_SESSION) + " bitmap=" + data.albumArtBitmap);
+
+			return true;
+		}
+		return false;
+	}
+
+
+	public static String getReadable(String title, String unknown) {
+		if(title != null && title.length() > 0) {
+			return title;
+		}
+		return unknown;
+	}
+}

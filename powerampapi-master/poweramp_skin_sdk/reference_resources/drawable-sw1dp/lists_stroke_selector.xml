@@ -1,11 +1,11 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9xA6wO6dGU39a/AP8UBqSIA3gcNPZiL41+F5Qql+cA3U
-JpQHtItBaYcFGc0q3lzUCKvrU2K/NV+bKeE31gVxNJZ1NLJm4tk593oKdl2Ehk9U
-d1vFe6H9f/eZhuQMWd3WV+JVgzEC1zTIHRctwvbP5fPEl4oajozBG19PBh5mGZIp
-jjLgUZV3WC8+TO+ms4wT6VgxJN4aUU0bTb2Gy+xP42A/INvf9KCDqOH+SdQR1ghQ
-2zVYJuhjTpPEowAGsd8ofsSLcPo1CaUJH/Z5OXzcKGWECpIWhcSySw2Sdp6Zawfp
-HG7VvZPAGb6PbXT++0K2vM1MnB8wlWl/P4tK3kS3HCalSumEa4zyQhI3csHRIhNS
-2J1+7t2jgY0FGjfmGWcgiAQLzkRLpm6toDHuxybN71p3LiwLp2fiDJgD9DhKcR1V
-smSRBURhuwLgwjBT7pM+Gd8+X6Z+Ozu4DKkPybeJOL/0pwqvYTApM2JlVoUBK70b
-QiXQd4uLClJ98fNxVVlN3lHdbtc7jAbdT7g8V/TmWmyj4Ohn3f3Hwo0O+NiQrsiC
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"
+	android:exitFadeDuration="@integer/selector_fade_ms">
+
+	<item w:state_toolbar_in_header="true" android:drawable="@drawable/lists" />
+	<item android:state_activated="true" android:drawable="@drawable/lists" />
+	<item android:state_pressed="true" android:drawable="@drawable/lists" />
+	<item android:drawable="@drawable/lists_stroke" />
+	
+</selector>

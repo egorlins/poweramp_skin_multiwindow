@@ -1,67 +1,92 @@
-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
+/*
+Copyright (C) 2011-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with PowerAMP application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpackcommon;
+
+import com.maxmpz.powerampapi.simplewidgetpack.R;
+
+import android.content.SharedPreferences.Editor;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.os.Build;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
+
+public class Widget4x2Configure extends Widget4x4Configure {
+	private static final String TAG = "Widget4x2AAConfigure";
+	
+	public Widget4x2Configure() {
+		super();
+		mWidgetProvider = new Widget4x2Provider();
+		mConfigureContentLayout = R.layout.widget_configure_content_centered;
+		mConfigureOptionsLayout = R.layout.widget_small_configure;
+	}
+	
+	protected void setDefaults() {
+		super.setDefaults();
+		
+		Editor edit = mPrefs.edit();
+		edit.putBoolean(mAppWidgetId + Widget4x2Provider.PREF_AA, true);
+		edit.commit();
+	}
+	
+	@Override
+	protected void setWidgetFrameSize() {
+		final Resources r = getResources();
+		mWidgetFrameHeight = r.getDimensionPixelSize(R.dimen.appwidget_small_configure_height);
+		mWidgetFrameWidth = r.getDimensionPixelSize(R.dimen.appwidget_small_configure_width);
+	}
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		CheckBox aaCheckBox = (CheckBox)findViewById(R.id.aa_cb);
+		aaCheckBox.setChecked(true);
+		aaCheckBox.setOnCheckedChangeListener(this);
+	}
+	
+	@Override
+	public void onCheckedChanged(CompoundButton v, boolean isChecked) {
+		if(v.getId() == R.id.aa_cb) {
+			Editor edit = mPrefs.edit();
+			edit.putBoolean(mAppWidgetId + Widget4x2Provider.PREF_AA, isChecked);
+			edit.commit();
+			updateWidgetDelayed();
+		} else {
+			super.onCheckedChanged(v, isChecked);
+		}
+	}
+	
+	protected void setDeckBG(int color, ImageView deck) {
+		int r = Color.red(color);
+		int g = Color.green(color);
+		int b = Color.blue(color);
+		deck.setColorFilter(Color.rgb(r, g, b));
+		int alpha = Color.alpha(color);
+		deck.setAlpha(alpha);
+		
+		findViewById(R.id.shadow).setVisibility(mShadow != Widget4x4Provider.SHADOW_ALBUM_ART && alpha > 0 ? View.VISIBLE : View.INVISIBLE);
+	}
+	
+}

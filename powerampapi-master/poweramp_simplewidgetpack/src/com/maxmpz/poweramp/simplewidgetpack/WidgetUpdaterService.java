@@ -1,47 +1,51 @@
-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
+/*
+Copyright (C) 2011-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with PowerAMP application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpack;
+
+import com.maxmpz.poweramp.widgetpackcommon.BaseWidgetUpdaterService;
+import com.maxmpz.poweramp.simplewidgetpackcommon.Widget2x2Provider;
+import com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x1Provider;
+import com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x2Provider;
+import com.maxmpz.poweramp.simplewidgetpackcommon.Widget4x4Provider;
+import com.maxmpz.poweramp.simplewidgetpackcommon.WidgetKeyguardProvider;
+
+import android.os.Build;
+
+/**
+ * Simple Serivce which updates widget(s). This service actually processes PowerampAPI intents, but throttles them, so widget updates are
+ * as rare as possible. 
+ */
+public class WidgetUpdaterService extends BaseWidgetUpdaterService {
+	private static final String TAG = "WidgetUpdaterService";
+	private static final boolean LOG = false;
+	
+	public WidgetUpdaterService() {
+		// NOTE: remove/add Widget providers for widgets supported by your widgetpack.
+		
+		mProviders.add(new Widget4x1Provider());
+		mProviders.add(new Widget4x4Provider());
+		mProviders.add(new Widget4x2Provider());
+		mProviders.add(new Widget2x2Provider());
+		if(Build.VERSION.SDK_INT >= 17) {
+			mProviders.add(new WidgetKeyguardProvider());
+		}
+	}
+}

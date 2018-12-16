@@ -1,8 +1,13 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-7idah8D7/KwDQ67Gi/GfXoAHnyv26vdY1Q/ri0ObuDs2eHfqqyA/589fRTQEXUfW
-dWmOEdE40oG+HbuGYMtMN0xGP2YhtrIkhF3nnthDMP7D1Spu5PB1YlnIfbnC41Af
-BueWBpqkRVE6o+hzORCXI5dG7nKhjLv9zbgxRZKju/7Xmj48uGMx3Oa+bD1ser9K
-BI2Lgn5jfNKnK2n76GVqM5RgHhEH9ub1u/bpgRgSSI8IHgeGaGkBRLmyhfTE1m1w
-A/qvr8iln4sSZ/beRklzo7JxmVICLgVmuI1Nr5K3/hSrqvpRK/4V0gvnWryM2nFj
-Ie7mgw4tYxNQpv1bWrs9kb69JLCKsPFLlxLgtP+E2n8Pg3x0+W0S2JKqJ2S2enx3
-3ZOh/qn3ZKoGZjTWHn7irJm78rj3S50yuDW/sZVmoTUABgiDxIZlc/+xPIiVQL0a
+<?xml version="1.0" encoding="utf-8"?>
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+	android:insetLeft="8dp"
+	android:insetTop="8dp"
+	android:insetRight="8dp"
+	android:insetBottom="8dp"
+>
+	<shape android:shape="rectangle">
+		<corners android:radius="?corners_medium" />
+		<solid android:color="?colorBgPrimary" />
+	</shape>
+</inset>

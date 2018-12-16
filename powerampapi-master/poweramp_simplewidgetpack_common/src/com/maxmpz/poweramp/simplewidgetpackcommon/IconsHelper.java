@@ -1,100 +1,182 @@
-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
-rtN1DX0w3d39Z9XoVhszhA==
+/*
+Copyright (C) 2011-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with PowerAMP application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpackcommon;
+
+import android.content.Context;
+import android.util.Log;
+
+import com.maxmpz.poweramp.player.PowerampAPI.Cats;
+import com.maxmpz.powerampapi.simplewidgetpack.R;
+
+public class IconsHelper {
+	private static final String TAG = "IconsHelper";
+	private static final boolean LOG = false;
+	
+	private int mFolderRes;
+	private int mAllSongsRes;
+	private int mAlbumRes;
+	private int mArtistRes;
+	private int mGenreRes;
+	private int mPlaylistRes;
+	private int mQueueRes;
+	private int mCueRes;
+	private int mComposerRes;
+
+	private int mMostPlayedRes;
+	private int mTopRatedRes;
+	private int mRecentlyAddedRes;
+	private int mRecentlyPlayedRes;
+	
+	public IconsHelper(Context context) {
+		mFolderRes = R.drawable.matte_folders;
+		mCueRes = R.drawable.matte_folder_cue;
+		mAllSongsRes = R.drawable.matte_all_songs;
+		mAlbumRes = R.drawable.matte_albums;
+		mArtistRes = R.drawable.matte_artists;
+		mComposerRes = R.drawable.matte_composers;
+		mGenreRes = R.drawable.matte_genres;
+		mPlaylistRes = R.drawable.matte_playlists;
+		mQueueRes = R.drawable.matte_queue;
+		mMostPlayedRes = R.drawable.matte_most_played;
+		mTopRatedRes = R.drawable.matte_top_rated;
+		mRecentlyAddedRes = R.drawable.matte_recently_added;
+		mRecentlyPlayedRes = R.drawable.matte_recently_played;
+	}
+	
+	public int getIcon(int matchedUri, boolean isCue) {
+		int res = 0;
+		switch(matchedUri) {
+			case Cats.FOLDERS:
+				if(!isCue) {
+					res = mFolderRes;
+				} else {
+					res = mCueRes;
+				}
+				break;
+				
+			case Cats.ROOT:
+				res = mAllSongsRes;
+ 				break;
+				
+			case Cats.GENRES_ID_ALBUMS:
+			case Cats.ALBUMS:
+			case Cats.ARTISTS_ID_ALBUMS:
+			case Cats.COMPOSERS_ID_ALBUMS:				
+			case Cats.ARTISTS__ALBUMS:
+				res = mAlbumRes;
+				break;
+				
+			case Cats.GENRES:
+				res = mGenreRes;
+				break;
+
+			case Cats.ARTISTS:
+				res = mArtistRes;
+				break;
+
+			case Cats.COMPOSERS:
+				res = mComposerRes;
+				break;
+
+			case Cats.PLAYLISTS:
+				res = mPlaylistRes;
+				break;
+				
+			case Cats.QUEUE:
+				res = mQueueRes;
+				break;
+				
+			case Cats.MOST_PLAYED:
+				res = mMostPlayedRes;
+				break;
+				
+			case Cats.TOP_RATED:
+				res = mTopRatedRes;
+				break;
+				
+			case Cats.RECENTLY_ADDED:
+				res = mRecentlyAddedRes;
+				break;
+				
+			case Cats.RECENTLY_PLAYED:
+				res = mRecentlyPlayedRes;
+				break;
+			default:
+				if(LOG) Log.e(TAG, "DEBUG no icon matched=" + matchedUri);
+		}
+	
+		return res;
+	}
+
+	public static final class CatsV140 {
+		public static final int UNKNOWN = 0;
+		public static final int NONE_RAW_FILE = 1;
+		public static final int ARTIST = 11;
+		public static final int ALBUM = 12;
+		public static final int ARTIST_ALBUM = 13;
+		public static final int GENRE = 14;
+		public static final int PLAYLIST = 15;
+		public static final int GENRE_ALBUM = 16;		
+		public static final int FOLDER_PLAYLIST = 101;
+		public static final int ALL = 10;
+		public static final int FOLDER = 100;
+		public static final int QUEUE = 200;
+	}
+
+	public int getIconV140(int cat, boolean isCue) {
+		int res;
+		if(LOG) Log.e(TAG, "getIconV140 cat=" + cat);
+		switch(cat) {
+			case CatsV140.FOLDER:
+				if(!isCue) {
+					res = mFolderRes;
+				} else {
+					res = mCueRes;
+				}
+				break;
+			case CatsV140.ARTIST_ALBUM:
+			case CatsV140.ALBUM:
+				res = mAlbumRes;
+				break;
+			case CatsV140.ARTIST:
+				res = mArtistRes;
+				break;
+			case CatsV140.GENRE:
+				res = mGenreRes;
+				break;
+			case CatsV140.FOLDER_PLAYLIST:
+			case CatsV140.PLAYLIST:
+				res = mPlaylistRes;
+				break;
+			case CatsV140.ALL:
+				res = mAllSongsRes;
+				break;
+			case CatsV140.QUEUE:
+				res = mQueueRes;
+				break;
+			default:
+				if(LOG) Log.e(TAG, "DEBUG no icon matched=" + cat);
+				res = 0;
+				break;
+		}
+		return res;
+	}
+}

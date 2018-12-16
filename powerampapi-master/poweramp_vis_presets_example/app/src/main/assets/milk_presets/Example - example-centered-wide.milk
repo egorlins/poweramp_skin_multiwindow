@@ -1,20 +1,59 @@
-U2FsdGVkX1+yCff3nBptWHKb2P1+5NPCyODDBuHwUUrjoSLeVEutFJ6TbfGKNkN5
-K/nK0NnK5OCjAnPJgpEZHYIUh5g80/QfH7aFZRlXqhsKngj+ry4dxEeZ3G/LOBzy
-Si2fCcuh/y/Ejl41FKVUdO7EhUzS/cx0rSzNA4AxlhqjlIdWwY290y+EmhtaHo+U
-KSwwP14XpYwvSC2rbIuowIekFlKVXfRI+bfn6CeINrxvKStDpyvHQDSDHEg7mtjE
-S1apLDpBhrQTsiFVPTd+Atviw5dA8KeDWl6Akucaa02SAVHgLxtRZLW7I/WBiR1V
-kQvwHltLL5vtvDk+fuzLIEF9sDLM9+XeYSNU1LUkDFyaMTgiMfVEHDCS8qkst+mF
-DSZfx4fOQby2Hxe/p6V5WHaAmptN+miI/PTvW1nCZeqEC/MnoQConmqxcQF8Hsxl
-qohOXWT/AbJ7U4eVxi3+9FL7hHsGk3asFsbrlK4yaJyIk+Bb+hMlIRkg8QWkWDyQ
-N9OWlHlwbhm2zDh8t0put4vFX/FR0YZwp0G8xZNWjQaHr49Q+qedrmG0jniYxPJh
-4HqvhzdaMQKlZFzxETml7lsIjiBQvI/czJX0IISX0KTeSXYRz/kx1u6u4vvruQa5
-jMkHitAV7BloaRD+XKLs4Tm8oXfHyHYRFIa9Ss5wQPvQ35qoSxGC6EA/ObdPXzXy
-IBSQFYJKTJYwCINLSRsD3q2gOkvuNReX4Z0TmglR4uvv5W65TDJD5miSoHey015a
-vQazX6yL7iYqw0Bq83+kQFIEJBWej0TDSwO+vDasw7db/2r/1aVuWYl/xZoHBN87
-ajJwH65yEV3atMyMhG0UHQOCbf+xpR50KT12b4K7uLN4dLqKLt9fS3y84aFplRDa
-L1EyPZWHEROH1tyRf4nQleinILl27Uy1yA4eTOp+04kcBGFbwX90HaUUdbhFHMq7
-pbebhe3RNgkcTcNuw8BwYFtTjtfNG+Eg7dXrPQuo8nbcc2fTN/gjVeS2g7AnKh6r
-71bzpQMhyy3lOrwzgLkUHpwXR5Bgqr0ItpA01wqkShb+n/3SWL6+p5alW7yfqZyU
-wrsU7csGeDna2CRNoKcZoTrE3jStXMb3juczc6QlYbPkmZmMPoymLvhY41C/fBJl
-Qn+47VNGvv0iN8E9C/IP5TWmbWNqanj1+xp3rRFAVg/tKE2/FwgXwOTLGONCIUGy
-pmsHzAbH562XXr4efaLCP4TEmbyRTm5/XEa7F9QB3u8=
+fGammaAdj=1.000
+fDecay=0.000
+nWaveMode=0
+bAdditiveWaves=0
+bWaveDots=0
+bWaveThick=1
+bModWaveAlphaByVolume=0
+bMaximizeWaveColor=0
+bTexWrap=0
+bDarkenCenter=0
+bRedBlueStereo=0
+bBrighten=0
+bDarken=0
+bSolarize=0
+bInvert=0
+fWaveSmoothing=0.000
+fModWaveAlphaStart=0.000
+fModWaveAlphaEnd=1.000
+fWarpAnimSpeed=1.000
+fWarpScale=1.000
+fZoomExponent=1.00000
+zoom=1.00
+rot=0.00000
+cx=0
+cy=0
+dx=0.00000
+dy=0.00000
+warp=0
+sx=1.00000
+sy=1.00000
+fWaveAlpha=0
+wave_r=1.000
+wave_g=1.000
+wave_b=1.000
+wave_x=0.5
+wave_y=0.5
+
+bars_mode=3
+
+bars_thr = 0.50
+bars_thr_color_t=0xFF98c8ff
+bars_thr_color_b=0xFF98c8ff
+
+bars_color_t=0xFFFFc8ff
+bars_color_b=0xFFFFc8ff
+bars_color_r=0x00000000
+bars_color_l=0x00000000
+
+bars_x=0.0
+bars_y=0.0
+bars_rot=0
+bars_sx = 1.0
+bars_sy = 1.0
+bars_num_x = 16
+bars_num_y = 24
+bars_smooth = 0.82
+bars_sensitivity = 0.5
+bars_spacing_y = 0.5
+bars_spacing_x = 0.3

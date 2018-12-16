@@ -1,9 +1,9 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9xA6wO6dGU39a/AP8UBqSIA3gcNPZiL41+F5Qql+cA3U
-JpQHtItBaYcFGc0q3lzUCKvrU2K/NV+bKeE31gVxNJZ1NLJm4tk593oKdl2Ehk9U
-DOxpiOeFVQL1VNQLfQAVf9zwNq7X1zNYl3jsyc2NuvlY6XqXY76pCsObZobU9K8k
-3a90Tw7PFQGRAjTGjnYvtzHrjgWLipypvr95wNIPlitJ/YpF7zTK2QM+J5Zam4h0
-sCTs8+OezbQMCn1xGiG3z5SfgLvuZIs929N5AL0Ds04UvGGg/WqZ8OXzmveU+SUs
-7gRbzM3lqjQkt+2OVrwMMzvyrT8PlT4DEd3w0EGJxp3PEe5j+IK9lF8lx/sLI9RL
-SnjAzy1JQ4MyCgSCKut68w==
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto"
+	android:exitFadeDuration="250"
+	android:enterFadeDuration="150"
+>
+	<item android:state_activated="true" android:drawable="@drawable/pause_small_stroke"/>
+	<item android:drawable="@drawable/play_small_stroke"/>
+</selector>

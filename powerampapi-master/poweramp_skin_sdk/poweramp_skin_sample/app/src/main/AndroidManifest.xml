@@ -1,19 +1,25 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-Sxa55y8aJEvv9fXhwSEcsl4d++IIRN+DkY5WrNJN+sY8M4qVoD5P9JSR6AWNH1iw
-gPiy/dzuiUMlUQXA94zCq02t15B1f6FlmgpBdH5eFb2OPnVd8D3PM4FDpNi71NNx
-P1Rdk30tOkz2F0sM1mjvqXzaLjL18Ogh3mAjPiZFNfxTUgatXN+uupcOj6xFRVIW
-avOFDLaxnbF2AgOs47yvmoxB0l7cAxMbyRkiPmKNSVL4zTU5U4PmPEEDKpVUCeBN
-3dcPlUgdH2NLzhz+VWOyktOLYS8o8hrnRxwhVsVMR87jEEjE7SRJh25AYHLY5wDZ
-eDbtGV6GJCbiYkVxyp50RAICTmdQJhACZH6/iSRdp1SBVJdmy08Fft3dtFH8WgFi
-dxtSRzqV7+7uVb4kpPS1rI5KQWKcQVOawxQhvNZMeH5vJnJz5l9vQAzvuQziXEGn
-VjBmluEvUJA9MruPOeAutR7yzXWlKrvtXgCVs3JNa6ZpUfgH11udCjB8z600xpoC
-uyR7JsKMAkkPjqpWW+LqlKE4lhh/Aed3KeHf27KpK9NKpiYqoMAq1tpfA4zji/rk
-3cnBy1wfTphZz+vHvPPCKtr5uKrzMxYC7Ya3f9tiwuq5pDgvzAtrUgLpjzDxpegm
-dYw73QdECsXjDXNuvm5cHRQ010vA6gFApTSGGLvg51UIO1HOuttt+2rssf27WBpS
-pWie1oIfBn+mi4SaTEBhute1+jya1NMqWZulEFg88PDGma4kxmOYbhm4Jsscn+Bv
-omtjKq+F/vj3+d8VFZDQI3CAb3ZWSvd+lmEAZsWMhI9pWcsxQ9PkiXWZ7/0EaIn3
-zb1eycxhSZrxw3V6KQ9zlrI74RyWkQ8H/G1cjFejHaxvWWVrElwmJEfUyEnNalxS
-wzUsDPdzP0ZNee/3pg38b9bbjaVp5UoZeeS6FehPzcvl+zrMUQ6Y8of5ch49tAOx
-/RY3dRzbGhpIFd53BFaSJEm9y6CW0ige0erbYIKY2hcXWfGiEgdT7Nk+ggKZl2JV
-VvBgRcrXZ7wmuhU0zByTGTjXWhNGNA9ILYhJh89QRjo+JxUfMBeBw1CLgmtRFrji
-PD0JZp4aO1mrdTGuB+Xmrw==
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.egorlins.poweramp.v3.skins.my">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+	    tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data android:name="com.maxmpz.PowerampSkins" android:resource="@xml/skins"/>
+
+        <activity android:name=".SkinInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

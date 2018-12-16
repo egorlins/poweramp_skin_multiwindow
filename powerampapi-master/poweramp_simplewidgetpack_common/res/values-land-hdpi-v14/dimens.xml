@@ -1,4 +1,6 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-bLRhZW6dTc2jRc8Y6HsbnzoWbBrPy+WLx63ky/tsSHB6AakwSoAyRpNEHayDYDX0
-u1Jre6D7Hc8wAG5WbG7s+/QebHi3r9kLogv8VXzFwLXIYOav55BOhbdg5+94RF5I
-OONo3gTaHQArpnD7BffXDBAX+z62G33DEb6W7BwvsM/TRZbKzYT5BWRJKl3d2zFg
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- values-land-hdpi-v14 -->
+<resources>
+    <dimen name="widget4x2_height">-1px</dimen><!-- fill parent -->
+</resources>

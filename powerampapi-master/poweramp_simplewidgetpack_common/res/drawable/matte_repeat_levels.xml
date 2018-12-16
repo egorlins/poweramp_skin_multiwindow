@@ -1,15 +1,16 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ0yKISJ06U3Uu5JsYx0nnvA
-M0M4QmLl1UbL22CFie1eC+L7vPaHjA1rrxSWpUMAeqXGmIhzb7SVa66MOP/AV8jZ
-YsI89D3ze1CgXYYegX9rEdHAEEiwStdgQ5eTs06N8DKhmzj5JPzwlqq8/Qa/ZYaf
-VxD5zMjgUOc9N/aZJvhuAVuiOeisJyRDAttooovEcuDz6T0kIgeKa0/j79ECpH7L
-f4VMGLr0BWY46H/uUyWnAAgMp/lB/TeVQbjRgY7rq/X4Vw/Mm7SsGbid4/45hxRy
-1saLIMTGcL1Zv+yjsUNmjvDm/CIlkYbEMGGcdz6UMTcLlIFZkoP+5bFokFCC6MSp
-LGWrLE+QeI2pPX9vkDIE7n7OWrAQfyl428jYOFP6mqpp8G6dvVPG1hKnCpvzh/7L
-YW1S2SHMIMda4m1S56wIrl9LcmyEc6i+/mny1RB7zwwkwvpxLGKiICrVpPWVCI/l
-smFQkb5rQAjxPOrV1461K2ynDgyp3FOFLsfFmLopYmmUviAf2FcV1xPqWkQN0Rwb
-k41tZCrC3kBpsV+0m+0i4CLBgC9OJajptJK5DMSYoOdmuym5Ep9SViRU7Pfb/iRe
-PmMuhCyakDqTiEJyM1IIlVLgsYDbS+aWvppjFLjyj1BOzLNJEs/8h235F3D1K+vL
-a3bC21VZvFCRHWRDjSynAfZCGvGAFteqkvzOzD03KMuxVaHtuRpMe3TrImgEjwwn
-W8xmvOXK8TBL4A8A/jnr6UReaSsI/VuNf3gjocTdwJenCoeUvqtgOMbIro//P/Tp
-x78mPeTL8u5FNHvqvky2v7Y9QzpzHrqTXADYtawFjs3K5KnWyzlNY8mPn36E/VQI
-Ul8BOD3JtQh1wBLqCtxsGQ==
+<?xml version="1.0" encoding="UTF-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
+	NOTE: levels should match Poweramp API RepeatMode:
+	 
+	public static final int REPEAT_NONE = 0;
+	public static final int REPEAT_ON = 1;
+	public static final int REPEAT_SONG = 2;
+	public static final int REPEAT_ADVANCE = 3;
+ -->
+	<item android:maxLevel="0" android:drawable="@drawable/matte_repeat_none"/>
+	<item android:maxLevel="1" android:drawable="@drawable/matte_repeat"/>	
+	<item android:maxLevel="2" android:drawable="@drawable/matte_repeat_advance"/>
+	<item android:maxLevel="3" android:drawable="@drawable/matte_repeat_song"/>
+</level-list>

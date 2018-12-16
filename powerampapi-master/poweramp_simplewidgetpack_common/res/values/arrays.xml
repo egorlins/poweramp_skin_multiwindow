@@ -1,10 +1,17 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04lpF5T+V+NFnrOpbK+/tx6KHvC8JT0mzHQVHeq8tS7vb
-3xotvtpx7ttFw2UZysb67CbT7PBXHSZO9n4+Ac59mm54SwlViAWLMyUOjluSxi5r
-Bu7ZWqx6Ch6gXT5qIJAyu6YV0GBkZWcnjoO1XWUfeKUQywCNR0z/BG2VfhKbAnPu
-mW27UQzItIvWF0b6CV6MRGthL+F+ThI1mMUZ8o8blSce0aQyGmW/wOGtTMcM/vX0
-HnneoCsGpWMOpcKrYagjiwGjoTco34K0ijtO93Pz1HZSOA6rySmc50myxo8tc7Li
-wXrxdgVhOxZFJHttJtWDez/BwotvG5yP3mpOWvUEIONKjugrupo6cmFKLoSbxOcT
-FAWW3jc2CrO+WtVxDJpv/w6Fu17YbiE2pHuoZBjA2e8gWGCpjQ+gb+nD98XGeyze
-4AcPexF4HdKaFRYsOL6bku1xjb60VigAdj9mnPeSBOmNpUmSTlnpCK8wMdfdUa5d
-ZBC2Rzr2k/VH9pzNdKLTTIXrKSAhv3T4Y24tHhxKOsxvHdvwf9o65dnKGVCEOHB8
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<array name="pref_theme_entries">
+		<item>Default</item>
+		<item>Aluminum</item>
+		<!-- Add more themes for 4x4 buttons if you need here -->
+		<!-- <item>White Plastic</item> -->
+		<!-- <item>Black Neon</item> -->
+	</array>
+
+	<array name="pref_widget_shadow_entries">
+		<item>@string/widget_style1</item>
+		<item>@string/widget_style2</item>
+		<item>@string/widget_style3</item>
+	</array>
+</resources>

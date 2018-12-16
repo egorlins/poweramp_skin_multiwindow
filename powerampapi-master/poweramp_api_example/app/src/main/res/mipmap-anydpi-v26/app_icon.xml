@@ -1,9 +1,17 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-xkIzIlJewGwIXuHJroJSuA6Qw75cdCiPMWEh8sQbBJU2Xo6NYqGWRsAENPL53Kg+
-8/VKVJBgd4vkFMew5f3U/yE/YfW/rjXE1mAYMQfJVcUP4DdcwxgxdrceXEKSvZsg
-QdPYjqGM3WQv//9Ayv9ZMAIXBsUS1vPtP/sdrqZVe/EMqxa6k65g8HVY/Md0ro5V
-0mhTDhoLuIQSlWuF64GoQF6bPnydkXDiSfi7+t922RehYPLrhHXxt21drPiBkZm9
-XgYUQoi3fL0jGIvF/cqfJpJR2ZBbjeeP6rLuSlH+mhv8vaXACQUmCzPcGAGLfYab
-NJZ8bqbTjkl+CI/mhHEZ8Y2LtAgNh3c0qQSXlrJGw9DQU652WwHznYUipa9tXfjO
-2svikqticQuWiwVd8Tn3ReTjAQcsAhjiy8RblGwTKFODY/LgesN+VUHtEe2Z6EWc
-KnipzoXXp/Xc74E+LvLLv+FSqTAiHHuVzkRfuJnHreo=
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+	<background>
+		<shape>
+			<solid android:color="@android:color/background_dark"/>
+		</shape>
+	</background>
+	<foreground>
+		<inset
+			android:inset="19.5%"
+			>
+			<bitmap android:gravity="fill"
+				android:src="@drawable/app_icon"
+				/>
+		</inset>
+	</foreground>
+</adaptive-icon>

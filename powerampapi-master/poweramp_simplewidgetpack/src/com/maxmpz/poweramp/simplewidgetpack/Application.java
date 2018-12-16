@@ -1,43 +1,57 @@
-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
-8cnsJ9Rj9CkatEmuund4Xw==
+/*
+Copyright (C) 2010-2013 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for themes, skins, widgets, plugins, applications and other software
+which communicate with Poweramp music player application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.simplewidgetpack;
+
+import com.maxmpz.poweramp.widgetpackcommon.BaseWidgetProvider;
+
+import android.content.SharedPreferences;
+import android.os.Build;
+import android.preference.PreferenceManager;
+
+public class Application extends android.app.Application {
+	private static final String TAG = "Application";
+	
+	static {
+		detectPhoneModelEtc();
+	}
+	
+	private SharedPreferences mPref;
+
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		
+		mPref = PreferenceManager.getDefaultSharedPreferences(this);
+	}
+	
+	public final SharedPreferences getSharedPreferences() {
+		return mPref;
+	}
+	
+	private static void detectPhoneModelEtc() {
+		if("HTC".equalsIgnoreCase(Build.MANUFACTURER) && ("inc".equals(Build.PRODUCT) || Build.PRODUCT != null && Build.PRODUCT.contains("htc"))) {
+			// Incredible: man: HTC prod: inc
+			// Nexus1:     man: HTC prod: passion
+			// other htc   man: HTC prod: htc_
+			BaseWidgetProvider.IS_HTC_SENSE = true;
+		}
+	}
+}

@@ -1,25 +1,26 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-lHbOCusx3tbDxIzRWIRWId+K+LLLE1au79fFZOxaxJXglY7jBAT0UKzfk8TYnGwC
-uQX+3ZghJUdnOvZGz+moMKWY3iENzuAuQ4z+MdAa3Klo60hP5ENBxTWDiyYfWXaH
-kjLWKgJ8WaiKKPUMasxxKc++zRZ+grU0H+JBOKAQO+IJIkOuoOuiyVDizWfbn+/n
-5XZVeddYKATgdMrFNlCYVOUfxtM6JLJ43rIF+5CqF+wPYlu8u9IT6/5NSYK1hLDs
-QlEKPXAnJ3OlIVgchQcbp2GqTctxDiUdHlI3BCuSY/1MaSkOUW3JTyK3hCici+3C
-h1/kcnaLWj28WXxjNfjSik0+GGKWLCgzb2mbFE1+Q6cbwIbtwRCWjtFX6UAJGzh9
-BLcrHxXDSUv9rDrIxQ1Wvin5dKXOK68/0FcdlM1ux6Uz7gGddZAwUL70oDUFiEW2
-0WrURWDhCHO6UWIkqsWVejgoXkJX06sP1dOnztNl1T9SOBhmh33Cvd2SPJmV7kPB
-B1saA5U8Ke7MBSaQEhT9HaA697u928LvFTBARB70YioFWq0IEA+GFW44O95v+T9z
-0Itd68blXD/f4mpLvlI91X512E3O+4GhbPCTbQNqTS0UzmMTp5e/ceWMUWnLZx0f
-uR99tMTn7vbUOnAXPgkPZoYnKPN0w/fiBcHMgmy92JBNXPJI5keS6Ixw6ZUA7uqg
-F3WlM5PHiy1lpR5HprE6NSOTFWjtxwbVsj2HgVZJjZEkAoTwzjdwBJvmZ7Fpbhbb
-HQx4Sq8ChrLbWaGjKbKoc5hGKXnxRG8ZptQnFTJogxmoo9lupXwbaY7nk7NsArlq
-IfKRYE8bMM3/E9+i643+SRxFvfJFOziVL0rEhr2TYUOuxecKh/ti9LE0XhlnCI7x
-k8dbkWvHTJ5yf+aQGmYph8vRDCHrvoCwbpnS5cA8zTNB8qDFE7PzzADjolxzQ8cf
-iTbvI/Y1OV5CU1cuCC1QjSEQKVC1ZT01phVPJPP5UCxtbj3wkvsSh39BvVpKfPJO
-tpEQqhu4mHTYSc6C1zNroWC6brJn4fd9jrRdXbGmkONWX4a7uOFmK8Dws3h8tT/h
-BUyQRxxRD0+aoJC3hohbvyvIn0Jy6YmKpVXZXGgwHDG1msclfnsEN38oCjfr0Z48
-5a6V9LE+jfliC9fu6M5mwP11ea7dv6cViUEwb1JcRlGBmn3Ufdo2gZ1eDIhu5Yus
-9rGJzjq+CIMRy1UxwNKetBmmPislT+QyVN/bq0UvOTOh1DA1A01vRhwlgv6mnTM+
-6omp2Q5+BTpfEmaLB3/HoPFNQ0kbArEn1DMJj6VVBOk/GUfqB6XvALqbiN7eke7p
-DCORKoMEad2lwwDRaZV6h6O25IX9ZeFHuf8LW0qcieWlpRJOcZ+Gw3AhS/VrRcv6
-kybcqHsY0K+TOLCG3EijTZtxLZRxo1cxYSgxZ2x9SX2bXdwumsw4wlAKgEB/5D4x
-bNUecE4ur3Zqn81hxDEeBRADJnbQqpsvS7ZjtHOPnPU=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 18:9 screens -->
+<resources>
+	<dimen name="AAA_Seek_height">32dp</dimen>
+	<dimen name="AAA_Seek_marginBottom">20dp</dimen>
+	<dimen name="AAA_TopTrackElapsed_marginBottom">0dp</dimen>
+	<dimen name="AAA_TopMetaInfoLayout_marginBottom">8dp</dimen>
+
+	<dimen name="AAA_TopPlay_maxSize">100dp</dimen>
+	<dimen name="AAA_TopPause_maxSize">90dp</dimen>
+	<dimen name="AAA_TopMediumButton_size">64dp</dimen>
+
+	<item type="dimen" format="float" name="AAA_ItemLikeUnlikeLayout_scene_aa_scale">.875</item>
+	<item type="dimen" format="float" name="AAA_TopShuffleButtonLayout_scale">1</item>
+	<item type="dimen" format="float" name="AAA_TopTrackElapsed_scale">.8</item>
+	<item type="dimen" format="float" name="AAA_TopTrackElapsed_scene_playing_scale">.9</item>
+
+	<dimen name="AAA_TopSleepTimerButtonLayout_marginLeft">4dp</dimen>
+
+	<fraction name="AAA_TopAAItemRatio">100%</fraction>
+	<dimen name="AAA_aaMaxSize">500dp</dimen><!-- For 18:9 actually it doesn't limit max size (width of screen does) -->
+
+	<dimen name="AAA_ItemTrackAAImage_scene_aa_margin">8dp</dimen>
+	<dimen name="AAA_TopWaveseekLayout_height">172dp</dimen>
+</resources>

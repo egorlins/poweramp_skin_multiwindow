@@ -1,15 +1,20 @@
-U2FsdGVkX1+yCff3nBptWOlCqaO1xA7e1vB24vsWvwQzgN6bpNuXL3HiVxTvuvSs
-F4IEbj8Y0CW1SG/L3wO0+YDlmi3Amob2PKcgyknJpVsTLru+lN196FbGEftRPx2/
-ydpfRHJh1ol+2A+1vlJtqIYUJhvIlwsEr5jH2f2I7FUP0IXkkTGeRKjTMn4nFJBp
-eVY3GnMNxkLKNtEANcmaZFQL93HTo9Gyb986nf5rHK9nE3Rfe9jFj5bxe6kADca9
-TGKbu57CuID8jqiNi8E3473e5t/vyyWCw/24Xsf11OstcqkxCbUgu8soAH15KCgv
-zVhVLvtCjSzG8/SEJuTUHKj1wMcJQmZMhukVnMOsuzpugmDmbgTUMFzgBbWFDcLv
-IjcagrcEUEmlUiM7DWoBHhHK1g06k86c7d1loa23lEe+6wJrHlT9egx6aY+d+V7b
-yTV4UqTFbq7NgqzQf7qFkW5R98dPinqdhTNNz3AQPmDc3P2CNwLYh3iNpKR+/Iu2
-192BVcFFGndNRBbbJ1qS3abhu3CNOxYkqq4UBzvJqwxpxnpQk8wQ1D8U6PVNspV1
-EGHpdwO5vuT/ezPOTQ4LG2Yp1OGOHFnt8SK0V2py27IQAsMUEAYec8qKEwrZFQTv
-MwxWEyWUdH73RjmnbezZfw3lFqERT00I6B08uEO44sjSax1xM3O2E60yt5SyR06Q
-3d12DN1eJ7vBhfGOJYXnYRb49XyiTbM0qzsgnN/ELdaCkdqquNsCCSa/pa65/mro
-f5Jg3SDFanrIcG9O3apzJ3RUZh2OVqgYY4q2K9ptpx4xXMGDuZC1kzwp7yqJMCMS
-Q3mYlIF6eJ46selpAET7QvzfrrOKooo6kglzvC4vqlciBXZMfMhQxYqfsUee1nNH
-TWrhZIstvha2sWMwDIP/VZHornsOF54LAFW50paVDUY=
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

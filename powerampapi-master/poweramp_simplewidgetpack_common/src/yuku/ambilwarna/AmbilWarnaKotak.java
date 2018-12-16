@@ -1,31 +1,49 @@
-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
+package yuku.ambilwarna;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.ComposeShader;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.Shader;
+import android.graphics.Shader.TileMode;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class AmbilWarnaKotak extends View {
+	Paint paint;
+	Shader luar;
+	final float[] color = { 1.f, 1.f, 1.f };
+
+	public AmbilWarnaKotak(Context context) {
+		this(context, null);
+	}
+
+	public AmbilWarnaKotak(Context context, AttributeSet attrs) {
+		this(context, attrs, 0);
+	}
+
+	public AmbilWarnaKotak(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+	}
+
+	@Override protected void onDraw(Canvas canvas) {
+		super.onDraw(canvas);
+		if (paint == null) {
+			paint = new Paint();
+			luar = new LinearGradient(0.f, 0.f, 0.f, this.getMeasuredHeight(), 0xffffffff, 0xff000000, TileMode.CLAMP);
+		}
+		int rgb = Color.HSVToColor(color);
+		Shader dalam = new LinearGradient(0.f, 0.f, this.getMeasuredWidth(), 0.f, 0xffffffff, rgb, TileMode.CLAMP);
+		ComposeShader shader = new ComposeShader(luar, dalam, PorterDuff.Mode.MULTIPLY);
+		paint.setShader(shader);
+		canvas.drawRect(0.f, 0.f, this.getMeasuredWidth(), this.getMeasuredHeight(), paint);
+	}
+
+	void setHue(float hue) {
+		color[0] = hue;
+		invalidate();
+	}
+}

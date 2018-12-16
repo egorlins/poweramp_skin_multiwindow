@@ -1,5 +1,6 @@
-U2FsdGVkX1+yCff3nBptWMpDOsre5ZR47rfQUGqNyGFInuTRkurMLwVxUdCfL/xt
-wM4QMO2h+TG05d5t7TQ+EvDJagLco7k8BJ56UKV8CXN0vB0S40hwF2obuxqrsBm/
-LgiYTPUC9Iz0kfV83TSPBwEGrZLMIzClauOSjmy9GH85pracWWcsuLfcHARotTqW
-UCZ9nADwMMDfQScUqwv5Q3Ij7fCdTA9C+1zfEbSYv6kCBpzGizuJuxhSYXrlw2nn
-b9Zfu2KV8t4K3Rv2rNNHaKID5jWDkXvz6D5BZQt5hnGWu8Pj7gXMrxGAFn5Y5IPd
+<resources>
+
+	<!-- Base application theme - just for skin information activity, not related to skin itself -->
+	<style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar"></style>
+
+</resources>

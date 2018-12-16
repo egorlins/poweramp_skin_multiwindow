@@ -1,5 +1,7 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-Ebrj3NMR2Sh9IORfbVvrY6J/3Q9g4QUElLCsiTRvfUaOpsTLiCgQHoSR2SE4cSBk
-WeM8WQh0a7R4o9cZnHnUUnbBhLNTfk+bK/qqzAFnq2ZZ5rxibW2aylteKyg5YhF7
-Fr/GcTeAlIxYvmC99QeXoeyznVvgraKlFqyb8f5rIL1rsntKEGwRltPCykC8gTQf
-7ERp0xFObMKRYGIwdI0l3lwFgY8aMdHS3ZxJZg/8lYQ=
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="?colorInverse"
+>
+	<item android:drawable="@drawable/ff_round" />
+</ripple>

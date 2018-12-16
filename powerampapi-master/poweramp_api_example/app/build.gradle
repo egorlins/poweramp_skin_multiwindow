@@ -1,20 +1,33 @@
-U2FsdGVkX1+yCff3nBptWC15oAzSipSMcDTMrItl95CnfXOFJGTZjxppr+9p0fh+
-dysmIeAxxFf8N2MZuKM2UytImu1A/SfvkpqRDvInISwwvyqtTLTWSpMCTNf6psTH
-FK3jMlhG8t3BlG0UIB5kRH/8qvTa9k92LT/8aF/053DyUNYM8QIgDMlsq75hgVpJ
-Hfgtb3JT5onaPC/LFjUQAoPvKCDpWgMNA+NwbecVMtAeReM3ISToQe96S4MqqY9e
-ay5+Rayy44XwtFatq3NMJC9qpHiG0MOf1BpW2UWAAAahR/Sf6M4APuZ/jkRw1be4
-NVNI3Ql4o097GcWLtSorzfQkXlVoh8idruRjosO+hbuErrVvSN8DrIgvqF/bP53+
-QH+A3szJQNHFskfd3p6f3NJOwbi94yfNRkcgznvDaAltZX4dn7QYIao69yY5q/t3
-1pW1MEKRTmcsuGBbIhQ2lr9jyFNrgPkXkkFVgL9SebCPFN/pp2D9UjKXBxvk7aJ7
-F1vuLEHx8QJW8TI1Fl6bQimCWhd1dKugp4/hi04MLGYwqxgK8ieJAB0ETqjJq+3H
-W3p4G9J3+icV8yNhEVJVIIsApKerS1hnEUxd1oKqVNbguV5ef2G0bh/Y1Bo88sPU
-L2QcRNqdo8dmfuh/FznrcDLSD0KwQbsPNuMo2hxMESQtLhL9Mngt3X4sAPEZj4Xr
-mBzBV8U4xUQrZvsM8THkvBfE6/2HxCsu3zxUAtqLHmNUlDI5IxAA5WtrFkl/apzZ
-u3kE51gZ/VU4Rso9fx/VcuIjOgPL3gedU181n4arGpTnw/QDOE65yU/ozmqpvnJ6
-D4ekdWUbN3l8aWP4T8gTK45pbAwtX/28qhp6fu5/JVNvNk9ra1/4h1vhHhkklx0C
-xfHtQk12GcmRyCGgeHtDmH9UWuRu2LJCy4PZ6WM+PXhaZXrHfMIXKYvlj+KuyBNn
-hwYBi/IDeDSGcuYWQy53q1B5cd8SS/CMAJgnAiC775DLUqlOHGpRNhZ2+q0svozr
-yOt0j+UIwjWviuDIvUf6Pi7P99UTf5raLGc/kePNki5hmn40BlqN3ILmjELS21Q3
-TAO311GxvPv7cmt4GNQ5N3H6duLZi1zF+P/ch7TpJxeEoqF33MOYU9wvCxsPfpSF
-8peFBj451qHu/xwxs4n+ujcCW9MOLAADQQLI+PLYsey/ogZzoE3d17kXoGEHwz77
-UIZHGSpZbLGZVH4SrxEmkw==
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.maxmpz.poweramp.apiexample"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+dependencies {
+    api 'org.eclipse.jdt:org.eclipse.jdt.annotation:2.0.0'
+
+    implementation project(":poweramp_api_lib")
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

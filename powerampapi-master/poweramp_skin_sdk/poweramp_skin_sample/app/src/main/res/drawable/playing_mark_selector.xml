@@ -1,14 +1,17 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa992ek6eqCBf/N6LV88aOivVPkww8LTq3F5F8B3hXmSSC
-6fGAcmAXLxfNRw1BLPDjsKiecQvsAFgmJWQ/zMbEppHlWY3W+trLwXmSvLg51KIW
-F7ER3de0q15Vai+s0e7m5JnkIHIriisybUreVpt4Q8aYUzqP/EPxq4e2sFu+t+8+
-pb8CbX7QVim3lwGQtWB3iGc9MI128T5wHkCCNNImMDzWa/rAQrEHKEPD/gi/vZI8
-kgviaeGLU0Lc0LzE5kB5h11Lin4PPEhI2NV3Te9Q+AfnMkhQbv/HIxs7rpa4Ohxv
-8qzJQmhLNZ2Xe3U+7uXG/jMpqhknl2We1tqDZO+AJokrBtpbCqArFmqJOXdYubbs
-ptC9DH+qdyXe4aLL51WGm98thukVVtUqSAJtFC1Nz3F/W3ONXlcUlFaWjryqAVgg
-wI5hzI7LuZu/dnJX0O6vPR7rKXK5fZteLlSWxE5/kXa0ghVU5JaEFqW2NnMY2cWT
-uSrVoSqG8Fx5WFXz6HItSRdur3fGtb2uYymnEGiQ2B1K8DMu6waeFrumen0/tzA7
-pMvvZ5tabFi7VTlG338UvprO1vlHTaaNldCYXlv3dKIIGrb2YcQkQ25xzLMji9uw
-aNX+a5r5pM0mZ+ugdrcpEzGUOUHT8xU/FWi8sswOR02dY7S0rjArGlDSakauEtQX
-3Q5kxU6sjFJE1fTSNSGPm9CkPZ1A+KZjMIsU11vHfj8=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="250" android:exitFadeDuration="250">
+	<!-- Drawable should be set only for activated state -->
+	<item android:state_activated="true">
+		<layer-list>
+			<item>
+				<shape android:shape="oval">
+					<solid android:color="?com.maxmpz.audioplayer:colorBgPrimary"/>
+				</shape>
+			</item>
+			<item>
+				<inset android:drawable="@drawable/check_big" android:insetTop="4dp" android:insetLeft="4dp" android:insetRight="4dp" android:insetBottom="4dp"/>
+			</item>
+		</layer-list>
+	</item>
+</selector>

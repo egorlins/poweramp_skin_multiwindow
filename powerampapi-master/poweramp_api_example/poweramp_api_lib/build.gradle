@@ -1,14 +1,31 @@
-U2FsdGVkX1+yCff3nBptWC15oAzSipSMcDTMrItl95ArbLAE1vS+89ioimBvzZWf
-s+IteZpKjryVSb4nXRS61Zq3vQMgxW5yEs+KOhB4afGZeX06ZjMA1FbR8KOhK1Nz
-NYlSaqlcXzS2lM5gEKgdC5bseQfsNHhXrGVyTowZd13JVmuG2sq/Tqo4q/x6WO2Q
-OFMKAPRgNW5xSAb4vKNKAgp0+8HmUaboqWUYgG0InRA/IzEOYobUbUtI6jxUP9Ah
-pJxajiyoFXI/K3XUOwtV72OkdiRDw0CjUuo+WaLhOZa5Av4hpkXlbi9udj5JAP2u
-g+X7NUuW1dhXEoQm+fwRiCVh47K3TyI42FlqPUprTAwoajl4e3D2Fal9SNL1K4e2
-6Ut2B/uFU3S6luGgIW/jQ7ikZF27xmw7UgZQ5c2sxgVr6PhbJFomKFxZxHKA7TZN
-Xgl3h+3FilvjFXOd8ykDkaGx+fmO/iD3H/92Nj6YiopzkEH5v7R1yH7ZI7YGdrYb
-7WAJos1omizvpbDlUsgmZ7jpxdfCVtCQ0tzBLxDWTHsNT9IIVRF1jRVSQw0/nbrG
-/F0tpCXgN9lB+tTxAg4YmTPsJVFwa1ejEZyG/g64n2IhGYrUGLtAICtyJe6JpLg8
-+wZ2+F73jVoXG3B+68Z8jGBEdUVQvNAVdKkUsEpiBw2DTGZo4pSUfTa7wf3IQ6Ay
-nIvO6vbgi56omufbN2Sa+kcFYds8uJavBqMQN+ev9CnxWy/FV5RR6CwMBkFOM5Rl
-d4HgWp18puBQ3IrkNx0lFMf8Xtgva9j6pEospY6vXLYikL4Oq/FN/HGbShX7uIag
-2/oQALKYx3AKlWcdvJFEwsw6i8NywVZlBb3rBcwD0PpF0q3ESwIeHiDfdNIzS9YT
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += '../../poweramp_api_lib/src'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'org.eclipse.jdt:org.eclipse.jdt.annotation:2.0.0'
+
+    testImplementation 'junit:junit:4.12'
+}

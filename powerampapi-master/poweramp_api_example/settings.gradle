@@ -1,2 +1,1 @@
-U2FsdGVkX1+yCff3nBptWIPCBsGa07pkgb46NGfzp0of5JsVYNeubjfqn7WFE7H4
-PpAE4cbOAz8VB0badotB6Q==
+include ':app', ':poweramp_api_lib'

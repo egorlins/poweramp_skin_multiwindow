@@ -1,1 +1,1 @@
-U2FsdGVkX1+yCff3nBptWP8fuAYJMgfwGQNji8RLTUKB/4eupu7vFzDsNCieHD+5
+APP_ABI := armeabi-v7a

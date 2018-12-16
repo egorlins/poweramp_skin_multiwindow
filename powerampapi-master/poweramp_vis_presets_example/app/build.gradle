@@ -1,18 +1,26 @@
-U2FsdGVkX1+yCff3nBptWC15oAzSipSMcDTMrItl95CnfXOFJGTZjxppr+9p0fh+
-dysmIeAxxFf8N2MZuKM2UytImu1A/SfvkpqRDvInISyU4m26gddn5Rfib/Hgi1ap
-iL2TfpivHmxAQsLrY3I4UiOW1lKZnkHjT43Xcf6at+260qJSE5DrPzrXXB7qsldw
-EtcvzU1r1JBLZudxqahX8T/p9rr85tsp2Lau5fpOqgQArT+nhRM9NAxERKFdxH64
-cHpSuZn5jWSMBIGxRuzMY8eCO3NLEdbk3S1NsgIdGnPK7rn6TdJVYGM09+5Bhfgl
-7HO8X3lS/O8ILzI5Q62DAdpW9ynOhOUegXS+lPk8Q12zn6eKWE7e6kBv3JU8HKfS
-y3ZcPjDP5a/r/KWVxsnePEdQkWmQT21wHYS0GGd2mryIanF7OxIUzAYtfkT9zgBm
-W78E5PKGr4d+eT1X70vulWhxOXUzLd10jpsOShFwSf8GfREFNVYG96Upq1khGyJv
-MTJZd7W/zFLzmUzXgPETAIia4bC48Hrq/4toxk+9y/XZ2KzXVPrPVTZqLpJ9x0Jv
-eF912afomyTL/YPV126LdEBBrk/yD1bS1sICaiekI6OWXzOXMxok5/dtIFxc/n+U
-So2jdC2OBHU4Jj/tcrIkMqJidzD4jrexlSdn9OPlQ7YBwjNJjZ7Plfye1Yb4GMOK
-fzd6ohTamIODCyIdnrWl2A4BEjJUXXsqu/HUO7v5uZ/fLO5E1krQSmcf5VZrgjMo
-tlU8fKjrPTOHa1qwH+yhDDfPveOM5ue6/asGA+c/bxzv3ygzjWnyCOyVvhV3QOSX
-IECIiMLpry4ZGxzo6i+LuxKgrLHwuOBAK294ReS9vOSajhNbaAyERt6IqmsIykRc
-lIlMv3WsdQ24Vzsp2Ca9KdS8++Vk4yRNcaOP6yGFsoZxoLWwx836aBcw50aTeIzk
-t9Lx+kGOu/YUAvvHBpruuVrqKN6EDsRI5/mJw30KM1TVnN3FafxWtDdZ7ZiOiWHu
-VMgNAhh+OPk2DIFgjmUnkqa/djtC3lNXyKSgN1ysCktDrHXuc0msKS7iWd1Y+6Hv
-2N4C2dAPzI1FNLtj9/U48A==
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.poweramp.v3.vispresets.sample"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

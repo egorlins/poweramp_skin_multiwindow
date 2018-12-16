@@ -1,10 +1,11 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-t7F2NCItExGBTFVFbTO04qPFYGGUpXaxsvf1g8jLjo6z2kI+YfhfeSmGq6hhngwB
-WjpTdFSqpDs6g7z0TdSG1nQ23CsdINk0xo6uvTu/cDu8orNLEkuxOnERzw300nSH
-AK/HYlJuL4/vRpCzpaIzCVbQx3McnijXeH4TK9yBqvEti/vFByhs1hVjc7gVQAwG
-qrw5IMkopl92zFtY4pALFKdhZYfeLeFongGi4M7gW/zOu4wpFJiK0Xech6o4ivj6
-BHVtcrM2LZuYJsM97MfsD4T5r2RmSfeuGGmsB99z/B56qf5/6kBNA+y64Kg41wkq
-5dPfTxQ3na6d17PnBqML4nILn+cZswo8ex/8Lc/iv0lW5kcL+RfuG8eQmszFvtk2
-EwMXMWdlYCvZVwzqQm6qsc3+h3eE3aSoy3z/UFM5G+yVcgU3cUMTgdLEu99gMd6z
-+hG0BPdLLZUCC5zu3K4FDBAoklqlz8+lmg1pIm/pfZd+AHM7mgE9ar55V5JnhluH
-3Cal1NV1DSzwrOduggpxTg==
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="ActivityWidgetConfigure_Title" parent="@android:style/Widget.Holo.ActionBar">
+	    <item name="android:background">@color/widget_options_bg_color</item>
+	</style>
+	
+	<style name="ActivityWidgetConfigure" parent="@android:style/Theme.Holo.Wallpaper">
+	    <item name="android:actionBarStyle">@style/ActivityWidgetConfigure_Title</item>
+	</style>
+</resources>

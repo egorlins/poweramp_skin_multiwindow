@@ -1,6 +1,7 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-G1lp7I4P+vcuhdYjAf2Of5jG0XImL3ZSuq9mtAuC5tN8h9aRVvTEVXDp/lDcnJKt
-qJD7oRIZAlcfGqxzUI5NEXvzqj2Ywk39HH7WqC97rzamTW0uD9zKt6vrBnplT0B2
-MWMgUQRO82S/hM76aqtoZKALI8ssdNRhIOiH9/R2r5E3I2UsBk4CbpMEnmMkFq8q
-C3rO1khyyYQNUmj3y5XosRlRPD6Wuxw/QDcIxLVHM9ImAtqzKQTfiSrIU7vvg7N1
-m/7iUwaMbzsp0J2/4uc0+6QfD9TEaJxS2457pban4Cg=
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- NOTE: needed as drawableTint is not supported by EditText until 6.0 -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/search" 
+	android:tint="?colorIconPrimary"
+/>

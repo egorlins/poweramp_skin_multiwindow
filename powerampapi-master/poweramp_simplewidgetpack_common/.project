@@ -1,18 +1,33 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ0yKISJ06U3Uu5JsYx0nnvA
-53XDMZuohRmkCMoYgDVW/6muW84QsFvVArRL0yFCEZrMsl9oR3Xy28RhN3Yfcgkl
-OC21jYGiwIe+QXTvQeFpRvS7GGlc7X3TL8BXX+sYS0l2eN3a2EVMwQeQKfc/e1jt
-PBN8zVL9hl/9yCnxq3S5J0L2rhZDh2/+k4ef8GwbHhsQKD+D7trj2O2XEWX08tfu
-plyjLyrwgOCLgwI4TEFT6JRxiMhlBXNV6wINGO9w0eT87yEtPsHs5PH7jhZ32enH
-bi7DdZGHy9e6OBrVwcQBDVdxLp8GzN9aOEUcnPf3vJ8+Yzkqc+PUjCoPGdC7w2ur
-rB1ibWz2qEK3PxAzOqy+Ta7jwBa+027J8/U9IpAq5i6+IBomogiBAPwOVQ3loVA0
-Wvy8s5vXCTyhZ041Qm28Smu9ySN9ONRrOp14XtjFHeKgup6M9p8HlR4iyl4mwh0p
-Cl8p0Q+nRB3iLHBl2nHq6CqEn2cXq+9V4uxV0BghYVyJ44KWftGh7De37IFRXwyo
-MFb7KS4lzXLn9NDzlWz5ZvOkxa9ErZoSqwpOOJJYBixipAGnAt5ggkLdQry4mIay
-VbyETTcm0+162jgY9tI0ow1kt8J2ghyfjwLTrrTZSJP4WSnDtnPiDg/j7W7wFMDc
-VP324bHKMi52gkhqJf/6ig/+DvUCx1M1gWeJQp2e59V6PlDwMvaWmvqkVHUW6ScH
-Y4u2ZpXwgJh9vAsgH8gBXAdziNzioL82TP8OVQRMN+GgO1f8uffNbw8yowia+m+S
-+fY9VG8cmSxWCSgXP3CONytRjSliLI0pFQv/HuRIHO86A3nuLRf5DeOONHTuuy0S
-2bFU9p1L91I4FAa/KVBYjLFK5xxi+/FgZpweRzUBacqoxQ742pbbMBwqDcxZeUk3
-s4vuczVfvHCQxEaE4041IBiBxoixvd2uVfM6n6b7/eP0s8Iy8DjTls5c1mEiFT7C
-2BoNl5loxdHYJjeaE1YLq4a04SbpOZF7kNSFDjkmwqY63vah29wZ6Kdf30MixRTz
-GeiFJ8Yhk0fM+YyzglU3rxMA6ccPGx1DwxuVx4DxuxvsT5RLHMZsXThW65rjT/6Z
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>poweramp_simplewidgetpack_common</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

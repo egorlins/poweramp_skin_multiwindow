@@ -1,18 +1,33 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ0yKISJ06U3Uu5JsYx0nnvA
-53XDMZuohRmkCMoYgDVW/6muW84QsFvVArRL0yFCEZrMsl9oR3Xy28RhN3Yfcgkl
-IQDjezqz1GiU+CNOvR0OgMBcGtlPRHkdpAHPanYoClo7O+MAunwM33lowoW479nW
-Kk8NOwpTUFTjAsiRkxdpy03Cqy0iIiiHRVmstN9D+g6+evE4X7ntCzEaNvi/66kn
-EXoVBbNEMN4DV72irc+mRAoO8X5+XuaDYqJnud2hoGSS4bqKBTkV7HwwqaIha/Cq
-yEepR/fwmahmb6OlGyHvB29zc/Um/nMBFlECX3uV6Uty3OM2ZQm/9eF6Rx71ODwx
-Ahf4JJ5f7birPbuNKpcEFpPOVzZGc435P7pkTo2Cn9uJc5BjtIDtBkcKA6ySrbTe
-KPeu1YA5RO6cdpJw5rREgEFv+UVwIShd7xpw/SXTACFKgojr501dPfXa+ZbBVCCQ
-1WWFFLAt3YUvNgsNMKBCTyrgrfCWeks/Df+r3lzN4C3KnZI7+qLcuJnhXANxCZub
-6A9zSv33DN0ZAYLzjbxSU7mO6R9olOQA3p1dCfrCivoAd12lcA2Pje/hAayuwP+f
-OZA0i5Jda0poyPk6SEeKyVs70nZcbW1qoa2Z6gmPmWkfO1IrBgkC5PVxXMlrC/51
-dyY9yJxoakYtWssvG9e3wPqMi5+AJEu8cIcFrnZcEDCOzh9vhSFQCPXCIl9xyiXW
-T17O5JlEb3FT5e/Jrzbadcg96aTQEhBxBh36saoVA8N+YQYbKabL597uOVyW42lu
-56X/p3R6hYXgpnBGobmSvKeq0gO/eEvpysO2Vf0HBRthb3jPosdmaLg5GS7RhKDG
-cKgMdksrCO6vLbHhUN/4WPhLoO+LafZ1mryO8vxkE72zu/AKafrD3jA30itRGNLf
-4SLo6vsKTZRfGC8Qxc/D1My24vQJvipkj4wvwHXU5pNkxsFod2ottU5ozdsdi+uf
-SHo+RzKHhnxT8Chy4DV7zIP/ehkSzrWLY7Rc5l7mSecMJjRO3Cufuz5QIRwGRvqd
-BBSgbCeTqHxPIvahjcXNV1uHXU9GB9JhY0EpHd64Ko0=
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>poweramp_simplewidgetpack</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

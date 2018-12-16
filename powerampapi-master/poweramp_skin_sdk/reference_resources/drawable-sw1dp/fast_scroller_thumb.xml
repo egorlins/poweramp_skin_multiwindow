@@ -1,9 +1,10 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9zZuHIMooj7L/3ShsSCPydAIo57APxGzFpoqiaUMpO09
-oego0wiKyziu/A7U8AWu3jx+HtSr1mOcHiLhMeIB79Kc0UY7azm80OmXgCbZ0Wc3
-jmAOMKARKUTnJT1d/GdT6Cnv9xiMOiU9SMe6NKsCXuY0YF8BCmNPtVbGQnuxKBZA
-abUW2l5qzhsLzCQ0baRPA6hfMCSsSkmeGFiDVygZyWWx24P7+VjBAjERQ0upW+Xz
-KiDN72PkvZD45R77lXIelpQOC9S46XsXzd/ChdBON4etyt1kQbIoJcAHKvmhoWDE
-7/BEG0M7nP/ridAQ39YKZSpWF/RwipK5E52edPLKhUfV+g4bYsVVg0i2/zya4qz2
-X91qg1AwPzVIIRBFXpwAlg==
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="250"
+>
+	<item android:id="@+id/pressed" android:state_pressed="true" android:drawable="@drawable/fast_scroller_thumb_pressed"/> 	
+	
+	<item android:id="@+id/normal" android:drawable="@drawable/fast_scroller_thumb_normal">
+	</item>
+</selector>

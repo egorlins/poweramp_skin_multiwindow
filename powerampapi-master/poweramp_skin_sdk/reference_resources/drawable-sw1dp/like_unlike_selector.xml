@@ -1,6 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-d7ST9vsQFx7mqBz89I7VFY/tVDz2ClljhxrIzC2N+5S6aFomnwr+Rr6zfU0lD8kI
-Tu+AQUUaZaBSlw0lxNRa9/3KuBYMpxc40XkKdEz0LNAqzS4Xts+qTSWnPT2GAwcm
-t3qgCG6Xj4tdNJlDvrSWmsTxsYdDfOoDce1Jvk9lCbVqT7clQO4ao9+18bcwY+R5
-BHIkGOKJbsUWbAKv6WCAy4n/aWhkhQRKoHO0pannd5jpsHotw7+fc/O0L7WkbQVu
-M1lpyplyOfxkXL/rN9BGBbd/XblEqZyEBQ0yooLo79w=
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<item android:state_checked="true" android:drawable="@drawable/like"/>
+	<item android:drawable="@drawable/like_stroke"/>
+	
+</selector>

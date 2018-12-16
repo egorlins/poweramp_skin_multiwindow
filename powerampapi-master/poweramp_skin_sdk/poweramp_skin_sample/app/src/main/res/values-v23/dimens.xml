@@ -1,4 +1,8 @@
-U2FsdGVkX1+yCff3nBptWKvBPmGlF4cj2LJs61kaMQ21fZE5loDWipLWEvH+w+5z
-/tW56zzJi6mrtAkIpm7AaRiE/7G0TdrW3mgl8jmNcEZ1V0OREJaMhv2eE/xpPJZy
-yMv5+QtI5PeCClYhg4f+cy48X4FBn8V89p/+3y3HKW5Z+lskje82RYKXdpY4qNNr
-VdieZhn9Dj9TV2vCd0wsukM8Tn1t5RmTa3w5hu5UyhmdTu57Ksdiwspb2E6A0YHi
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="AAA_Seek_thumb_size">16dp</dimen>
+	<dimen name="AAA_Seek_paddingTopBottom">0dp</dimen>
+
+
+</resources>

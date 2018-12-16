@@ -1,50 +1,68 @@
-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
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.widgetpackcommon;
+
+import android.graphics.Bitmap;
+
+import com.maxmpz.poweramp.player.PowerampAPI;
+
+/**
+ * The data required for widget update
+ */
+public class WidgetUpdateData {
+	public int apiVersion;
+
+	public boolean hasTrack;
+	public String title;
+	public String album;
+	public String artist;
+	public boolean supportsCatNav;
+	public int posInList;
+	public int listSize;
+	public int flags;
+
+	public Bitmap albumArtBitmap;
+	public long albumArtTimestamp;
+
+	public boolean playing;
+
+	public int shuffle = PowerampAPI.ShuffleMode.SHUFFLE_NONE;
+	public int repeat = PowerampAPI.RepeatMode.REPEAT_NONE;
+
+	public boolean albumArtNoAnim; // Used by widget configurator
+
+	@Override
+	public String toString() {
+		return super.toString() + " hasTrack=" + hasTrack + " title=" + title + " album=" + album + " artist=" + artist + " supportsCatNav=" + supportsCatNav +
+				" posInList=" + posInList + " listSize=" + listSize + " flags=0x" + Integer.toHexString(flags) + " albumArtBitmap=" + albumArtBitmap +
+				" albumArtTimestamp=" + albumArtTimestamp + " playing=" + playing + " shuffle=" + shuffle + " repeat=" + repeat;
+	}
+
+
+	public void resetTrackData() {
+		hasTrack = false;
+		title = album = artist = null;
+		supportsCatNav = false;
+		posInList = 0;
+		listSize = 0;
+		// NOTE: not resetting album art, repeat/shuffle, nor playing
+	}
+}

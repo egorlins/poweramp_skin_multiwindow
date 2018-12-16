@@ -1,92 +1,118 @@
-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
+/*
+Copyright (C) 2011-2018 Maksim Petrov
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted for widgets, plugins, applications and other software
+which communicate with Poweramp application on Android platform.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+package com.maxmpz.poweramp.player;
+
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.ParcelFileDescriptor;
+import android.util.Log;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import org.eclipse.jdt.annotation.Nullable;
+
+public class PowerampAPIHelper {
+	private static final String TAG = "PowerampAPIHelper";
+	private static final boolean LOG = false;
+
+
+	public static void startPAService(Context context, Intent intent) {
+		intent.setComponent(PowerampAPI.PLAYER_SERVICE_COMPONENT_NAME);
+		if(Build.VERSION.SDK_INT >= 26) {
+			context.startForegroundService(intent);
+		} else {
+			context.startService(intent);
+		}
+	}
+
+	// WARNING: openFileDescriptor() will return the original image right from embed track loaded in Poweramp or
+	// file cached image. The later is more or less under control in terms of size, though, that can be in-folder user provided image.
+	// As for embed album art, the resulting bitmap can be any size. Poweramp has some upper limits on embed album art, still, the decoded image can be very large.
+	public static @Nullable Bitmap getAlbumArt(Context context, @Nullable Bundle track, int subsampleWidth, int subsampleHeight) {
+		if(track == null) {
+			if(LOG) Log.e(TAG, "getAlbumArt !track");
+			return null;
+		}
+
+		Uri aaUri = PowerampAPI.AA_ROOT_URI.buildUpon().appendEncodedPath("files").appendEncodedPath(Long.toString(track.getLong(PowerampAPI.Track.REAL_ID))).build();
+
+		ParcelFileDescriptor pfd = null;
+
+		try {
+			pfd = context.getContentResolver().openFileDescriptor(aaUri, "r");
+			if(pfd != null) {
+				// Get original bitmap size
+				BitmapFactory.Options opts = new BitmapFactory.Options();
+				opts.inJustDecodeBounds = true;
+				BitmapFactory.decodeFileDescriptor(pfd.getFileDescriptor(), null, opts);
+
+				// Calculate subsample and load subsampled image
+				opts.inJustDecodeBounds = false;
+				if(subsampleWidth > 0 && subsampleHeight > 0) {
+					opts.inSampleSize = calcSubsample(subsampleWidth, subsampleHeight, opts.outWidth, opts.outHeight); // Subsamples images up to 2047x2047, should be safe, though this is up to 16mb per bitmap
+				}
+
+				Bitmap b = BitmapFactory.decodeFileDescriptor(pfd.getFileDescriptor(), null, opts);
+
+				if(LOG) Log.e(TAG, "getAlbumArt aaUri=" + aaUri + " b=" + b);
+				if(LOG && b != null) Log.e(TAG, "getAlbumArt w=" + b.getWidth() + " h=" + b.getHeight());
+
+				return b;
+
+			} else if(LOG) Log.e(TAG, "getAlbumArt no pfd for aaUri=" + aaUri);
+
+		} catch(FileNotFoundException ex) {
+			// OK
+			if(LOG) Log.e(TAG, "getAlbumArt aaUri=" + aaUri, ex);
+
+		} catch(Throwable th) {
+			Log.e(TAG, "", th);
+
+		} finally {
+			if(pfd != null) {
+				try {
+					pfd.close();
+				} catch(IOException e) {}
+			}
+		}
+
+		return null;
+	}
+
+	// NOTE: maxW/maxH is not actual max, as we just subsample. Output image size will be up to maxW(H)*2 - 1
+	private static int calcSubsample(final int maxW, final int maxH, final int outWidth, final int outHeight) {
+		int sampleSize = 1;
+		int nextWidth = outWidth >> 1;
+		int nextHeight = outHeight >> 1;
+		while(nextWidth >= maxW && nextHeight >= maxH) {
+			sampleSize <<= 1;
+			nextWidth >>= 1;
+			nextHeight >>= 1;
+		}
+		return sampleSize;
+	}
+
+}
